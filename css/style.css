@@ -18,15 +18,13 @@ body {
     overflow: hidden;
     color: #3A4145;
 
-    -webkit-font-feature-settings: 'kern' 1;
-    -moz-font-feature-settings: 'kern' 1;
-    -o-font-feature-settings: 'kern' 1;
+    -webkit-font-feature-settings: "dlig" 1, "kern" 1, "frac" 1;
+    -moz-font-feature-settings: "dlig" 1, "kern" 1, "frac" 1;
+    -ms-font-feature-settings: "dlig" 1, "kern" 1, "frac" 1;
+    font-feature-settings: "dlig" 1, "kern" 1, "frac" 1;
 }
 
 cite, h1 {
-    -webkit-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
-    -moz-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
-    -o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
     color: #242323;
     line-height: 1.15em;
     margin: 0 0 0.4em 0;
@@ -42,6 +40,14 @@ cite {
 h1 {
     font-size: 3.6rem;
     letter-spacing: -1px;
+}
+
+footer {
+    text-transform: lowercase;
+    margin-right: 2.4rem;
+    line-height: 1.4rem;
+    position: absolute;
+    bottom: 0;
 }
 
 /* ==================
@@ -76,6 +82,20 @@ h1 {
     animation: fade-in-down 1.2s;
 }
 
+.page-description {
+    margin: 0;
+    font-size: 4rem;
+    line-height: 1.5em;
+    font-weight: 400;
+    letter-spacing: 0.01rem;
+    font-style: oblique;
+    text-transform: capitalize;
+    color: #635959;
+
+    -webkit-animation: fade-in-down 1s;
+    animation: fade-in-down 1s;
+}
+
 .page-icons {
     padding: 0;
     margin: 0;
@@ -93,7 +113,6 @@ h1 {
     text-decoration: none;
 }
 
-
 .page-icons svg {
     height: 8rem;
     width: 8rem;
@@ -104,18 +123,19 @@ h1 {
     animation: fade-in-down 1s;
 }
 
-.page-description {
-    margin: 0;
-    font-size: 4rem;
-    line-height: 1.5em;
-    font-weight: 400;
-    letter-spacing: 0.01rem;
-    font-style: oblique;
-    text-transform: capitalize;
-    color: #635959;
+.page-footer {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.3rem;
 
-    -webkit-animation: fade-in-down 1s;
-    animation: fade-in-down 1s;
+    text-wrap: normal;
+    text-align: right;
+
+    right: 0;
+}
+
+.page-footer {
+    line-height: 0.33rem;
 }
 
 /* ===================================
@@ -148,6 +168,12 @@ h1 {
         font-size: 3rem;
         font-weight: 700;
         line-height: 1.5em;
+    }
+
+    .page-footer {
+        text-align: center;
+        width: 100%;
+        margin: 0;
     }
 }
 
