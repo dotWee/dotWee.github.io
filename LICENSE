@@ -1,21 +1,3 @@
-# dotWee.github.io
-
-Minimal portfolio website.
-Fully responsive and built on HTML5 and CSS3.
-
-## Sceenshots
-
-![Desktop](/art/sc_desktop-03-04.png)
-![Mobile](/art/sc_mobile-03-04.png)
-
-## Credits
-
-+ [Ghost](https://ghost.org), for its front-page design (licensed under MIT license)
-+ [Claus Eggers Sørensen](http://www.forthehearts.net), for his Playfair Display font (licensed under SIL Open Font)
-+ [Raph Levien](http://www.levien.com), for his Inconsolata font (licensed under SIL Open Font)
-
-## License
-
 The MIT License (MIT)
 
 Copyright (c) 2015 Lukas 'dotwee' Wolfsteiner
