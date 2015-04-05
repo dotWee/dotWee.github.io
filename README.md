@@ -2,17 +2,20 @@
 
 Minimal portfolio website.
 Fully responsive and built on HTML5 and CSS3.
+This also runs without any single f**ng line of Javascript.
 
 ## Sceenshots
 
-![Desktop](/art/sc_desktop-03-04.png)
-![Mobile](/art/sc_mobile-03-04.png)
+![Mobile](/art/sc_mobile-05-04.png)
+![Tablet](/art/sc_tablet-05-04.png)
+![Desktop](/art/sc_desktop-05-04.png)
 
 ## Credits
 
-+ [Ghost](https://ghost.org), for its front-page design (licensed under MIT license)
-+ [Claus Eggers Sørensen](http://www.forthehearts.net), for his Playfair Display font (licensed under SIL Open Font)
-+ [Raph Levien](http://www.levien.com), for his Inconsolata font (licensed under SIL Open Font)
++ [Font Awesome](http://fortawesome.github.io/) : for their awesome icons
++ [Ghost](https://ghost.org) : for its front-page design (licensed under MIT license)
++ [Raph Levien](http://www.levien.com) : for his Inconsolata font (licensed under SIL Open Font)
++ [Claus Eggers Sørensen](http://www.forthehearts.net) : for his Playfair Display font (licensed under SIL Open Font)
 
 ## License
 
