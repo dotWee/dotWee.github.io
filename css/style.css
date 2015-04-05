@@ -17,8 +17,6 @@ body {
     height: 100%;
     max-height: 100%;
     letter-spacing: 0.01rem;
-    font-size: 1.8rem;
-    line-height: 1.75em;
     color: #242323;
 
     -webkit-font-feature-settings: "dlig" 1, "kern" 1, "frac" 1;
@@ -68,16 +66,18 @@ body {
 }
 
 .page-title {
+    -webkit-animation: fade-in-down 1.2s;
+    animation: fade-in-down 1.2s;
+    margin: 0;
+}
+
+.page-title {
     font-size: 14rem;
     letter-spacing: -1px;
-    margin: 0;
 
     font-style: normal;
     text-indent: -3px;
     line-height: 1.15em;
-
-    -webkit-animation: fade-in-down 1.2s;
-    animation: fade-in-down 1.2s;
 }
 
 /* =============
@@ -121,10 +121,15 @@ body {
     text-wrap: normal;
     text-align: right;
     margin-right: 2.4rem;
-    line-height: 1rem;
+    white-space: nowrap;
+    line-height: 1.6rem;
     position: fixed;
     bottom: 0;
     right: 0;
+}
+
+.page-footer br {
+    display: none;
 }
 
 /* ===================================
@@ -149,7 +154,7 @@ body {
     }
 
     .page-link {
-        font-size: 3rem;
+        font-size: 2.6rem;
         margin: 1rem;
     }
 
@@ -157,6 +162,10 @@ body {
         text-align: center;
         width: 100%;
         margin: 0;
+    }
+
+    .page-footer br {
+        display: inline;
     }
 }
 
@@ -181,6 +190,10 @@ body {
         font-size: 6.4rem;
         margin: 0 0 0.3em 0;
         letter-spacing: -4px;
+    }
+
+    .page-footer {
+
     }
 }
 
