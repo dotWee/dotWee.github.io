@@ -1,7 +1,7 @@
 /* =====================
        General style
    ===================== */
-@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,700|Inconsolata);
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:700|Inconsolata);
 
 html, body {
     overflow: hidden;
@@ -34,12 +34,7 @@ body {
     font-weight: 700;
 }
 
-.page-link {
-    font-family: 'Playfair Display', serif;
-    font-weight: 400;
-}
-
-.page-footer {
+.page-footer, .page-comment {
     font-family: 'Inconsolata', monospace;
     font-weight: 400;
 }
@@ -93,40 +88,42 @@ body {
 }
 
 .page-link {
-    text-decoration: overline;
-    text-transform: uppercase;
-    line-height: 5.3rem;
-    font-size: 3rem;
+    text-decoration: none;
     color: inherit;
-    margin: 1rem;
-    width: 50%;
+    margin: 0;
 
     -webkit-animation: fade-in-down 0.8s;
     animation: fade-in-down 0.8s;
 }
 
+.page-link a {
+    white-space-collapse: discard;
+    display: block;
+}
+
 .page-link svg {
-    display: none;
     margin-right: 1.7rem;
     margin-left: 1.7rem;
-    height: 7rem;
-    width: 7rem;
+    overflow: hidden;
+    fill: #242323;
+    height: 6rem;
+    width: 6rem;
 }
 
 /* ========================
        Hover management
    ======================== */
 
-.page-link {
-    -webkit-transition: all 0.14s ease-in-out;
-    -moz-transition: all 0.14s ease-in-out;
-    -ms-transition: all 0.14s ease-in-out;
+.page-link svg {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
 
-.page-link:hover {
-    color: #D1CDCD;
+.page-link svg:hover {
+    fill: #D1CDCD;
 }
 
 /* =====================
@@ -177,24 +174,8 @@ body {
     }
 
     .page-link {
-        text-decoration: none;
-        white-space: nowrap;
-        font-size: 2.6rem;
-        margin: 0.7rem;
-    }
-
-    .page-link i {
-        display: none;
-    }
-
-    .page-link a {
-        white-space-collapse: discard;
-        display: block;
-    }
-
-    .page-link svg {
-        overflow: hidden;
-        display: inline-block;
+        margin-right: 1rem;
+        margin-left: 1rem;
     }
 
     .page-footer {
