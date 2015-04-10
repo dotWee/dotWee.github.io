@@ -8,10 +8,18 @@
     min-height: 160px;
 }
 
+.page-title, .page-subtitle {
+    margin: 0 0 0.3em 0;
+    letter-spacing: -2px;
+}
+
 .page-title {
     font-size: 6.4rem;
-    margin: 0 0 0.3em 0;
-    letter-spacing: -4px;
+}
+
+.page-subtitle {
+    text-decoration: overline;
+    font-size: 3.7rem;
 }
 
 .link-wrapper br {

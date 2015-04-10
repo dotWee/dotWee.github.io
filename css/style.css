@@ -64,20 +64,25 @@ body {
     right: 0;
 }
 
-.page-title {
+.page-title, .page-subtitle {
     -webkit-animation: fade-in-down 1.2s;
     -o-animation: fade-in-down 1.2s;
     animation: fade-in-down 1.2s;
     margin: 0;
-}
-
-.page-title {
-    font-size: 14rem;
-    letter-spacing: -1px;
 
     font-style: normal;
     text-indent: -3px;
     line-height: 1.15em;
+    letter-spacing: -1px;
+}
+
+.page-title {
+    font-size: 14rem;
+}
+
+.page-subtitle {
+    text-decoration: overline;
+    font-size: 7rem;
 }
 
 /* =============
@@ -102,8 +107,8 @@ body {
     margin-left: 1.7rem;
     overflow: hidden;
     fill: #242323;
-    height: 9.7rem;
-    width: 9.7rem;
+    height: 9.5rem;
+    width: 9.5rem;
 }
 
 /* ========================

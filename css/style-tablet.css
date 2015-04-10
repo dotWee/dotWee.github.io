@@ -12,20 +12,26 @@
     padding: 15% 0;
 }
 
-.page-title {
-    letter-spacing: 3px;
+.page-title, .page-subtitle {
     text-indent: -2px;
-    font-size: 8rem;
+}
+
+.page-title {
+    font-size: 9.7rem;
+}
+
+.page-subtitle {
+    font-size: 5rem;
 }
 
 .page-link {
-    margin-right: -0.2rem;
-    margin-left: -0.2rem;
+    margin-right: -0.3rem;
+    margin-left: -0.3rem;
 }
 
 .page-link svg {
-    height: 6.7rem;
-    width: 6.7rem;
+    height: 6.3rem;
+    width: 6.3rem;
 }
 
 .page-footer {
