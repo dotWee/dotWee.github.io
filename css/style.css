@@ -65,6 +65,7 @@ body {
 
 .page-title {
     -webkit-animation: fade-in-down 1.2s;
+    -o-animation: fade-in-down 1.2s;
     animation: fade-in-down 1.2s;
     margin: 0;
 }
@@ -89,6 +90,7 @@ body {
     margin: 0;
 
     -webkit-animation: fade-in-down 0.8s;
+    -o-animation: fade-in-down 0.8s;
     animation: fade-in-down 0.8s;
 }
 
@@ -128,6 +130,9 @@ body {
 
 .page-footer {
     font-family: 'Inconsolata', monospace;
+    -webkit-animation: fade-in 1s;
+    -o-animation: fade-in 1s;
+    animation: fade-in 1s;
     font-weight: 400;
 }
 
@@ -158,14 +163,44 @@ body {
        Animations
    ================== */
 
+@-webkit-keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 @-webkit-keyframes fade-in-down {
-    0% {
+    from {
         opacity: 0;
         -webkit-transform: translateY(-10px);
         transform: translateY(-10px);
     }
 
-    100% {
+    to {
         opacity: 1;
         -webkit-transform: translateY(0);
         transform: translateY(0);
@@ -173,13 +208,13 @@ body {
 }
 
 @keyframes fade-in-down {
-    0% {
+    from {
         opacity: 0;
         -webkit-transform: translateY(-10px);
         transform: translateY(-10px);
     }
 
-    100% {
+    to {
         opacity: 1;
         -webkit-transform: translateY(0);
         transform: translateY(0);
