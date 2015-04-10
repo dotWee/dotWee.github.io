@@ -1,0 +1,29 @@
+/* ====================================
+       Mobile layout (eg. iPhone 4)
+   ==================================== */
+
+.page-header {
+    height: 25vh;
+    max-height: 20vh;
+    min-height: 160px;
+}
+
+.page-title {
+    font-size: 6.4rem;
+    margin: 0 0 0.3em 0;
+    letter-spacing: -4px;
+}
+
+.link-wrapper br {
+    display: inline;
+}
+
+.page-link {
+    margin-top: 0;
+}
+
+.page-link svg {
+    height: 5.7rem;
+    width: 5.7rem;
+    margin: 0.7rem;
+}
