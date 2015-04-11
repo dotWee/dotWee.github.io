@@ -14,29 +14,23 @@
 }
 
 .page-title {
-    font-size: 6.4rem;
+    font-size: 7.9rem;
 }
 
 .page-subtitle {
     text-decoration: overline;
-    font-size: 3.7rem;
-}
-
-.link-wrapper br {
-    display: inline;
+    font-size: 4.2rem;
 }
 
 .page-link {
-    margin-top: 1rem;
-}
-
-.page-link .third a {
-    margin-top: -1.7rem;
+    letter-spacing: -2rem;
+    position: relative;
+    top: -1rem;
 }
 
 .page-link svg {
-    height: 5.7rem;
-    width: 5.7rem;
+    height: 5.4rem;
+    width: 5.4rem;
 }
 
 .page-link.first, .page-link.second {
