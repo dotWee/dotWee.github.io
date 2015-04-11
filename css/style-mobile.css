@@ -2,7 +2,7 @@
        Mobile layout (eg. iPhone 4)
    ==================================== */
 
-.page-header {
+.main-wrapper {
     height: 25vh;
     max-height: 20vh;
     min-height: 160px;

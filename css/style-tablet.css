@@ -2,16 +2,6 @@
        Mobile layout (eg. Nexus 10)
    =================================== */
 
-.page-header {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-
-    min-height: 240px;
-    height: 40vh;
-    padding: 15% 0;
-}
-
 .page-title, .page-subtitle {
     text-indent: -2px;
 }

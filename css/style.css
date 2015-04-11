@@ -34,9 +34,19 @@ body {
        Wrappers
    ================ */
 
-.page-wrapper {
-    min-height: 100%;
-    position: relative;
+.main-wrapper {
+    position: absolute;
+    display: table;
+    margin: auto;
+    width: 40rem;
+
+    text-align: center;
+    overflow: hidden;
+
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 .link-wrapper {
@@ -50,19 +60,6 @@ body {
 /* ==================
        Page style
    ================== */
-
-.page-header {
-    position: absolute;
-    display: table;
-    margin: auto;
-    width: 80%;
-    text-align: center;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-}
 
 .page-title, .page-subtitle {
     -webkit-animation: fade-in-down 1.2s;
@@ -143,14 +140,14 @@ body {
     text-wrap: normal;
     text-align: right;
 
-    margin-right: 2.4rem;
     white-space: nowrap;
     line-height: 1.6rem;
     font-size: 1.3rem;
-
+    padding: 0;
+    margin: 0;
     position: fixed;
-    bottom: 0;
-    right: 0;
+    bottom: 0.4rem;
+    right: 0.4rem;
 }
 
 .page-footer a {
