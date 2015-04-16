@@ -1,12 +1,14 @@
 # dotWee.github.io
 
-Minimal portfolio website.
-Fully responsive and built with latest HTML5 tags and CSS3.
-This also runs without any single f'ing line of Javascript.
+Minimal personal website.
+See it live at [dotwee.de](http://dotwee.de) or [dotwee.github.io](http://dotwee.github.io/)
 
-## Sceenshots
+Fully responsive, animated and built with HTML5 and CSS3. 
+Runs without any single f 'ing line of Javascript. 
+Just pure HTML and CSS. 
 
-![Mobile](/art/sc_mobile-05-04.png)
+Mobile layouts (tablets as well as phones, like the Nexus 7 or iPhone 5) are also in the stylesheets defined.
+![Desktop](/art/sc_desktiop-10-04.png)
 
 ## Credits
 

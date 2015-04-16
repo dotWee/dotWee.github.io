@@ -18,7 +18,7 @@ html {
 body {
     letter-spacing: 0.01rem;
     max-height: 100%;
-    color: #242323;
+    color: #222222;
     height: 100%;
 
     font-family: 'Playfair Display', serif;
@@ -61,9 +61,9 @@ body {
    ================== */
 
 .page-title, .page-subtitle {
-    -webkit-animation: fade-in-down 1.2s;
-    -o-animation: fade-in-down 1.2s;
-    animation: fade-in-down 1.2s;
+    -webkit-animation: fade-in-down 1.2s ease forwards;
+    -o-animation: fade-in-down 1.2s ease forwards;
+    animation: fade-in-down 1.2s ease forwards;
     margin: 0;
 
     font-style: normal;
@@ -77,8 +77,13 @@ body {
 }
 
 .page-subtitle {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    -o-animation-delay: 0.4s;
+    animation-delay: 0.4s;
     text-decoration: overline;
     font-size: 7rem;
+    opacity: 0;
 }
 
 /* =============
@@ -103,58 +108,114 @@ body {
     margin-left: 1.7rem;
     overflow: hidden;
     fill: #242323;
-    height: 9.5rem;
-    width: 9.5rem;
+    height: 9.2rem;
+    width: 9.2rem;
 }
 
 /* ========================
        Hover management
    ======================== */
 
-.page-link svg {
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
+.page-title, .page-subtitle, .page-link svg {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.page-title:hover, .page-subtitle:hover {
+    color: #7b858e;
 }
 
 .page-link svg:hover {
-    fill: #D1CDCD;
+    fill: #7b858e;
 }
 
-/* =====================
-       Bottom footer
-   ===================== */
+.page-comment .init:hover ~ * {
+    overflow: visible;
+    display: block;
+    width: 100%;
+}
 
-.page-footer {
+/* ===============================
+       Comment & bottom footer
+   =============================== */
+
+.page-comment, .page-footer {
     font-family: 'Inconsolata', monospace;
-    -webkit-animation: fade-in 1s;
-    -o-animation: fade-in 1s;
-    animation: fade-in 1s;
+    -webkit-animation: fade-in 0.5s;
+    -o-animation: fade-in 0.5s;
+    animation: fade-in 0.5s;
+
     font-weight: 400;
+    line-height: 1.6rem;
+    font-size: 1.3rem;
+    position: fixed;
+    margin: 0.4rem;
+}
+
+.page-comment a, .page-footer a {
+    text-decoration: underline;
+    color: #002147;
+}
+
+.page-comment {
+    text-align: justify;
+    width: 90px;
+    top: 0.4rem;
+    left: 0.4rem;
+    clear: right;
+}
+
+.page-comment p, .page-comment span {
+    white-space: nowrap;
+    overflow: hidden;
+
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+
+    -webkit-animation: fade-in-down 0.8s ease forwards;
+    -o-animation: fade-in-down 0.8s ease forwards;
+    animation: fade-in-down 0.8s ease forwards;
+
+    padding: 0;
+    margin: 0;
+}
+
+.page-comment .first, .page-comment .second, .page-comment .third {
+    opacity: 0;
+    display: none;
+}
+
+.page-comment .second {
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.page-comment .third {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    -o-animation-delay: 0.4s;
+    animation-delay: 0.4s;
 }
 
 .page-footer {
     text-wrap: normal;
     text-align: right;
 
-    white-space: nowrap;
-    line-height: 1.6rem;
-    font-size: 1.3rem;
-    padding: 0;
-    margin: 0;
-    position: fixed;
     bottom: 0.4rem;
     right: 0.4rem;
 }
 
-.page-footer a {
-    text-decoration: underline;
-    color: #3D7699;
-}
-
-.page-footer br {
+.page-footer br, .page-comment br {
     display: none;
 }
 
@@ -169,24 +230,24 @@ body {
 }
 
 .page-link.first {
-    -webkit-animation-delay: 0.3s;
-    -moz-animation-delay: 0.3s;
-    -o-animation-delay: 0.3s;
-    animation-delay: 0.3s;
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    -o-animation-delay: 0.4s;
+    animation-delay: 0.4s;
 }
 
 .page-link.second {
-    -webkit-animation-delay: 0.5s;
-    -moz-animation-delay: 0.5s;
-    -o-animation-delay: 0.5s;
-    animation-delay: 0.5s;
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    -o-animation-delay: 0.6s;
+    animation-delay: 0.6s;
 }
 
 .page-link.third {
-    -webkit-animation-delay: 0.7s;
-    -moz-animation-delay: 0.7s;
-    -o-animation-delay: 0.7s;
-    animation-delay: 0.7s;
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    -o-animation-delay: 0.8s;
+    animation-delay: 0.8s;
 }
 
 /* =======================

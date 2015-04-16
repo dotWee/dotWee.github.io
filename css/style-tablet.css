@@ -24,6 +24,11 @@
     width: 6.3rem;
 }
 
+.page-comment {
+    visibility: hidden;
+    display: none;
+}
+
 .page-footer {
     text-align: center;
     width: 100%;
