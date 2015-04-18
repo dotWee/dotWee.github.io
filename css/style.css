@@ -118,12 +118,20 @@ body {
        Hover management
    ======================== */
 
+.page-title, .page-subtitle {
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+
 .page-title, .page-subtitle, .page-link svg {
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .page-title:hover, .page-subtitle:hover {
@@ -146,9 +154,10 @@ body {
 
 .page-comment, .page-footer {
     font-family: 'Inconsolata', monospace;
-    -webkit-animation: fade-in 0.5s;
-    -o-animation: fade-in 0.5s;
-    animation: fade-in 0.5s;
+
+    -webkit-animation: fade-in 0.7s;
+    -o-animation: fade-in 0.7s;
+    animation: fade-in 0.7s;
 
     font-weight: 400;
     line-height: 1.6rem;
@@ -159,6 +168,7 @@ body {
 
 .page-comment a, .page-footer a {
     text-decoration: underline;
+    cursor: pointer;
     color: #002147;
 }
 
