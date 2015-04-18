@@ -4,7 +4,7 @@ Minimal personal website. Constantly work in progress.
 See it live at [dotwee.de](http://dotwee.de) or [dotwee.github.io](http://dotwee.github.io/)
 
 >Fully responsive, animated and built with intelligent HTML5 and CSS3. 
-Runs without any single f 'ing line of Javascript. Pure HTML and CSS. 
+>Runs without any single f 'ing line of Javascript. Just pure HTML and CSS. 
 
 Mobile layouts (tablets as well as phones, like the Nexus 7 or iPhone 5) are also in the stylesheets defined.
 ![Mobile](/art/mobile-2015-04-18.png)
