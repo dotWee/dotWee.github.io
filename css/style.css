@@ -1,7 +1,6 @@
 /* =====================
        General style
    ===================== */
-@import url(http://fonts.googleapis.com/css?family=Playfair+Display:700|Inconsolata);
 
 html, body {
     overflow: hidden;
@@ -21,9 +20,7 @@ body {
     color: #222222;
     height: 100%;
 
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-
+    font-family: 'Playfair Display', serif !important;
     -webkit-font-feature-settings: "onum" 1, "liga" 1;
     -moz-font-feature-settings: "onum" 1, "liga" 1;
     -moz-font-feature-settings: "onum=1, liga=1";
@@ -40,7 +37,7 @@ body {
     position: absolute;
     display: table;
     margin: auto;
-    width: 40rem;
+    width: 30rem;
 
     text-align: center;
     overflow: hidden;
@@ -93,8 +90,9 @@ body {
    ============= */
 
 .page-link {
-    vertical-align: top;
     text-decoration: none;
+    vertical-align: top;
+    overflow: hidden;
     color: inherit;
     opacity: 0;
     margin: 0;
@@ -102,6 +100,7 @@ body {
 
 .page-link a {
     white-space-collapse: discard;
+    white-space: nowrap;
     display: block;
 }
 
@@ -126,7 +125,7 @@ body {
     transition: all 0.6s ease-in-out;
 }
 
-.page-title, .page-subtitle, .page-link svg {
+.page-link svg {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
@@ -249,17 +248,17 @@ body {
 }
 
 .page-link.second {
-    -webkit-animation-delay: 0.6s;
-    -moz-animation-delay: 0.6s;
-    -o-animation-delay: 0.6s;
-    animation-delay: 0.6s;
+    -webkit-animation-delay: 0.7s;
+    -moz-animation-delay: 0.7s;
+    -o-animation-delay: 0.7s;
+    animation-delay: 0.7s;
 }
 
 .page-link.third {
-    -webkit-animation-delay: 0.8s;
-    -moz-animation-delay: 0.8s;
-    -o-animation-delay: 0.8s;
-    animation-delay: 0.8s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
 }
 
 /* =======================
