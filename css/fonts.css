@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Playfair Display'), local('PlayfairDisplay'), url(fonts/PlayfairDisplay.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Inconsolata'), url(fonts/Inconsolata.woff2) format('woff2');
+}

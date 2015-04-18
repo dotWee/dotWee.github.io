@@ -20,13 +20,7 @@ body {
     color: #222222;
     height: 100%;
 
-    font-family: 'Playfair Display', serif !important;
-    -webkit-font-feature-settings: "onum" 1, "liga" 1;
-    -moz-font-feature-settings: "onum" 1, "liga" 1;
-    -moz-font-feature-settings: "onum=1, liga=1";
-    -ms-font-feature-settings: "onum" 1, "liga" 1;
-    -o-font-feature-settings: "onum" 1, "liga" 1;
-    font-feature-settings: "onum" 1, "liga" 1;
+    font-family: 'Playfair Display', serif;
 }
 
 /* ================
