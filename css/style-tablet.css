@@ -15,13 +15,13 @@
 }
 
 .page-link {
-    margin-right: -0.3rem;
-    margin-left: -0.3rem;
+    horiz-align: center;
+    margin: -1rem;
 }
 
 .page-link svg {
-    height: 6.3rem;
-    width: 6.3rem;
+    height: 6.5rem;
+    width: 6.5rem;
 }
 
 .page-comment {
