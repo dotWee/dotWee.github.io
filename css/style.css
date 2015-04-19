@@ -135,17 +135,11 @@ body {
     fill: #7b858e;
 }
 
-.page-comment .init:hover ~ * {
-    overflow: visible;
-    display: block;
-    width: 100%;
-}
+/* =====================
+       Bottom footer
+   ===================== */
 
-/* ===============================
-       Comment & bottom footer
-   =============================== */
-
-.page-comment, .page-footer {
+.page-footer {
     font-family: 'Inconsolata', monospace;
 
     -webkit-animation: fade-in 0.7s;
@@ -159,57 +153,10 @@ body {
     margin: 0.4rem;
 }
 
-.page-comment a, .page-footer a {
+.page-footer a {
     text-decoration: underline;
     cursor: pointer;
     color: #002147;
-}
-
-.page-comment {
-    text-align: justify;
-    width: 90px;
-    top: 0.4rem;
-    left: 0.4rem;
-    clear: right;
-}
-
-.page-comment p, .page-comment span {
-    white-space: nowrap;
-    overflow: hidden;
-
-    -ms-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
-
-    -webkit-animation: fade-in-down 0.8s ease forwards;
-    -o-animation: fade-in-down 0.8s ease forwards;
-    animation: fade-in-down 0.8s ease forwards;
-
-    padding: 0;
-    margin: 0;
-}
-
-.page-comment .first, .page-comment .second, .page-comment .third {
-    opacity: 0;
-    display: none;
-}
-
-.page-comment .second {
-    -webkit-animation-delay: 0.2s;
-    -moz-animation-delay: 0.2s;
-    -o-animation-delay: 0.2s;
-    animation-delay: 0.2s;
-}
-
-.page-comment .third {
-    -webkit-animation-delay: 0.4s;
-    -moz-animation-delay: 0.4s;
-    -o-animation-delay: 0.4s;
-    animation-delay: 0.4s;
 }
 
 .page-footer {
@@ -220,7 +167,7 @@ body {
     right: 0.4rem;
 }
 
-.page-footer br, .page-comment br {
+.page-footer br {
     display: none;
 }
 
