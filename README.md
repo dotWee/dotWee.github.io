@@ -15,8 +15,9 @@ Mobile layouts (tablets as well as phones, like the Nexus 7 or iPhone 5) are als
 ## Credits
 
 + [Font Awesome](http://fortawesome.github.io/) : for their awesome icons
-+ [Ghost](https://ghost.org) : for its inspiration (licensed under MIT license)
++ [Ghost](https://ghost.org) : for its inspiration (MIT license)
 + [Raph Levien](http://www.levien.com) : for his Inconsolata font (licensed under SIL Open Font)
++ [Nicolas Gallagher & Jonathan Neal](http://necolas.github.io/normalize.css/) : for Normalize.css (MIT license)
 + [Claus Eggers Sørensen](http://www.forthehearts.net) : for his Playfair Display font (licensed under SIL Open Font)
 
 ## License
