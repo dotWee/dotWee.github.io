@@ -1,13 +1,16 @@
-# dotWee.github.io
+# dotWee.github.io / dotwee.de
 
 Minimal personal website. Constantly work in progress.
-See it live at [dotwee.de](http://dotwee.de) or [dotwee.github.io](http://dotwee.github.io/)
+See it live at [dotwee.de](https://dotwee.de) or [dotwee.github.io](http://dotwee.github.io/)
 
->Fully responsive, animated and built with intelligent HTML5 and CSS3. 
->Runs without any single f 'ing line of Javascript. Just pure HTML and CSS. 
+>Fully responsive, animated and built with intelligent HTML5 and CSS3. <br>
+Runs without any single f 'ing line of Javascript. Just pure HTML and CSS.
 
-Mobile layouts (tablets as well as phones, like the Nexus 7 or iPhone 5) are also in the stylesheets defined.
-![Mobile](/art/mobile-2015-04-18.png)
+Mobile layouts (tablets as well as phones, like the Nexus 7 or iPhone 5) are also in the stylesheets defined:
+
+<table style="border: 0px;">
+    <tr><td><img width="200px" src="art/mobile-2015-04-18.png" /></td></tr>
+</table>
 
 ## Credits
 
@@ -18,16 +21,5 @@ Mobile layouts (tablets as well as phones, like the Nexus 7 or iPhone 5) are als
 
 ## License
 
-        DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
-                    Version 2, December 2004 
-
- Copyright (C) 2015 Lukas 'dotwee' Wolfsteiner
-
- Everyone is permitted to copy and distribute verbatim or modified 
- copies of this license document, and changing it is allowed as long 
- as the name is changed. 
-
-            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
-   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION 
-
-  0. You just DO WHAT THE FUCK YOU WANT TO.
+Copyright (c) 2015 Lukas 'dotwee' Wolfsteiner
+Licensed under the [_Do What The Fuck You Want To_](/LICENSE) public license
