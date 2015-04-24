@@ -218,9 +218,9 @@ body {
 @-moz-keyframes fade-in{from{opacity:0}to{opacity:1}}
 @keyframes fade-in{from{opacity:0}to{opacity:1}}
 
-@-webkit-keyframes fade-in-down{from{opacity:0;-webkit-transform:translateY(-10px);transform:translateY(-10px)}to{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}
-@-moz-keyframes fade-in-down{from{opacity:0;-webkit-transform:translateY(-10px);transform:translateY(-10px)}to{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}
-@keyframes fade-in-down{from{opacity:0;-webkit-transform:translateY(-10px);transform:translateY(-10px)}to{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}
+@-webkit-keyframes fade-in-down{from{opacity:0;-webkit-transform:translateY(-2rem);transform:translateY(-2rem)}to{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}
+@-moz-keyframes fade-in-down{from{opacity:0;-webkit-transform:translateY(-2rem);transform:translateY(-2rem)}to{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}
+@keyframes fade-in-down{from{opacity:0;-webkit-transform:translateY(-2rem);transform:translateY(-2rem)}to{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}
 
 @-webkit-keyframes moving-background{from{background-position:bottom center}to{background-position:top center}}
 @-moz-keyframes moving-background{from{background-position:bottom center}to{background-position:top center}}
