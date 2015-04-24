@@ -22,7 +22,7 @@ body {
 
     /*
     background: url(../img/background.png) repeat-x 0 0;
-    animation: moving-background 60s linear infinite;
+    animation: moving-background 33s linear 1;
     */
 
     font-family: 'Playfair Display', serif;
@@ -222,6 +222,6 @@ body {
 @-moz-keyframes fade-in-down{from{opacity:0;-webkit-transform:translateY(-10px);transform:translateY(-10px)}to{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}
 @keyframes fade-in-down{from{opacity:0;-webkit-transform:translateY(-10px);transform:translateY(-10px)}to{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}
 
-@-webkit-keyframes moving-background{from{background-position:bottom right}to{background-position:bottom left}}
-@-moz-keyframes moving-background{from{background-position:bottom right}to{background-position:bottom left}}
-@keyframes moving-background{from{background-position:bottom right}to{background-position:bottom left}}
+@-webkit-keyframes moving-background{from{background-position:bottom center}to{background-position:top center}}
+@-moz-keyframes moving-background{from{background-position:bottom center}to{background-position:top center}}
+@keyframes moving-background{from{background-position:bottom center}to{background-position:top center}}
