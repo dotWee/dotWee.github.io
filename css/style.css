@@ -20,6 +20,11 @@ body {
     color: #222222;
     height: 100%;
 
+    /*
+    background: url(../img/background.png) repeat-x 0 0;
+    animation: moving-background 60s linear infinite;
+    */
+
     font-family: 'Playfair Display', serif;
 }
 
@@ -278,5 +283,35 @@ body {
         opacity: 1;
         -webkit-transform: translateY(0);
         transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes moving-background {
+    from {
+        background-position: bottom right;
+    }
+
+    to {
+        background-position: bottom left;
+    }
+}
+
+@-moz-keyframes moving-background {
+    from {
+        background-position: bottom right;
+    }
+
+    to {
+        background-position: bottom left;
+    }
+}
+
+@keyframes moving-background {
+    from {
+        background-position: bottom right;
+    }
+
+    to {
+        background-position: bottom left;
     }
 }
