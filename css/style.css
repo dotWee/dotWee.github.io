@@ -60,6 +60,7 @@ body {
     -webkit-animation: fade-in-down 1s ease forwards;
     -o-animation: fade-in-down 1s ease forwards;
     animation: fade-in-down 1s ease forwards;
+    width: 100%;
     margin: 0;
 
     font-style: normal;
