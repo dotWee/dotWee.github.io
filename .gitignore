@@ -12,3 +12,6 @@ build/
 
 # Non-public
 include/
+
+# Web-server
+robots.txt
