@@ -214,104 +214,14 @@ body {
        Animations Code
    ======================= */
 
-@-webkit-keyframes fade-in {
-    from {
-        opacity: 0;
-    }
+@-webkit-keyframes fade-in{from{opacity:0}to{opacity:1}}
+@-moz-keyframes fade-in{from{opacity:0}to{opacity:1}}
+@keyframes fade-in{from{opacity:0}to{opacity:1}}
 
-    to {
-        opacity: 1;
-    }
-}
+@-webkit-keyframes fade-in-down{from{opacity:0;-webkit-transform:translateY(-10px);transform:translateY(-10px)}to{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}
+@-moz-keyframes fade-in-down{from{opacity:0;-webkit-transform:translateY(-10px);transform:translateY(-10px)}to{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}
+@keyframes fade-in-down{from{opacity:0;-webkit-transform:translateY(-10px);transform:translateY(-10px)}to{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}
 
-@-moz-keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes fade-in-down {
-    from {
-        opacity: 0;
-        -webkit-transform: translateY(-10px);
-        transform: translateY(-10px);
-    }
-
-    to {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-}
-
-@keyframes fade-in-down {
-    from {
-        opacity: 0;
-        -webkit-transform: translateY(-10px);
-        transform: translateY(-10px);
-    }
-
-    to {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-}
-
-@-moz-keyframes fade-in-down {
-    from {
-        opacity: 0;
-        -webkit-transform: translateY(-10px);
-        transform: translateY(-10px);
-    }
-
-    to {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-}
-
-@-webkit-keyframes moving-background {
-    from {
-        background-position: bottom right;
-    }
-
-    to {
-        background-position: bottom left;
-    }
-}
-
-@-moz-keyframes moving-background {
-    from {
-        background-position: bottom right;
-    }
-
-    to {
-        background-position: bottom left;
-    }
-}
-
-@keyframes moving-background {
-    from {
-        background-position: bottom right;
-    }
-
-    to {
-        background-position: bottom left;
-    }
-}
+@-webkit-keyframes moving-background{from{background-position:bottom right}to{background-position:bottom left}}
+@-moz-keyframes moving-background{from{background-position:bottom right}to{background-position:bottom left}}
+@keyframes moving-background{from{background-position:bottom right}to{background-position:bottom left}}
