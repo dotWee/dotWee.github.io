@@ -30,6 +30,6 @@
     margin: 0;
 }
 
-.page-footer br {
-    display: inline;
+.page-footer ul li {
+    display: list-item;
 }

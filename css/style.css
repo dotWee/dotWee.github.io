@@ -149,6 +149,7 @@ body {
 
 .page-footer {
     font-family: 'Inconsolata', monospace;
+    list-style: none;
 
     -webkit-animation: fade-in 0.7s;
     -o-animation: fade-in 0.7s;
@@ -159,6 +160,16 @@ body {
     font-size: 1.3rem;
     position: fixed;
     margin: 0.4rem;
+}
+
+.page-footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.page-footer ul li {
+    display: inline;
 }
 
 .page-footer a {
@@ -173,10 +184,6 @@ body {
 
     bottom: 0.4rem;
     right: 0.4rem;
-}
-
-.page-footer br {
-    display: none;
 }
 
 /* ==================
