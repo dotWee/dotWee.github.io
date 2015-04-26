@@ -53,7 +53,7 @@ body {
     white-space: nowrap;
     margin: 1.7rem 0 0;
     overflow: visible;
-    max-height: 10rem;
+    max-height: 100%;
 }
 
 
@@ -113,6 +113,11 @@ body {
     fill: #242323;
     height: 9.2rem;
     width: 9.2rem;
+}
+
+.page-link:nth-of-type(4):before {
+    white-space: pre;
+    content: "\A";
 }
 
 /* ========================
@@ -196,25 +201,39 @@ body {
     animation: fade-in-down 0.8s ease forwards;
 }
 
-.page-link.first {
+.page-link:nth-of-type(1) {
     -webkit-animation-delay: 0.4s;
     -moz-animation-delay: 0.4s;
     -o-animation-delay: 0.4s;
     animation-delay: 0.4s;
 }
 
-.page-link.second {
-    -webkit-animation-delay: 0.7s;
-    -moz-animation-delay: 0.7s;
-    -o-animation-delay: 0.7s;
-    animation-delay: 0.7s;
+.page-link:nth-of-type(2) {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    -o-animation-delay: 0.6s;
+    animation-delay: 0.6s;
 }
 
-.page-link.third {
-    -webkit-animation-delay: 1s;
-    -moz-animation-delay: 1s;
-    -o-animation-delay: 1s;
-    animation-delay: 1s;
+.page-link:nth-of-type(3) {
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    -o-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+
+.page-link:nth-of-type(4) {
+    -webkit-animation-delay: 1.0s;
+    -moz-animation-delay: 1.0s;
+    -o-animation-delay: 1.0s;
+    animation-delay: 1.0s;
+}
+
+.page-link:nth-of-type(5) {
+    -webkit-animation-delay: 1.2s;
+    -moz-animation-delay: 1.2s;
+    -o-animation-delay: 1.2s;
+    animation-delay: 1.2s;
 }
 
 /* =======================
