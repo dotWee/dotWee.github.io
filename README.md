@@ -8,6 +8,7 @@ Minimal personal website. Constantly work in progress.
 + Runs without any single f 'ing line of Javascript. Just pure HTML and CSS.
 + Mobile layouts (tablets as well as phones, like for the Nexus 7 or iPhone 5) <br>
 are also in the stylesheets defined.
++ Includes pizza
 
 ## Screenshots
 
