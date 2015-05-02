@@ -17,7 +17,7 @@ html {
 body {
     letter-spacing: 0.01rem;
     max-height: 100%;
-    color: #222222;
+    color: #212121;
     height: 100%;
 
     /*
@@ -109,7 +109,7 @@ body {
     margin-right: 1.7rem;
     margin-left: 1.7rem;
     overflow: hidden;
-    fill: #242323;
+    fill: #212121;
     height: 9.2rem;
     width: 9.2rem;
 }
@@ -140,11 +140,11 @@ body {
 }
 
 .page-title:hover, .page-subtitle:hover {
-    color: #7b858e;
+    color: #37474F;
 }
 
 .page-link svg:hover {
-    fill: #7b858e;
+    fill: #3F51B5;
 }
 
 /* =====================
@@ -168,18 +168,11 @@ body {
 
 .page-footer ul {
     list-style-type: none;
-    padding: 0;
     margin: 0;
 }
 
-.page-footer ul li {
-    display: inline;
-}
-
-.page-footer a {
-    text-decoration: underline;
-    cursor: pointer;
-    color: #002147;
+.page-footer ul li:nth-of-type(2) {
+    color: #009688;
 }
 
 .page-footer {
