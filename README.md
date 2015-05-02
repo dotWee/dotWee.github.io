@@ -14,7 +14,7 @@ are also in the stylesheets defined.
 
 Who needs Screenshots if you can test it live! Test it at
 + [dotwee.de](https://dotwee.de); may some commits behind or
-+ [dotwee.github.io](http://dotwee.github.io/); directly from this repository, always up-to-date.
++ [dotwee.github.io](https://dotwee.github.io/); directly from this repository, always up-to-date.
 
 ## Credits
 
