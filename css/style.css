@@ -66,11 +66,10 @@ body {
     -o-animation: fade-in-down 1s ease forwards;
     animation: fade-in-down 1s ease forwards;
     width: 100%;
-    margin: 0;
 
     font-style: normal;
     text-indent: -3px;
-    line-height: 1.05em;
+    line-height: 1.2em;
     letter-spacing: -1px;
 }
 
