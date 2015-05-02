@@ -1,17 +1,20 @@
-# dotWee.github.io / dotwee.de
+# dotwee.de / dotWee.github.io
 
 Minimal personal website. Constantly work in progress.
-See it live at [dotwee.de](https://dotwee.de) or [dotwee.github.io](http://dotwee.github.io/)
 
->Fully responsive, animated and built with intelligent HTML5 and CSS3. <br>
-Runs without any single f 'ing line of Javascript. <br>
-Just pure HTML and CSS.
+## Features
 
-Mobile layouts (tablets as well as phones, like the Nexus 7 or iPhone 5) are also in the stylesheets defined:
++ Fully responsive, animated and built with intelligent HTML5 and CSS3.
++ Runs without any single f 'ing line of Javascript. Just pure HTML and CSS.
++ Mobile layouts (tablets as well as phones, like for the Nexus 7 or iPhone 5) <br>
+are also in the stylesheets defined.
 
-<table style="border: 0px;">
-    <tr><td><img width="200px" src="art/mobile-2015-04-18.png" /></td></tr>
-</table>
+## Screenshots
+
+
+Who needs Screenshots if you can test it live! Test it at
++ [dotwee.de](https://dotwee.de); may some commits behind or
++ [dotwee.github.io](http://dotwee.github.io/); directly from this repository, always up-to-date.
 
 ## Credits
 
