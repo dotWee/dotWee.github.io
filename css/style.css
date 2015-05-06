@@ -171,8 +171,8 @@ body {
     margin: 0;
 }
 
-.page-footer ul li:nth-of-type(2) {
-    color: #009688;
+.page-footer ul li {
+    display: inline;
 }
 
 .page-footer {
