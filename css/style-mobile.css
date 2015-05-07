@@ -21,8 +21,14 @@
     font-size: 7.9rem;
 }
 
+.page-separator {
+    border-width: 0.2rem;
+    margin-right: 14%;
+    margin-left: 14%;
+    width: 72%;
+}
+
 .page-subtitle {
-    text-decoration: overline;
     font-size: 4.2rem;
 }
 

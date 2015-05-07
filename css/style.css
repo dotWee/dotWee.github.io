@@ -77,15 +77,26 @@ body {
     font-size: 14rem;
 }
 
-.page-subtitle {
+.page-separator {
+    width: 98%;
+    border: 0.3rem solid #212121;
+    border-radius: 50px;
+
+    -webkit-animation: fade-in-down 1s ease forwards;
+    -o-animation: fade-in-down 1s ease forwards;
+    animation: fade-in-down 1s ease forwards;
+}
+
+.page-separator, .page-subtitle {
     -webkit-animation-delay: 0.2s;
     -moz-animation-delay: 0.2s;
     -o-animation-delay: 0.2s;
     animation-delay: 0.2s;
-
-    text-decoration: overline;
-    font-size: 7rem;
     opacity: 0;
+}
+
+.page-subtitle {
+    font-size: 7rem;
 }
 
 /* =============

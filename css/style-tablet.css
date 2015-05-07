@@ -10,6 +10,13 @@
     font-size: 9.7rem;
 }
 
+.page-separator {
+    border-width: 0.2rem;
+    margin-right: 6%;
+    margin-left: 6%;
+    width: 87%;
+}
+
 .page-subtitle {
     font-size: 5rem;
 }
