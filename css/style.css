@@ -193,35 +193,35 @@ body {
     animation: fade-in-down 0.8s ease forwards;
 }
 
-.page-link:nth-of-type(1) {
+.page-link.first {
     -webkit-animation-delay: 0.4s;
     -moz-animation-delay: 0.4s;
     -o-animation-delay: 0.4s;
     animation-delay: 0.4s;
 }
 
-.page-link:nth-of-type(2) {
+.page-link.second {
     -webkit-animation-delay: 0.6s;
     -moz-animation-delay: 0.6s;
     -o-animation-delay: 0.6s;
     animation-delay: 0.6s;
 }
 
-.page-link:nth-of-type(3) {
+.page-link.third {
     -webkit-animation-delay: 0.8s;
     -moz-animation-delay: 0.8s;
     -o-animation-delay: 0.8s;
     animation-delay: 0.8s;
 }
 
-.page-link:nth-of-type(4) {
+.page-link.fourth {
     -webkit-animation-delay: 1.0s;
     -moz-animation-delay: 1.0s;
     -o-animation-delay: 1.0s;
     animation-delay: 1.0s;
 }
 
-.page-link:nth-of-type(5) {
+.page-link.fifth {
     -webkit-animation-delay: 1.2s;
     -moz-animation-delay: 1.2s;
     -o-animation-delay: 1.2s;
