@@ -4,6 +4,7 @@ Minimal personal website. Constantly work in progress.
 
 ## Features
 
++ Lightweight, less than 800b! (without included fonts)
 + Fully responsive, animated and built with intelligent HTML5 and CSS3.
 + Runs without any single f 'ing line of Javascript. Just pure HTML and CSS.
 + Mobile layouts (tablets as well as phones, like for the Nexus 7 or iPhone 5) <br>
