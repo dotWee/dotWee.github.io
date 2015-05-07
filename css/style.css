@@ -85,17 +85,22 @@ body {
     -webkit-animation: fade-in-down 1s ease forwards;
     -o-animation: fade-in-down 1s ease forwards;
     animation: fade-in-down 1s ease forwards;
+
+    -webkit-animation-delay: 0.1s;
+    -moz-animation-delay: 0.1s;
+    -o-animation-delay: 0.1s;
+    animation-delay: 0.1s;
 }
 
 .page-separator, .page-subtitle {
-    -webkit-animation-delay: 0.2s;
-    -moz-animation-delay: 0.2s;
-    -o-animation-delay: 0.2s;
-    animation-delay: 0.2s;
     opacity: 0;
 }
 
 .page-subtitle {
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    animation-delay: 0.2s;
     font-size: 7rem;
 }
 
