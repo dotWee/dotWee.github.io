@@ -114,7 +114,7 @@ body {
     width: 9.2rem;
 }
 
-.page-link:nth-of-type(4):before {
+.page-link.fourth:before {
     white-space: pre;
     content: "\A";
 }
@@ -164,6 +164,12 @@ body {
     font-size: 1.3rem;
     position: fixed;
     margin: 0.4rem;
+
+    text-wrap: normal;
+    text-align: right;
+
+    bottom: 0.4rem;
+    right: 0.4rem;
 }
 
 .page-footer ul {
@@ -173,14 +179,6 @@ body {
 
 .page-footer ul li {
     display: inline;
-}
-
-.page-footer {
-    text-wrap: normal;
-    text-align: right;
-
-    bottom: 0.4rem;
-    right: 0.4rem;
 }
 
 /* ==================
