@@ -20,7 +20,6 @@ Who needs Screenshots if you can test it live! Test it at
 
 ## Credits
 
-+ [Nicolas Gallagher & Jonathan Neal](http://necolas.github.io/normalize.css) : for their Normalize.css project
 + [Raph Levien](http://www.levien.com) : for his Inconsolata font (licensed under SIL Open Font)
 + [Nicolas Gallagher & Jonathan Neal](http://necolas.github.io/normalize.css/) : for Normalize.css (MIT license)
 + [Claus Eggers Sørensen](http://www.forthehearts.net) : for his Playfair Display font (licensed under SIL Open Font)
