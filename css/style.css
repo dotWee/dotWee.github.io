@@ -80,6 +80,9 @@ body {
     border: 0.3rem solid #212121;
     border-radius: 50px;
 
+    margin-left: auto;
+    margin-right: auto;
+
     -webkit-animation: fade-in-down 1s ease forwards;
     -o-animation: fade-in-down 1s ease forwards;
     animation: fade-in-down 1s ease forwards;
@@ -90,7 +93,7 @@ body {
     animation-delay: 0.1s;
 }
 
-.page-separator, .page-subtitle {
+.page-separator, .page-subtitle, .page-title {
     opacity: 0;
 }
 
@@ -151,11 +154,9 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-.page-title:hover, .page-subtitle:hover {
+.page-title:hover, .page-subtitle:hover, .page-link svg:hover {
+    border-color: #3F51B5;
     color: #37474F;
-}
-
-.page-link svg:hover {
     fill: #3F51B5;
 }
 

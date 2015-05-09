@@ -22,10 +22,8 @@
 }
 
 .page-separator {
-    border-width: 0.2rem;
-    margin-right: 14%;
-    margin-left: 14%;
-    width: 72%;
+    border-width: 0.17rem;
+    width: 70%;
 }
 
 .page-subtitle {
