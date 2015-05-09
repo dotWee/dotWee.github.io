@@ -39,7 +39,6 @@ body {
     width: 30rem;
 
     text-align: center;
-    overflow: hidden;
 
     top: 0;
     left: 0;
@@ -52,7 +51,6 @@ body {
     horiz-align: center;
     white-space: nowrap;
     margin: 1.7rem 0 0;
-    overflow: visible;
     max-height: 100%;
 }
 
@@ -111,7 +109,6 @@ body {
 .page-link {
     text-decoration: none;
     vertical-align: top;
-    overflow: hidden;
     color: inherit;
     opacity: 0;
     margin: 0;
@@ -124,7 +121,6 @@ body {
 .page-link svg {
     margin-right: 1.7rem;
     margin-left: 1.7rem;
-    overflow: hidden;
     fill: #212121;
     height: 9.2rem;
     width: 9.2rem;
