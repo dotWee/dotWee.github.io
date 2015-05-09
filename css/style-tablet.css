@@ -36,5 +36,5 @@
 }
 
 .page-footer ul li {
-    display: list-item;
+    display: block;
 }
