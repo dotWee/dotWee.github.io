@@ -38,3 +38,11 @@
 .page-footer ul li {
     display: block;
 }
+
+/* =======================
+       Animations Code
+   ======================= */
+
+@-webkit-keyframes expand{from{opacity:0;width:5%}to{opacity:1;width:87%}}
+@-moz-keyframes expand{from{opacity:0;width:5%}to{opacity:1;width:87%}}
+@keyframes expand{from{opacity:0;width:5%}to{opacity:1;width:87%}}

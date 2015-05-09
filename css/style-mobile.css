@@ -38,3 +38,12 @@
     height: 5.4rem;
     width: 5.4rem;
 }
+
+
+/* =======================
+       Animations Code
+   ======================= */
+
+@-webkit-keyframes expand{from{opacity:0;width:5%}to{opacity:1;width:70%}}
+@-moz-keyframes expand{from{opacity:0;width:5%}to{opacity:1;width:70%}}
+@keyframes expand{from{opacity:0;width:5%}to{opacity:1;width:70%}}
