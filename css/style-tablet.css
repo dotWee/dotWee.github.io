@@ -2,29 +2,29 @@
        Mobile layout (eg. Nexus 10)
    =================================== */
 
-.page-title, .page-subtitle {
+.header-title, .header-subtitle {
     text-indent: -2px;
 }
 
-.page-title {
+.header-title {
     font-size: 9.7rem;
 }
 
-.page-separator {
+.header-separator {
     border-width: 0.2rem;
     width: 87%;
 }
 
-.page-subtitle {
+.header-subtitle {
     font-size: 5rem;
 }
 
-.page-link {
+.link {
     horiz-align: center;
     margin: -1rem;
 }
 
-.page-link svg {
+.link svg {
     height: 6.5rem;
     width: 6.5rem;
 }

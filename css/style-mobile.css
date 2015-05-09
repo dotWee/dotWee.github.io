@@ -12,29 +12,29 @@
     margin-top: 1rem;
 }
 
-.page-title, .page-subtitle {
+.header-title, .header-subtitle {
     margin: 0 0 0.3em 0;
     letter-spacing: -2px;
 }
 
-.page-title {
+.header-title {
     font-size: 7.9rem;
 }
 
-.page-separator {
+.header-separator {
     border-width: 0.17rem;
     width: 70%;
 }
 
-.page-subtitle {
+.header-subtitle {
     font-size: 4.2rem;
 }
 
-.page-link {
+.link {
     position: relative;
 }
 
-.page-link svg {
+.link svg {
     height: 5.4rem;
     width: 5.4rem;
 }

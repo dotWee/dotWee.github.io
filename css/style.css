@@ -59,7 +59,7 @@ body {
        Page style
    ================== */
 
-.page-title, .page-subtitle {
+.header-title, .header-subtitle {
     -webkit-animation: fade-in-down 1s ease forwards;
     -o-animation: fade-in-down 1s ease forwards;
     animation: fade-in-down 1s ease forwards;
@@ -71,11 +71,11 @@ body {
     letter-spacing: -1px;
 }
 
-.page-title {
+.header-title {
     font-size: 14rem;
 }
 
-.page-separator {
+.header-separator {
     width: 98%;
     border: 0.3rem solid #212121;
     border-radius: 50px;
@@ -93,11 +93,11 @@ body {
     animation-delay: 0.1s;
 }
 
-.page-separator, .page-subtitle, .page-title {
+.header-separator, .header-subtitle, .header-title {
     opacity: 0;
 }
 
-.page-subtitle {
+.header-subtitle {
     -webkit-animation-delay: 0.2s;
     -moz-animation-delay: 0.2s;
     -o-animation-delay: 0.2s;
@@ -109,7 +109,7 @@ body {
        Links
    ============= */
 
-.page-link {
+.link {
     text-decoration: none;
     vertical-align: top;
     color: inherit;
@@ -117,11 +117,11 @@ body {
     margin: 0;
 }
 
-.page-link a {
+.link a {
     display: block;
 }
 
-.page-link svg {
+.link svg {
     margin-right: 1.7rem;
     margin-left: 1.7rem;
     fill: #212121;
@@ -129,7 +129,7 @@ body {
     width: 9.2rem;
 }
 
-.page-link.fourth:before {
+.link.fourth:before {
     white-space: pre;
     content: "\A";
 }
@@ -138,7 +138,7 @@ body {
        Hover management
    ======================== */
 
-.page-title, .page-subtitle {
+.header-title, .header-subtitle {
     -webkit-transition: all 0.6s ease-in-out;
     -moz-transition: all 0.6s ease-in-out;
     -ms-transition: all 0.6s ease-in-out;
@@ -146,7 +146,7 @@ body {
     transition: all 0.6s ease-in-out;
 }
 
-.page-link svg {
+.link svg {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
@@ -154,7 +154,7 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-.page-title:hover, .page-subtitle:hover, .page-link svg:hover {
+.header-title:hover, .header-subtitle:hover, .link svg:hover {
     border-color: #3F51B5;
     color: #37474F;
     fill: #3F51B5;
@@ -198,13 +198,13 @@ body {
        Animations
    ================== */
 
-.page-link{-webkit-animation:fade-in-down .8s ease forwards;-o-animation:fade-in-down .8s ease forwards;animation:fade-in-down .8s ease forwards}
+.link {-webkit-animation:fade-in-down .8s ease forwards;-o-animation:fade-in-down .8s ease forwards;animation:fade-in-down .8s ease forwards}
 
-.page-link.first{-webkit-animation-delay:.4s;-moz-animation-delay:.4s;-o-animation-delay:.4s;animation-delay:.4s}
-.page-link.second{-webkit-animation-delay:.6s;-moz-animation-delay:.6s;-o-animation-delay:.6s;animation-delay:.6s}
-.page-link.third{-webkit-animation-delay:.8s;-moz-animation-delay:.8s;-o-animation-delay:.8s;animation-delay:.8s}
-.page-link.fourth{-webkit-animation-delay:1s;-moz-animation-delay:1s;-o-animation-delay:1s;animation-delay:1s}
-.page-link.fifth{-webkit-animation-delay:1.2s;-moz-animation-delay:1.2s;-o-animation-delay:1.2s;animation-delay:1.2s}
+.link.first{-webkit-animation-delay:.4s;-moz-animation-delay:.4s;-o-animation-delay:.4s;animation-delay:.4s}
+.link.second{-webkit-animation-delay:.6s;-moz-animation-delay:.6s;-o-animation-delay:.6s;animation-delay:.6s}
+.link.third{-webkit-animation-delay:.8s;-moz-animation-delay:.8s;-o-animation-delay:.8s;animation-delay:.8s}
+.link.fourth{-webkit-animation-delay:1s;-moz-animation-delay:1s;-o-animation-delay:1s;animation-delay:1s}
+.link.fifth{-webkit-animation-delay:1.2s;-moz-animation-delay:1.2s;-o-animation-delay:1.2s;animation-delay:1.2s}
 
 /* =======================
        Animations Code
