@@ -4,13 +4,13 @@
 
 html, body {
     font-family: 'Playfair Display', serif;
+    text-align: center;
     overflow: hidden;
-    padding: 0;
-    margin: 0;
 
     font-size: 62.5%;
     color: #212121;
     height: 100%;
+    width: 100%;
 }
 
 /*
@@ -26,11 +26,9 @@ body {
 
 .main-wrapper {
     position: absolute;
-    display: table;
+    max-width: 40rem;
+    height: 50rem;
     margin: auto;
-    width: 30rem;
-
-    text-align: center;
 
     top: 0;
     left: 0;
