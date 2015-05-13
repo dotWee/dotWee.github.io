@@ -3,9 +3,7 @@
    ==================================== */
 
 .main-wrapper {
-    height: 25vh;
-    max-height: 20vh;
-    min-height: 160px;
+    max-height: 50%;
 }
 
 .link-wrapper {

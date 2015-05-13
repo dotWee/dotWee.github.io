@@ -13,21 +13,14 @@ html, body {
     width: 100%;
 }
 
-/*
-body {
-    background: url(../img/background.png) repeat-x 0 0;
-    animation: moving-background 33s linear 1;
-}
-*/
-
 /* ================
        Wrappers
    ================ */
 
 .main-wrapper {
     position: absolute;
-    max-width: 40rem;
     height: 50rem;
+    width: 40rem;
     margin: auto;
 
     top: 0;

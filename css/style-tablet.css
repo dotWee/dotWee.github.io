@@ -2,6 +2,11 @@
        Mobile layout (eg. Nexus 10)
    =================================== */
 
+.main-wrapper {
+    max-width: 30rem;
+    max-height: 60%;
+}
+
 .header-title, .header-subtitle {
     text-indent: -2px;
 }
