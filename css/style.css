@@ -41,6 +41,10 @@ html, body {
        Page style
    ================== */
 
+.header-title, .header-subtitle, .header-separator, .link {
+    opacity: 0;
+}
+
 .header-title, .header-subtitle{
     -webkit-animation: fade-in-down 1s ease forwards;
     -o-animation: fade-in-down 1s ease forwards;
@@ -76,10 +80,6 @@ html, body {
     margin-left: auto;
 }
 
-.header-separator, .header-subtitle, .header-title {
-    opacity: 0;
-}
-
 .header-subtitle {
     -webkit-animation-delay: 0.2s;
     -moz-animation-delay: 0.2s;
@@ -96,7 +96,6 @@ html, body {
     text-decoration: none;
     vertical-align: top;
     color: inherit;
-    opacity: 0;
 }
 
 .link svg {
