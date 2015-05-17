@@ -4,19 +4,16 @@ Minimal personal website. Constantly work in progress.
 
 ## Features
 
-+ Lightweight, less than 800b! (without included fonts)
 + Fully responsive, animated and built with intelligent HTML5 and CSS3.
 + Runs without any single f 'ing line of Javascript. Just pure HTML and CSS.
 + Mobile layouts (tablets as well as phones, like for the Nexus 7 or iPhone 5) <br>
 are also in the stylesheets defined.
-+ Includes pizza
 
 ## Screenshots
 
-
-Who needs Screenshots if you can test it live! Test it at
-+ [dotwee.de](https://dotwee.de); may some commits behind or
-+ [dotwee.github.io](https://dotwee.github.io/); directly from this repository, always up-to-date.
+View it at
++ [dotwee.de](https://dotwee.de) (may some commits behind) or
++ [dotwee.github.io](https://dotwee.github.io/), directly from this repository, always up-to-date.
 
 ## Credits
 
