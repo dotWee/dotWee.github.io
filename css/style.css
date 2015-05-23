@@ -27,6 +27,13 @@ html, body {
     width: 100%;
 }
 
+::selection {
+    background: #009688;
+}
+::-moz-selection {
+    background: #009688;
+}
+
 /* ================
        Wrappers
    ================ */
