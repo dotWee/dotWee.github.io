@@ -41,7 +41,7 @@ html, body {
        Page style
    ================== */
 
-.header-title, .header-subtitle, .header-separator, .link {
+.header-title, .header-subtitle, .link {
     opacity: 0;
 }
 
@@ -62,22 +62,6 @@ html, body {
 
 .header-title {
     font-size: 14rem;
-}
-
-.header-separator {
-    -webkit-animation: expand 1.7s ease forwards;
-    -o-animation: expand 1.7s ease forwards;
-    animation: expand 1.7s ease forwards;
-
-    -webkit-animation-delay: 0.3s;
-    -moz-animation-delay: 0.3s;
-    -o-animation-delay: 0.3s;
-    animation-delay: 0.3s;
-
-    border: 0.3rem solid #212121;
-    border-radius: 50px;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 .header-subtitle {
@@ -191,10 +175,6 @@ footer {
 @-webkit-keyframes fade-in{from{opacity:0}to{opacity:1}}
 @-moz-keyframes fade-in{from{opacity:0}to{opacity:1}}
 @keyframes fade-in{from{opacity:0}to{opacity:1}}
-
-@-webkit-keyframes expand{from{opacity:0;width:5%}to{opacity:1;width:95%}}
-@-moz-keyframes expand{from{opacity:0;width:5%}to{opacity:1;width:95%}}
-@keyframes expand{from{opacity:0;width:5%}to{opacity:1;width:95%}}
 
 @-webkit-keyframes fade-in-down{from{opacity:0;-webkit-transform:translateY(-2rem);transform:translateY(-2rem)}to{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}
 @-moz-keyframes fade-in-down{from{opacity:0;-webkit-transform:translateY(-2rem);transform:translateY(-2rem)}to{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}

@@ -15,10 +15,6 @@
     font-size: 9.7rem;
 }
 
-.header-separator {
-    border-width: 0.2rem;
-}
-
 .header-subtitle {
     font-size: 5rem;
 }
@@ -45,11 +41,3 @@ footer {
 footer ul li {
     display: block;
 }
-
-/* =======================
-       Animations Code
-   ======================= */
-
-@-webkit-keyframes expand{from{opacity:0;width:5%}to{opacity:1;width:26rem}}
-@-moz-keyframes expand{from{opacity:0;width:5%}to{opacity:1;width:26rem}}
-@keyframes expand{from{opacity:0;width:5%}to{opacity:1;width:26rem}}
