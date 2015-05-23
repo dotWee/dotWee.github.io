@@ -27,13 +27,6 @@ html, body {
     width: 100%;
 }
 
-::selection {
-    background: #009688;
-}
-::-moz-selection {
-    background: #009688;
-}
-
 /* ================
        Wrappers
    ================ */
@@ -63,6 +56,12 @@ html, body {
    ================== */
 
 .header-title, .header-subtitle, .link {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     opacity: 0;
 }
 
@@ -99,14 +98,14 @@ html, body {
    ============= */
 
 .link {
-    -webkit-filter: drop-shadow(0.15rem 0.10rem 0.10rem #424242);
-    filter: drop-shadow(0.15rem 0.10rem 0.10rem #424242);
     text-decoration: none;
     vertical-align: top;
     color: inherit;
 }
 
 .link svg {
+    -webkit-filter: drop-shadow(0.10rem 0.06rem 0.06rem #424242);
+    filter: drop-shadow(0.10rem 0.06rem 0.06rem #424242);
     margin-right: 1.7rem;
     margin-left: 1.7rem;
     fill: #424242;
@@ -131,8 +130,10 @@ html, body {
     transition: all 0.2s ease-in-out;
 }
 
-.link svg:hover {
+.link:hover svg {
     fill: #009688;
+    -webkit-filter: none;
+    filter: none;
 }
 
 /* =====================
