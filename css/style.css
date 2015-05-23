@@ -3,7 +3,7 @@
    ===================== */
 
 html, body {
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", Georgia, serif;
     text-align: center;
     overflow: hidden;
 
@@ -126,7 +126,7 @@ html, body {
    ===================== */
 
 footer {
-    font-family: 'Inconsolata', monospace;
+    font-family: "Inconsolata", "Lucida Console", Monaco, monospace;
     list-style-type: none;
 
     font-weight: 400;
