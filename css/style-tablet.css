@@ -29,15 +29,17 @@
 
 .link svg {
     height: 9rem;
-    width: 10rem;
+    width: 9rem;
 }
 
-footer {
+.footer-wrapper {
     text-align: center;
-    width: 100%;
     margin: 0;
+    
+    right: 0;
+    left: 0;
 }
 
-footer p {
+.footer-wrapper p {
     display: block;
 }
