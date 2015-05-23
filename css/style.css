@@ -34,7 +34,7 @@ html, body {
 .main-wrapper {
     position: absolute;
     height: 50rem;
-    width: 40rem;
+    width: 45rem;
     margin: auto;
 
     top: 0;
@@ -66,16 +66,18 @@ html, body {
 }
 
 .header-title, .header-subtitle {
+    padding: 0;
+    margin: 0;
+
     width: 100%;
 
     font-style: normal;
-    text-indent: -3px;
-    line-height: 1.2em;
+    line-height: 1em;
     letter-spacing: -1px;
 }
 
 .header-title {
-    font-size: 14rem;
+    font-size: 16rem;
 }
 
 .header-subtitle {
@@ -83,7 +85,7 @@ html, body {
     -moz-animation-delay: 0.2s;
     -o-animation-delay: 0.2s;
     animation-delay: 0.2s;
-    font-size: 7rem;
+    font-size: 8rem;
 }
 
 /* =============
@@ -100,8 +102,8 @@ html, body {
     margin-right: 1.7rem;
     margin-left: 1.7rem;
     fill: #212121;
-    height: 9.2rem;
-    width: 9.2rem;
+    height: 11rem;
+    width: 11rem;
 }
 
 .link.fourth:before {

@@ -3,7 +3,8 @@
    ==================================== */
 
 .main-wrapper {
-    max-height: 50%;
+    min-height: 50%;
+    min-width: 70%;
 }
 
 .link-wrapper {
@@ -16,11 +17,11 @@
 }
 
 .header-title {
-    font-size: 7.9rem;
+    font-size: 10rem;
 }
 
 .header-subtitle {
-    font-size: 4.2rem;
+    font-size: 5.2rem;
 }
 
 .link {
@@ -28,6 +29,6 @@
 }
 
 .link svg {
-    height: 5.4rem;
-    width: 5.4rem;
+    height: 8rem;
+    width: 7.6rem;
 }
