@@ -100,6 +100,8 @@ html, body {
    ============= */
 
 .link {
+    -webkit-filter: drop-shadow(0.15rem 0.10rem 0.10rem #424242);
+    filter: drop-shadow(0.15rem 0.10rem 0.10rem #424242);
     text-decoration: none;
     vertical-align: top;
     color: inherit;
