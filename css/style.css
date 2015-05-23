@@ -142,6 +142,10 @@ html, body {
 
 footer {
     font-family: "Inconsolata", "Lucida Console", Monaco, monospace;
+    -webkit-animation: fade-in 0.7s;
+    -o-animation: fade-in 0.7s;
+    animation: fade-in 0.7s;
+
     list-style-type: none;
 
     font-weight: 400;
@@ -152,23 +156,14 @@ footer {
     text-wrap: normal;
     text-align: right;
 
-    bottom: 0.4rem;
-    right: 0.4rem;
+    bottom: 0.7rem;
+    right: 1rem;
 }
 
-footer ul {
-    list-style-type: none;
-    margin: 0;
-}
-
-footer ul li {
+footer p {
     display: inline;
-}
-
-footer {
-    -webkit-animation: fade-in 0.7s;
-    -o-animation: fade-in 0.7s;
-    animation: fade-in 0.7s;
+    padding: 0;
+    margin: 0;
 }
 
 /* ==================
