@@ -22,7 +22,7 @@ html, body {
     overflow: hidden;
 
     font-size: 62.5%;
-    color: #212121;
+    color: #424242;
     height: 100%;
     width: 100%;
 }
@@ -101,7 +101,7 @@ html, body {
 .link svg {
     margin-right: 1.7rem;
     margin-left: 1.7rem;
-    fill: #212121;
+    fill: #424242;
     height: 11rem;
     width: 11rem;
 }
@@ -132,9 +132,8 @@ html, body {
 }
 
 .header-title:hover, .header-subtitle:hover, .link svg:hover {
-    border-color: #3F51B5;
-    color: #37474F;
-    fill: #3F51B5;
+    color: #757575;
+    fill: #009688;
 }
 
 /* =====================
