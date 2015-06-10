@@ -19,8 +19,6 @@ View it at
 
 + [Raph Levien](http://www.levien.com) : for his Inconsolata font (licensed under SIL Open Font)
 + [Nicolas Gallagher & Jonathan Neal](http://necolas.github.io/normalize.css/) : for Normalize.css (MIT license)
-+ [Claus Eggers Sørensen](http://www.forthehearts.net) : for his Playfair Display font (licensed under SIL Open Font)
-+ [Austin Andrews](http://templarian.com/) : for his awesome [Material Design Icons](https://github.com/Templarian/MaterialDesign) project! (also licensed under SIL Open Font)
 
 ## License
 

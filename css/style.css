@@ -1,146 +1,113 @@
-/* =====================
-       General style
-   ===================== */
-
-@font-face {
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Playfair Display'), local('PlayfairDisplay'), url(fonts/PlayfairDisplay.woff2) format('woff2');
-}
-
-@font-face {
-    font-family: 'Inconsolata';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Inconsolata'), url(fonts/Inconsolata.woff2) format('woff2');
-}
-
 html, body {
-    font-family: "Playfair Display", Georgia, serif;
+    font-family: "Times New Roman", Times, serif;
+    letter-spacing: 0.01rem;
     text-align: center;
-    overflow: hidden;
-
-    font-size: 62.5%;
     color: #424242;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+
     height: 100%;
     width: 100%;
 }
 
-/* ================
-       Wrappers
-   ================ */
-
-.main-wrapper {
-    position: absolute;
-    height: 50rem;
-    width: 45rem;
-    margin: auto;
-
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+article * {
+    display: block;
 }
 
-.link-wrapper {
-    vertical-align: middle;
-    horiz-align: center;
-    white-space: nowrap;
-    margin: 1.7rem 0 0;
-    max-height: 100%;
+article {
+    position: relative;
+    top: 50%;
+
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: 0 auto;
+
+    max-width: 25rem;
+    min-width: 12rem;
+    width: 70%;
 }
 
-/* ==================
-       Page style
-   ================== */
+header, nav {
+    padding: 1rem;
+}
 
-.header-title, .header-subtitle, .link {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+cite, comment {
+    -webkit-animation: fade-in-down 1.5s ease forwards;
+    -o-animation: fade-in-down 1.5s ease forwards;
+    animation: fade-in-down 1.5s ease forwards;
+}
+
+cite {
+    font-size: 2rem;
+}
+
+comment {
+    font-size: 1.7rem;
     opacity: 0;
-}
 
-.header-title, .header-subtitle{
-    -webkit-animation: fade-in-down 1s ease forwards;
-    -o-animation: fade-in-down 1s ease forwards;
-    animation: fade-in-down 1s ease forwards;
-}
-
-.header-title, .header-subtitle {
-    line-height: 90%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-
-    font-style: normal;
-    letter-spacing: -1px;
-}
-
-.header-title {
-    font-size: 16rem;
-}
-
-.header-subtitle {
     -webkit-animation-delay: 0.2s;
     -moz-animation-delay: 0.2s;
     -o-animation-delay: 0.2s;
     animation-delay: 0.2s;
-    font-size: 8rem;
 }
 
-/* =============
-       Links
-   ============= */
-
-.link {
-    text-decoration: none;
-    vertical-align: top;
-    color: inherit;
+nav * {
+    display: inline;
+    padding: 0.5rem;
 }
 
-.link svg {
-    -webkit-filter: drop-shadow(0.10rem 0.06rem 0.06rem #424242);
-    filter: drop-shadow(0.10rem 0.06rem 0.06rem #424242);
-    margin-right: 1.7rem;
-    margin-left: 1.7rem;
-    fill: #424242;
-    height: 11rem;
-    width: 11rem;
+a {
+    line-height: 1.5rem;
+    text-decoration: underline;
+    padding: 0.5rem;
+    opacity: 0;
+    color: #009688;
 }
 
-.link.fourth:before {
-    white-space: pre;
-    content: "\A";
+a {
+    -webkit-animation: fade-in-down 1.2s ease forwards;
+    -o-animation: fade-in-down 1.2s ease forwards;
+    animation: fade-in-down 1.2s ease forwards
 }
 
-/* ========================
-       Hover management
-   ======================== */
-
-.link svg {
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+a.first {
+    -webkit-animation-delay: .4s;
+    -moz-animation-delay: .4s;
+    -o-animation-delay: .4s;
+    animation-delay: .4s
 }
 
-.link:hover svg {
-    fill: #009688;
-    -webkit-filter: none;
-    filter: none;
+a.second {
+    -webkit-animation-delay: .6s;
+    -moz-animation-delay: .6s;
+    -o-animation-delay: .6s;
+    animation-delay: .6s
 }
 
-/* =====================
-       Bottom footer
-   ===================== */
+a.third {
+    -webkit-animation-delay: .8s;
+    -moz-animation-delay: .8s;
+    -o-animation-delay: .8s;
+    animation-delay: .8s
+}
 
-.footer-wrapper {
+a.fourth {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s
+}
+
+a.fourth {
+    font-size: 90%;
+    padding: 0.2rem;
+}
+
+footer {
     font-family: "Inconsolata", "Lucida Console", Monaco, monospace;
     -webkit-animation: fade-in 0.7s;
     -o-animation: fade-in 0.7s;
@@ -152,27 +119,12 @@ html, body {
     right: 1rem;
 }
 
-.footer-wrapper p {
-    font-size: 1.3rem;
+footer p {
+    font-size: 0.7rem;
+    line-height: 1.1rem;
     padding: 0;
     margin: 0;
 }
-
-/* ==================
-       Animations
-   ================== */
-
-.link {-webkit-animation:fade-in-down .8s ease forwards;-o-animation:fade-in-down .8s ease forwards;animation:fade-in-down .8s ease forwards}
-
-.link.first{-webkit-animation-delay:.4s;-moz-animation-delay:.4s;-o-animation-delay:.4s;animation-delay:.4s}
-.link.second{-webkit-animation-delay:.6s;-moz-animation-delay:.6s;-o-animation-delay:.6s;animation-delay:.6s}
-.link.third{-webkit-animation-delay:.8s;-moz-animation-delay:.8s;-o-animation-delay:.8s;animation-delay:.8s}
-.link.fourth{-webkit-animation-delay:1s;-moz-animation-delay:1s;-o-animation-delay:1s;animation-delay:1s}
-.link.fifth{-webkit-animation-delay:1.2s;-moz-animation-delay:1.2s;-o-animation-delay:1.2s;animation-delay:1.2s}
-
-/* =======================
-       Animations Code
-   ======================= */
 
 @-webkit-keyframes fade-in{from{opacity:0}to{opacity:1}}
 @-moz-keyframes fade-in{from{opacity:0}to{opacity:1}}
@@ -181,7 +133,4 @@ html, body {
 @-webkit-keyframes fade-in-down{from{opacity:0;-webkit-transform:translateY(-2rem);transform:translateY(-2rem)}to{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}
 @-moz-keyframes fade-in-down{from{opacity:0;-webkit-transform:translateY(-2rem);transform:translateY(-2rem)}to{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}
 @keyframes fade-in-down{from{opacity:0;-webkit-transform:translateY(-2rem);transform:translateY(-2rem)}to{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}
-
-@-webkit-keyframes moving-background{from{background-position:bottom center}to{background-position:top center}}
-@-moz-keyframes moving-background{from{background-position:bottom center}to{background-position:top center}}
-@keyframes moving-background{from{background-position:bottom center}to{background-position:top center}}
+   

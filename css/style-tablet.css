@@ -1,45 +1,7 @@
-/* ===================================
-       Mobile layout (eg. Nexus 10)
-   =================================== */
-
-.main-wrapper {
-    width: 40rem;
-    height: 40rem;
+html {
+    font-size: 120%;
 }
 
-.header-title, .header-subtitle {
-    text-indent: -2px;
-}
-
-.header-title {
-    font-size: 13rem;
-}
-
-.header-subtitle {
-    font-size: 6.5rem;
-}
-
-.link-wrapper {
-    margin: 0 0 0 0;
-}
-
-.link {
-    margin: -1rem;
-}
-
-.link svg {
-    height: 9rem;
-    width: 9rem;
-}
-
-.footer-wrapper {
-    text-align: center;
-    margin: 0;
-    
-    right: 0;
-    left: 0;
-}
-
-.footer-wrapper p {
-    display: block;
+a {
+    font-size: 90%;
 }
