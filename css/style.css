@@ -64,11 +64,10 @@ a {
     line-height: 1.5rem;
     text-decoration: underline;
     padding: 0.5rem;
-    opacity: 0;
     color: #009688;
 }
 
-footer {
+footer, span {
     font-family: "Inconsolata", "Lucida Console", Monaco, monospace;
     -webkit-animation: fade-in 0.7s;
     -o-animation: fade-in 0.7s;
@@ -77,10 +76,17 @@ footer {
 
     position: fixed;
     bottom: 0.7rem;
+}
+
+footer {
     right: 1rem;
 }
 
-footer p {
+span {
+    left: 1rem;
+}
+
+footer p, span a {
     font-size: 0.7rem;
     line-height: 1.1rem;
     padding: 0;
