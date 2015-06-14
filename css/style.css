@@ -70,6 +70,12 @@ html, body {
 }
 
 .link-item {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+
     -webkit-animation: fade-in 1.9s forwards;
     -o-animation: fade-in 1.9s forwards;
     animation: fade-in 1.9s forwards;
@@ -78,6 +84,10 @@ html, body {
     text-decoration: underline;
     padding: 0.5rem;
     color: #009688;
+}
+
+.link-item:hover, .link-item:active, .disclaimer-wrapper:hover, .disclaimer-wrapper:active, .link-item:visited, .disclaimer-wrapper:visited {
+    color: #00695C;
 }
 
 /* Footer and disclaimer */
