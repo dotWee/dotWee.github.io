@@ -1,3 +1,5 @@
+/* Default stuff */
+
 html, body {
     font-family: "Times New Roman", Times, serif;
     letter-spacing: 0.01rem;
@@ -11,11 +13,9 @@ html, body {
     width: 100%;
 }
 
-article * {
-    display: block;
-}
+/* Main wrapper */
 
-article {
+#main-wrapper {
     position: relative;
     top: 50%;
 
@@ -24,6 +24,7 @@ article {
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
+    padding: 1rem;
     margin: 0 auto;
 
     max-width: 25rem;
@@ -31,21 +32,23 @@ article {
     width: 70%;
 }
 
-header, nav {
-    padding: 1rem;
+/* Header wrapper and its childs (title and descriptiom) */
+
+.header-wrapper * {
+    display: block;
 }
 
-cite, comment {
+.title, .description {
     -webkit-animation: fade-in-down 1.5s ease forwards;
     -o-animation: fade-in-down 1.5s ease forwards;
     animation: fade-in-down 1.5s ease forwards;
 }
 
-cite {
+.title {
     font-size: 2rem;
 }
 
-comment {
+.description {
     font-size: 1.7rem;
     opacity: 0;
 
@@ -55,19 +58,31 @@ comment {
     animation-delay: 0.2s;
 }
 
-nav * {
+/* Link wrapper and its childs (links) */
+
+.link-wrapper {
+    padding: 1rem;
+}
+
+.link-wrapper * {
     display: inline;
     padding: 0.5rem;
 }
 
-a {
+.link-item {
+    -webkit-animation: fade-in 1.9s forwards;
+    -o-animation: fade-in 1.9s forwards;
+    animation: fade-in 1.9s forwards;
+
     line-height: 1.5rem;
     text-decoration: underline;
     padding: 0.5rem;
     color: #009688;
 }
 
-footer, span {
+/* Footer and disclaimer */
+
+.footer-wrapper, .disclaimer-wrapper {
     font-family: "Inconsolata", "Lucida Console", Monaco, monospace;
     -webkit-animation: fade-in 0.7s;
     -o-animation: fade-in 0.7s;
@@ -78,20 +93,22 @@ footer, span {
     bottom: 0.7rem;
 }
 
-footer {
-    right: 1rem;
-}
-
-span {
+.disclaimer-wrapper {
     left: 1rem;
 }
 
-footer p, span a {
+.footer-wrapper {
+    right: 1rem;
+}
+
+.footer-wrapper p, .disclaimer-wrapper a {
     font-size: 0.7rem;
     line-height: 0.9rem;
     padding: 0;
     margin: 0;
 }
+
+/* Custom animations (minimized) */
 
 @-webkit-keyframes fade-in{from{opacity:0}to{opacity:1}}
 @-moz-keyframes fade-in{from{opacity:0}to{opacity:1}}
