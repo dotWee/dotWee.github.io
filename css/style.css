@@ -32,36 +32,23 @@ html, body {
     width: 70%;
 }
 
-/* Header wrapper and its childs (title and descriptiom) */
+/* Header wrapper and its child's (title and description) */
 
 .header-wrapper * {
     display: block;
 }
 
-.title, .description {
+.title {
     -webkit-animation: fade-in-down 1.5s ease forwards;
     -o-animation: fade-in-down 1.5s ease forwards;
     animation: fade-in-down 1.5s ease forwards;
-}
-
-.title {
     font-size: 2rem;
 }
 
-.description {
-    font-size: 1.7rem;
-    opacity: 0;
-
-    -webkit-animation-delay: 0.2s;
-    -moz-animation-delay: 0.2s;
-    -o-animation-delay: 0.2s;
-    animation-delay: 0.2s;
-}
-
-/* Link wrapper and its childs (links) */
+/* Link wrapper and its child's (links) */
 
 .link-wrapper {
-    padding: 1rem;
+    padding: 0 1rem 1rem;
 }
 
 .link-wrapper * {
@@ -79,15 +66,21 @@ html, body {
     -webkit-animation: fade-in 1.9s forwards;
     -o-animation: fade-in 1.9s forwards;
     animation: fade-in 1.9s forwards;
+    font-size: 1.05rem;
+    font-style: italic;
 
-    line-height: 1.5rem;
-    text-decoration: underline;
-    padding: 0.5rem;
-    color: #009688;
+    line-height: 1.7rem;
+    text-decoration: none;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAADAQMAAAB7xLc1AAAABlBMVEUAAAAAAAClZ7nPAAAAAXRSTlMAQObYZgAAABFJREFUCNdjUGlg8GRgmMQAAAc6AYCilqiRAAAAAElFTkSuQmCC') repeat-x 100% 100%;
+
+    white-space: nowrap;
+    padding: 0.2rem;
+    margin: 0.3rem;
+    color: #37474F;
 }
 
 .link-item:hover, .link-item:active, .disclaimer-wrapper:hover, .disclaimer-wrapper:active, .link-item:visited, .disclaimer-wrapper:visited {
-    color: #00695C;
+    color: #263238;
 }
 
 /* Footer and disclaimer */
