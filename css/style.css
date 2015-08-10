@@ -39,6 +39,7 @@ html, body {
 }
 
 .title {
+    font-family: Landon, serif;
     -webkit-animation: fade-in-down 1.7s ease forwards;
     -o-animation: fade-in-down 1.7s ease forwards;
     animation: fade-in-down 1.7s ease forwards;
@@ -48,7 +49,7 @@ html, body {
 /* Link wrapper and its child's (links) */
 
 .link-wrapper {
-    padding: 0 1rem 1rem;
+    padding: 0.1rem;
 }
 
 .link-wrapper * {
