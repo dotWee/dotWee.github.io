@@ -48,6 +48,7 @@ html, body {
 /* Link wrapper and its child's (links) */
 
 .link-wrapper {
+    white-space: nowrap;
     padding: 0.1rem;
 }
 
