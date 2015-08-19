@@ -39,9 +39,9 @@ html, body {
 }
 
 .title {
-    -webkit-animation: fade-in-down 0.7s ease forwards;
-    -o-animation: fade-in-down 0.7s ease forwards;
-    animation: fade-in-down 0.7s ease forwards;
+    -webkit-animation: fade-in-right 0.7s ease forwards;
+    -o-animation: fade-in-right 0.7s ease forwards;
+    animation: fade-in-right 0.7s ease forwards;
     font-size: 2rem;
 }
 
@@ -114,45 +114,26 @@ html, body {
 /* Custom animations (minimized) */
 
 @-webkit-keyframes fade-in{from{opacity:0}to{opacity:1}}
-@-moz-keyframes fade-in{from{opacity:0}to{opacity:1}}
 @keyframes fade-in{from{opacity:0}to{opacity:1}}
 
-@-webkit-keyframes fade-in-down {
-    from {
+@-webkit-keyframes fade-in-right {
+    0% {
         opacity: 0;
-        -webkit-transform: translateY(-0.65rem);
-        transform: translateY(-0.65rem)
+        -webkit-transform: translateX(1.2rem);
     }
-    to {
+    100% {
         opacity: 1;
-        -webkit-transform: translateY(0);
-        transform: translateY(0)
+        -webkit-transform: translateX(0);
     }
 }
 
-@-moz-keyframes fade-in-down {
-    from {
+@keyframes fade-in-right {
+    0% {
         opacity: 0;
-        -webkit-transform: translateY(-0.65rem);
-        transform: translateY(-0.65rem)
+        transform: translateX(1.2rem);
     }
-    to {
+    100% {
         opacity: 1;
-        -webkit-transform: translateY(0);
-        transform: translateY(0)
+        transform: translateX(0);
     }
 }
-
-@keyframes fade-in-down {
-    from {
-        opacity: 0;
-        -webkit-transform: translateY(-0.65rem);
-        transform: translateY(-0.65rem)
-    }
-    to {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        transform: translateY(0)
-    }
-}
-   
