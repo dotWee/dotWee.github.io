@@ -6,8 +6,7 @@ Minimal personal website. Constantly work in progress.
 
 + Fully responsive, animated and built with intelligent HTML5 and CSS3.
 + Runs without any single f 'ing line of Javascript. Just pure HTML and CSS.
-+ Mobile layouts (tablets as well as phones, like for the Nexus 7 or iPhone 5) <br>
-are also in the stylesheets defined.
++ Mobile layouts (tablets as well as phones) are also in the stylesheets defined.
 
 ## Screenshots
 
