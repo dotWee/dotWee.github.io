@@ -17,7 +17,6 @@ View it at
 
 ## Credits
 
-+ [Raph Levien](http://www.levien.com) : for his Inconsolata font (licensed under SIL Open Font)
 + [Nicolas Gallagher & Jonathan Neal](http://necolas.github.io/normalize.css/) : for Normalize.css (MIT license)
 
 ## License
