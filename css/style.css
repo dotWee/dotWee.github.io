@@ -33,9 +33,6 @@ html, body {
 }
 
 .title {
-    -webkit-animation: fade-in-right 0.7s ease forwards;
-    -o-animation: fade-in-right 0.7s ease forwards;
-    animation: fade-in-right 0.7s ease forwards;
     font-size: 2rem;
 }
 
@@ -51,15 +48,6 @@ html, body {
 }
 
 .link-item {
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-
-    -webkit-animation: fade-in 1.9s forwards;
-    -o-animation: fade-in 1.9s forwards;
-    animation: fade-in 1.9s forwards;
     font-size: 1.05rem;
     font-style: italic;
 
@@ -79,9 +67,6 @@ html, body {
 
 .footer-wrapper, .disclaimer-wrapper {
     font-family: "Lucida Console", Monaco, monospace;
-    -webkit-animation: fade-in 0.7s;
-    -o-animation: fade-in 0.7s;
-    animation: fade-in 0.7s;
     text-align: right;
 
     position: fixed;
@@ -105,31 +90,4 @@ html, body {
 
 .nowrap {
     white-space: nowrap;
-}
-
-/* Custom animations (minimized) */
-
-@-webkit-keyframes fade-in{from{opacity:0}to{opacity:1}}
-@keyframes fade-in{from{opacity:0}to{opacity:1}}
-
-@-webkit-keyframes fade-in-right {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateX(1.2rem)
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateX(0)
-    }
-}
-
-@keyframes fade-in-right {
-    0% {
-        opacity: 0;
-        transform: translateX(1.2rem)
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0)
-    }
 }
