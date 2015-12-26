@@ -60,6 +60,8 @@ html, body {
 }
 
 .link-item:hover, .link-item:active, .disclaimer-wrapper:hover, .disclaimer-wrapper:active, .link-item:visited, .disclaimer-wrapper:visited {
+    text-decoration-color: #263238;
+    text-decoration: underline;
     color: #263238;
 }
 
