@@ -5,8 +5,10 @@ html, body {
     letter-spacing: 0.01rem;
     font-weight: 500;
     text-align: center;
-    color: #424242;
+    color: black;
     overflow: hidden;
+
+    font-size: 110%;
 
     height: 100%;
     width: 100%;
@@ -16,7 +18,13 @@ html, body {
 
 #main-wrapper {
     position: relative;
+    display: inline-block;
     top: 50%;
+
+    width: 16rem;
+    padding: 1rem;
+    border: 0.2rem solid;
+    border-color: #424242;
 
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -26,57 +34,46 @@ html, body {
     margin: 0 auto;
 }
 
-/* Header wrapper and its child's (title and description) */
-
-.header-wrapper * {
-    display: block;
-}
+/* Header */
 
 .title {
     font-size: 2.2rem
 }
 
-/* Link wrapper and its child's (links) */
+/* Description */
+
+.description {
+    text-align: justify;
+}
+
+/* Links */
 
 .link-wrapper {
+    text-align: start;
     padding: 0.1rem;
+    padding-bottom: 0;
 }
 
-.link-wrapper * {
-    display: inline;
-    padding: 0.5rem;
-}
-
-.link-item {
-    font-size: 1.05rem;
-    font-style: italic;
-
-    line-height: 1.7rem;
+.link, a:visited {
+    line-height: 1rem;
     text-decoration: none;
+    color: #0000EE;
 
-    padding: 0.2rem;
-    margin: 0.3rem;
-    color: #37474F;
 }
 
-.link-item:hover, .link-item:active, .disclaimer-wrapper:hover, .disclaimer-wrapper:active, .link-item:visited, .disclaimer-wrapper:visited {
-    text-decoration-color: #263238;
+a:hover, a:active {
+    text-decoration-color: black;
     text-decoration: underline;
-    color: #263238;
 }
 
-/* Footer and disclaimer */
+/* Footer */
 
-.footer-wrapper, .disclaimer-wrapper {
+.footer-wrapper {
     font-family: "Lucida Console", Monaco, monospace;
     text-align: right;
 
     position: fixed;
     bottom: 0.7rem;
-}
-
-.disclaimer-wrapper {
-    left: 1rem;
 }
 
 .footer-wrapper {
@@ -88,8 +85,4 @@ html, body {
     line-height: 0.9rem;
     padding: 0;
     margin: 0;
-}
-
-.nowrap {
-    white-space: nowrap;
 }
