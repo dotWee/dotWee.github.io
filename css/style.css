@@ -14,6 +14,10 @@ html, body {
     width: 100%;
 }
 
+a {
+    font-size: 90%;
+}
+
 /* Main wrapper */
 
 #main-wrapper {
@@ -50,8 +54,24 @@ html, body {
 
 .link-wrapper {
     text-align: start;
-    padding: 0.1rem;
-    padding-bottom: 0;
+}
+
+.list {
+    list-style-position: inside;
+    padding-left: 1rem;
+}
+
+.list:first-of-type {
+    columns: 2;
+    margin-bottom: 0;
+}
+
+.list:first-of-type {
+    display: inline-block;
+}
+
+.list:last-of-type {
+    margin-bottom: 0;
 }
 
 .link, a:visited {
@@ -61,7 +81,7 @@ html, body {
 
 }
 
-a:hover, a:active {
+.link:hover, .link:active {
     text-decoration-color: black;
     text-decoration: underline;
 }
