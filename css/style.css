@@ -91,12 +91,12 @@ a {
 
 /* Footer */
 
-.footer-wrapper {
+.footer-wrapper, .disclaimer-wrapper {
     font-family: "Lucida Console", Monaco, monospace;
     text-align: right;
 
     position: fixed;
-    bottom: 0.7rem;
+    bottom: 1rem;
 }
 
 .footer-wrapper {
@@ -105,7 +105,11 @@ a {
 
 .footer-wrapper p, .disclaimer-wrapper a {
     font-size: 0.7rem;
-    line-height: 0.9rem;
+    line-height: 1rem;
     padding: 0;
     margin: 0;
+}
+
+.disclaimer-wrapper {
+    left: 1rem;
 }
