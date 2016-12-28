@@ -1,6 +1,6 @@
 # dotwee.de / dotWee.github.io
 
-Minimal personal website. Constantly work in progress.
+Minimal personal website
 
 ## Features
 
@@ -9,10 +9,15 @@ Minimal personal website. Constantly work in progress.
 + NoScript compatible (no Javascript used)
 + Very lightweight
 
-## See it live at
+## Screenshot
 
-+ [dotwee.de](https://dotwee.de) (may some commits ahead/behind) or
-+ [dotwee.github.io](https://dotwee.github.io/), directly from this repository, always up-to-date.
+(May some commits behind)
+<img src="screenshot.png"/>
+
+## Live
+
++ [dotwee.de](https://dotwee.de)
++ [dotwee.github.io](https://dotwee.github.io/)
 
 ## Credits
 
