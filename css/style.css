@@ -17,28 +17,59 @@ a {
     font-size: 90%;
 }
 
+div {
+    height: 10%;
+}
+
 .container {
-    height: 100%;
     width: 100%;
 
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
 }
 
-/* Main wrapper */
-
-#main-wrapper {
+article {
     position: relative;
     display: inline-block;
 
-    width: 16rem;
+    min-width: 16rem;
     padding: 1rem;
-    border: 0.2rem solid;
-    border-color: #424242;
+    border: 0.2rem solid #424242;
 
     margin: 0 auto;
 }
+
+section.portfolio {
+    max-height: 80%;
+}
+
+.portfolio > article {
+    min-width: 20rem;
+    max-width: 22rem;
+}
+
+section.container.portfolio > article {
+    min-height: 10%;
+}
+
+section.container.portfolio > article > .description, section.container.portfolio > article > .title {
+    text-align: center;
+}
+
+section.cite {
+    min-height: 50%
+}
+
+.cite > article {
+    max-width: 18rem;
+}
+
+section.container.cite {
+    display: flex;
+}
+
+
 
 /* Header */
 

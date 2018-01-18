@@ -1,3 +1,7 @@
 html {
     font-size: 110%;
 }
+
+section.container.cite {
+    min-width: fit-content;
+}
