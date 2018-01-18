@@ -1,5 +1,3 @@
-/* Default stuff */
-
 html, body {
     font-family: "Times New Roman", Times, serif;
     letter-spacing: 0.01rem;
@@ -69,23 +67,15 @@ section.container.cite {
     display: flex;
 }
 
-
-
-/* Header */
-
 .title {
     font-size: 2.2rem;
     margin-bottom: 1rem;
 }
 
-/* Description */
-
 .description {
     text-align: justify;
     margin-bottom: 1rem;
 }
-
-/* Links */
 
 .link-wrapper {
     text-align: start;
@@ -121,8 +111,6 @@ section.container.cite {
     text-decoration-color: black;
     text-decoration: underline;
 }
-
-/* Footer */
 
 .footer-wrapper, .disclaimer-wrapper {
     font-family: "Lucida Console", Monaco, monospace;
