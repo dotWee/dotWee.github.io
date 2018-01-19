@@ -38,6 +38,18 @@ article {
     margin: 0 auto;
 }
 
+section.cite {
+    min-height: 50%
+}
+
+.cite > article {
+    max-width: 18rem;
+}
+
+section.container.cite {
+    display: flex;
+}
+
 section.portfolio {
     max-height: 80%;
 }
@@ -55,16 +67,12 @@ section.container.portfolio > article > .description, section.container.portfoli
     text-align: center;
 }
 
-section.cite {
-    min-height: 50%
+.project {
+    text-align: left;
 }
 
-.cite > article {
-    max-width: 18rem;
-}
-
-section.container.cite {
-    display: flex;
+.project > h2, .project > p {
+    word-break: break-all;
 }
 
 .title {
