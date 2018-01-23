@@ -3,7 +3,19 @@ html, body {
 }
 
 article {
-    width: 10rem;
+    width: unset;
+    min-width: unset;
+
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.cite > article {
+    max-width: unset;
+}
+
+.portfolio > article {
+    min-width: unset;
 }
 
 section.portfolio {
