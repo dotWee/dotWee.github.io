@@ -5,3 +5,7 @@ html, body {
 article {
     width: 10rem;
 }
+
+section.portfolio {
+    max-height: unset;
+}

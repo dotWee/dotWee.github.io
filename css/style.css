@@ -32,10 +32,13 @@ article {
     display: inline-block;
 
     min-width: 16rem;
-    padding: 1rem;
-    border: 0.2rem solid #424242;
 
     margin: 0 auto;
+}
+
+.border {
+    padding: 1rem;
+    border: 0.2rem solid #424242;
 }
 
 section.cite {
