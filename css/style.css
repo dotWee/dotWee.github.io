@@ -1,3 +1,5 @@
+/* Default stuff */
+
 html, body {
     font-family: "Times New Roman", Times, serif;
     letter-spacing: 0.01rem;
@@ -15,78 +17,43 @@ a {
     font-size: 90%;
 }
 
-div {
-    height: 10%;
-}
-
 .container {
+    height: 100%;
     width: 100%;
 
-    display: block;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
-article {
+/* Main wrapper */
+
+#main-wrapper {
     position: relative;
     display: inline-block;
 
-    min-width: 16rem;
+    width: 16rem;
+    padding: 1rem;
+    border: 0.2rem solid black;
 
     margin: 0 auto;
 }
 
-.border {
-    padding: 1rem;
-    border: 0.2rem solid #424242;
-}
-
-section.cite {
-    min-height: 50%
-}
-
-.cite > article {
-    max-width: 18rem;
-}
-
-section.container.cite {
-    display: flex;
-}
-
-section.portfolio {
-    max-height: 80%;
-}
-
-.portfolio > article {
-    min-width: 20rem;
-    max-width: 22rem;
-}
-
-section.container.portfolio > article {
-    min-height: 10%;
-}
-
-section.container.portfolio > article > .description, section.container.portfolio > article > .title {
-    text-align: center;
-}
-
-.project {
-    text-align: left;
-}
-
-.project > h2, .project > p {
-    word-break: break-all;
-}
+/* Header */
 
 .title {
     font-size: 2.2rem;
     margin-bottom: 1rem;
 }
 
+/* Description */
+
 .description {
     text-align: justify;
     margin-bottom: 1rem;
 }
+
+/* Links */
 
 .link-wrapper {
     text-align: start;
@@ -114,14 +81,14 @@ section.container.portfolio > article > .description, section.container.portfoli
 .link, a:visited {
     line-height: 1rem;
     text-decoration: none;
-    color: #0000EE;
-
 }
 
 .link:hover, .link:active {
     text-decoration-color: black;
     text-decoration: underline;
 }
+
+/* Footer */
 
 .footer-wrapper, .disclaimer-wrapper {
     font-family: "Lucida Console", Monaco, monospace;
