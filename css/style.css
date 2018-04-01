@@ -57,6 +57,7 @@ a {
 
 .link-wrapper {
     text-align: start;
+    white-space: nowrap;
 }
 
 .list {
