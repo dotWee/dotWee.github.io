@@ -26,6 +26,12 @@ a {
     justify-content: center;
 }
 
+.bordered {
+    border: 0.2rem solid black;
+    padding: 1rem;
+
+}
+
 /* Main wrapper */
 
 #main-wrapper {
@@ -33,9 +39,6 @@ a {
     display: inline-block;
 
     width: 16rem;
-    padding: 1rem;
-    border: 0.2rem solid black;
-
     margin: 0 auto;
 }
 
