@@ -78,14 +78,10 @@ a {
     margin-bottom: 0;
 }
 
-.link, a:visited {
-    line-height: 1rem;
-    text-decoration: none;
-}
-
-.link:hover, .link:active {
-    text-decoration-color: black;
+.link, .link:visited, .link:hover, .link:active {
     text-decoration: underline;
+    line-height: 1rem;
+    color: blue;
 }
 
 /* Footer */
