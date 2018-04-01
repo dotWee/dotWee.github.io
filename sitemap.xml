@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <url>
+        <loc>https://dotwee.de/</loc>
+        <lastmod>2018-04-01T20:50:01+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://dotwee.de/disclaimer/</loc>
+        <lastmod>2017-12-20T11:12:37+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+</urlset>
