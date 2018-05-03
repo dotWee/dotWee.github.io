@@ -47,11 +47,12 @@ a {
 
 /* Separator */
 
-.strikethrough {
+hr {
+    border: none;
+    height: 0.2rem;
+    color: black;
     margin-bottom: 1rem;
     margin-top: 1rem;
-    width: 100%;
-    height: 0.2rem;
     background-color: black;
 }
 
