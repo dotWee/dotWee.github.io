@@ -46,7 +46,7 @@
             a.src = g;
             m.parentNode.insertBefore(a, m)
         })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
+        ga('set', 'anonymizeIp', true);
         ga('create', 'UA-58602415-1', 'auto', {'allowLinker': true});
         ga('require', 'linker');
         ga('linker:autoLink', ['dotwee.de']);
