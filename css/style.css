@@ -98,19 +98,15 @@ hr {
 
 /* Header */
 
-.title h1, .entry small {
-    font-family: Helvetica, sans-serif;
+h1, .entry small {
     font-weight: normal;
-    text-align: left;
-    font-size: 1.2rem;
-}
-
-.title h1 {
-    font-size: 1rem;
+    line-height: 100%;
 }
 
 .entry small {
-    line-height: 120%;
+    font-family: Helvetica, sans-serif;
+    text-align: left;
+    font-size: 1.2rem;
     color: black;
 }
 
