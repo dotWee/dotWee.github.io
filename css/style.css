@@ -103,13 +103,6 @@ h1, .entry small {
     line-height: 100%;
 }
 
-.entry small {
-    font-family: Helvetica, sans-serif;
-    text-align: left;
-    font-size: 1.2rem;
-    color: black;
-}
-
 /* entries */
 
 .entry {
@@ -121,8 +114,10 @@ h1, .entry small {
 
 .entry small {
     text-transform: uppercase;
-    font-size: 0.8rem;
+    font-family: Helvetica, sans-serif;
     text-align: left;
+    font-size: 0.8rem;
+    color: black;
 }
 
 .entry ul {
