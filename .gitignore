@@ -12,3 +12,8 @@ build/
 
 # Web-server
 robots.txt
+
+# Jekyll
+_site
+.sass-cache
+.jekyll-metadata
