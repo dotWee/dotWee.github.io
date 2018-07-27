@@ -10,9 +10,5 @@ build/
 .htaccess
 .htusers
 
-# Non-public
-whatthefuckshouldlukaseatforlunch/
-include/
-
 # Web-server
 robots.txt
