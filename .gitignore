@@ -17,3 +17,6 @@ robots.txt
 _site
 .sass-cache
 .jekyll-metadata
+
+# MacOS
+.DS_Store
