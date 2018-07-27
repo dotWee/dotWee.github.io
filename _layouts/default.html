@@ -4,7 +4,27 @@
   {%- include head.html -%}
 
   <body>
-      {{ content }}
+      <!-- Page wrapper -->
+      <section class="container">
+        <article id="main-wrapper" class="bordered">
+            <div class="bordered">
+                {{ content }}                
+
+                <svg x="0px" y="0px" viewBox="0 0 72 72" xml:space="preserve" class="corner-line-top-left corner-line">
+                    <line class="corner-line" x1="72" y1="0" x2="0" y2="72"></line>
+                </svg>
+                <svg x="0px" y="0px" viewBox="0 0 72 72" xml:space="preserve" class="corner-line-top-right corner-line">
+                    <line class="corner-line" x1="0" y1="0" x2="72" y2="72"></line>
+                </svg>
+                <svg x="0px" y="0px" viewBox="0 0 72 72" xml:space="preserve" class="corner-line-bottom-left corner-line">
+                    <line class="corner-line" x1="0" y1="0" x2="72" y2="72"></line>
+                </svg>
+                <svg x="0px" y="0px" viewBox="0 0 72 72" xml:space="preserve" class="corner-line-bottom-right corner-line">
+                    <line class="corner-line" x1="72" y1="0" x2="0" y2="72"></line>
+                </svg>
+            </div>
+        </article>
+      </section>
 
       {%- include footer.html -%}
   </body>

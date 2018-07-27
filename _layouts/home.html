@@ -2,124 +2,103 @@
 layout: default 
 ---
 
-<!-- Page wrapper -->
-<section class="container">
-    <article id="main-wrapper" class="bordered">
-        <div class="bordered">
+<header class="title">
+    <h1>{{ site.title }},</h1>
+</header>
 
-            <header class="title">
-                <h1>{{ site.title }},</h1>
-            </header>
+<br>
 
-            <br>
+<section class="entry">
+    <table>
+        <tr>
+            <th>
+                <small>about</small>
+            </th>
+        </tr>
 
-            <section class="entry">
-                <table>
-                    <tr>
-                        <th>
-                            <small>about</small>
-                        </th>
-                    </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>
+                        <span>
+                            {{ site.description }}
+                        </span>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</section>
 
-                    <tr>
-                        <td>
-                            <ul>
-                                <li>
-                                    <span>
-                                        {{ site.description }}
-                                    </span>
-                                </li>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
-            </section>
+<hr>
 
-            <hr>
+<section class="entry">
+    <table>
+        <tr>
+            <th>
+                <small>interests</small>
+            </th>
+        </tr>
 
-            <section class="entry">
-                <table>
-                    <tr>
-                        <th>
-                            <small>interests</small>
-                        </th>
-                    </tr>
+        <tr>
+            <td>
+                <ul>
+                    {% for interest in page.interests %}
+                    <li>{{ interest }}</li>
+                    {% endfor %}
+                </ul>
+            </td>
+        </tr>
+    </table>
+</section>
 
-                    <tr>
-                        <td>
-                            <ul>
-                                {% for interest in page.interests %}
-                                <li>{{ interest }}</li>
-                                {% endfor %}
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
-            </section>
+<hr>
 
-            <hr>
+<section class="entry">
+    <table>
+        <tr>
+            <th>
+                <small>publications</small>
+            </th>
+            <th>
+                <small>contact</small>
+            </th>
+        </tr>
 
-            <section class="entry">
-                <table>
-                    <tr>
-                        <th>
-                            <small>publications</small>
-                        </th>
-                        <th>
-                            <small>contact</small>
-                        </th>
-                    </tr>
+        <tr>
+            <td>
+                <ul>
+                    {% for publication in page.publications %}
+                    <li>{{ publication }}</li>
+                    {% endfor %}
 
-                    <tr>
-                        <td>
-                            <ul>
-                                {% for publication in page.publications %}
-                                <li>{{ publication }}</li>
-                                {% endfor %}
+                    <li>
+                        <a class="link" href="https://github.com/{{ site.github_username }}">GitHub</a>
+                    </li>
 
-                                <li>
-                                    <a class="link" href="https://github.com/{{ site.github_username }}">GitHub</a>
-                                </li>
+                    <li>
+                        <a class="link" href="https://gitlab.com/{{ site.gitlab_username }}">GitLab</a>
+                    </li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    {% for contact in page.contacts %}
+                    <li>{{ contact }}</li>
+                    {% endfor %}
 
-                                <li>
-                                    <a class="link" href="https://gitlab.com/{{ site.gitlab_username }}">GitLab</a>
-                                </li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ul>
-                                {% for contact in page.contacts %}
-                                <li>{{ contact }}</li>
-                                {% endfor %}
+                    <li>
+                        <a class="link" href="https://twitter.com/{{ site.twitter_username }}">Twitter</a>
+                    </li>
+                    <li>
+                        <a class="link" href="https://www.xing.com/profile/{{ site.xing_username }}">Xing</a>
+                    </li>
 
-                                <li>
-                                    <a class="link" href="https://twitter.com/{{ site.twitter_username }}">Twitter</a>
-                                </li>
-                                <li>
-                                    <a class="link" href="https://www.xing.com/profile/{{ site.xing_username }}">Xing</a>
-                                </li>
-
-                                <li>
-                                    <a class="link" href="https://www.linkedin.com/in/{{ site.linkedin_username }}">LinkedIn</a>
-                                </li>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
-            </section>
-
-            <svg x="0px" y="0px" viewBox="0 0 72 72" xml:space="preserve" class="corner-line-top-left corner-line">
-                <line class="corner-line" x1="72" y1="0" x2="0" y2="72"></line>
-            </svg>
-            <svg x="0px" y="0px" viewBox="0 0 72 72" xml:space="preserve" class="corner-line-top-right corner-line">
-                <line class="corner-line" x1="0" y1="0" x2="72" y2="72"></line>
-            </svg>
-            <svg x="0px" y="0px" viewBox="0 0 72 72" xml:space="preserve" class="corner-line-bottom-left corner-line">
-                <line class="corner-line" x1="0" y1="0" x2="72" y2="72"></line>
-            </svg>
-            <svg x="0px" y="0px" viewBox="0 0 72 72" xml:space="preserve" class="corner-line-bottom-right corner-line">
-                <line class="corner-line" x1="72" y1="0" x2="0" y2="72"></line>
-            </svg>
-        </div>
-    </article>
+                    <li>
+                        <a class="link" href="https://www.linkedin.com/in/{{ site.linkedin_username }}">LinkedIn</a>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    </table>
 </section>
