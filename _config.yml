@@ -18,7 +18,7 @@ author: Lukas Wolfsteiner
 email: lukas@wolfsteiner.de
 description: A medical health informatics student at the technical university of applied sciences in regensburg, germany
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "www.iamlukas.website" # the base hostname & protocol for your site, e.g. http://example.com
+url: "iamlukas.website" # the base hostname & protocol for your site, e.g. http://example.com
 
 twitter_username: dnkncht
 xing_username: Lukas_Wolfsteiner2
