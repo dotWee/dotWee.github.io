@@ -1,20 +1,16 @@
-# dotwee.de / dotWee.github.io
+# dotwee.de
 
-Minimal personal website
+A simple introduction / portfolio site using [Jekyll](https://jekyllrb.com/) and some handcrafted stylesheets.
 
-## Features
+## Running
 
-+ Fully responsive, easily scalable and built with intelligent HTML5 and CSS3.
-+ Aligned layout for mobile layouts (tablets as well as phones)
-+ NoScript compatible (no Javascript used)
-+ Very lightweight
+Serve this website locally using Docker:
 
-## Screenshot
+`$ docker-compose up`
 
-(May some commits behind)
-<img src="screenshot.png"/>
+Site should be then running on [localhost:80](http://localhost:80).
 
-## Live
+## Deployments
 
 + [dotwee.de](https://dotwee.de)
 + [dotwee.github.io](https://dotwee.github.io/)
