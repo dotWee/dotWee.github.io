@@ -17,6 +17,7 @@ robots.txt
 _site
 .sass-cache
 .jekyll-metadata
+vendor/
 
 # MacOS
 .DS_Store
