@@ -20,6 +20,15 @@ layout: default
         padding-right: 2rem;
         padding-bottom: 2rem;
     }
+
+    h1, h2 {
+        color: blue;
+        font-weight: normal;
+    }
+
+    li {
+        color: unset;
+    }
 </style>
 
 # Datenschutzerklärung
