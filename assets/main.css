@@ -1,6 +1,7 @@
 /* Default stuff */
 
-html, body {
+html,
+body {
   font-family: Georgia, serif;
   letter-spacing: 0.014rem;
   height: 100%;
@@ -10,7 +11,6 @@ html, body {
 .container {
   height: 100%;
   width: 100%;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,7 +26,6 @@ html, body {
   position: relative;
   display: inline-block;
   padding: 0.5rem;
-
   width: 24rem;
   margin: 0 auto;
 }
@@ -42,7 +41,6 @@ html, body {
 svg {
   display: block;
   max-width: 100%;
-
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -50,7 +48,10 @@ svg {
   box-sizing: border-box;
 }
 
-span, li, a, h1 {
+span,
+li,
+a,
+h1 {
   color: blue;
 }
 
@@ -58,7 +59,6 @@ span, li, a, h1 {
   fill: none;
   stroke: black;
   stroke-miterlimit: 10;
-
   position: absolute;
   stroke-width: 0.2em;
   width: 60px;
@@ -98,7 +98,8 @@ hr {
 
 /* Header */
 
-h1, .entry small {
+h1,
+.entry small {
   font-weight: normal;
   line-height: 100%;
 }
@@ -126,20 +127,22 @@ h1, .entry small {
   margin: 0;
 }
 
-.entry ul li > a, .entry table tr td > a {
+.entry ul li>a,
+.entry table tr td>a {
   text-decoration: none;
 }
 
-.entry ul li > a:hover, .entry table tr td > a:hover {
+.entry ul li>a:hover,
+.entry table tr td>a:hover {
   text-decoration: underline;
 }
 
 /* Footer */
 
-.footer-wrapper, .disclaimer-wrapper {
+.footer-wrapper,
+.disclaimer-wrapper {
   font-family: "Lucida Console", Monaco, monospace;
   text-align: right;
-
   position: fixed;
   bottom: 1rem;
 }
@@ -148,7 +151,8 @@ h1, .entry small {
   right: 1rem;
 }
 
-.footer-wrapper p, .disclaimer-wrapper a {
+.footer-wrapper p,
+.disclaimer-wrapper a {
   font-size: 0.7rem;
   line-height: 1rem;
   padding: 0;
@@ -161,32 +165,32 @@ h1, .entry small {
 
 @media screen and (max-width: 500px) {
   body {
-      height: unset;
+    height: unset;
   }
-
   .title {
-      text-align: center;
+    text-align: center;
   }
-
   #main-wrapper div {
-      padding: 0.5rem;
+    padding: 0.5rem;
   }
-
   #main-wrapper {
-      margin: 1rem;
+    margin: 1rem;
   }
-
   #main-wrapper div {
-      padding: 1rem 1rem 2rem;
+    padding: 1rem 1rem 2rem;
   }
-
-  .disclaimer-wrapper, .footer-wrapper {
-      position: inherit;
-      margin-right: 1rem;
-  }
-
+  .disclaimer-wrapper,
   .footer-wrapper {
-      margin-bottom: 1rem;
+    position: inherit;
+    margin-right: 1rem;
   }
+  .footer-wrapper {
+    margin-bottom: 1rem;
+  }
+}
 
+/* 404 Error page */
+
+strong {
+  font-weight: normal;
 }
