@@ -46,3 +46,4 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - LICENSE
+  - .idea/
