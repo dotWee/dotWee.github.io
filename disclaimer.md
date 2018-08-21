@@ -29,8 +29,8 @@ Diese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der V
 ## Verantwortlicher
 
 Lukas Wolfsteiner  
-Kettenbacher Weg 24  
-92348 Berg  
+Regensburger Str 139  
+92318 Neumarkt  
 Deutschland  
 
 Kontakt: lukas@wolfsteiner.de
