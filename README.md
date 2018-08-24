@@ -1,4 +1,4 @@
-# dotwee.de
+# dotWee.github.io
 
 A simple introduction / portfolio site using [Jekyll](https://jekyllrb.com/) and some handcrafted stylesheets.
 
