@@ -1,15 +1,16 @@
 # humanstxt.org/
 # The humans responsible & technology colophon
+                         
+/* TEAM */
 
-# TEAM
+Webmaster: Lukas Wolfsteiner
+Site: info@wolfsteiner.media
+Twitter: @dnkncht
+Location: Neumarkt, Germany
+                            
+/* SITE */
 
-    <name> -- <role> -- <twitter>
-
-# THANKS
-
-    <name>
-
-# TECHNOLOGY COLOPHON
-
-    CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+Last update: YYYY/MM/DD 
+Standards: HTML5, CSS3
+Components: Modernizr, jQuery, Normalize.css
+Software: Visual Studio Code
