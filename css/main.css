@@ -150,14 +150,29 @@ body {
 
 /* Content */
 
+.footnotes {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
 .lead {
-  margin: 0.5rem;
+  text-align: justify;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.lead, small {
   font-size: 1.25rem;
   font-weight: 300;
   line-height: 1.8;
 }
 
-small.lead {
+small {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 0.8rem;
@@ -173,24 +188,41 @@ cite.lead {
 }
 
 mark {
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
-  padding-left: 0.4em;
-  padding-right: 0.4em;
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .btn {
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
   text-decoration: none;
-
-  padding: 0.2rem 0.5rem;
-
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 
   background-color: transparent;
   background-image: none;
+  margin: 0;
+  border-style: solid;
+  border-width: 0.1rem;
+}
+
+mark, .btn {
+  padding-top: 0.3rem;
+  padding-bottom: 0.2rem;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+}
+
+#contentContact .footnotes {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#contentProjects .footnotes:nth-of-type(2) {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media only screen and (max-width: 600px) {
+  #contentProjects .footnotes:nth-of-type(2) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /* Footer */
@@ -230,7 +262,42 @@ footer p {
    Color classes
    ========================================================================== */
 
-/* Background */
+/* Backgrounds */
+
+body,
+input[id="tabAbout"]:checked~.tabbar:nth-of-type(1) #tabAboutLabel,
+input[id="tabInterests"]:checked~.tabbar:nth-of-type(1) #tabInterestsLabel,
+input[id="tabContact"]:checked~.tabbar:nth-of-type(1) #tabContactLabel,
+input[id="tabProjects"]:checked~.tabbar:nth-of-type(1) #tabProjectsLabel,
+.box,
+footer {
+  background-color: #FFFFFF;
+}
+
+mark {
+  background-color: #EFF1F3;
+}
+
+/* Text */
+
+mark,
+h1,
+p {
+  color: #010400;
+}
+
+.btn {
+  border-color:  #010400;
+}
+
+mark:hover,
+mark:hover a,
+.btn:hover,
+.tabbar {
+  color: #FFFFFF;
+}
+
+/* Accents */
 
 .tabbar,
 .btn:hover,
@@ -239,72 +306,22 @@ mark:hover,
 #tabInterests:checked~section p mark:hover,
 #tabProjects:checked~section p mark:hover,
 #tabContact:checked~section p mark:hover {
-  background-color: #222222;
+  background-color: #14248A;
 }
-
-body {
-  background-color: #D6DBDF;
-}
-
-input[id="tabAbout"]:checked~.tabbar:nth-of-type(1) #tabAboutLabel,
-input[id="tabInterests"]:checked~.tabbar:nth-of-type(1) #tabInterestsLabel,
-input[id="tabContact"]:checked~.tabbar:nth-of-type(1) #tabContactLabel,
-input[id="tabProjects"]:checked~.tabbar:nth-of-type(1) #tabProjectsLabel,
-.box,
-footer {
-  background-color: #ffffff;
-}
-
-mark {
-  background-color: #E7E247;
-}
-
-/* Text */
-
-a {
-  color: #090446;
-}
-
-input[id="tabAbout"]:checked~.tabbar:nth-of-type(1) #tabAboutLabel,
-input[id="tabInterests"]:checked~.tabbar:nth-of-type(1) #tabInterestsLabel,
-input[id="tabContact"]:checked~.tabbar:nth-of-type(1) #tabContactLabel,
-input[id="tabProjects"]:checked~.tabbar:nth-of-type(1) #tabProjectsLabel,
-.btn,
-mark,
-h1,
-p {
-  color: #000000;
-}
-
-mark:hover,
-mark:hover a,
-.btn:hover,
-.tabbar {
-  color: #ffffff;
-}
-
-/* Borders */
 
 .btn,
 .btn:hover,
 content,
 label {
-  border-color: #222222;
+  border-color: #14248A;
 }
 
-.btn {
-  border-style: solid;
-  border-width: 0.1rem;
-}
-
-.content {
-  border-bottom-style: solid;
-  border-bottom-width: 0.2rem;
-}
-
-label {
-  border-style: solid;
-  border-width: 0.2rem;
+input[id="tabAbout"]:checked~.tabbar:nth-of-type(1) #tabAboutLabel,
+input[id="tabInterests"]:checked~.tabbar:nth-of-type(1) #tabInterestsLabel,
+input[id="tabContact"]:checked~.tabbar:nth-of-type(1) #tabContactLabel,
+input[id="tabProjects"]:checked~.tabbar:nth-of-type(1) #tabProjectsLabel,
+a {
+  color: #14248A;
 }
 
 /* ==========================================================================
@@ -314,9 +331,13 @@ label {
 .content {
   display: none;
   min-height: 15rem;
-
+  border-bottom-style: solid;
+  border-bottom-width: 0.2rem;
   padding-top: 2rem;
   padding-bottom: 1rem;
+
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 input {
@@ -329,27 +350,13 @@ label {
   display: block;
   padding: 0.5rem;
   font-weight: 400;
+  border-style: solid;
+  border-width: 0.2rem;
 }
 
 label:hover {
   cursor: pointer;
   font-weight: 500;
-}
-
-#tabAbout:checked~section p mark, #tabAbout:checked~section p .btn:hover {
-  background-color: #20A39E;
-}
-
-#tabInterests:checked~section p mark, #tabInterests:checked~section p .btn:hover {
-  background-color: #E7E247;
-}
-
-#tabProjects:checked~section p mark, #tabProjects:checked~section p .btn:hover {
-  background-color: #E08DAC;
-}
-
-#tabContact:checked~section p mark, #tabContact:checked~section p .btn:hover {
-  background-color: #6A7FDB;
 }
 
 #tabAbout:checked~#contentAbout,
