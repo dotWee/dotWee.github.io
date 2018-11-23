@@ -126,7 +126,8 @@ body {
   padding-right: 1rem;
 }
 
-.boxed {
+.boxed,
+.tabbar {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
@@ -150,8 +151,6 @@ body {
 /* Content */
 
 .lead {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  text-align: justify; 
   margin: 0.5rem;
   font-size: 1.25rem;
   font-weight: 300;
@@ -162,7 +161,6 @@ small.lead {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 0.8rem;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1.lead {
@@ -183,21 +181,12 @@ mark {
 }
 
 .btn {
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   text-align: center;
   text-decoration: none;
 
-  padding: 0.1rem 0.5rem;
-  font-size: 0.875rem;
-  line-height: 1.5;
+  padding: 0.2rem 0.5rem;
 
-  border-radius: 0.2rem;
-
-  display: inline-block;
-  white-space: nowrap;
-  vertical-align: middle;
-  -webkit-user-select: none;
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 
   background-color: transparent;
@@ -245,7 +234,11 @@ footer p {
 
 .tabbar,
 .btn:hover,
-mark:hover {
+mark:hover,
+#tabAbout:checked~section p mark:hover,
+#tabInterests:checked~section p mark:hover,
+#tabProjects:checked~section p mark:hover,
+#tabContact:checked~section p mark:hover {
   background-color: #222222;
 }
 
@@ -318,86 +311,103 @@ label {
    Tabs related classes
    ========================================================================== */
 
-   .content {
-    display: none;
-    min-height: 12rem;
-  
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-  
-  input {
-    display: none;
-  }
-  
-  label {
-    text-transform: uppercase;
-    text-align: center;
-    display: block;
-    padding: 0.5rem;
-    font-weight: 400;
-  }
-  
-  label:hover {
-    cursor: pointer;
-    font-weight: 500;
-  }
-  
-  #tabAbout:checked~#contentAbout,
-  #tabInterests:checked~#contentInterests,
-  #tabProjects:checked~#contentProjects,
-  #tabContact:checked~#contentContact {
-    display: block;
-  }
-  
-  input[id="tabAbout"]:checked ~ .tabbar:nth-of-type(1) #tabAboutLabel,
-  input[id="tabInterests"]:checked ~ .tabbar:nth-of-type(1) #tabInterestsLabel,
-  input[id="tabContact"]:checked ~ .tabbar:nth-of-type(1) #tabContactLabel,
-  input[id="tabProjects"]:checked ~ .tabbar:nth-of-type(1) #tabProjectsLabel {
-    font-weight: 500;
-  }
-  
-  .tabbar {
-    padding: 0;
-    list-style: none;
-    
-    margin-top: 0;
-    margin-bottom: 0;
-  
-    display: inline-flex;
-    width: calc(100% + 4rem);
+.content {
+  display: none;
+  min-height: 15rem;
 
-    margin-left: -2rem;
-  }
-  
-  .tab {
-    width: 25%;
-  }
-  
-  @media only screen and (max-width: 600px) {
-    .tabbar {
-      display: flex;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+input {
+  display: none;
+}
+
+label {
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  padding: 0.5rem;
+  font-weight: 400;
+}
+
+label:hover {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+#tabAbout:checked~section p mark, #tabAbout:checked~section p .btn:hover {
+  background-color: #20A39E;
+}
+
+#tabInterests:checked~section p mark, #tabInterests:checked~section p .btn:hover {
+  background-color: #E7E247;
+}
+
+#tabProjects:checked~section p mark, #tabProjects:checked~section p .btn:hover {
+  background-color: #E08DAC;
+}
+
+#tabContact:checked~section p mark, #tabContact:checked~section p .btn:hover {
+  background-color: #6A7FDB;
+}
+
+#tabAbout:checked~#contentAbout,
+#tabInterests:checked~#contentInterests,
+#tabProjects:checked~#contentProjects,
+#tabContact:checked~#contentContact {
+  display: block;
+}
+
+input[id="tabAbout"]:checked~.tabbar #tabAboutLabel,
+input[id="tabInterests"]:checked~.tabbar #tabInterestsLabel,
+input[id="tabContact"]:checked~.tabbar #tabContactLabel,
+input[id="tabProjects"]:checked~.tabbar #tabProjectsLabel {
+  font-weight: 500;
+}
+
+.tabbar {
+  padding: 0;
+  list-style: none;
+
+  margin-top: 0;
+  margin-bottom: 0;
+
+  display: inline-flex;
+  width: calc(100% + 4rem);
+
+  margin-left: -2rem;
+}
+
+.tab {
+  width: 25%;
+}
+
+@media only screen and (max-width: 600px) {
+  .tabbar {
+    display: flex;
     flex-wrap: wrap;
-  
-      width: 100%;
-      margin: 0;
-    }
-  
-    .tab {
-      flex: calc(100% / 2);
-    }
+
+    width: 100%;
+    margin: 0;
   }
+
+  .tab {
+    flex: calc(100% / 2);
+  }
+}
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
 
-   .alignleft {
-    float: left;
-  }
-  .alignright {
-    float: right;
-  }
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
 
 /*
  * Hide visually and from screen readers
