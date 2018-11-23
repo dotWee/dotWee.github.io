@@ -134,7 +134,7 @@ h1 {
 }
 
 .boxed,
-.tabbar {
+nav {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
@@ -302,10 +302,10 @@ footer p {
 /* Backgrounds */
 
 body,
-input[id="tabAbout"]:checked~nav .tabbar:nth-of-type(1) #tabAboutLabel,
-input[id="tabInterests"]:checked~nav .tabbar:nth-of-type(1) #tabInterestsLabel,
-input[id="tabContact"]:checked~nav .tabbar:nth-of-type(1) #tabContactLabel,
-input[id="tabProjects"]:checked~nav .tabbar:nth-of-type(1) #tabProjectsLabel,
+input[id="tabAbout"]:checked~nav .tabbar .tab label[for="tabAbout"],
+input[id="tabInterests"]:checked~nav .tabbar .tab label[for="tabInterests"],
+input[id="tabContact"]:checked~nav .tabbar .tab label[for="tabContact"],
+input[id="tabProjects"]:checked~nav .tabbar .tab label[for="tabProjects"],
 .box,
 footer {
   background-color: #FFFFFF;
@@ -336,7 +336,7 @@ mark:hover a,
 
 /* Accents */
 
-.tabbar,
+.tab,
 .btn:hover,
 mark:hover,
 #tabAbout:checked~section p mark:hover,
@@ -353,10 +353,10 @@ label {
   border-color: #14248A;
 }
 
-input[id="tabAbout"]:checked~nav .tabbar:nth-of-type(1) #tabAboutLabel,
-input[id="tabInterests"]:checked~nav .tabbar:nth-of-type(1) #tabInterestsLabel,
-input[id="tabContact"]:checked~nav .tabbar:nth-of-type(1) #tabContactLabel,
-input[id="tabProjects"]:checked~nav .tabbar:nth-of-type(1) #tabProjectsLabel,
+input[id="tabAbout"]:checked~nav .tabbar .tab label[for="tabAbout"],
+input[id="tabInterests"]:checked~nav .tabbar .tab label[for="tabInterests"],
+input[id="tabContact"]:checked~nav .tabbar .tab label[for="tabContact"],
+input[id="tabProjects"]:checked~nav .tabbar .tab label[for="tabProjects"],
 .lead span,
 a {
   color: #14248A;
@@ -408,41 +408,47 @@ label:hover {
   display: block;
 }
 
-input[id="tabAbout"]:checked~nav .tabbar #tabAboutLabel,
-input[id="tabInterests"]:checked~nav .tabbar #tabInterestsLabel,
-input[id="tabContact"]:checked~nav .tabbar #tabContactLabel,
-input[id="tabProjects"]:checked~nav .tabbar #tabProjectsLabel {
+input[id="tabAbout"]:checked~nav .tabbar .tab label[for="tabAbout"],
+input[id="tabInterests"]:checked~nav .tabbar .tab label[for="tabInterests"],
+input[id="tabContact"]:checked~nav .tabbar .tab label[for="tabContact"],
+input[id="tabProjects"]:checked~nav .tabbar .tab label[for="tabProjects"] {
   font-weight: 500;
 }
 
-.tabbar {
-  padding: 0;
-  list-style: none;
-
-  margin-top: 0;
-  margin-bottom: 0;
-
-  display: inline-flex;
+nav {
   width: calc(100% + 4rem);
-
   margin-left: -2rem;
 }
 
-.tab {
-  width: 25%;
+.tabbar {
+  width: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 0;
+  list-style: none;
 }
 
 @media only screen and (max-width: 600px) {
-  .tabbar {
-    display: flex;
-    flex-wrap: wrap;
-
-    width: 100%;
-    margin: 0;
+  .content {
+    padding-left: 1rem;
+  padding-right: 1rem;
   }
 
-  .tab {
-    flex: calc(100% / 2);
+  nav {
+    padding-top: 1rem;
+    width: 100%;
+    margin: 0;
+    box-shadow: unset;
+  }
+
+  .tabbar {
+    width: calc(100% - 2rem);
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.5rem;
+
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 
