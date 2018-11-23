@@ -211,16 +211,16 @@ mark, .btn {
   padding-right: 0.4rem;
 }
 
-#contentContact .footnotes {
+#contact .footnotes {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-#contentProjects .footnotes:nth-of-type(2) {
+#projects .footnotes:nth-of-type(2) {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 @media only screen and (max-width: 600px) {
-  #contentProjects .footnotes:nth-of-type(2) {
+  #projects .footnotes:nth-of-type(2) {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -286,7 +286,7 @@ p {
   color: #010400;
 }
 
-.btn {
+.btn, .content {
   border-color:  #010400;
 }
 
@@ -330,14 +330,18 @@ a {
 
 .content {
   display: none;
-  min-height: 15rem;
   border-bottom-style: solid;
   border-bottom-width: 0.2rem;
-  padding-top: 2rem;
+
+  margin-top: 2rem;
   padding-bottom: 1rem;
 
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.content .lead:first-of-type {
+  margin-top: 0;
 }
 
 input {
@@ -359,10 +363,10 @@ label:hover {
   font-weight: 500;
 }
 
-#tabAbout:checked~#contentAbout,
-#tabInterests:checked~#contentInterests,
-#tabProjects:checked~#contentProjects,
-#tabContact:checked~#contentContact {
+#tabAbout:checked~#about,
+#tabInterests:checked~#interests,
+#tabProjects:checked~#projects,
+#tabContact:checked~#contact {
   display: block;
 }
 
