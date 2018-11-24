@@ -1,4 +1,6 @@
 @import 'variables';
+@import 'grid';
+@import 'borders';
 
 /* ==========================================================================
    Author's custom styles
@@ -10,20 +12,20 @@ body {
   font-family: $font-default;
 
   @media only screen and (max-width: $screen-breakpoint) {
-    height: 100%;
+    height: $dim-full;
   }
 }
 
 main {
   @media only screen and (max-width: $screen-breakpoint) {
-    box-shadow: none !important;
+    box-shadow: none;
   }
 }
 
 /* Wrapper */
 .container {
-  height: 100%;
-  width: 100%;
+  height: $dim-full;
+  width: $dim-full;
   position: absolute;
 
   display: flex;
@@ -41,11 +43,15 @@ main {
 }
 
 .box {
-  width: 32rem;
+  width: $dim-box;
+
+  padding-top: $dim-2;
+  padding-bottom: $dim-1;
 
   @media only screen and (max-width: $screen-breakpoint) {
-    padding-top: 2rem;
-    width: 100%;
+    padding-top: $dim-2;
+    width: $dim-full;
+    box-shadow: none;
   }
 }
 
@@ -59,47 +65,47 @@ header {
 }
 
 .introduction {
-  font-weight: 300;
-  padding: 1rem 1rem 0;
+  font-weight: $font-weight-thinner;
+  padding: $dim-1 $dim-1 0;
 
-  font-size: 2.5rem;
+  font-size: $dim-2 + $dim-05;
   line-height: 1.8;
   margin: 0;
 }
 
 /* Main content */
 .content {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: $dim-1;
+  margin-right: $dim-1;
 
   display: none;
-  border-bottom-style: solid;
-  border-bottom-width: 0.2rem;
 
-  margin-top: 2rem;
-  padding-bottom: 1rem;
+  margin-top: $dim-2;
+  padding-bottom: $dim-1;
 
   @media only screen and (max-width: $screen-breakpoint) {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
-small, .lead {
-  line-height: 1.8;
-}
-
 small {
+  line-height: 1.8;
   text-transform: uppercase;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: $dim-1;
+  font-weight: $font-weight-thick;
 }
 
 .lead {
+  line-height: 1.8;
   text-align: justify;
-  margin-top: 1rem;
+  margin-top: $dim-1;
   margin-bottom: 0;
   font-size: 1.25rem;
+}
+
+.lead span {
+  color: $color-dark-accent;
 }
 
 .lead:first-of-type {
@@ -107,29 +113,107 @@ small {
 }
 
 cite {
-  font-weight: 400;
+  font-weight: $font-weight-thin;
   font-style: oblique;
 }
 
 mark {
+  padding: 0.3rem 0.4rem $dim-02;
+  background-color: $color-light-accent;
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
+mark:hover {
+  background-color: $color-dark-accent;
+  color: $color-light;
+
+  a {
+    color: $color-light;
+  }
+}
+
 .button {
-  font-weight: 500;
+  @extend %border-shared;
+
+  font-weight: $font-weight-normal;
   text-align: center;
   text-decoration: none;
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
   background-image: none;
   margin: 0;
+  background-color: transparent;
+  padding: 0.3rem 0.4rem $dim-02;
+  color: $color-dark-accent;
+
+  @media only screen and (max-width: $screen-breakpoint) {
+    box-shadow: $box-shadow-normal;
+  }
 }
 
-mark,
-.button {
-  padding: 0.3rem 0.4rem 0.2rem;
+.button:hover {
+  @extend %border-shared;
+
+  color: $color-light;
+  background-color: $color-dark-accent;
+
+  @media only screen and (max-width: $screen-breakpoint) {
+    box-shadow: $box-shadow-elevated;
+  }
 }
 
-/* Tabs and tabbar */
+nav {
+  width: calc(100% + 4rem);
+  margin-left: -$dim-2;
+
+  @media only screen and (max-width: $screen-breakpoint) {
+    padding-top: $dim-1;
+    width: $dim-full;
+    margin: 0;
+
+    box-shadow: none !important;
+  }
+}
+
+.tabbar {
+  @extend %grid-shared;
+  grid-gap: unset;
+
+  width: $dim-full;
+  margin: 0;
+
+  grid-template-columns: $grid-columns-4;
+  padding: 0;
+  list-style: none;
+
+  border-color: $color-dark-accent;
+  border-width: $dim-02;
+  border-style: solid;
+
+  color: $color-light;
+
+
+  @media only screen and (max-width: $screen-breakpoint) {
+    @include noborder;
+
+    width: calc(100% - 2rem);
+    grid-template-columns: $grid-columns-2;
+    grid-gap: $grid-gap-1;
+
+    margin-left: $dim-1;
+    margin-right: $dim-1;
+  }
+}
+
+.tab {
+  background-color: $color-dark-accent;
+
+  @media only screen and (max-width: $screen-breakpoint) {
+    border-color: $color-dark-accent;
+    border-width: $dim-02;
+    border-style: solid;
+  }
+}
+
 input {
   display: none;
 }
@@ -138,26 +222,30 @@ label {
   text-transform: uppercase;
   text-align: center;
   display: block;
-  padding: 0.5rem;
-  font-weight: 400;
+  padding: $dim-05;
+  font-weight: $font-weight-thin;
+
+  background-color: $color-light;
+  color: $color-dark-accent;
 
   @media only screen and (max-width: $screen-breakpoint) {
     box-shadow: $box-shadow-normal;
-    background-color: $color-light;
-    color: $color-dark-accent;
   }
 }
 
 label:hover {
   cursor: pointer;
-  font-weight: 500;
+  font-weight: $font-weight-normal;
+
+  background-color: $color-dark-accent;
+  color: $color-light;
 
   @media only screen and (max-width: $screen-breakpoint) {
-    background-color: $color-dark-accent;
-    color: $color-light;
+    box-shadow: $box-shadow-elevated;
   }
 }
 
+/* Tab selected */
 #tabAbout:checked ~ #about,
 #tabInterests:checked ~ #interests,
 #tabProjects:checked ~ #projects,
@@ -165,77 +253,62 @@ label:hover {
   display: block;
 }
 
+#tabAbout:checked ~ section p mark:hover,
+#tabInterests:checked ~ section p mark:hover,
+#tabProjects:checked ~ section p mark:hover,
+#tabContact:checked ~ section p mark:hover {
+  background-color: $color-dark-accent;
+}
+
 input[id="tabAbout"]:checked ~ nav .tabbar .tab label[for="tabAbout"],
 input[id="tabInterests"]:checked ~ nav .tabbar .tab label[for="tabInterests"],
 input[id="tabContact"]:checked ~ nav .tabbar .tab label[for="tabContact"],
 input[id="tabProjects"]:checked ~ nav .tabbar .tab label[for="tabProjects"] {
-  font-weight: 500;
-}
+  font-weight: $font-weight-normal;
 
-nav {
-  width: calc(100% + 4rem);
-  margin-left: -2rem;
+  background-color: $color-dark-accent;
+  color: $color-light;
 
   @media only screen and (max-width: $screen-breakpoint) {
-    padding-top: 1rem;
-    width: 100%;
-    margin: 0;
-
-    box-shadow: none !important;
-  }
-}
-
-.tabbar {
-  width: 100%;
-  margin: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding: 0;
-  list-style: none;
-
-  @media only screen and (max-width: $screen-breakpoint) {
-    width: calc(100% - 2rem);
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
-
-    margin-left: 1rem;
-    margin-right: 1rem;
+    box-shadow: $box-shadow-elevated;
   }
 }
 
 /* Footnotes */
 .footnotes {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  @extend %grid-shared;
+  margin-top: $dim-05;
+  margin-bottom: $dim-05;
   padding: 0;
+}
 
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
+.footnotes,
+#projects .footnotes:nth-of-type(2) {
+  grid-template-columns: $grid-columns-2;
 }
 
 #contact .footnotes {
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: $grid-columns-3;
 }
 
 #projects .footnotes:nth-of-type(2) {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: $grid-columns-4;
 }
 
 /* Footer */
 footer {
   position: absolute;
-  right: 1rem;
-  bottom: 1rem;
+  right: $dim-1;
+  bottom: $dim-1;
   text-align: right;
 
-  padding: 1rem;
+  padding: $dim-1;
 
   @media only screen and (max-width: $screen-breakpoint) {
     position: initial;
-    height: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    height: $dim-2;
+    margin-left: $dim-1;
+    margin-right: $dim-1;
 
     border: none !important;
     box-shadow: none !important;
@@ -243,7 +316,7 @@ footer {
 }
 
 footer p {
-  font-size: 0.75rem;
+  font-size: $dim-075;
   margin: 0;
 
   @media only screen and (max-width: $screen-breakpoint) {
@@ -253,43 +326,9 @@ footer p {
 
 /* Signature */
 .signature {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-}
-
-/* ==========================================================================
-   Other Media Queries for Responsive Design.
-   ========================================================================== */
-
-@media only screen and (max-width: 600px) {
-
-  /* Tab clicked */
-  input[id="tabAbout"]:checked ~ nav .tabbar .tab label[for="tabAbout"],
-  input[id="tabInterests"]:checked ~ nav .tabbar .tab label[for="tabInterests"],
-  input[id="tabContact"]:checked ~ nav .tabbar .tab label[for="tabContact"],
-  input[id="tabProjects"]:checked ~ nav .tabbar .tab label[for="tabProjects"] {
-    box-shadow: $box-shadow-elevated;
-    background-color: $color-dark-accent;
-    color: $color-light;
-  }
-
-  /* More boxed */
-  .button,
-  label {
-    box-shadow: $box-shadow-normal;
-  }
-
-  .button:hover,
-  label:hover {
-    box-shadow: $box-shadow-elevated;
-
-  }
-
-  /* Contents */
-  #projects .footnotes:nth-of-type(2) {
-    grid-template-columns: 1fr 1fr;
-  }
+  margin-left: $dim-3;
+  margin-right: $dim-3;
+  margin-bottom: $dim-1;
 }
 
 /* ==========================================================================
@@ -304,93 +343,10 @@ footer p {
   font-family: $font-serif;
 }
 
-.bordered-1,
-.bordered-2 {
-  border-style: solid;
-}
-
-.bordered-1 {
-  border-width: 0.1rem;
-}
-
-.bordered-2 {
-  border-width: 0.2rem;
-}
-
 .boxed {
   box-shadow: $box-shadow-box-normal;
 }
 
 .boxed:hover {
   box-shadow: $box-shadow-box-elevated;
-}
-
-/* ==========================================================================
-   Color related classes
-   ========================================================================== */
-
-/* Backgrounds */
-body,
-input[id="tabAbout"]:checked ~ nav .tabbar .tab label[for="tabAbout"],
-input[id="tabInterests"]:checked ~ nav .tabbar .tab label[for="tabInterests"],
-input[id="tabContact"]:checked ~ nav .tabbar .tab label[for="tabContact"],
-input[id="tabProjects"]:checked ~ nav .tabbar .tab label[for="tabProjects"],
-.box,
-footer {
-  background-color: $color-light;
-}
-
-mark {
-  background-color: $color-light-accent;
-}
-
-.button {
-  background-color: transparent;
-}
-
-/* Text */
-mark,
-.introduction,
-p {
-  color: $color-dark;
-}
-
-mark:hover,
-mark:hover a,
-.button:hover,
-.tabbar {
-  color: $color-light;
-}
-
-input[id="tabAbout"]:checked ~ nav .tabbar .tab label[for="tabAbout"],
-input[id="tabInterests"]:checked ~ nav .tabbar .tab label[for="tabInterests"],
-input[id="tabContact"]:checked ~ nav .tabbar .tab label[for="tabContact"],
-input[id="tabProjects"]:checked ~ nav .tabbar .tab label[for="tabProjects"],
-.lead span,
-a {
-  color: $color-dark-accent;
-}
-
-/* Accents */
-.tab,
-.button:hover,
-mark:hover,
-#tabAbout:checked ~ section p mark:hover,
-#tabInterests:checked ~ section p mark:hover,
-#tabProjects:checked ~ section p mark:hover,
-#tabContact:checked ~ section p mark:hover {
-  background-color: $color-dark-accent;
-}
-
-/* Borders */
-.button,
-.button:hover,
-.content,
-.bordered-1,
-.bordered-2 {
-  border-color: $color-dark-accent;
-}
-
-.content {
-  border-color: $color-dark;
 }

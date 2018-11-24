@@ -21,6 +21,9 @@ gulp.task('sass', function () {
         .pipe(minifyCSS())
         .pipe(gulp.dest('dist/css'));
 });
+gulp.task('sass:watch', function () {
+    gulp.watch('src/sass/*.scss', ['sass']);
+});
 
 gulp.task('img', function () {
     return gulp.src(['src/img/*.png', 'src/img/*.jpg'])
