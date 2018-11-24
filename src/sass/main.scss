@@ -1,0 +1,396 @@
+@import 'variables';
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* Globals */
+html,
+body {
+  font-family: $font-default;
+
+  @media only screen and (max-width: $screen-breakpoint) {
+    height: 100%;
+  }
+}
+
+main {
+  @media only screen and (max-width: $screen-breakpoint) {
+    box-shadow: none !important;
+  }
+}
+
+/* Wrapper */
+.container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (max-width: $screen-breakpoint) {
+    display: block;
+    height: unset;
+    min-height: calc(100% - 5rem);
+    position: unset;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.box {
+  width: 32rem;
+
+  @media only screen and (max-width: $screen-breakpoint) {
+    padding-top: 2rem;
+    width: 100%;
+  }
+}
+
+/* Header with introduction */
+header {
+  border-bottom: none !important;
+
+  @media only screen and (max-width: $screen-breakpoint) {
+    border: none !important;
+  }
+}
+
+.introduction {
+  font-weight: 300;
+  padding: 1rem 1rem 0;
+
+  font-size: 2.5rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Main content */
+.content {
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  display: none;
+  border-bottom-style: solid;
+  border-bottom-width: 0.2rem;
+
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+
+  @media only screen and (max-width: $screen-breakpoint) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+small, .lead {
+  line-height: 1.8;
+}
+
+small {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.lead {
+  text-align: justify;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-size: 1.25rem;
+}
+
+.lead:first-of-type {
+  margin-top: 0;
+}
+
+cite {
+  font-weight: 400;
+  font-style: oblique;
+}
+
+mark {
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.button {
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  background-image: none;
+  margin: 0;
+}
+
+mark,
+.button {
+  padding: 0.3rem 0.4rem 0.2rem;
+}
+
+/* Tabs and tabbar */
+input {
+  display: none;
+}
+
+label {
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  padding: 0.5rem;
+  font-weight: 400;
+
+  @media only screen and (max-width: $screen-breakpoint) {
+    box-shadow: $box-shadow-normal;
+    background-color: $color-light;
+    color: $color-dark-accent;
+  }
+}
+
+label:hover {
+  cursor: pointer;
+  font-weight: 500;
+
+  @media only screen and (max-width: $screen-breakpoint) {
+    background-color: $color-dark-accent;
+    color: $color-light;
+  }
+}
+
+#tabAbout:checked ~ #about,
+#tabInterests:checked ~ #interests,
+#tabProjects:checked ~ #projects,
+#tabContact:checked ~ #contact {
+  display: block;
+}
+
+input[id="tabAbout"]:checked ~ nav .tabbar .tab label[for="tabAbout"],
+input[id="tabInterests"]:checked ~ nav .tabbar .tab label[for="tabInterests"],
+input[id="tabContact"]:checked ~ nav .tabbar .tab label[for="tabContact"],
+input[id="tabProjects"]:checked ~ nav .tabbar .tab label[for="tabProjects"] {
+  font-weight: 500;
+}
+
+nav {
+  width: calc(100% + 4rem);
+  margin-left: -2rem;
+
+  @media only screen and (max-width: $screen-breakpoint) {
+    padding-top: 1rem;
+    width: 100%;
+    margin: 0;
+
+    box-shadow: none !important;
+  }
+}
+
+.tabbar {
+  width: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 0;
+  list-style: none;
+
+  @media only screen and (max-width: $screen-breakpoint) {
+    width: calc(100% - 2rem);
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+/* Footnotes */
+.footnotes {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+#contact .footnotes {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#projects .footnotes:nth-of-type(2) {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  text-align: right;
+
+  padding: 1rem;
+
+  @media only screen and (max-width: $screen-breakpoint) {
+    position: initial;
+    height: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    border: none !important;
+    box-shadow: none !important;
+  }
+}
+
+footer p {
+  font-size: 0.75rem;
+  margin: 0;
+
+  @media only screen and (max-width: $screen-breakpoint) {
+    text-align: center;
+  }
+}
+
+/* Signature */
+.signature {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* ==========================================================================
+   Other Media Queries for Responsive Design.
+   ========================================================================== */
+
+@media only screen and (max-width: 600px) {
+
+  /* Tab clicked */
+  input[id="tabAbout"]:checked ~ nav .tabbar .tab label[for="tabAbout"],
+  input[id="tabInterests"]:checked ~ nav .tabbar .tab label[for="tabInterests"],
+  input[id="tabContact"]:checked ~ nav .tabbar .tab label[for="tabContact"],
+  input[id="tabProjects"]:checked ~ nav .tabbar .tab label[for="tabProjects"] {
+    box-shadow: $box-shadow-elevated;
+    background-color: $color-dark-accent;
+    color: $color-light;
+  }
+
+  /* More boxed */
+  .button,
+  label {
+    box-shadow: $box-shadow-normal;
+  }
+
+  .button:hover,
+  label:hover {
+    box-shadow: $box-shadow-elevated;
+
+  }
+
+  /* Contents */
+  #projects .footnotes:nth-of-type(2) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.font-lucida {
+  font-family: $font-monospace;
+}
+
+.font-georgia {
+  font-family: $font-serif;
+}
+
+.bordered-1,
+.bordered-2 {
+  border-style: solid;
+}
+
+.bordered-1 {
+  border-width: 0.1rem;
+}
+
+.bordered-2 {
+  border-width: 0.2rem;
+}
+
+.boxed {
+  box-shadow: $box-shadow-box-normal;
+}
+
+.boxed:hover {
+  box-shadow: $box-shadow-box-elevated;
+}
+
+/* ==========================================================================
+   Color related classes
+   ========================================================================== */
+
+/* Backgrounds */
+body,
+input[id="tabAbout"]:checked ~ nav .tabbar .tab label[for="tabAbout"],
+input[id="tabInterests"]:checked ~ nav .tabbar .tab label[for="tabInterests"],
+input[id="tabContact"]:checked ~ nav .tabbar .tab label[for="tabContact"],
+input[id="tabProjects"]:checked ~ nav .tabbar .tab label[for="tabProjects"],
+.box,
+footer {
+  background-color: $color-light;
+}
+
+mark {
+  background-color: $color-light-accent;
+}
+
+.button {
+  background-color: transparent;
+}
+
+/* Text */
+mark,
+.introduction,
+p {
+  color: $color-dark;
+}
+
+mark:hover,
+mark:hover a,
+.button:hover,
+.tabbar {
+  color: $color-light;
+}
+
+input[id="tabAbout"]:checked ~ nav .tabbar .tab label[for="tabAbout"],
+input[id="tabInterests"]:checked ~ nav .tabbar .tab label[for="tabInterests"],
+input[id="tabContact"]:checked ~ nav .tabbar .tab label[for="tabContact"],
+input[id="tabProjects"]:checked ~ nav .tabbar .tab label[for="tabProjects"],
+.lead span,
+a {
+  color: $color-dark-accent;
+}
+
+/* Accents */
+.tab,
+.button:hover,
+mark:hover,
+#tabAbout:checked ~ section p mark:hover,
+#tabInterests:checked ~ section p mark:hover,
+#tabProjects:checked ~ section p mark:hover,
+#tabContact:checked ~ section p mark:hover {
+  background-color: $color-dark-accent;
+}
+
+/* Borders */
+.button,
+.button:hover,
+.content,
+.bordered-1,
+.bordered-2 {
+  border-color: $color-dark-accent;
+}
+
+.content {
+  border-color: $color-dark;
+}
