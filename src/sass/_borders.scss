@@ -7,6 +7,7 @@ $border-width-2: $dim-2;
 %border-shared {
   border-color: $color-dark-accent;
   border-style: solid;
+  border-width: $dim-02;
 }
 
 @mixin noborder() {

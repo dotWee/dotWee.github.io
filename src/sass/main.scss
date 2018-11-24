@@ -44,6 +44,7 @@ main {
 
 .box {
   width: $dim-box;
+  box-shadow: $box-shadow-box-normal;
 
   padding-top: $dim-2;
   padding-bottom: $dim-1;
@@ -53,6 +54,10 @@ main {
     width: $dim-full;
     box-shadow: none;
   }
+}
+
+.box:hover {
+  box-shadow: $box-shadow-box-elevated;
 }
 
 /* Header with introduction */
@@ -172,6 +177,12 @@ nav {
 
     box-shadow: none !important;
   }
+
+  box-shadow: $box-shadow-box-normal;
+}
+
+nav:hover {
+  box-shadow: $box-shadow-box-elevated;
 }
 
 .tabbar {
@@ -191,7 +202,6 @@ nav {
 
   color: $color-light;
 
-
   @media only screen and (max-width: $screen-breakpoint) {
     @include noborder;
 
@@ -205,9 +215,14 @@ nav {
 }
 
 .tab {
+  @extend %border-shared;
+  border-width: $dim-01;
+
   background-color: $color-dark-accent;
 
   @media only screen and (max-width: $screen-breakpoint) {
+    background-color: $color-light;
+
     border-color: $color-dark-accent;
     border-width: $dim-02;
     border-style: solid;
@@ -225,10 +240,13 @@ label {
   padding: $dim-05;
   font-weight: $font-weight-thin;
 
-  background-color: $color-light;
-  color: $color-dark-accent;
+  background-color: $color-dark-accent;
+  color: $color-light;
 
   @media only screen and (max-width: $screen-breakpoint) {
+    background-color: $color-light;
+    color: $color-dark-accent;
+
     box-shadow: $box-shadow-normal;
   }
 }
@@ -237,10 +255,13 @@ label:hover {
   cursor: pointer;
   font-weight: $font-weight-normal;
 
-  background-color: $color-dark-accent;
-  color: $color-light;
+  background-color: $color-light;
+  color: $color-dark-accent;
 
   @media only screen and (max-width: $screen-breakpoint) {
+    background-color: $color-dark-accent;
+    color: $color-light;
+
     box-shadow: $box-shadow-elevated;
   }
 }
@@ -257,7 +278,11 @@ label:hover {
 #tabInterests:checked ~ section p mark:hover,
 #tabProjects:checked ~ section p mark:hover,
 #tabContact:checked ~ section p mark:hover {
-  background-color: $color-dark-accent;
+  background-color: $color-light;
+
+  @media only screen and (max-width: $screen-breakpoint) {
+    background-color: $color-dark-accent;
+  }
 }
 
 input[id="tabAbout"]:checked ~ nav .tabbar .tab label[for="tabAbout"],
@@ -266,10 +291,13 @@ input[id="tabContact"]:checked ~ nav .tabbar .tab label[for="tabContact"],
 input[id="tabProjects"]:checked ~ nav .tabbar .tab label[for="tabProjects"] {
   font-weight: $font-weight-normal;
 
-  background-color: $color-dark-accent;
-  color: $color-light;
+  background-color: $color-light;
+  color: $color-dark-accent;
 
   @media only screen and (max-width: $screen-breakpoint) {
+    background-color: $color-dark-accent;
+    color: $color-light;
+
     box-shadow: $box-shadow-elevated;
   }
 }
@@ -277,12 +305,14 @@ input[id="tabProjects"]:checked ~ nav .tabbar .tab label[for="tabProjects"] {
 /* Footnotes */
 .footnotes {
   @extend %grid-shared;
+  grid-template-columns: $grid-columns-2;
+
   margin-top: $dim-05;
   margin-bottom: $dim-05;
   padding: 0;
 }
 
-.footnotes,
+/* Content specific layouts */
 #projects .footnotes:nth-of-type(2) {
   grid-template-columns: $grid-columns-2;
 }
@@ -292,7 +322,7 @@ input[id="tabProjects"]:checked ~ nav .tabbar .tab label[for="tabProjects"] {
 }
 
 #projects .footnotes:nth-of-type(2) {
-  grid-template-columns: $grid-columns-4;
+  grid-template-columns: $grid-columns-2;
 }
 
 /* Footer */
@@ -303,6 +333,7 @@ footer {
   text-align: right;
 
   padding: $dim-1;
+  font-family: $font-monospace;
 
   @media only screen and (max-width: $screen-breakpoint) {
     position: initial;
@@ -313,6 +344,12 @@ footer {
     border: none !important;
     box-shadow: none !important;
   }
+
+  box-shadow: $box-shadow-box-normal;
+}
+
+footer:hover {
+  box-shadow: $box-shadow-box-elevated;
 }
 
 footer p {
@@ -329,24 +366,5 @@ footer p {
   margin-left: $dim-3;
   margin-right: $dim-3;
   margin-bottom: $dim-1;
-}
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-.font-lucida {
-  font-family: $font-monospace;
-}
-
-.font-georgia {
   font-family: $font-serif;
-}
-
-.boxed {
-  box-shadow: $box-shadow-box-normal;
-}
-
-.boxed:hover {
-  box-shadow: $box-shadow-box-elevated;
 }
