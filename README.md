@@ -16,6 +16,12 @@ Site should be then running on [localhost:80](http://localhost:80).
 + [dotwee.github.io](https://dotwee.github.io/)
 + [iamlukas.website](https://iamlukas.website/)
 
+## Color scheme
+
+![Color-scheme.png](docs/Color-scheme.png)
+
+([View online](https://coolors.co/28262c-eff1f3-070707-c5d5ea-14248a))
+
 ## Credits
 
 + [Nicolas Gallagher & Jonathan Neal](http://necolas.github.io/normalize.css/): for Normalize.css (MIT license)
