@@ -12,5 +12,11 @@
     "gulp-csso": "^3.0.1",
     "gulp-sass": "^4.0.2",
     "node-sass": "^4.10.0"
+  },
+  "scripts": {
+    "clean": "rm -r ./dist",
+    "webpack": "gulp",
+    "build": "npm run clean & npm run webpack",
+    "watch": "gulp watch"
   }
 }
