@@ -52,7 +52,7 @@ main {
   @media only screen and (max-width: $screen-breakpoint) {
     padding-top: $dim-2;
     width: $dim-full;
-    box-shadow: none;
+    box-shadow: $box-shadow-box-elevated;
   }
 }
 
@@ -195,12 +195,6 @@ nav:hover {
   grid-template-columns: $grid-columns-4;
   padding: 0;
   list-style: none;
-
-  border-color: $color-dark-accent;
-  border-width: $dim-02;
-  border-style: solid;
-
-  color: $color-light;
 
   @media only screen and (max-width: $screen-breakpoint) {
     @include noborder;
