@@ -4,6 +4,7 @@
   "private": true,
   "version": "1.0.0",
   "dependencies": {
+    "gulp-concat": "^2.6.1",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
