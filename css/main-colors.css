@@ -1,0 +1,70 @@
+/* ==========================================================================
+   Color related classes
+   ========================================================================== */
+
+/* Backgrounds */
+body,
+input[id="tabAbout"]:checked~nav .tabbar .tab label[for="tabAbout"],
+input[id="tabInterests"]:checked~nav .tabbar .tab label[for="tabInterests"],
+input[id="tabContact"]:checked~nav .tabbar .tab label[for="tabContact"],
+input[id="tabProjects"]:checked~nav .tabbar .tab label[for="tabProjects"],
+.box,
+footer {
+    background-color: #FFFFFF;
+}
+
+mark {
+    background-color: #EFF1F3;
+}
+
+.button {
+    background-color: transparent;
+}
+
+/* Text */
+mark,
+.introduction,
+p {
+    color: #010400;
+}
+
+mark:hover,
+mark:hover a,
+.button:hover,
+.tabbar {
+    color: #FFFFFF;
+}
+
+input[id="tabAbout"]:checked~nav .tabbar .tab label[for="tabAbout"],
+input[id="tabInterests"]:checked~nav .tabbar .tab label[for="tabInterests"],
+input[id="tabContact"]:checked~nav .tabbar .tab label[for="tabContact"],
+input[id="tabProjects"]:checked~nav .tabbar .tab label[for="tabProjects"],
+.lead span,
+a {
+    color: #14248A;
+}
+
+/* Accents */
+.tab,
+.button:hover,
+mark:hover,
+#tabAbout:checked~section p mark:hover,
+#tabInterests:checked~section p mark:hover,
+#tabProjects:checked~section p mark:hover,
+#tabContact:checked~section p mark:hover {
+    background-color: #14248A;
+}
+
+/* Borders */
+.button,
+.button:hover,
+.content,
+.bordered,
+.bordered-1,
+.bordered-2 {
+    border-color: #14248A;
+}
+
+.content {
+    border-color: #010400;
+}
