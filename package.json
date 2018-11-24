@@ -1,0 +1,13 @@
+{
+  "name": "portfolio",
+  "repository": "https://github.com/dotWee/dotWee.github.io",
+  "private": true,
+  "version": "1.0.0",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-csso": "^3.0.1"
+  }
+}

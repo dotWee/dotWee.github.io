@@ -22,3 +22,7 @@ vendor/
 # MacOS
 .DS_Store
 favicon.afdesign
+
+# Binaries
+node_modules/
+dist/
