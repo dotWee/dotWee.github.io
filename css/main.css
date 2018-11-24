@@ -120,10 +120,6 @@ body {
   width: 32rem;
 }
 
-.box {
-  width: 32rem;
-}
-
 h1 {
   font-weight: 300;
   padding-top: 1rem;
@@ -133,13 +129,8 @@ h1 {
   padding-right: 1rem;
 }
 
-.boxed,
-nav {
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-}
-
-.boxed:hover {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+header {
+  border-bottom: 0 !important;
 }
 
 .content {
@@ -155,19 +146,6 @@ nav {
   margin-bottom: 1rem;
 }
 
-@media only screen and (max-width: 600px) {
-  .container {
-    height: unset;
-    position: unset;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
-  .box {
-    width: 100%;
-  }
-}
-
 /* Content */
 
 .footnotes {
@@ -180,13 +158,16 @@ nav {
   grid-gap: 1rem;
 }
 
-.lead {
+p {
+
   text-align: justify;
   margin-top: 1rem;
   margin-bottom: 0;
 }
 
-.lead, small, h1 {
+.lead,
+small,
+h1 {
   font-size: 1.25rem;
   font-weight: 300;
   line-height: 1.8;
@@ -221,23 +202,10 @@ mark {
   background-color: transparent;
   background-image: none;
   margin: 0;
-  border-style: solid;
-  border-width: 0.1rem;
 }
 
-header {
-  border-color: #14248A;
-
-  border-left-style: solid;
-  border-right-style: solid;
-  border-top-style: solid;
-
-  border-left-width: 0.2rem;
-  border-right-width: 0.2rem;
-  border-top-width: 0.2rem;
-}
-
-mark, .btn {
+mark,
+.btn {
   padding-top: 0.3rem;
   padding-bottom: 0.2rem;
   padding-left: 0.4rem;
@@ -252,17 +220,9 @@ mark, .btn {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-@media only screen and (max-width: 600px) {
-  #projects .footnotes:nth-of-type(2) {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 /* Footer */
 
 footer {
-  font-family: "Lucida Console", Monaco, monospace;
-
   position: absolute;
   right: 1rem;
   bottom: 1rem;
@@ -323,8 +283,9 @@ p {
   color: #010400;
 }
 
-.btn, .content {
-  border-color:  #010400;
+.btn,
+.content {
+  border-color: #010400;
 }
 
 mark:hover,
@@ -348,8 +309,7 @@ mark:hover,
 
 .btn,
 .btn:hover,
-content,
-label {
+content {
   border-color: #14248A;
 }
 
@@ -373,9 +333,6 @@ a {
 
   margin-top: 2rem;
   padding-bottom: 1rem;
-
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 
 .content .lead:first-of-type {
@@ -392,8 +349,6 @@ label {
   display: block;
   padding: 0.5rem;
   font-weight: 400;
-  border-style: solid;
-  border-width: 0.2rem;
 }
 
 label:hover {
@@ -432,23 +387,7 @@ nav {
 @media only screen and (max-width: 600px) {
   .content {
     padding-left: 1rem;
-  padding-right: 1rem;
-  }
-
-  nav {
-    padding-top: 1rem;
-    width: 100%;
-    margin: 0;
-    box-shadow: unset;
-  }
-
-  .tabbar {
-    width: calc(100% - 2rem);
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 0.5rem;
-
-    margin-left: 1rem;
-    margin-right: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -456,12 +395,35 @@ nav {
    Helper classes
    ========================================================================== */
 
-.alignleft {
-  float: left;
+.font-lucida {
+  font-family: "Lucida Console", Monaco, monospace;
 }
 
-.alignright {
-  float: right;
+.font-georgia {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.bordered,
+.bordered-1,
+.bordered-2 {
+  border-color: #14248A;
+  border-style: solid;
+}
+
+.bordered-1 {
+  border-width: 0.1rem;
+}
+
+.bordered-2 {
+  border-width: 0.2rem;
+}
+
+.boxed {
+  box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.30), 0 1rem 0.75rem rgba(0, 0, 0, 0.22);
+}
+
+.boxed:hover {
+  box-shadow: 0 1rem 1.875rem rgba(0, 0, 0, 0.25), 0 0.625rem 0.625rem rgba(0, 0, 0, 0.22);
 }
 
 /*

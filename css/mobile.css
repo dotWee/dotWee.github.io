@@ -1,0 +1,70 @@
+/* ==========================================================================
+   Body
+   ========================================================================== */
+
+@media only screen and (max-width: 600px) {
+    .container {
+        height: unset;
+        position: unset;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .box {
+        width: 100%;
+    }
+}
+
+/* ==========================================================================
+   Tab
+   ========================================================================== */
+
+@media only screen and (max-width: 600px) {
+    nav {
+        padding-top: 1rem;
+        width: 100%;
+        margin: 0;
+        box-shadow: unset;
+    }
+
+    .tabbar {
+        width: calc(100% - 2rem);
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    /* Tab normal */
+    label {
+        box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.2);
+        background-color: #FFFFFF;
+        color: #14248A;
+    }
+
+    /* Tab hover */
+    label:hover {
+        box-shadow: 0.3rem 0.3rem 0.3rem 0.15rem rgba(0, 0, 0, 0.2);
+        background-color: #14248A;
+        color: #FFFFFF;
+    }
+
+    /* Tab clicked */
+
+    input[id="tabAbout"]:checked~nav .tabbar .tab label[for="tabAbout"],
+    input[id="tabInterests"]:checked~nav .tabbar .tab label[for="tabInterests"],
+    input[id="tabContact"]:checked~nav .tabbar .tab label[for="tabContact"],
+    input[id="tabProjects"]:checked~nav .tabbar .tab label[for="tabProjects"] {
+        box-shadow: 0.3rem 0.3rem 0.3rem 0.15rem rgba(0, 0, 0, 0.3);
+        background-color: #14248A;
+        color: #FFFFFF;
+    }
+}
+
+/* Tab contents */
+@media only screen and (max-width: 600px) {
+    #projects .footnotes:nth-of-type(2) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
