@@ -314,6 +314,7 @@ footer {
 
   padding: $dim-1;
   font-family: $font-monospace;
+  background-color: $color-light-accent;
 
   @media only screen and (max-width: $screen-breakpoint) {
     position: initial;
@@ -323,6 +324,7 @@ footer {
 
     border: none !important;
     box-shadow: none !important;
+    background-color: unset;
   }
 
   box-shadow: $box-shadow-box-normal;
