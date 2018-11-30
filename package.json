@@ -8,7 +8,7 @@
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-csso": "^3.0.1",
     "gulp-sass": "^4.0.2",
     "node-sass": "^4.10.0"
