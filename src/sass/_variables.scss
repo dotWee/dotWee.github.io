@@ -28,8 +28,11 @@ $dim-box: $dim-1 * 32;
 
 $screen-breakpoint: 600px;
 
-$box-shadow-normal: 0.2rem 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.2);
-$box-shadow-elevated: 0.3rem 0.3rem 0.3rem 0.15rem rgba(0, 0, 0, 0.2);
+$box-shadow-normal: 0.2rem 0.5rem 0.2rem 0.1rem rgba(0, 0, 0, 0.2);
+$box-shadow-elevated: 0.3rem 1rem 0.3rem 0.15rem rgba(0, 0, 0, 0.2);
 
-$box-shadow-box-normal: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.30), 0 1rem 0.75rem rgba(0, 0, 0, 0.22);
-$box-shadow-box-elevated: 0 1rem 1.875rem rgba(0, 0, 0, 0.25), 0 0.625rem 0.625rem rgba(0, 0, 0, 0.22);
+$box-shadow-box-normal: 0 0.25rem 2.5rem rgba(0, 0, 0, 0.30), 0 1rem 0.75rem rgba(0, 0, 0, 0.25);
+$box-shadow-box-elevated: 0 1rem 1.875rem rgba(0, 0, 0, 0.25), 0 0.625rem 0.625rem rgba(0, 0, 0, 0.25);
+
+$box-shadow-button-normal: 0.2rem 0.2rem 0.2rem 0.1rem rgba(0,0,0,.1);
+$box-shadow-button-elevated: 0.2rem 0.2rem 0.2rem 0.2rem rgba(0,0,0,.3);

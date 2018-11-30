@@ -50,9 +50,9 @@ main {
   padding-bottom: $dim-1;
 
   @media only screen and (max-width: $screen-breakpoint) {
-    padding-top: $dim-2;
+    padding-top: 0;
+    margin-top: 1rem;
     width: $dim-full;
-    box-shadow: $box-shadow-box-elevated;
   }
 }
 
@@ -149,10 +149,7 @@ mark:hover {
   background-color: transparent;
   padding: 0.3rem 0.4rem $dim-02;
   color: $color-dark-accent;
-
-  @media only screen and (max-width: $screen-breakpoint) {
-    box-shadow: $box-shadow-normal;
-  }
+  box-shadow: $box-shadow-button-normal;
 }
 
 .button:hover {
@@ -160,10 +157,7 @@ mark:hover {
 
   color: $color-light;
   background-color: $color-dark-accent;
-
-  @media only screen and (max-width: $screen-breakpoint) {
-    box-shadow: $box-shadow-elevated;
-  }
+  box-shadow: $box-shadow-button-elevated;
 }
 
 nav {
