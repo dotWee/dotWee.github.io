@@ -210,16 +210,13 @@ nav:hover {
 
 .tab {
   @extend %border-shared;
-  border-width: $dim-01;
 
   background-color: $color-dark-accent;
+  border-color: $color-dark-accent;
 
   @media only screen and (max-width: $screen-breakpoint) {
     background-color: $color-light;
-
     border-color: $color-dark-accent;
-    border-width: $dim-02;
-    border-style: solid;
   }
 }
 
@@ -266,17 +263,6 @@ label:hover {
 #tabProjects:checked ~ #projects,
 #tabContact:checked ~ #contact {
   display: block;
-}
-
-#tabAbout:checked ~ section p mark:hover,
-#tabInterests:checked ~ section p mark:hover,
-#tabProjects:checked ~ section p mark:hover,
-#tabContact:checked ~ section p mark:hover {
-  background-color: $color-light;
-
-  @media only screen and (max-width: $screen-breakpoint) {
-    background-color: $color-dark-accent;
-  }
 }
 
 input[id="tabAbout"]:checked ~ nav .tabbar .tab label[for="tabAbout"],
