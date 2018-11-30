@@ -213,11 +213,6 @@ nav:hover {
 
   background-color: $color-dark-accent;
   border-color: $color-dark-accent;
-
-  @media only screen and (max-width: $screen-breakpoint) {
-    background-color: $color-light;
-    border-color: $color-dark-accent;
-  }
 }
 
 input {
