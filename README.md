@@ -4,11 +4,11 @@ A simple introduction / portfolio site using [Jekyll](https://jekyllrb.com/) and
 
 ## Running
 
-Serve this website locally using Docker:
+Installing dependencies: `$ npm install`
 
-`$ docker-compose up`
+For local development: `$ npm run gulp` and open [./dist/index.html](./dist/index.html).
 
-Site should be then running on [localhost:80](http://localhost:80).
+For deploying: `$ npm run build`
 
 ## Deployments
 
@@ -25,6 +25,7 @@ Site should be then running on [localhost:80](http://localhost:80).
 ## Credits
 
 + [Nicolas Gallagher & Jonathan Neal](http://necolas.github.io/normalize.css/): for Normalize.css (MIT license)
++ The [HTML5 Boilerplate](https://html5boilerplate.com) for its base code
 
 ## License
 
