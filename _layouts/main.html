@@ -1,0 +1,39 @@
+---
+stylesheet: main.css
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ site.title }}</title>
+
+    <!-- Search engines control -->
+    {% include seo.html %}
+
+    <!-- Structured Data -->
+    {% include sd.html %}
+
+    <!-- Layout management -->
+    <meta name="theme-color" content="#000000">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Prefetch linked sites -->
+    <link rel="dns-prefetch" href="/disclaimer">
+
+    <!-- Default page style -->
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/{{ layout.stylesheet }}">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    {% include analytics.html %}
+</head>
+
+<body>
+
+    {{ content }}
+
+</body>
+
+</html>

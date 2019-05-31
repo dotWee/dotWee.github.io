@@ -1,0 +1,19 @@
+<section class="entry">
+    <table>
+        <tr>
+            <th>
+                <small>interests</small>
+            </th>
+        </tr>
+
+        <tr>
+            <td>
+                <ul>
+                    {% for entry in site.data.interests %}
+                    <li>{{ entry.name }}</li>
+                    {% endfor %}
+                </ul>
+            </td>
+        </tr>
+    </table>
+</section>

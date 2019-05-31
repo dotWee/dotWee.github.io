@@ -4,23 +4,17 @@ A simple introduction / portfolio site using [Jekyll](https://jekyllrb.com/) and
 
 ## Running
 
-Installing dependencies: `$ npm install`
+Installing dependencies: `$ bundle install`
 
-For local development: `$ npm run gulp` and open [./dist/index.html](./dist/index.html).
+For local development: `$ bundle exec jekyll serve` and open [http://localhost:4000](http://localhost:4000).
 
-For deploying: `$ npm run build`
+For deploying: `$ bundle exec jekyll build`
 
 ## Deployments
 
 + [dotwee.de](https://dotwee.de)
 + [dotwee.github.io](https://dotwee.github.io/)
 + [iamlukas.website](https://iamlukas.website/)
-
-## Color scheme
-
-![Color-scheme.png](docs/Color-scheme.png)
-
-([View online](https://coolors.co/28262c-eff1f3-070707-c5d5ea-14248a))
 
 ## Credits
 

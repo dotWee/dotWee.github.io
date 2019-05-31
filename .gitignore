@@ -1,28 +1,3 @@
-# JetBrains
-*.iml
-.idea/
-
-# Gradle
-.gradle
-build/
-
-# Apache
-.htaccess
-.htusers
-
-# Web-server
-robots.txt
-
-# Jekyll
 _site
 .sass-cache
 .jekyll-metadata
-vendor/
-
-# MacOS
-.DS_Store
-favicon.afdesign
-
-# Binaries
-node_modules/
-dist/

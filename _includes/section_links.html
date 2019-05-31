@@ -1,0 +1,33 @@
+<section class="entry">
+    <table>
+        <tr>
+            <th>
+                <small>publications</small>
+            </th>
+            <th>
+                <small>contact</small>
+            </th>
+        </tr>
+
+        <tr>
+            <td>
+                <ul>
+                    {% for entry in site.data.publications %}
+                    <li>
+                        <a class="link" href="{{ entry.link }}">{{ entry.name }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    {% for entry in site.data.contact %}
+                    <li>
+                        <a class="link" href="{{ entry.link }}">{{ entry.name }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </td>
+        </tr>
+    </table>
+</section>
