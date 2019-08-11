@@ -1,0 +1,105 @@
+.element-sidebar {
+    grid-area: sidebar;
+}
+
+.element-sidebar, .element-content {
+    position: relative;
+    padding: .5rem;
+}
+
+.element-sidebar div {
+    padding: 2rem
+}
+
+.element-sidebar span {
+    margin-bottom: 1rem
+}
+
+.element-content {
+    grid-area: content;
+}
+
+.element-content div {
+    padding: 1rem;
+}
+
+.element-copyright {
+    grid-area: copyright;
+}
+
+.element-disclaimer {
+    grid-area: disclaimer;
+}
+
+.container {
+    padding: 2rem;
+    display: grid;
+    grid-gap: 6rem;
+    grid-template-columns: 24rem auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "sidebar content"
+        "sidebar ."
+        "disclaimer copyright";
+
+    width: unset;
+    height: unset;
+    align-items: unset;
+    justify-content: unset;
+}
+
+.caption {
+    font-weight: normal;
+    line-height: 100%;
+    text-transform: uppercase;
+    font-family: Helvetica, sans-serif;
+    text-align: left;
+    font-size: .8rem;
+    color: #000
+}
+
+h2 {
+    font-weight: normal;
+    line-height: 100%;
+    color: blue;
+    margin: 0;
+}
+
+@media only screen and (max-width: 599px) {
+    h2, span {
+        color: orange;
+    }
+
+    .container {
+        grid-template-areas: 
+        "sidebar sidebar"
+        "content content"
+        "disclaimer copyright";
+    }
+}
+
+@media only screen and (min-width: 600px ) {
+    h2, span {
+        color: red;
+    }
+
+    .container {
+        grid-template-areas: 
+        "sidebar sidebar sidebar"
+        "content content content"
+        "disclaimer . copyright";
+    }
+}
+
+@media only screen and (min-width: 980px ) {
+    h2, span {
+        color: brown;
+    }
+}
+
+@media only screen and (min-width: 1260px ) {
+    h2, span {
+        color: grey;
+
+    }
+}

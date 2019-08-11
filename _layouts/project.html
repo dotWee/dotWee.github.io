@@ -1,0 +1,71 @@
+---
+stylesheet: project.css
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ site.title }}</title>
+
+    <!-- Search engines control -->
+    {% include seo.html %}
+
+    <!-- Structured Data -->
+    {% include sd.html %}
+
+    <!-- Layout management -->
+    <meta name="theme-color" content="#000000">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Prefetch linked sites -->
+    <link rel="dns-prefetch" href="/disclaimer">
+
+    <!-- Default page style -->
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/{{ layout.stylesheet }}">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    {% include analytics.html %}
+</head>
+
+<body>
+    <section class="container">
+        <div class="element element-sidebar bordered">
+            <div class="bordered">
+                <header class="title">
+                    <h1>I'm Lukas,</h1>
+                </header>
+
+                <br>
+
+                {% include section_about.html %}
+
+                <hr>
+
+                {% include section_interests.html %}
+
+                <hr>
+
+                {% include section_links.html %}
+
+                {% include corners.html %}
+            </div>
+        </div>
+
+        <div class="element element-content bordered">
+            <div class="bordered">
+                {{ content }}
+
+                {% include corners.html %}
+            </div>
+
+        </div>
+        <div class="element element-disclaimer"></div>
+        <div class="element element-copyright"></div>
+    </section>
+</body>
+
+</html>
