@@ -7,7 +7,6 @@ html, body {
 
 .container {
     height: 100%;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center
@@ -17,7 +16,7 @@ html, body {
     border: .2rem solid #000
 }
 
-#main-wrapper {
+#content {
     position: relative;
     display: inline-block;
     padding: .5rem;
@@ -25,11 +24,11 @@ html, body {
     margin: 0 auto
 }
 
-#main-wrapper div {
+#content div {
     padding: 2rem
 }
 
-#main-wrapper span {
+#content span {
     margin-bottom: 1rem
 }
 
@@ -126,29 +125,29 @@ h1 {
     text-decoration: underline
 }
 
-.footer-wrapper, .disclaimer-wrapper {
+.copyright, .disclaimer {
     font-family: "Lucida Console", Monaco, monospace;
     text-align: right;
     position: fixed;
     bottom: 1rem
 }
 
-.footer-wrapper {
+.copyright {
     right: 1rem
 }
 
-.footer-wrapper p {
+.copyright p {
     font-size: .7rem;
     line-height: 1rem;
     padding: 0;
     margin: 0
 }
 
-.disclaimer-wrapper {
+.disclaimer {
     left: 1rem
 }
 
-.disclaimer-wrapper a {
+.disclaimer a {
     font-size: .7rem;
     line-height: 1rem;
     padding: 0;
@@ -164,21 +163,25 @@ h1 {
         text-align: center
     }
 
-    #main-wrapper {
+    #content {
         margin: 1rem
     }
 
-    #main-wrapper div {
+    #content div {
         padding: .5rem;
         padding: 1rem 1rem 2rem
     }
 
-    .disclaimer-wrapper {
+    .footer {
+        padding-bottom: .5rem;
+    }
+
+    .disclaimer {
         position: inherit;
         margin-right: 1rem
     }
 
-    .footer-wrapper {
+    .copyright {
         position: inherit;
         margin-right: 1rem;
         margin-bottom: 1rem
