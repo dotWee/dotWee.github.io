@@ -1,28 +1,58 @@
-# dotWee.github.io
+# [dotwee.github.io](https://dotwee.github.io/)
 
-A simple introduction / portfolio site using [Jekyll](https://jekyllrb.com/) and some handcrafted stylesheets.
+_a simple personal single-page* website built using [jekyll](https://jekyllrb.com/) and some handcrafted** stylesheets_
 
-## Running
+<sub>* almost. has dedicated privacy, 403 & 404 page</sub>
+</br>
+<sub>** mostly. except <a href="http://necolas.github.io/normalize.css/">normalize.css</a></sub>
 
-Installing dependencies: `$ bundle install`
+## setup
 
-For local development: `$ bundle exec jekyll serve` and open [http://localhost:4000](http://localhost:4000).
+1. install a full [ruby development environment](https://jekyllrb.com/docs/installation/)
+2. install [jekyll](https://jekyllrb.com/) and [bundler](https://jekyllrb.com/docs/ruby-101/#bundler) [gems](https://jekyllrb.com/docs/ruby-101/#gems):
 
-For deploying: `$ bundle exec jekyll build`
+    ```bash
+    $ gem install jekyll bundler
+    ```
 
-## Deployments
+3. clone git repository and change into repo directory:
 
-+ [lukas.wolfsteiner.media](https://lukas.wolfsteiner.media)
-+ [dotwee.de](https://dotwee.de)
-+ [dotwee.github.io](https://dotwee.github.io/)
-+ [iamlukas.website](https://iamlukas.website/)
+    ```bash
+    $ git clone https://github.com/dotWee/dotWee.github.io.git dotwee-github-io && cd dotwee-github-io
+    ```
 
-## Credits
+## usage
 
-+ [Nicolas Gallagher & Jonathan Neal](http://necolas.github.io/normalize.css/): for Normalize.css (MIT license)
-+ The [HTML5 Boilerplate](https://html5boilerplate.com) for its base code
+### run site locally using [jekyll](https://jekyllrb.com/)
 
-## License
+1. install required dependencies:
 
-Copyright (c) 2015 Lukas 'dotwee' Wolfsteiner
-Licensed under the [_Do What The Fuck You Want To_](/LICENSE) public license
+    ```bash
+    $ bundle install
+    ```
+
+2. build the site and make it available on a local server:
+
+    ```bash
+    $ bundle exec jekyll serve
+    ```
+
+3. now browse to [localhost:4000](http://localhost:4000)
+
+### update [ruby gems](https://rubygems.org/) dependencies
+
+```bash
+$ bundle update
+```
+
+### cleanup binaries
+
+```bash
+$ bundle exec jekyll clean
+```
+
+## license
+
+copyright (c) 2015 lukas 'dotwee' wolfsteiner <lukas@wolfsteiner.media>
+
+licensed under the [_do what the fuck you want to_](/LICENSE) public license
