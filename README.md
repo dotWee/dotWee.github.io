@@ -39,6 +39,37 @@ _a simple personal single-page* website built using [jekyll](https://jekyllrb.co
 
 3. now browse to [localhost:4000](http://localhost:4000)
 
+### run site using [docker](https://www.docker.com/)
+
+```bash
+$ docker run --rm \
+    --name dotwee-github-io \
+    -p 4000:4000 \
+    --volume="$PWD:/srv/jekyll" \
+    -it jekyll/jekyll:latest \
+    jekyll serve --force_polling --livereload
+```
+
+alternatively using [docker-compose](https://docs.docker.com/compose):
+
+> **note**: see [./docker-compose.yml](./docker-compose.yml) for reference
+
+```yaml
+version: '3.7'
+services:
+  dotwee-github-io:
+    image: jekyll/jekyll:latest
+    command: jekyll serve --watch --force_polling
+    volumes:
+      - $PWD:/srv/jekyll
+    ports:
+      - 4000:4000
+```
+
+```bash
+$ docker-compose up -d
+```
+
 ### update [ruby gems](https://rubygems.org/) dependencies
 
 ```bash
