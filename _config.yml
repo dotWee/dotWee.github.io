@@ -35,6 +35,7 @@ exclude:
   - status_waiting.lock
   - Gemfile
   - Gemfile.lock
+  - vendor
 #   - Gemfile.lock
 #   - node_modules
 #   - vendor/bundle/
