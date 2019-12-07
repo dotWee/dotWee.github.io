@@ -6,12 +6,9 @@ rvm:
 # the `install` step will run `bundle install` by default.
 script: ./scripts/cibuild
 
-# branch whitelist, only for GitHub Pages
 branches:
   only:
-  - master       # test the travis branch
-  - gh-pages     # test the gh-pages branch
-  - /pages-(.*)/ # test every branch which starts with "pages-"
+  - travis       # test the travis branch
 
 env:
   global:
@@ -37,4 +34,4 @@ deploy:
   keep_history: true
   local_dir: ./_site
   on:
-    branch: master
+    branch: travis

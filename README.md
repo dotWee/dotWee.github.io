@@ -1,6 +1,6 @@
 # [dotwee.github.io](https://dotwee.github.io/)
 
-[![Build Status](https://travis-ci.org/dotWee/dotWee.github.io.svg?branch=master)](https://travis-ci.org/dotWee/dotWee.github.io)
+[![Build Status](https://travis-ci.org/dotWee/dotWee.github.io.svg?branch=travis)](https://travis-ci.org/dotWee/dotWee.github.io)
 
 _a simple personal single-page* website built using [jekyll](https://jekyllrb.com/) and some handcrafted** stylesheets_
 
