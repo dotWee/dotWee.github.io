@@ -10,3 +10,6 @@ vendor/
 
 # Ignore files related to macOS
 .DS_Store
+
+# Ignore private deploy script
+scripts/deploy
