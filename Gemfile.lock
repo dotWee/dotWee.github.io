@@ -67,7 +67,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll (~> 4.0)
+  jekyll (~> 4.1.1)
   jekyll-favicon
   jekyll-sitemap
   tzinfo-data
