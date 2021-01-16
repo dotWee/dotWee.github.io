@@ -70,6 +70,7 @@ DEPENDENCIES
   jekyll (~> 4.1.1)
   jekyll-favicon
   jekyll-sitemap
+  tzinfo (~> 1.2)
   tzinfo-data
 
 BUNDLED WITH
