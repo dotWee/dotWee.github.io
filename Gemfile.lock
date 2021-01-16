@@ -12,7 +12,7 @@ GEM
     ffi (1.13.1)
     forwardable-extended (2.6.0)
     http_parser.rb (0.6.0)
-    i18n (1.8.5)
+    i18n (1.8.7)
       concurrent-ruby (~> 1.0)
     jekyll (4.1.1)
       addressable (~> 2.4)
@@ -47,7 +47,7 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
-    mini_magick (4.10.1)
+    mini_magick (4.11.0)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (4.0.6)
@@ -55,7 +55,7 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rexml (3.2.4)
-    rouge (3.24.0)
+    rouge (3.26.0)
     safe_yaml (1.0.5)
     sassc (2.4.0)
       ffi (~> 1.9)
@@ -64,7 +64,7 @@ GEM
     unicode-display_width (1.7.0)
 
 PLATFORMS
-  ruby
+  universal-darwin-19
 
 DEPENDENCIES
   jekyll (~> 4.1.1)
@@ -72,6 +72,7 @@ DEPENDENCIES
   jekyll-sitemap
   tzinfo (~> 1.2)
   tzinfo-data
+  wdm (~> 0.1.1)
 
 BUNDLED WITH
-   2.1.4
+   2.2.5
