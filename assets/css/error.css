@@ -1,0 +1,63 @@
+html, body { font-family: Georgia, serif; letter-spacing: .014rem; height: 100%; width: 100%; }
+
+.container { height: 100%; display: flex; align-items: center; justify-content: center; }
+
+.bordered { border: .2rem solid #000; }
+
+#content { position: relative; display: inline-block; padding: .5rem; width: 24rem; margin: 0 auto; }
+
+#content div { padding: 2rem; }
+
+#content span { margin-bottom: 1rem; }
+
+svg { display: block; max-width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; }
+
+span, li, a, h1 { color: blue; }
+
+.corner-line { fill: none; stroke: #000; stroke-miterlimit: 10; position: absolute; stroke-width: .2em; width: 60px; height: 60px; }
+
+.corner-line-top-left { top: -0.7rem; left: -0.7rem; }
+
+.corner-line-top-right { top: -0.7rem; right: -0.7rem; }
+
+.corner-line-bottom-left { bottom: -0.7rem; left: -0.7rem; }
+
+.corner-line-bottom-right { bottom: -0.7rem; right: -0.7rem; }
+
+hr { border: none; height: .2rem; color: #000; margin-bottom: 1rem; margin-top: 1rem; background-color: #000; }
+
+h1 { font-weight: normal; line-height: 100%; }
+
+.entry { font-size: 1.4rem; text-align: left; margin-bottom: 1rem; display: grid; }
+
+.entry small { font-weight: normal; line-height: 100%; text-transform: uppercase; font-family: Helvetica, sans-serif; text-align: left; font-size: .8rem; color: #000; }
+
+.entry ul { list-style-type: none; padding: 0; margin: 0; }
+
+.entry ul li > a { text-decoration: none; }
+
+.entry table tr td > a { text-decoration: none; }
+
+.entry ul li > a:hover, .entry table tr td > a:hover { text-decoration: underline; }
+
+.copyright, .disclaimer { font-family: "Lucida Console", Monaco, monospace; text-align: right; position: fixed; bottom: 1rem; }
+
+.copyright { right: 1rem; }
+
+.copyright p { font-size: .7rem; line-height: 1rem; padding: 0; margin: 0; }
+
+.disclaimer { left: 1rem; }
+
+.disclaimer a { font-size: .7rem; line-height: 1rem; padding: 0; margin: 0; }
+
+@media screen and (max-width: 500px) { body { height: unset; } .title { text-align: center; } #content { margin: 1rem; } #content div { padding: .5rem; padding: 1rem 1rem 2rem; } .footer { padding-bottom: .5rem; } .disclaimer { position: inherit; margin-right: 1rem; } .copyright { position: inherit; margin-right: 1rem; margin-bottom: 1rem; } }
+
+strong { font-weight: normal; }
+
+table { width: 100%; }
+
+.container { margin: 10px auto; max-width: 600px; text-align: center; }
+
+h1 { margin: 30px 0; font-size: 4em; line-height: 1; letter-spacing: -1px; }
+
+/*# sourceMappingURL=error.css.map */
