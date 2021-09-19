@@ -44,6 +44,7 @@ exclude:
   - vendor/ruby/
   - scripts/
   - .DS_Store
+  - Dockerfile
   - LICENSE
 #  - Gemfile.lock
 #  - node_modules
