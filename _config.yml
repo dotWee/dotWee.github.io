@@ -21,10 +21,12 @@ url: "https://lukas.wolfsteiner.media" # the base hostname & protocol for your s
 
 # Build settings
 markdown: kramdown
+
 # theme: minima
 plugins:
   - jekyll-sitemap
   - jekyll-favicon
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -43,3 +45,21 @@ exclude:
   - scripts/
 #  - Gemfile.lock
 #  - node_modules
+
+# Config for jekyll-seo-tag
+logo: /favicon.png
+author: lukaswolfsteiner
+
+twitter:
+  username: dnkncht
+  card: summary
+
+social:
+  name: Lukas Wolfsteiner
+  links:
+    - https://twitter.com/dnkncht
+    - https://www.xing.com/profile/Lukas_Wolfsteiner2
+    - https://www.linkedin.com/in/lukas-wolfsteiner
+    - https://instagram.com/dnkncht
+    - https://github.com/dotWee
+    - https://keybase.io/dotwee
