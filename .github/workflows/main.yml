@@ -22,7 +22,7 @@ jobs:
         with:
           enable_cache: true
 
-      - name: Safe built site as artifact
+      - name: Persist built site as artifact
         uses: actions/upload-artifact@v2
         with:
           name: site
@@ -32,18 +32,15 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    if: ${{ github.ref == 'refs/heads/master' }}
     steps:
       - name: Download static webpage files
         uses: actions/download-artifact@v2
         with:
           name: site
 
-      - name: Display structure of downloaded files
-        run: ls -R
-
       - name: Deploy site to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/master' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .
