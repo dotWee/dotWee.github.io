@@ -21,6 +21,13 @@ jobs:
         uses: limjh16/jekyll-action-ts@v2
         with:
           enable_cache: true
+
+      - name: Safe built site as artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: site
+          path: ./_site/
+          if-no-files-found: error
       
       - name: Deploy site to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
