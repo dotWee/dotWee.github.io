@@ -55,7 +55,7 @@ jobs:
           platforms: linux/amd64,linux/arm64
           context: .
           push: false
-          outputs: type=tar,dest=./docker/
+          outputs: type=local,dest=./docker/
           tags: dotwee/lukas-wolfsteiner:latest
 
       - name: Preserve docker images as artifacts
