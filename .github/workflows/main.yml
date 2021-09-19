@@ -1,6 +1,7 @@
 name: Jekyll Build & Deploy
 
 on:
+  workflow_dispatch:
   push:
     branches: [ master ]
 
