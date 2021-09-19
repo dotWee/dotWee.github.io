@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "plaintext.css",
+	"sources": [
+		"plaintext.scss",
+		"_sass/plaintext.scss"
+	],
+	"sourcesContent": [
+		"@import \"plaintext\";",
+		"body {\n    font-family: \"Times New Roman\", Times, serif;\n    color: black;\n    padding: 2.5rem 5rem;\n}\n\nstrong,\n.tsmcontroller {\n    color: blue\n}"
+	],
+	"names": [],
+	"mappings": "ACAA,AAAA,IAAI,CAAC,EACD,WAAW,EAAE,+BAA+B,EAC5C,KAAK,EAAE,KAAK,EACZ,OAAO,EAAE,WAAW,GACvB;;AAED,AAAA,MAAM,EACN,cAAc,CAAC,EACX,KAAK,EAAE,IACX,GAAC"
+}
