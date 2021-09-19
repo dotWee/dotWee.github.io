@@ -61,7 +61,6 @@ jobs:
       - name: Preserve docker images as artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: docker
           path: ./docker/
           if-no-files-found: error
 
