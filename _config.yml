@@ -43,6 +43,8 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - scripts/
+  - .DS_Store
+  - LICENSE
 #  - Gemfile.lock
 #  - node_modules
 
