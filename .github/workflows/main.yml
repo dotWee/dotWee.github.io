@@ -17,6 +17,11 @@ jobs:
         with:
           ruby-version: 2.7 # Not needed with a .ruby-version file
           bundler-cache: true
+
+      - name: Install dependencies & build site using jekyll
+        uses: limjh16/jekyll-action-ts@v2
+        with:
+          enable_cache: true
       
       - name: Deploy site to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
@@ -24,3 +29,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
+          allow_empty_commit: true
