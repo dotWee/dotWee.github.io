@@ -1,9 +1,0 @@
-version: '3.7'
-services:
-  dotwee-github-io:
-    image: jekyll/jekyll:latest
-    command: jekyll serve --watch --force_polling --livereload
-    volumes:
-      - $PWD:/srv/jekyll
-    ports:
-      - 4000:4000
