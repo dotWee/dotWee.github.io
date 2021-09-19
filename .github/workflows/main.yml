@@ -29,7 +29,7 @@ jobs:
           name: site
           path: ./_site/
           if-no-files-found: error
- 
+  
   build:
     needs: generate
     runs-on: ubuntu-latest
@@ -40,7 +40,8 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: site
-          path: _site
+          path: _site/
+      - run: ls -R
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
@@ -52,12 +53,14 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           platforms: linux/amd64,linux/arm64
+          context: .
           push: false
           tags: dotwee/lukas-wolfsteiner:latest
 
   deploy:
     needs: generate
     runs-on: ubuntu-latest
+    if: ${{ github.ref == 'refs/heads/master' }}
     name: Deploy generated site to GitHub pages
     steps:
       - name: Download static webpage files
@@ -67,7 +70,6 @@ jobs:
 
       - name: Deploy site to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/master' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .
