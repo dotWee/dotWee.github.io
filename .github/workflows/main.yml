@@ -55,7 +55,15 @@ jobs:
           platforms: linux/amd64,linux/arm64
           context: .
           push: false
+          outputs: type=tar,dest=./docker/
           tags: dotwee/lukas-wolfsteiner:latest
+
+      - name: Preserve docker images as artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: docker
+          path: ./docker/
+          if-no-files-found: error
 
   deploy:
     needs: generate
