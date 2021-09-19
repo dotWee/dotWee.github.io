@@ -6,15 +6,16 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
+  generate:
     runs-on: ubuntu-latest
+    name: Generate static website
     steps:
       - uses: actions/checkout@v2
 
       - name: Use ruby/setup-ruby to shorten build times
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.7 # Not needed with a .ruby-version file
+          ruby-version: 2.7
           bundler-cache: true
 
       - name: Install dependencies & build site using jekyll
@@ -28,11 +29,46 @@ jobs:
           name: site
           path: ./_site/
           if-no-files-found: error
+  
+  build:
+    needs: generate
+    runs-on: ubuntu-latest
+    name: Build docker image
+    steps:
+      - uses: actions/checkout@v2
+      - name: Download static webpage files
+        uses: actions/download-artifact@v2
+        with:
+          name: site
+          path: _site/
+      - run: ls -R
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v1
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+
+      - name: Build docker image
+        uses: docker/build-push-action@v2
+        with:
+          platforms: linux/amd64,linux/arm64
+          context: .
+          push: false
+          outputs: type=local,dest=./docker/
+          tags: dotwee/lukas-wolfsteiner:latest
+
+      - name: Preserve docker images as artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          path: ./docker/
+          if-no-files-found: error
 
   deploy:
-    needs: build
+    needs: generate
     runs-on: ubuntu-latest
     if: ${{ github.ref == 'refs/heads/master' }}
+    name: Deploy generated site to GitHub pages
     steps:
       - name: Download static webpage files
         uses: actions/download-artifact@v2
@@ -45,3 +81,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .
           allow_empty_commit: true
+          
