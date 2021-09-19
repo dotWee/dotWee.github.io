@@ -11,21 +11,17 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Use GitHub Actions' cache to shorten build times and decrease load on servers
+      - name: Use GitHub Actions' cache to shorten build times & decrease load on servers
         uses: actions/cache@v2
         with:
           path: vendor/bundle
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
           restore-keys: |
             ${{ runner.os }}-gems-
-
-      - name: Install imagemagick package
-        run: |
-          sudo apt-get -y install imagemagick imagemagick-doc
-          cat /etc/ImageMagick-6/policy.xml
-
-      - name: Build the site and deploy to GitHub Pages
-        uses: helaili/jekyll-action@v2
+      
+      - name: Deploy site to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/master' }}
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          target_branch: 'gh-pages'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
