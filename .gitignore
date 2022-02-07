@@ -13,3 +13,6 @@ vendor/
 
 # Ignore private deploy script
 scripts/deploy
+
+# Ignore related gem files
+Gemfile.lock
