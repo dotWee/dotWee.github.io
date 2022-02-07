@@ -15,8 +15,8 @@ jobs:
       - name: Use ruby/setup-ruby to shorten build times
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.7
-
+          bundler-cache: true
+          
       - name: Install dependencies & build site using jekyll
         uses: limjh16/jekyll-action-ts@v2
 
