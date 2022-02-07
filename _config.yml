@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Lukas Wolfsteiner
-description: A medical health informatics student at the technical university of applied sciences in regensburg, germany
+description: computer science student at the technical university of applied sciences in regensburg, germany
 email: lukas@wolfsteiner.media
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lukas.wolfsteiner.media" # the base hostname & protocol for your site, e.g. http://example.com
