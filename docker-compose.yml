@@ -1,6 +1,6 @@
 version: '3.7'
 services:
-  dotwee-github-io:
+  jekyll:
     image: jekyll/jekyll:latest
     command: jekyll serve --watch --force_polling --livereload
     volumes:

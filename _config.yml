@@ -44,7 +44,6 @@ exclude:
   - vendor/ruby/
   - scripts/
   - .DS_Store
-  - Dockerfile
   - docker-compose.yml
   - LICENSE
 #  - Gemfile.lock
