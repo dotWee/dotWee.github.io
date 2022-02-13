@@ -1,10 +1,10 @@
 # [dotwee.github.io](https://dotwee.github.io/)
 
-[![Build Status](https://travis-ci.org/dotWee/dotWee.github.io.svg?branch=travis)](https://travis-ci.org/dotWee/dotWee.github.io)
+[![Jekyll Build & Deploy](https://github.com/dotWee/dotWee.github.io/actions/workflows/main.yml/badge.svg)](https://github.com/dotWee/dotWee.github.io/actions/workflows/main.yml)
 
 _a simple personal single-page* website built using [jekyll](https://jekyllrb.com/) and some handcrafted** stylesheets_
 
-<sub>* almost. has dedicated privacy, 403 & 404 page</sub>
+<sub>* almost. has dedicated `[imprint, 403, 404]` page</sub>
 </br>
 <sub>** mostly. except <a href="http://necolas.github.io/normalize.css/">normalize.css</a></sub>
 
