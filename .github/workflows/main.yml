@@ -4,6 +4,8 @@ on:
   workflow_dispatch:
   push:
     branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 jobs:
   generate:
@@ -31,7 +33,7 @@ jobs:
   deploy:
     needs: generate
     runs-on: ubuntu-latest
-    if: ${{ github.ref == 'refs/heads/master' }}
+    if: ${{ github.event_name == 'push' }}
     name: Deploy generated site to GitHub pages
     steps:
       - name: Download static webpage files
@@ -45,4 +47,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .
           allow_empty_commit: true
-          
