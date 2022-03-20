@@ -18,7 +18,8 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-          ruby-version: 2.7
+          ruby-version: '3.0'
+          cache-version: 1
           
       - name: Install dependencies & build site using jekyll
         uses: limjh16/jekyll-action-ts@v2
