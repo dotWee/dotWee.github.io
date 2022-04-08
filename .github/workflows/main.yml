@@ -25,7 +25,7 @@ jobs:
         uses: limjh16/jekyll-action-ts@v2
 
       - name: Persist built site as artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: site
           path: ./_site/
