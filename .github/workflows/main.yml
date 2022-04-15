@@ -38,7 +38,7 @@ jobs:
     name: Deploy generated site to GitHub pages
     steps:
       - name: Download static webpage files
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: site
 
