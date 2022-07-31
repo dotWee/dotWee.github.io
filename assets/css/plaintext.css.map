@@ -7,8 +7,8 @@
 	],
 	"sourcesContent": [
 		"@import \"plaintext\";",
-		"body {\n    font-family: \"Times New Roman\", Times, serif;\n    color: black;\n    padding: 2.5rem 5rem;\n}\n\nstrong,\n.tsmcontroller {\n    color: blue\n}"
+		"body {\n    font-family: \"Times New Roman\", Times, serif;\n    color: black;\n    padding: 2.5rem 5rem;\n}\n\nh1, h2, h3 {\n    letter-spacing: 1px;\n}\n\nstrong,\n.tsmcontroller {\n    color: blue\n}"
 	],
 	"names": [],
-	"mappings": "ACAA,AAAA,IAAI,CAAC,EACD,WAAW,EAAE,+BAA+B,EAC5C,KAAK,EAAE,KAAK,EACZ,OAAO,EAAE,WAAW,GACvB;;AAED,AAAA,MAAM,EACN,cAAc,CAAC,EACX,KAAK,EAAE,IACX,GAAC"
+	"mappings": "ACAA,AAAA,IAAI,CAAC,EACD,WAAW,EAAE,+BAA+B,EAC5C,KAAK,EAAE,KAAK,EACZ,OAAO,EAAE,WAAW,GACvB;;AAED,AAAA,EAAE,EAAE,EAAE,EAAE,EAAE,CAAC,EACP,cAAc,EAAE,GAAG,GACtB;;AAED,AAAA,MAAM,EACN,cAAc,CAAC,EACX,KAAK,EAAE,IACX,GAAC"
 }

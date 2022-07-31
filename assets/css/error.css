@@ -14,6 +14,8 @@ svg { display: block; max-width: 100%; -webkit-box-sizing: border-box; -moz-box-
 
 span, li, a, h1 { color: blue; }
 
+ul > li { text-transform: lowercase; }
+
 .corner-line { fill: none; stroke: #000; stroke-miterlimit: 10; position: absolute; stroke-width: .2em; width: 60px; height: 60px; }
 
 .corner-line-top-left { top: -0.7rem; left: -0.7rem; }
