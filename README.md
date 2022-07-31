@@ -14,7 +14,7 @@ _a simple personal single-page* website built using [jekyll](https://jekyllrb.co
 2. install [jekyll](https://jekyllrb.com/) and [bundler](https://jekyllrb.com/docs/ruby-101/#bundler) [gems](https://jekyllrb.com/docs/ruby-101/#gems):
 
     ```bash
-    $ gem install jekyll bundler
+    $ gem install jekyll bundler --user-install
     ```
 
 3. clone git repository and change into repo directory:
