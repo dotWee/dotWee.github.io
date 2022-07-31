@@ -46,6 +46,10 @@ span, li, a, h1 {
     color: blue
 }
 
+ul > li {
+    text-transform: lowercase;
+} 
+
 .corner-line {
     fill: none;
     stroke: #000;
