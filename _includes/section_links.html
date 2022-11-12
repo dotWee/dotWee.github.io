@@ -14,7 +14,7 @@
                 <ul>
                     {% for entry in site.data.publications %}
                     <li>
-                        <a class="link" href="{{ entry.link }}" data-proofer-ignore>{{ entry.name }}</a>
+                        <a class="link" href="{{ entry.link }}" rel="me" data-proofer-ignore>{{ entry.name }}</a>
                     </li>
                     {% endfor %}
                 </ul>
@@ -23,7 +23,7 @@
                 <ul>
                     {% for entry in site.data.contact %}
                     <li>
-                        <a class="link" href="{{ entry.link }}" data-proofer-ignore>{{ entry.name }}</a>
+                        <a class="link" href="{{ entry.link }}" rel="me" data-proofer-ignore>{{ entry.name }}</a>
                     </li>
                     {% endfor %}
                 </ul>
