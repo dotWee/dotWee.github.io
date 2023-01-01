@@ -11,6 +11,9 @@ stylesheet: main.css
     <!-- Search engines control -->
     {% include seo.html %}
 
+    <!-- Favicon -->
+    {% favicon %}
+
     <!-- Layout management -->
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="blue">
@@ -22,9 +25,6 @@ stylesheet: main.css
     <!-- Default page style -->
     <link rel="stylesheet" href="/assets/css/normalize.css">
     <link rel="stylesheet" href="/assets/css/{{ layout.stylesheet }}">
-
-    <!-- Favicons -->
-    <link rel="shortcut icon" href="/favicon.ico">
 </head>
 
 <body>

@@ -49,6 +49,10 @@ exclude:
 #  - Gemfile.lock
 #  - node_modules
 
+# Config for jekyll-favicon
+favicon:
+  source: favicon.svg
+
 # Config for jekyll-seo-tag
 logo: /favicon.png
 author: lukaswolfsteiner
