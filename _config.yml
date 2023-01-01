@@ -19,6 +19,8 @@ email: lukas@wolfsteiner.media
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lukas.wolfsteiner.media" # the base hostname & protocol for your site, e.g. http://example.com
 
+timezone: Europe/Berlin
+
 # Build settings
 markdown: kramdown
 
@@ -33,16 +35,12 @@ plugins:
 # to override the default setting.
 exclude:
   - README.md
-  - deploy.sh
-  - status_running.lock
-  - status_waiting.lock
   - Gemfile
   - Gemfile.lock
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  - scripts/
   - .DS_Store
   - docker-compose.yml
   - LICENSE
