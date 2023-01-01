@@ -29,6 +29,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-favicon
   - jekyll-seo-tag
+  - jekyll-last-modified-at
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -51,6 +52,10 @@ exclude:
 sass:
   sass_dir: _sass
   style: compressed
+
+# Config for jekyll-last-modified-at
+last-modified-at:
+    date-format: '%Y-%m-%d'
 
 # Config for jekyll-favicon
 favicon:
