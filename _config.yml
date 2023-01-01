@@ -30,6 +30,12 @@ plugins:
   - jekyll-favicon
   - jekyll-seo-tag
   - jekyll-last-modified-at
+  - jekyll/mastodon_webfinger
+
+# Config for jekyll/mastodon_webfinger
+mastodon:
+  username: dotwee
+  instance: sueden.social
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

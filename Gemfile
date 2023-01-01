@@ -22,7 +22,8 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap'
   gem 'jekyll-favicon'
   gem 'jekyll-seo-tag'
-  gem "jekyll-last-modified-at"
+  gem 'jekyll-last-modified-at'
+  gem 'jekyll-mastodon_webfinger'
   # gem "jekyll-feed", "~> 0.6"
 end
 
