@@ -46,6 +46,7 @@ exclude:
   - .DS_Store
   - docker-compose.yml
   - LICENSE
+  - CNAME
 #  - Gemfile.lock
 #  - node_modules
 
