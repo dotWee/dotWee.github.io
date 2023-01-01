@@ -50,6 +50,10 @@ exclude:
 #  - Gemfile.lock
 #  - node_modules
 
+sass:
+  sass_dir: _sass
+  style: compressed
+
 # Config for jekyll-favicon
 favicon:
   source: favicon.svg
