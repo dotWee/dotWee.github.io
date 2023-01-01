@@ -37,4 +37,4 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
 # Workaround for failing GitHub Action
 # see https://github.com/helaili/jekyll-action/issues/150
-gem "jekyll-sass-converter", "~> 2.0"
+gem "jekyll-sass-converter", "~> 3.0"
