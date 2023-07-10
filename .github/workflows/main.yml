@@ -47,7 +47,7 @@ jobs:
 
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v2
 
   deploy:
     name: Deploy generated site to GitHub pages
