@@ -1,0 +1,26 @@
+
+publications:
+  - name: Google Play
+    link: https://play.google.com/store/apps/dev?id=8839840212318057393
+
+  - name: GitHub
+    link: https://github.com/dotwee
+
+  - name: DockerHub
+    link: https://hub.docker.com/u/dotwee
+
+interests:
+  - name: Digital health and medicine
+  - name: Mobile technologies
+  - name: Creative arts and design
+  - name: Philosophy of information
+
+contact:
+  - name: Twitter
+    link: https://twitter.com/dnkncht
+
+  - name: Xing
+    link: https://www.xing.com/profile/Lukas_Wolfsteiner2
+
+  - name: LinkedIn
+    link: https://www.linkedin.com/in/lukas-wolfsteiner

@@ -1,0 +1,26 @@
+:root {
+  --bg-color: #f1f1f1;
+  --bg-color-cv: white;
+  --fg-color: blue;
+  --fg-color-dark: blue;
+  --fg-color-body: black;
+  --fg-color-title-sm: black;
+
+  --grid-spacing: 20px;
+}
+
+/* disabled while WIP */
+$dark-theme-enabled: false;
+
+@if $dark-theme-enabled {
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg-color: #121212;
+      --bg-color-cv: #1a1a1a; 
+      --fg-color: #007acc;
+      --fg-color-dark: #007acc;
+      --fg-color-body: #f5f5f5; 
+      --fg-color-title-sm: white;
+    }
+  }
+}

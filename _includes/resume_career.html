@@ -1,0 +1,11 @@
+{% assign career = site.data.resume.career %}
+{% if career %}
+<section class="career">
+    <h2 class="title">Career Objective</h2>
+    <div class="details">
+        {% for sentence in career %}
+        <p>{{sentence}}</p>
+        {% endfor %}
+    </div>
+</section>
+{% endif %}

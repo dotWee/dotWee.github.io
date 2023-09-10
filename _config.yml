@@ -24,7 +24,9 @@ timezone: Europe/Berlin
 # Build settings
 markdown: kramdown
 
-# theme: minima
+# Force UTF-8 encoding
+encoding: UTF-8
+
 plugins:
   - jekyll-sitemap
   - jekyll-favicon
@@ -42,8 +44,12 @@ mastodon:
 # to override the default setting.
 exclude:
   - README.md
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
   - Gemfile
   - Gemfile.lock
+  - node_modules/
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
@@ -52,9 +58,8 @@ exclude:
   - docker-compose.yml
   - LICENSE
   - CNAME
-#  - Gemfile.lock
-#  - node_modules
 
+# Sass
 sass:
   sass_dir: _sass
   style: compressed

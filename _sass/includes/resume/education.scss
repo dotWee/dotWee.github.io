@@ -1,0 +1,23 @@
+.education {
+    margin-bottom: var(--grid-spacing);
+    .title {
+        @include sub-header;
+    }
+    .education-item {
+        margin-bottom: var(--grid-spacing);
+        .degree {
+            @include body-text;
+            font-weight: bold;
+            text-align: start;
+        }
+
+        .university {
+            @include body-text;
+            text-align: start;
+        }
+
+        .time {
+            @include time;            
+        }
+    }
+}

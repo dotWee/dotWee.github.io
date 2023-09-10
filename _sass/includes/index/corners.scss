@@ -1,0 +1,45 @@
+
+.bordered {
+  border: .2rem solid var(--fg-color-title-sm)
+}
+
+svg {
+  display: block;
+  max-width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+
+.corner-line {
+  fill: none;
+  stroke: var(--fg-color-title-sm);
+  stroke-miterlimit: 10;
+  position: absolute;
+  stroke-width: .2em;
+  width: 60px;
+  height: 60px
+}
+
+.corner-line-top-left {
+  top: -0.7rem;
+  left: -0.7rem
+}
+
+.corner-line-top-right {
+  top: -0.7rem;
+  right: -0.7rem
+}
+
+.corner-line-bottom-left {
+  bottom: -0.7rem;
+  left: -0.7rem
+}
+
+.corner-line-bottom-right {
+  bottom: -0.7rem;
+  right: -0.7rem
+}

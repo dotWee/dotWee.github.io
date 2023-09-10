@@ -1,0 +1,23 @@
+.imprint {
+  font-family: "Lucida Console", Monaco, monospace;
+  text-align: right;
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.imprint a {
+  @include body-text;
+  color: var(--fg-color-dark);
+  font-size: .7rem;
+  line-height: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .imprint {
+      position: inherit;
+      margin-right: 1rem;
+  }
+}

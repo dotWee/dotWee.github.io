@@ -1,0 +1,122 @@
+name: Lukas Wolfsteiner
+support_dark_mode: false
+
+# Sidebar
+contacts:
+  - icon: "far.fa-envelope"
+    href: "mailto:lukas@wolfsteiner.media"
+    username: lukas@wolfsteiner.media
+  - icon: "fab.fa-linkedin-in"
+    href: "https://linkedin.com/in/lukas-wolfsteiner"
+    username: lukas-wolfsteiner
+  #- icon: "fab.fa-xing"
+  #  href: "https://www.xing.com/profile/Lukas_Wolfsteiner2"
+  #  username: Lukas_Wolfsteiner2
+  #- icon: "fab.fa-mastodon"
+  #  href: "https://sueden.social/@dotwee"
+  #  username: "@dotwee@sueden.social"
+  #- icon: "fab.fa-twitter"
+  #  href: "https://twitter.com/dnkncht"
+  #  username: dnkncht
+  - icon: "fab.fa-github"
+    href: "https://github.com/dotWee"
+    username: dotWee
+  #- icon: "fab.fa-gitlab"
+  #  href: "https://gitlab.com/dotwee"
+  #  username: "dotWee"
+  - icon: "fab.fa-docker"
+    href: "https://hub.docker.com/u/dotwee"
+    username: "dotwee"
+
+languages:
+  - idiom: German (native)
+  - idiom: English (fluent)
+
+education:
+  - degree: Bachelor of Science (B.Sc.) in Computer Science
+    time: 2020 - present
+    university: Technical University of applied Sciences Regensburg
+
+  - degree: Bachelor of Science (B.Sc.) in Medical Health Informatics (switched major)
+    time: 2016 - 2020
+    university: Technical University of applied Sciences Regensburg
+
+  - degree: Entrance qualification for universities of applied sciences ("Fachabitur")
+    time: 2014 - 2016
+    university: Maximilian-Kolbe-Schule Neumarkt
+
+skills:
+  - category: Backend
+    skill: 
+      - Java (Spring Boot, Hibernate)
+      - C# (.NET Core, ASP.NET)
+      - SQL (PostgreSQL, MS SQL)
+  - category: Frontend
+    skill:
+      - JavaScript (ES6, Node.js)
+      - TypeScript (Vue.js)
+      - Bootstrap
+      - Vuetify
+  - category: DevOps
+    skill:
+      - Cloud (Azure, Docker, Kubernetes)
+      - Monitoring (Grafana, Prometheus)
+      - Atlassian (Jira, BitBucket)
+  - category: Tool
+    skill:
+      - JetBrains (IntelliJ IDEA)
+      - Android Studio
+      - Visual Studio Code
+
+# Career Objective
+career:
+  - Results-driven software engineer with a proven ability to develop and deliver high-quality software solutions in a fast-paced, deadline-driven environment.
+  - Proficient in multiple programming languages and frameworks, with experience in agile methodologies and DevOps practices.
+  - Passionate about information theory and philosophy, with a deep understanding of how these disciplines inform and influence software development.
+  - Strong analytical thinker with a passion for problem-solving and a commitment to continuous learning and improvement.
+
+# Experience
+experience:
+  - role: Full-Stack Developer & IT-Sysadmin
+    time: 2022 - early 2023
+    company: <a href="http://www.weigertkunde.de/">WEIGERT + KUNDE Unternehmensberatung GmbH</a>
+    details:
+      - As part of the project, an existing web platform was extended with a component for in-house document and file management to reduce paperwork and administrative friction for company management.
+      - My tasks included planning, designing, and developing the document management system as well as fully integrating it with the existing web platform. Additionally, I was responsible for testing, deployment, and maintenance.
+      - For the frontend, I used VueJS & Vuetify technologies, implemented the RESTful API in the Spring Boot Java backend, and used PostgreSQL & Hibernate for the database layer.
+      - Version control was carried out via Atlassian Jira and BitBucket. The project was successfully deployed and commissioned.
+    technologies_used: Vue.js (TypeScript), Vuetify (UI), Spring Boot (Java), Hibernate, PostgreSQL, Atlassian
+  
+  - role: Working Student Software Engineer
+    time: 2017 - 2019
+    company: <a href="https://www.kdv-fh-bayern.de/cms/home/">Koordinierungsstelle für die Datenverarbeitung in der Hochschulverwaltung an den staatlichen Hochschulen für angewandte Wissenschaften in Bayern (KDV)</a>
+    details:
+      - As a student assistant and software developer at the Coordination Office for Data Processing in Administration at the State Universities of Applied Sciences in Bavaria (Germany), I was given the task to develope a internally used web platform for data management and administration.
+      - The project involved tasks such as requirement analysis, data modeling, UI concept, web application development with C# and JavaScript, and use of GUI frameworks such as ASP.NET Core MVC and Bootstrap 4.
+      - I mapped the data model using Entity Framework Core and Microsoft SQL Server and implemented continuous test-driven development using the MSTest unit testing framework.
+      - Throughout the project, I worked closely with the responsible domain expert and proved that I could integrate complex changes through clean refactoring in existing source code.
+      - <a href="/assets/LetterOfRecommendation_KDV.pdf">Letter of Recommendation</a>
+    technologies_used: ASP.NET Core MVC (C#), MSTest, Bootstrap, Entity Framework Core, Microsoft SQL Server
+
+projects:
+  - title: "DockerHub"
+    link: https://hub.docker.com/u/dotwee
+    details:
+      - Maintaining and administrating several Docker container images publicly available on DockerHub, ensuring their reliability and availability to the user community.
+      - Monitoring and resolving issues related to the container images, working collaboratively with users to troubleshoot problems and provide technical support.
+      - Updating and optimizing container images to improve their functionality and performance, incorporating feedback from users and following best practices for Docker container management.
+
+# Volunteering
+volunteering:
+  - role: FlightAware Active Network Contributor
+    time: 2022 - present
+    company: <a href="https://flightaware.com/">FlightAware International</a>
+    details:
+      - Contributing to the FlightAware network by running a FlightFeeder, a device that listens for radio signals from ADS-B aircraft transponders and descodes them to determine aircraft positions.
+      - FlightAware uses this data to provide real-time flight tracking to the public, to help airlines and operators improve efficiency and promote aviation safety.
+  - time: 2014 - present
+    role: Bidirectional Translator
+    company: <a href="https://crowdin.com/profile/dotwee">Crowdin</a> & <a href="https://github.com/dotWee">GitHub</a>
+    details:
+      - Translate open-source projects into German and English on <a href="https://crowdin.com/profile/dotwee">Crowdin</a> and <a href="https://github.com/dotWee">GitHub</a>, contributing to the localization efforts of various non-profit organizations and community-driven projects.
+      - Providing high-quality translations, collaborating with other volunteer translators to ensure consistency and accuracy in translations. Assisting in the review and proofreading of translations, ensuring that they are of the highest quality.

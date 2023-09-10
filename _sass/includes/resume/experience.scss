@@ -1,0 +1,27 @@
+.experiance {
+    .title {
+        @include header;
+    }
+    .experience-item {
+        .role {
+            @include sub-header;
+        }
+        .company {
+            @include body-text;
+            font-weight: bold;
+            
+            .time {
+                @include time;
+
+                float: right;
+                margin-left: calc(var(--grid-spacing) / 2);
+            }
+        }
+        .details {
+            @include body-text;
+        }
+        .technologies {
+            @include body-text;
+        }
+    }
+}

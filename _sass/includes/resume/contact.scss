@@ -1,0 +1,32 @@
+.contact {
+    margin-bottom: var(--grid-spacing);
+    .title {
+        @include sub-header;
+    }
+    .contact-item {
+        display: flex;
+        align-items: center;
+
+        .icon {
+            margin-top: 4px;
+            width: 21px;
+            height: 21px;
+            display: inline-block;
+
+            * {
+                fill: var(--fg-color);
+            }
+        }
+
+        a {
+            text-decoration: none;
+            padding-top: 4px;
+            padding-left: 4px;
+
+            @include body-text;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

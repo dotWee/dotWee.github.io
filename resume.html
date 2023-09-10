@@ -1,0 +1,31 @@
+---
+layout: default
+title: "Curriculum Vitae"
+stylesheet: resume
+
+permalink: /resume/
+---
+
+{% assign data = site.data.resume %}
+
+<div class="container">
+  <div class="header">
+    <h1 class="title">{{site.data.resume.name}}</h1>
+  </div>
+  <div class="container-block">
+    <div class="sidebar">
+      {% include resume_contact.html %}
+      {% include resume_languages.html %}
+      {% include resume_education.html %}
+      {% include resume_skills.html %}
+    </div>
+
+    <div class="main">
+      {% include resume_career.html %}
+      {% include resume_experience.html %}
+      {% include resume_publications.html %}
+      {% include resume_projects.html %}
+      {% include resume_volunteering.html %}
+    </div>
+  </div>
+</div>

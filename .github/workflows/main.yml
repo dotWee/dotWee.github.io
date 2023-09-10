@@ -3,8 +3,6 @@ name: Jekyll Build & Deploy
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: 
-      - main
   pull_request:
 
   # Allows you to run this workflow manually from the Actions tab
@@ -31,9 +29,9 @@ jobs:
       - name: Use ruby/setup-ruby to shorten build times
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.0' # Not needed with a .ruby-version file
+          ruby-version: '3.2' # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-          cache-version: 2 # Increment this number if you need to re-download cached gems
+          cache-version: 3 # Increment this number if you need to re-download cached gems
 
       - name: Setup Pages
         id: pages
@@ -52,7 +50,7 @@ jobs:
   deploy:
     name: Deploy generated site to GitHub pages
     needs: generate
-    if: ${{ github.event_name == 'push' }}
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
 
     environment:

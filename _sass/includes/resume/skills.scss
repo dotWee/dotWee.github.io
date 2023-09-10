@@ -1,0 +1,10 @@
+.skills {
+    margin-bottom: var(--grid-spacing);
+    .title {
+        margin-top: var(--grid-spacing);
+        @include sub-header;
+    }
+    .skill {
+        @include body-text;
+    }
+}

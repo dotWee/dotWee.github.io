@@ -1,0 +1,26 @@
+{% assign volunteering = site.data.resume.volunteering %}
+{% if volunteering %}
+<section class="volunteering">
+    <h2 class="title">Volunteering</h2>
+    {% for vol in volunteering %}
+    <div class="volunteering-item">
+        <div class="role">
+            {{vol.role}}
+        </div>
+        <div class="organization">
+            {{vol.company}}
+            <span class="time">{{vol.time}}</span>
+        </div>
+
+        {% if vol.details %}
+        <div class="details">
+            {% for sentence in vol.details %}
+            <p>{{sentence}}</p>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+
+    {% endfor %}
+</section>
+{% endif %}

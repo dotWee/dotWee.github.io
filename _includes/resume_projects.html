@@ -1,0 +1,19 @@
+{% assign projects = site.data.resume.projects %}
+{% if projects %}
+<section class="projects">
+    <h2 class="title">Public references</h2>
+    {% for p in projects %}
+    <div class="project">
+        <a class="project-link" href="{{p.link}}">{{p.title}}</a>
+
+        {% if p.details %}
+        <span class="details">
+            - {% for sentence in p.details %}
+            <span>{{sentence}}</span>
+            {% endfor %}
+        </span>
+        {% endif %}
+    </div>
+    {% endfor %}
+</section>
+{% endif %}

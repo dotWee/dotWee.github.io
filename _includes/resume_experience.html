@@ -1,0 +1,26 @@
+{% assign experience = site.data.resume.experience %}
+{% if experience %}
+<section class="experiance">
+    <h2 class="title">Work Experience</h2>
+    {% for exp in experience %}
+    <div class="experience-item">
+        <div class="role">
+            {{exp.role}}
+        </div>
+        <div class="company">
+            {{exp.company}}
+            <span class="time">{{exp.time}}</span>
+        </div>
+        {% if exp.details %}
+        <div class="details">
+            {% for sentence in exp.details %}
+            <p>{{sentence}}</p>
+            {% endfor %}
+        </div>
+        {% endif %}
+        <p class="technologies">Technologies Used: <i>{{exp.technologies_used}}</i></p>
+    </div>
+
+    {% endfor %}
+</section>
+{% endif %}
