@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Curriculum Vitae
+title: "Curriculum Vitae"
 stylesheet: resume
 
 permalink: /resume/
@@ -9,7 +9,9 @@ permalink: /resume/
 {% assign data = site.data.resume %}
 
 <div class="container">
-  {% include resume_header.html %}
+  <div class="header">
+    <h1 class="title">{{site.data.resume.name}}</h1>
+  </div>
   <div class="container-block">
     <div class="sidebar">
       {% include resume_contact.html %}
