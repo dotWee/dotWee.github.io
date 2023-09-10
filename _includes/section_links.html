@@ -12,7 +12,7 @@
         <tr>
             <td>
                 <ul>
-                    {% for entry in site.data.publications %}
+                    {% for entry in site.data.index.publications %}
                     <li>
                         <a class="link" href="{{ entry.link }}" rel="me" data-proofer-ignore>{{ entry.name }}</a>
                     </li>
@@ -21,7 +21,7 @@
             </td>
             <td>
                 <ul>
-                    {% for entry in site.data.contact %}
+                    {% for entry in site.data.index.contact %}
                     <li>
                         <a class="link" href="{{ entry.link }}" rel="me" data-proofer-ignore>{{ entry.name }}</a>
                     </li>
