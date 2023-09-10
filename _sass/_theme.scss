@@ -1,0 +1,23 @@
+:root {
+  --bg-color: #f1f1f1;
+  --bg-color-cv: white;
+  --fg-color: blue;
+  --fg-color-dark: blue;
+  --fg-color-body: black;
+  --fg-color-title-sm: black;
+
+  --grid-spacing: 20px;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #121212;       /* Even darker background color */
+    --bg-color-cv: #1a1a1a;   /* Slightly lighter background color */
+    --fg-color: #007acc;      /* Brighter blue for text and highlights */
+    --fg-color-dark: #007acc; /* Brighter blue for some elements */
+    --fg-color-body: #f5f5f5; /* Lighter gray for main text content */
+    --fg-color-title-sm: #ffffff; /* White for smaller titles */
+  }
+  
+}

@@ -1,14 +1,12 @@
 body {
     font-family: "Times New Roman", Times, serif;
-    color: black;
+    color: var(--fg-color-body);
     padding: 2.5rem 5rem;
-}
 
-h1, h2, h3 {
-    letter-spacing: 1px;
+    background-color: var(--bg-color);
 }
 
 h1, h2, h3,
 strong {
-    color: blue
+    color: var(--fg-color)
 }

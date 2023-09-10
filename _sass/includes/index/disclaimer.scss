@@ -1,0 +1,22 @@
+.disclaimer {
+  font-family: "Lucida Console", Monaco, monospace;
+  text-align: right;
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.disclaimer a {
+  @include body-text;
+  font-size: .7rem;
+  line-height: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .disclaimer {
+      position: inherit;
+      margin-right: 1rem;
+  }
+}

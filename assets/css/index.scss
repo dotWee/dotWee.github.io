@@ -1,4 +1,11 @@
 ---
 ---
 
-@import "_main";
+@import "_mixins";
+@import "_theme";
+
+@import "includes/index/_base";
+@import "includes/index/entry";
+@import "includes/index/corners";
+@import "includes/index/disclaimer";
+@import "includes/index/copyright";
