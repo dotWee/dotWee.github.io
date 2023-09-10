@@ -19,15 +19,12 @@ gem "jekyll", "~> 4.3.2"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-feed"
-  #gem "jekyll-minifier"
-  gem 'jekyll-fontawesome-svg'
   gem 'jekyll-sitemap'
   gem 'jekyll-favicon'
   gem 'jekyll-seo-tag'
   gem 'jekyll-last-modified-at'
   gem 'jekyll-mastodon_webfinger'
-  # gem "jekyll-feed", "~> 0.6"
+  gem 'jekyll-fontawesome-svg'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
