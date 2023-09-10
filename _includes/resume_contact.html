@@ -1,0 +1,17 @@
+{% assign contacts = site.data.resume.contacts %}
+{% if contacts %}
+<section class="contact">
+    <div class="title">Contact</div>
+
+    {% for contact in contacts %}
+    <div class="contact-item">
+        {% fa_svg contact.icon %}
+        <a href="{{contact.href}}">
+            {{contact.username}}
+        </a>
+    </div>
+    {% endfor %}
+</section>
+{% fa_svg_generate %}
+
+{% endif %}

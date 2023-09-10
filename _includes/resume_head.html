@@ -1,0 +1,33 @@
+<head>
+  <!-- Styles -->
+  <link rel="stylesheet" href="{{'/assets/css/resume.css' | absolute_url}}">
+
+  <!-- Meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  <title>{{ site.data.resume.name }} - {{ site.title }}</title>
+
+  <script>
+    var _paq = window._paq = window._paq || [];
+    _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+    _paq.push(["setCookieDomain", "*.lukas.wolfsteiner.media"]);
+    _paq.push(["setDomains", ["*.lukas.wolfsteiner.media", "*.dotwee.de", "*.dotwee.dev", "*.dotwee.uber.space", "*.lukas.wolfsteiner.de"]]);
+    _paq.push(["enableCrossDomainLinking"]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function () {
+      var u = "//matm.dotwee.de/";
+      _paq.push(['setTrackerUrl', u + 'matm.php']);
+      _paq.push(['setSiteId', '1']);
+      var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+      g.async = true; g.src = u + 'matm.js'; s.parentNode.insertBefore(g, s);
+    })();
+  </script>
+  <noscript>
+    <p><img width="0" height="0" src="//matm.dotwee.de/matm.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p>
+  </noscript>
+</head>

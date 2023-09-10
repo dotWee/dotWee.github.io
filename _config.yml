@@ -16,7 +16,7 @@
 title: Lukas Wolfsteiner
 description: computer science student at the technical university of applied sciences in regensburg, germany
 email: lukas@wolfsteiner.media
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://lukas.wolfsteiner.media" # the base hostname & protocol for your site, e.g. http://example.com
 
 timezone: Europe/Berlin
@@ -42,8 +42,13 @@ mastodon:
 # to override the default setting.
 exclude:
   - README.md
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
   - Gemfile
   - Gemfile.lock
+  - node_modules/
+
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
