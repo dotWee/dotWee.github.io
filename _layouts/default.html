@@ -3,10 +3,9 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>{{ site.title }}</title>
+    <title>{{ site.title }} - {{ page.title }}</title>
 
     <!-- Search engines control -->
     {% include seo.html %}
@@ -33,5 +32,5 @@
     {{ content }}
 
 </body>
-
+{% include _scripts.html %}
 </html>
