@@ -1,4 +1,4 @@
-.disclaimer {
+.imprint {
   font-family: "Lucida Console", Monaco, monospace;
   text-align: right;
   position: fixed;
@@ -6,7 +6,7 @@
   left: 1rem;
 }
 
-.disclaimer a {
+.imprint a {
   @include body-text;
   font-size: .7rem;
   line-height: 1rem;
@@ -15,7 +15,7 @@
 }
 
 @media screen and (max-width: 500px) {
-  .disclaimer {
+  .imprint {
       position: inherit;
       margin-right: 1rem;
   }

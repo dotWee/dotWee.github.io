@@ -3,6 +3,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>{{ site.title }} - {{ page.title }}</title>
@@ -12,25 +13,28 @@
     <meta name="robots" content="index, follow">
     <meta name="publisher" content="Lukas Wolfsteiner">
     <meta name="copyright" content="Lukas Wolfsteiner">
-    <meta name="keywords" content="Wolfsteiner, Lukas, Lukas Wolfsteiner, Lukas dotwee Wolfsteiner, dotwee, dot, wee, coding, wee coding, dotwee coding">
+    <meta name="keywords"
+        content="Wolfsteiner, Lukas, Lukas Wolfsteiner, Lukas dotwee Wolfsteiner, dotwee, dot, wee, coding, wee coding, dotwee coding">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <script>
-    var _paq = window._paq = window._paq || [];
-    _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-    _paq.push(["setCookieDomain", "*.lukas.wolfsteiner.media"]);
-    _paq.push(["setDomains", ["*.lukas.wolfsteiner.media","*.dotwee.de","*.dotwee.dev","*.dotwee.uber.space","*.lukas.wolfsteiner.de"]]);
-    _paq.push(["enableCrossDomainLinking"]);
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function() {
-        var u="//matm.dotwee.de/";
-        _paq.push(['setTrackerUrl', u+'matm.php']);
-        _paq.push(['setSiteId', '1']);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.async=true; g.src=u+'matm.js'; s.parentNode.insertBefore(g,s);
-    })();
+        var _paq = window._paq = window._paq || [];
+        _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+        _paq.push(["setCookieDomain", "*.lukas.wolfsteiner.media"]);
+        _paq.push(["setDomains", ["*.lukas.wolfsteiner.media", "*.dotwee.de", "*.dotwee.dev", "*.dotwee.uber.space", "*.lukas.wolfsteiner.de"]]);
+        _paq.push(["enableCrossDomainLinking"]);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function () {
+            var u = "//matm.dotwee.de/";
+            _paq.push(['setTrackerUrl', u + 'matm.php']);
+            _paq.push(['setSiteId', '1']);
+            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+            g.async = true; g.src = u + 'matm.js'; s.parentNode.insertBefore(g, s);
+        })();
     </script>
-    <noscript><p><img width="0" height="0" src="//matm.dotwee.de/matm.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+    <noscript>
+        <p><img width="0" height="0" src="//matm.dotwee.de/matm.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p>
+    </noscript>
 
     <!-- Favicon -->
     {% favicon %}
@@ -41,7 +45,7 @@
     <meta name="HandheldFriendly" content="True">
 
     <!-- Prefetch linked sites -->
-    <link rel="dns-prefetch" href="/disclaimer.html">
+    <link rel="dns-prefetch" href="/imprint.html">
 
     <!-- Default page style -->
     <link rel="stylesheet" href="/assets/css/normalize.css">
@@ -49,9 +53,11 @@
 </head>
 
 <body>
-    <img referrerpolicy="no-referrer-when-downgrade" width="0" height="0" src="https://matm.dotwee.de/matm.php?idsite=1&amp;rec=1" style="border:0" alt="" />
+    <img referrerpolicy="no-referrer-when-downgrade" width="0" height="0"
+        src="https://matm.dotwee.de/matm.php?idsite=1&amp;rec=1" style="border:0" alt="" />
 
     {{ content }}
 
 </body>
+
 </html>
