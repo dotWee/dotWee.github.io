@@ -8,6 +8,7 @@
 
 .imprint a {
   @include body-text;
+  color: var(--fg-color-dark);
   font-size: .7rem;
   line-height: 1rem;
   padding: 0;
