@@ -9,14 +9,14 @@
                 a {
                     text-decoration: none;
                     font-weight: bold;
-                    @include body-text; 
+                    @include body-text;
                 }
             }
             .authors {
-                @include body-text; 
+                @include body-text;
             }
             .conference {
-                @include body-text; 
+                @include body-text;
                 color: var(--fg-color-title-sm);
                 font-weight: 100;
             }

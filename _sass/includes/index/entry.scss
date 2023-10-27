@@ -1,40 +1,41 @@
 .entry {
-  font-size: 1.4rem;
-  text-align: left;
-  margin-bottom: 1rem;
-  display: grid
+    font-size: 1.4rem;
+    text-align: left;
+    margin-bottom: 1rem;
+    display: grid;
 }
 
 .entry h2 {
-  font-weight: normal;
-  line-height: 100%;
-  text-transform: uppercase;
-  font-family: Helvetica, sans-serif;
-  text-align: left;
-  font-size: .8rem;
-  color: var(--fg-color-body)
+    font-weight: normal;
+    line-height: 100%;
+    text-transform: uppercase;
+    font-family: Helvetica, sans-serif;
+    text-align: left;
+    font-size: 0.9rem;
+    color: var(--fg-color-body);
 }
 
 .entry ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .entry ul li > a {
-  text-decoration: none
+    text-decoration: none;
 }
 
 .entry table tr td > a {
-  text-decoration: none
+    text-decoration: none;
 }
 
-.entry ul li > a:hover, .entry table tr td > a:hover {
-  text-decoration: underline
+.entry ul li > a:hover,
+.entry table tr td > a:hover {
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 500px) {
-  .entry {
-      font-size: 1.6;
-  }
+    .entry {
+        font-size: 1.6;
+    }
 }

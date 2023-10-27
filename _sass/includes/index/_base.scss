@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     font-family: Georgia, serif;
     letter-spacing: .014rem;
     height: 100%;
@@ -33,13 +34,17 @@ body {
 }
 
 
-span, li, a, h1, a:visited {
+span,
+li,
+a,
+h1,
+a:visited {
     color: var(--fg-color)
 }
 
-ul > li {
+ul>li {
     text-transform: lowercase;
-} 
+}
 
 hr {
     border: none;

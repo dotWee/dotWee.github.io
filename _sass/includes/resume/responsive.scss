@@ -7,16 +7,15 @@
         // margin:0;
         box-shadow: none;
         .container-block {
-
             .sidebar {
                 div {
                     text-align: left;
-                }                
+                }
             }
         }
     }
-    .company { 
-            text-align: left !important;
+    .company {
+        text-align: left !important;
     }
 }
 
@@ -29,9 +28,10 @@
     .header {
         display: block;
         .title {
-            margin:0 auto;
+            margin: 0 auto;
         }
-        input, label {
+        input,
+        label {
             display: none;
         }
     }

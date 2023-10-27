@@ -9,7 +9,7 @@
         .company {
             @include body-text;
             font-weight: bold;
-            
+
             .time {
                 @include time;
 

@@ -3,26 +3,30 @@
     font-size: 18px;
     text-transform: uppercase;
     font-weight: 700;
-    margin-top:var(--grid-spacing);
+    margin-top: var(--grid-spacing);
     display: flex;
     flex-direction: row;
-    &:before, &:after{
+
+    &:before,
+    &:after {
         content: "";
         flex: 1 1;
         border-bottom: 1px solid;
         margin: auto;
     }
+
     &:before {
-        margin-right: 10px
+        margin-right: 10px;
     }
+
     &:after {
-        margin-left: 10px
+        margin-left: 10px;
     }
 }
 
 @mixin sub-header {
     font-size: 16px;
-    font-weight: 700; 
+    font-weight: 700;
     color: var(--fg-color);
 }
 

@@ -3,7 +3,6 @@ layout: default
 stylesheet: index
 image: /favicon.png
 title: "Index"
-
 ---
 
 <!-- Page wrapper -->
@@ -14,24 +13,21 @@ title: "Index"
                 <h1>I'm Lukas,</h1>
             </header>
 
-            <br>
+            <br />
 
             {% include section_about.html %}
 
-            <hr>
+            <hr />
 
             {% include section_interests.html %}
 
-            <hr>
+            <hr />
 
-            {% include section_links.html %}
-
-            {% include corners.html %}
+            {% include section_links.html %} {% include corners.html %}
         </div>
     </article>
 </section>
 
 <div class="footer">
-    {% include imprint.html %}
-    {% include copyright.html %}
+    {% include imprint.html %} {% include copyright.html %}
 </div>
