@@ -20,11 +20,10 @@
 
 
 	// Uncomment the next line to run commands after the container is created.
-	"postCreateCommand": "sudo apt update; sudo apt install imagemagick imagemagick-doc"
+	"postCreateCommand": "sudo apt-get update; sudo apt-get install -y imagemagick imagemagick-doc",
 
-	// Configure tool-specific properties.
-	// "customizations": {},
 
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
+	"containerEnv": {
+		"DEBIAN_FRONTEND": "noninteractive"
+	}
 }
