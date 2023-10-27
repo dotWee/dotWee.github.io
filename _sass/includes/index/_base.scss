@@ -43,7 +43,7 @@ ul > li {
 
 hr {
     border: none;
-    height: .2rem;
+    height: var(--stroke-width);
     color: var(--fg-color-body);
     margin-bottom: 1rem;
     margin-top: 1rem;

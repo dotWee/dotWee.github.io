@@ -1,6 +1,6 @@
 
 .bordered {
-  border: .2rem solid var(--fg-color-title-sm)
+  border: var(--stroke-width) solid var(--fg-color-title-sm)
 }
 
 svg {
@@ -19,7 +19,7 @@ svg {
   stroke: var(--fg-color-title-sm);
   stroke-miterlimit: 10;
   position: absolute;
-  stroke-width: .2em;
+  stroke-width: var(--stroke-width);
   width: 60px;
   height: 60px
 }
