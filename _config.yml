@@ -36,6 +36,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-last-modified-at
   - jekyll/mastodon_webfinger
+  - jekyll-target-blank
 
 # Config for jekyll/mastodon_webfinger
 mastodon:
@@ -92,3 +93,12 @@ social:
     - https://instagram.com/dnkncht
     - https://github.com/dotWee
     - https://keybase.io/dotwee
+
+# Config for jekyll-target-blank
+target-blank:
+  noopener: false
+  noreferrer: false
+  rel: me
+  rel_exclude: 
+    - kdv-fh-bayern.de
+    - weigertkunde.de
