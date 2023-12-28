@@ -3,6 +3,7 @@ name: Jekyll Build & Deploy
 on:
   # Runs on pushes targeting the default branch
   push:
+    branches: [$default-branch]
   pull_request:
 
   # Allows you to run this workflow manually from the Actions tab
@@ -52,6 +53,11 @@ jobs:
     needs: generate
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
 
     environment:
       name: github-pages
