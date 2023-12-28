@@ -1,9 +1,7 @@
 name: Jekyll Build & Deploy
 
 on:
-  # Runs on pushes targeting the default branch
   push:
-    branches: [$default-branch]
   pull_request:
 
   # Allows you to run this workflow manually from the Actions tab
@@ -51,6 +49,8 @@ jobs:
   deploy:
     name: Deploy generated site to GitHub pages
     needs: generate
+    
+    # Only deploy on pushes to the default branch
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
 
