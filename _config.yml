@@ -16,7 +16,9 @@
 title: Lukas Wolfsteiner
 description: computer science student at the technical university of applied sciences in regensburg, germany
 email: lukas@wolfsteiner.media
-baseurl: "" # the subpath of your site, e.g. /blog
+
+# Plugin jekyll-github-metadata should take care of this
+# baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lukas.wolfsteiner.media" # the base hostname & protocol for your site, e.g. http://example.com
 
 timezone: Europe/Berlin
@@ -28,11 +30,13 @@ markdown: kramdown
 encoding: UTF-8
 
 plugins:
+  - jekyll-github-metadata
   - jekyll-sitemap
   - jekyll-favicon
   - jekyll-seo-tag
   - jekyll-last-modified-at
   - jekyll/mastodon_webfinger
+  - jekyll-target-blank
 
 # Config for jekyll/mastodon_webfinger
 mastodon:
@@ -89,3 +93,12 @@ social:
     - https://instagram.com/dnkncht
     - https://github.com/dotWee
     - https://keybase.io/dotwee
+
+# Config for jekyll-target-blank
+target-blank:
+  noopener: false
+  noreferrer: false
+  rel: me
+  rel_exclude: 
+    - kdv-fh-bayern.de
+    - weigertkunde.de
