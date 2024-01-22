@@ -10,7 +10,7 @@ permalink: /resume/
 
 <div class="container">
   <div class="header">
-    <h1 class="title">{{site.data.resume.name}}</h1>
+    <h1 class="title">{{site.data.resume.name | default: site.title }}</h1>
   </div>
   <div class="container-block">
     <div class="sidebar">
