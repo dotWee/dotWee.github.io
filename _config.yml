@@ -21,6 +21,9 @@ email: lukas@wolfsteiner.media
 # baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lukas.wolfsteiner.media" # the base hostname & protocol for your site, e.g. http://example.com
 
+# Config for jekyll-github-metadata
+repository: dotWee/dotWee.github.io
+
 timezone: Europe/Berlin
 
 # Build settings
