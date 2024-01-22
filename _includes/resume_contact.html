@@ -7,7 +7,7 @@
     <div class="contact-item">
         {% fa_svg contact.icon %}
         <a href="{{contact.href}}">
-            {{contact.username}}
+            {{ contact.label | default: contact.username }}
         </a>
     </div>
     {% endfor %}

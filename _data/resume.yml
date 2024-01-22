@@ -9,24 +9,15 @@ contacts:
   - icon: "fab.fa-linkedin-in"
     href: "https://linkedin.com/in/lukas-wolfsteiner"
     username: lukas-wolfsteiner
-  #- icon: "fab.fa-xing"
-  #  href: "https://www.xing.com/profile/Lukas_Wolfsteiner2"
-  #  username: Lukas_Wolfsteiner2
-  #- icon: "fab.fa-mastodon"
-  #  href: "https://sueden.social/@dotwee"
-  #  username: "@dotwee@sueden.social"
-  #- icon: "fab.fa-twitter"
-  #  href: "https://twitter.com/dnkncht"
-  #  username: dnkncht
+    label: LinkedIn
   - icon: "fab.fa-github"
     href: "https://github.com/dotWee"
     username: dotWee
-  #- icon: "fab.fa-gitlab"
-  #  href: "https://gitlab.com/dotwee"
-  #  username: "dotWee"
+    label: GitHub
   - icon: "fab.fa-docker"
     href: "https://hub.docker.com/u/dotwee"
     username: "dotwee"
+    label: DockerHub
 
 languages:
   - idiom: German (native)
