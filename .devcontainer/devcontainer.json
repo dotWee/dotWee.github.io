@@ -1,29 +1,28 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/jekyll
 {
-	"name": "Jekyll",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/jekyll",
-
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
-
+	"build": {
+		"dockerfile": "./Dockerfile",
+		"context": "."
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/node:1": {
+            "version": "none"
+        },
+		"ghcr.io/devcontainers/features/git:1": {
+            "version": "latest",
+            "ppa": "false"
+        }
+	},
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [4000],
+	"forwardPorts": [
+		// Jekyll server
+		4000,
+		// Live reload server
+		35729
+	],
 
-  "portsAttributes": {
-    "4000": {
-      "label": "Jekyll Live Server",
-      "onAutoForward": "notify"
-    }
-  },
+	// Use 'postCreateCommand' to run commands after the container is created.
+	"postCreateCommand": "sh /usr/local/post-create.sh",
 
-
-	// Uncomment the next line to run commands after the container is created.
-	"postCreateCommand": "sudo apt-get update; sudo apt-get install -y imagemagick imagemagick-doc",
-
-
-	"containerEnv": {
-		"DEBIAN_FRONTEND": "noninteractive"
-	}
+	// Set `remoteUser` to `root` to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+	"remoteUser": "vscode"
 }
