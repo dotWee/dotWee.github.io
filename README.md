@@ -10,6 +10,21 @@ _a simple personal single-page* website built using [jekyll](https://jekyllrb.co
 
 ## setup
 
+### using a devcontainer as environment
+
+1. clone git repository and change into repo directory:
+
+    ```bash
+    $ git clone https://github.com/dotWee/dotWee.github.io.git dotwee-github-io && cd dotwee-github-io
+    ```
+
+2. open the git repository in Visual Studio Code & install the Remote-Containers extension
+3. Visual Studio Code will detect the devcontainer configuration and prompt you to reopen the project in a devcontainer. Click on "Reopen in Container" to start the devcontainer.
+
+Once the devcontainer is up and running, you can proceed with the rest of the setup and usage instructions in the README.md file.
+
+### regular local development environment
+
 1. install a full [ruby development environment](https://jekyllrb.com/docs/installation/)
 2. install [jekyll](https://jekyllrb.com/) and [bundler](https://jekyllrb.com/docs/ruby-101/#bundler) [gems](https://jekyllrb.com/docs/ruby-101/#gems):
 
