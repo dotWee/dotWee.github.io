@@ -107,7 +107,27 @@ jobs:
         extra_dictionary_limit: 20
         extra_dictionaries:
           cspell:software-terms/dict/softwareTerms.txt
-
+          cspell:npm/dict/npm.txt
+          cspell:css/dict/css.txt
+          cspell:html/dict/html.txt
+          cspell:php/dict/php.txt
+          cspell:django/dict/django.txt
+          cspell:typescript/dict/typescript.txt
+          cspell:python/src/python/python-lib.txt
+          cspell:aws/aws.txt
+          cspell:k8s/dict/k8s.txt
+          cspell:java/src/java-terms.txt
+          cspell:filetypes/filetypes.txt
+          cspell:node/dict/node.txt
+          cspell:r/src/r.txt
+          cspell:java/src/java.txt
+          cspell:dotnet/dict/dotnet.txt
+          cspell:fullstack/dict/fullstack.txt
+          cspell:html/src/svg.txt
+          cspell:python/src/python/python.txt
+          cspell:golang/dict/go.txt
+          cspell:ruby/dict/ruby.txt
+          
   comment-push:
     name: Report (Push)
     # If your workflow isn't running on push, you can remove this job

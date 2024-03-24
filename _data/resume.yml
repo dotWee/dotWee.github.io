@@ -68,6 +68,13 @@ career:
 
 # Experience
 experience:
+  - role: Software Developer
+    time: early 2023 - present
+    company: <a href="https://awesome-technologies.de/">Awesome Technologies Innovationslabor GmbH</a>
+    details:
+      - Driven by a passion for meaningful impact, I collaborate with cross-functional teams to create tailored software solutions. My work aligns with Awesome Technologies’ commitment to human-centered co-innovation, where we address industry challenges together.
+      - Developing cutting-edge projects in telemedicine and Industry 4.0, ensuring robust solutions that prioritize privacy and security.
+      - For more informations, check our <a href="https://www.linkedin.com/company/awesome-technologies-innovationslabor/">LinkedIn</a> page.
   - role: Full-Stack Developer & IT-Sysadmin
     time: 2022 - early 2023
     company: <a href="http://www.weigertkunde.de/">WEIGERT + KUNDE Unternehmensberatung GmbH</a>

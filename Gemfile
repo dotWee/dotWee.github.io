@@ -17,6 +17,9 @@ gem "jekyll", "~> 4.3.3"
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
 
+# Use the HTML Proofer gem to validate HTML output
+gem 'html-proofer'
+
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem 'jekyll-github-metadata'

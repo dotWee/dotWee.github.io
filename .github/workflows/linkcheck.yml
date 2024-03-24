@@ -1,0 +1,30 @@
+name: Check Markdown Links
+
+on:
+  push:
+    branches: main
+  pull_request:
+    branches: main
+
+jobs:
+  build:
+    name: Check Markdown Links
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: latest
+      - name: Install Markdown Link Checker
+        run: npm install -g markdown-link-check
+      
+      - name: Check Links in Posts
+        run: |
+          find . -maxdepth 1 -name '*.md' -print0 | xargs -0 -n1 markdown-link-check
+      
+      - name: Check Links in README
+        run: |
+          markdown-link-check README.md

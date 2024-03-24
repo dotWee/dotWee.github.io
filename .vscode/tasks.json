@@ -69,6 +69,15 @@
             // "options": {
             //     "cwd": "${workspaceFolder}/solothought"
             // },
+        },
+        {
+            "label": "Lint",
+            "type": "shell",
+            "dependsOn": "Build",
+            "command": "npx linthtml ./**/*.html ./*.html",
+            "options": {
+                "cwd": "${workspaceFolder}/_site"
+              }
         }
     ]
 }

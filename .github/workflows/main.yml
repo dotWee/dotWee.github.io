@@ -38,13 +38,39 @@ jobs:
 
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}" --verbose --trace
         env:
           JEKYLL_ENV: production
+
 
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
+
+
+  validate:
+    name: Validate generated site
+    needs: generate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+
+      - uses: anishathalye/proof-html@v2
+        with:
+          directory: ./_site
+          enforce_https: true
+          allow_missing_href: false
+          tokens: |
+            {"https://github.com": "${{ secrets.GITHUB_TOKEN }}"}
+          ignore_url: |
+            http://www.example.com/
+            https://en.wikipedia.org/wiki/Main_Page
+          ignore_url_re: |
+            ^https://twitter.com/
+          swap_urls: |
+            {"^https://www.anishathalye.com/": "/"}
+
 
   deploy:
     name: Deploy generated site to GitHub pages

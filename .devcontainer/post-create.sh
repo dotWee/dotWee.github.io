@@ -10,3 +10,8 @@ fi
 if [ -f Gemfile ]; then
     bundle install
 fi
+
+# If theres a .linthtmlrc file, then install linthtml
+if [ -f .linthtmlrc ]; then
+    npm install -g @linthtml/linthtml --save-dev
+fi
