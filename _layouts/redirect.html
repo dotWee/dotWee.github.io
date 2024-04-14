@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Redirecting&hellip;</title>
+  <link rel="canonical" href="{{ page.redirect.to }}" />
+  <script>
+    const urlSuffix =
+      "" +
+      (location.hash ? location.hash : "") +
+      (location.search ? location.search : "");
+    location = "{{ page.redirect.to }}" + urlSuffix;
+  </script>
+  <meta id="refresh-meta" http-equiv="refresh" content="0; url={{ page.redirect.to }}" />
+  <meta name="robots" content="noindex" />
+
+  <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//matm.dotwee.de/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+</head>
+
+<body>
+  <h1>Redirecting&hellip;</h1>
+  <a id="redirect-link" href="{{ page.redirect.to }}">Click here if you are not redirected.</a>
+  <p><img referrerpolicy="no-referrer-when-downgrade" src="//matm.dotwee.de/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p>
+
+  <script>
+    // Add hash and search to meta redirect and manual link, in case script above did not work
+    const urlSuffix2 =
+      "" +
+      (location.hash ? location.hash : "") +
+      (location.search ? location.search : "");
+    let refreshMeta = document.getElementById("refresh-meta");
+    const newContentStr = refreshMeta.getAttribute("content") + urlSuffix2;
+    refreshMeta.setAttribute("content", newContentStr);
+    let redirectLink = document.getElementById("redirect-link");
+    const newHrefUrl = redirectLink.getAttribute("href") + urlSuffix2;
+    redirectLink.setAttribute("href", newHrefUrl);
+  </script>
+</body>
+
+</html>

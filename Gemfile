@@ -27,6 +27,7 @@ group :jekyll_plugins do
   gem 'jekyll-mastodon_webfinger'
   gem 'jekyll-fontawesome-svg'
   gem 'jekyll-target-blank'
+  gem 'jekyll-redirect-from', git: 'https://github.com/Young-Lord/jekyll-redirect-from', branch: 'master'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
