@@ -1,7 +1,7 @@
 
 publications:
-  - name: Google Play
-    link: https://play.google.com/store/apps/dev?id=8839840212318057393
+  - name: Resume
+    link: https://lukas.wolfsteiner.media/resume
 
   - name: GitHub
     link: https://github.com/dotwee
@@ -16,11 +16,11 @@ interests:
   - name: Philosophy of information
 
 contact:
-  - name: Twitter
-    link: https://twitter.com/dnkncht
+  - name: LinkedIn
+    link: https://www.linkedin.com/in/lukas-wolfsteiner
 
   - name: Xing
     link: https://www.xing.com/profile/Lukas_Wolfsteiner2
 
-  - name: LinkedIn
-    link: https://www.linkedin.com/in/lukas-wolfsteiner
+  - name: Mastodon
+    link: https://sueden.social/@dotwee
