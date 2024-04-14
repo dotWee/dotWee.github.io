@@ -18,7 +18,8 @@ seo:
 
 <head>
     <meta charset="UTF-8">
-    <title>{{ site.title }} - {{ page.title }}</title>
+    
+    <title>{{ site.title }}{% if page.title %}: {{ page.title }}{% endif %}</title>
 
     <!-- Search engines control -->
     {% seo title=false %}
