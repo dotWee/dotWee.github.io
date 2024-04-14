@@ -11,7 +11,7 @@ contacts:
     username: lukas-wolfsteiner
     label: LinkedIn
   - icon: "fab.fa-github"
-    href: "/links/dotwee"
+    href: "/links/github"
     username: dotWee
     label: GitHub
   - icon: "fab.fa-docker"
