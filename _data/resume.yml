@@ -86,7 +86,7 @@ experience:
       - The project involved tasks such as requirement analysis, data modeling, UI concept, web application development with C# and JavaScript, and use of GUI frameworks such as ASP.NET Core MVC and Bootstrap 4.
       - I mapped the data model using Entity Framework Core and Microsoft SQL Server and implemented continuous test-driven development using the MSTest unit testing framework.
       - Throughout the project, I worked closely with the responsible domain expert and proved that I could integrate complex changes through clean refactoring in existing source code.
-      - <a href="/assets/LetterOfRecommendation_KDV.pdf">Letter of Recommendation</a>
+      - <a href="/assets/files/2019-06-11_Letter-Of-Recommendation_KDV.pdf">Letter of Recommendation</a>
     technologies_used: ASP.NET Core MVC (C#), MSTest, Bootstrap, Entity Framework Core, Microsoft SQL Server
 
 projects:
