@@ -70,7 +70,7 @@ career:
 experience:
   - role: Full-Stack Developer & IT-Sysadmin
     time: 2022 - early 2023
-    company: <a href="http://www.weigertkunde.de/">WEIGERT + KUNDE Unternehmensberatung GmbH</a>
+    company: <a href="https://www.weigertkunde.de/">WEIGERT + KUNDE Unternehmensberatung GmbH</a>
     details:
       - As part of the project, an existing web platform was extended with a component for in-house document and file management to reduce paperwork and administrative friction for company management.
       - My tasks included planning, designing, and developing the document management system as well as fully integrating it with the existing web platform. Additionally, I was responsible for testing, deployment, and maintenance.
@@ -80,7 +80,7 @@ experience:
   
   - role: Working Student Software Engineer
     time: 2017 - 2019
-    company: <a href="https://www.kdv-fh-bayern.de/cms/home/">Koordinierungsstelle für die Datenverarbeitung in der Hochschulverwaltung an den staatlichen Hochschulen für angewandte Wissenschaften in Bayern (KDV)</a>
+    company: <a href="https://www.kdv-fh-bayern.de/">Koordinierungsstelle für die Datenverarbeitung in der Hochschulverwaltung an den staatlichen Hochschulen für angewandte Wissenschaften in Bayern (KDV)</a>
     details:
       - As a student assistant and software developer at the Coordination Office for Data Processing in Administration at the State Universities of Applied Sciences in Bavaria (Germany), I was given the task to develope a internally used web platform for data management and administration.
       - The project involved tasks such as requirement analysis, data modeling, UI concept, web application development with C# and JavaScript, and use of GUI frameworks such as ASP.NET Core MVC and Bootstrap 4.
