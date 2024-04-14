@@ -10,9 +10,14 @@ vendor/
 
 # Ignore files related to macOS
 .DS_Store
+.AppleDouble
+.LSOverride
 
 # Ignore private deploy script
 scripts/deploy
 
 # Ignore related gem files
 Gemfile.lock
+
+# Ignore environment file
+.env
