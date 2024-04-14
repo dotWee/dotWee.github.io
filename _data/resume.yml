@@ -7,15 +7,15 @@ contacts:
     href: "mailto:lukas@wolfsteiner.media"
     username: lukas@wolfsteiner.media
   - icon: "fab.fa-linkedin-in"
-    href: "https://linkedin.com/in/lukas-wolfsteiner"
+    href: "/links/linkedin"
     username: lukas-wolfsteiner
     label: LinkedIn
   - icon: "fab.fa-github"
-    href: "https://github.com/dotWee"
+    href: "/links/github"
     username: dotWee
     label: GitHub
   - icon: "fab.fa-docker"
-    href: "https://hub.docker.com/u/dotwee"
+    href: "/links/dockerhub"
     username: "dotwee"
     label: DockerHub
 
@@ -70,7 +70,7 @@ career:
 experience:
   - role: Full-Stack Developer & IT-Sysadmin
     time: 2022 - early 2023
-    company: <a href="http://www.weigertkunde.de/">WEIGERT + KUNDE Unternehmensberatung GmbH</a>
+    company: <a href="https://www.weigertkunde.de/">WEIGERT + KUNDE Unternehmensberatung GmbH</a>
     details:
       - As part of the project, an existing web platform was extended with a component for in-house document and file management to reduce paperwork and administrative friction for company management.
       - My tasks included planning, designing, and developing the document management system as well as fully integrating it with the existing web platform. Additionally, I was responsible for testing, deployment, and maintenance.
@@ -80,18 +80,18 @@ experience:
   
   - role: Working Student Software Engineer
     time: 2017 - 2019
-    company: <a href="https://www.kdv-fh-bayern.de/cms/home/">Koordinierungsstelle für die Datenverarbeitung in der Hochschulverwaltung an den staatlichen Hochschulen für angewandte Wissenschaften in Bayern (KDV)</a>
+    company: <a href="https://www.kdv-fh-bayern.de/">Koordinierungsstelle für die Datenverarbeitung in der Hochschulverwaltung an den staatlichen Hochschulen für angewandte Wissenschaften in Bayern (KDV)</a>
     details:
       - As a student assistant and software developer at the Coordination Office for Data Processing in Administration at the State Universities of Applied Sciences in Bavaria (Germany), I was given the task to develope a internally used web platform for data management and administration.
       - The project involved tasks such as requirement analysis, data modeling, UI concept, web application development with C# and JavaScript, and use of GUI frameworks such as ASP.NET Core MVC and Bootstrap 4.
       - I mapped the data model using Entity Framework Core and Microsoft SQL Server and implemented continuous test-driven development using the MSTest unit testing framework.
       - Throughout the project, I worked closely with the responsible domain expert and proved that I could integrate complex changes through clean refactoring in existing source code.
-      - <a href="/assets/LetterOfRecommendation_KDV.pdf">Letter of Recommendation</a>
+      - <a href="/assets/files/2019-06-11_Letter-Of-Recommendation_KDV.pdf">Letter of Recommendation</a>
     technologies_used: ASP.NET Core MVC (C#), MSTest, Bootstrap, Entity Framework Core, Microsoft SQL Server
 
 projects:
   - title: "DockerHub"
-    link: https://hub.docker.com/u/dotwee
+    link: /links/dockerhub
     details:
       - Maintaining and administrating several Docker container images publicly available on DockerHub, ensuring their reliability and availability to the user community.
       - Monitoring and resolving issues related to the container images, working collaboratively with users to troubleshoot problems and provide technical support.
@@ -107,7 +107,7 @@ volunteering:
       - FlightAware uses this data to provide real-time flight tracking to the public, to help airlines and operators improve efficiency and promote aviation safety.
   - time: 2014 - present
     role: Bidirectional Translator
-    company: <a href="https://crowdin.com/profile/dotwee">Crowdin</a> & <a href="https://github.com/dotWee">GitHub</a>
+    company: <a href="/links/crowdin">Crowdin</a> & <a href="/links/github">GitHub</a>
     details:
-      - Translate open-source projects into German and English on <a href="https://crowdin.com/profile/dotwee">Crowdin</a> and <a href="https://github.com/dotWee">GitHub</a>, contributing to the localization efforts of various non-profit organizations and community-driven projects.
+      - Translate open-source projects into German and English on <a href="/links/crowdin">Crowdin</a> and <a href="/links/github">GitHub</a>, contributing to the localization efforts of various non-profit organizations and community-driven projects.
       - Providing high-quality translations, collaborating with other volunteer translators to ensure consistency and accuracy in translations. Assisting in the review and proofreading of translations, ensuring that they are of the highest quality.

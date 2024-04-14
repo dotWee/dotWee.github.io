@@ -2,13 +2,14 @@
 
 [![Jekyll Build & Deploy](https://github.com/dotWee/dotWee.github.io/actions/workflows/main.yml/badge.svg)](https://github.com/dotWee/dotWee.github.io/actions/workflows/main.yml)
 
-_a simple personal single-page* website built using [jekyll](https://jekyllrb.com/) and some handcrafted** stylesheets_
+_a simple static website* built using [jekyll](https://jekyllrb.com/) and some handcrafted stylesheets_
 
-<sub>* almost. has dedicated `[imprint, 403, 404]` page</sub>
+<sub>* /(personal|webbased|cv-letter|resume)/g</sub>
 </br>
-<sub>** mostly. except <a href="http://necolas.github.io/normalize.css/">normalize.css</a></sub>
 
 ## setup
+
+### manually
 
 1. install a full [ruby development environment](https://jekyllrb.com/docs/installation/)
 2. install [jekyll](https://jekyllrb.com/) and [bundler](https://jekyllrb.com/docs/ruby-101/#bundler) [gems](https://jekyllrb.com/docs/ruby-101/#gems):
@@ -22,6 +23,19 @@ _a simple personal single-page* website built using [jekyll](https://jekyllrb.co
     ```bash
     $ git clone https://github.com/dotWee/dotWee.github.io.git dotwee-github-io && cd dotwee-github-io
     ```
+
+### through [devcontainer](https://containers.dev/)
+
+open this repository in a devcontainer-supported-ide (like visual studio code or [GitHub Codespace](https://docs.github.com/codespaces)):
+
+1. clone git repository and change into repo directory:
+
+    ```bash
+    $ git clone https://github.com/dotWee/dotWee.github.io.git dotwee-github-io && cd dotwee-github-io
+    ```
+
+2. open the git repository in Visual Studio Code & install the Remote-Containers extension
+3. Visual Studio Code will detect the devcontainer configuration and prompt you to reopen the project in a devcontainer: click on "_Reopen in Container_" and you're done
 
 ## usage
 

@@ -1,13 +1,13 @@
 
 publications:
   - name: Resume
-    link: https://lukas.wolfsteiner.media/resume
+    link: /resume/
 
   - name: GitHub
-    link: https://github.com/dotwee
+    link: /links/github
 
   - name: DockerHub
-    link: https://hub.docker.com/u/dotwee
+    link: /links/dockerhub
 
 interests:
   - name: Digital health and medicine
@@ -17,10 +17,10 @@ interests:
 
 contact:
   - name: LinkedIn
-    link: https://www.linkedin.com/in/lukas-wolfsteiner
+    link: /links/linkedin
 
   - name: Xing
-    link: https://www.xing.com/profile/Lukas_Wolfsteiner2
+    link: /links/xing
 
   - name: Mastodon
-    link: https://sueden.social/@dotwee
+    link: /links/mastodon

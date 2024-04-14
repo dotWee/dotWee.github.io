@@ -40,6 +40,7 @@ plugins:
   - jekyll-last-modified-at
   - jekyll/mastodon_webfinger
   - jekyll-target-blank
+  - jekyll-redirect-from
 
 # Config for jekyll/mastodon_webfinger
 mastodon:
