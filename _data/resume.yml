@@ -51,11 +51,11 @@ skills:
       - Vuetify
   - category: DevOps
     skill:
-      - Project Management (Agile, OpenProject)
       - Cloud (Azure, Docker, Kubernetes)
       - Monitoring (Grafana, Prometheus)
       - Atlassian (Jira, BitBucket)
-      - CI/CD (Jenkins, GitHab)
+      - Project Management (Agile)
+      - CI/CD (Jenkins, GitHub)
   - category: Tools
     skill:
       - JetBrains (IntelliJ IDEA)
