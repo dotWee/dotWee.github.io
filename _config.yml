@@ -17,12 +17,8 @@ title: Lukas Wolfsteiner
 description: computer science student at the technical university of applied sciences in regensburg, germany
 email: lukas@wolfsteiner.media
 
-# Plugin jekyll-github-metadata should take care of this
 # baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lukas.wolfsteiner.media" # the base hostname & protocol for your site, e.g. http://example.com
-
-# Config for jekyll-github-metadata
-repository: dotWee/dotWee.github.io
 
 timezone: Europe/Berlin
 
@@ -33,7 +29,6 @@ markdown: kramdown
 encoding: UTF-8
 
 plugins:
-  - jekyll-github-metadata
   - jekyll-sitemap
   - jekyll-favicon
   - jekyll-seo-tag

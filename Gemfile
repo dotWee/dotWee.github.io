@@ -19,7 +19,6 @@ gem "jekyll", "~> 4.3.3"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem 'jekyll-github-metadata'
   gem 'jekyll-sitemap'
   gem 'jekyll-favicon'
   gem 'jekyll-seo-tag'
