@@ -58,9 +58,9 @@ skills:
       - CI/CD (Jenkins, GitHub)
   - category: Tools
     skill:
-      - JetBrains (IntelliJ IDEA)
-      - Android Studio
+      - JetBrains IDEs
       - Visual Studio Code
+      - Vim
 
 # Career Objective
 career:
