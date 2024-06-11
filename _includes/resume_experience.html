@@ -11,6 +11,7 @@
             {{exp.company}}
             <span class="time">{{exp.time}}</span>
         </div>
+
         {% if exp.details %}
         <div class="details">
             {% for sentence in exp.details %}
@@ -18,6 +19,17 @@
             {% endfor %}
         </div>
         {% endif %}
+
+        {% if exp.files %}
+        <div class="details">
+            <ul>
+                {% for file in exp.files %}
+                <li><a href="{{file.path | relative_url}}">{{file.title}}</a></li>
+                {% endfor %}                
+            </ul>
+        </div>
+        {% endif %}
+
         <p class="technologies">Technologies Used: <i>{{exp.technologies_used}}</i></p>
     </div>
 
