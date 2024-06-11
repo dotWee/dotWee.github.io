@@ -32,10 +32,6 @@ education:
     time: 2016 - 2020
     university: Technical University of applied Sciences Regensburg
 
-  - degree: Entrance qualification for universities of applied sciences ("Fachabitur")
-    time: 2014 - 2016
-    university: Maximilian-Kolbe-Schule Neumarkt
-
 skills:
   - category: Backend
     skill: 
