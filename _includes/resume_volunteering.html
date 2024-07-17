@@ -5,17 +5,17 @@
     {% for vol in volunteering %}
     <div class="volunteering-item">
         <div class="role">
-            {{vol.role}}
+            {{ vol.role }}
         </div>
         <div class="organization">
-            {{vol.company}}
-            <span class="time">{{vol.time}}</span>
+            {{ vol.company }}
+            <span class="time">{{ vol.time }}</span>
         </div>
 
         {% if vol.details %}
         <div class="details">
             {% for sentence in vol.details %}
-            <p>{{sentence}}</p>
+            <p>{{ sentence | markdownify }}</p>
             {% endfor %}
         </div>
         {% endif %}
