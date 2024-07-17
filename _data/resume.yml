@@ -119,11 +119,11 @@ volunteering:
     time: 2022 - present
     company: <a href="https://flightaware.com/">FlightAware International</a>
     details:
-      - Contributing to the FlightAware network by running a FlightFeeder, a device that listens for radio signals from ADS-B aircraft transponders and descodes them to determine aircraft positions.
-      - FlightAware uses this data to provide real-time flight tracking to the public, to help airlines and operators improve efficiency and promote aviation safety.
+      - Contributing to the FlightAware network by hosting a [FlightFeeder](https://www.flightaware.com/adsb/flightfeeder/), a device that **listens for radio signals** from ADS-B **aircraft transponders** and descodes them to determine aircraft positions.
+      - FlightAware uses this data to **provide real-time flight tracking** to the public, to **help airlines** and operators improve efficiency and **promote aviation safety**.
   - time: 2014 - present
     role: Bidirectional Translator
     company: <a href="/links/crowdin">Crowdin</a> & <a href="/links/github">GitHub</a>
     details:
-      - Translate open-source projects into German and English on <a href="/links/crowdin">Crowdin</a> and <a href="/links/github">GitHub</a>, contributing to the localization efforts of various non-profit organizations and community-driven projects.
-      - Providing high-quality translations, collaborating with other volunteer translators to ensure consistency and accuracy in translations. Assisting in the review and proofreading of translations, ensuring that they are of the highest quality.
+      - Translate open-source projects into German and English on [Crowdin](/links/crowdin) and [GitHub](/links/github), contributing to the localization efforts of various **non-profit organizations** and **community-driven projects**.
+      - Providing **high-quality translations**, collaborating with other volunteer translators to **ensure consistency** and **accuracy** in translations. Assisting in the review and proofreading of translations, ensuring that they are of the highest quality.
