@@ -11,6 +11,24 @@
         "kind": "build",
         "isDefault": true
       },
+    },
+    {
+      "label": "bundle-install",
+      "type": "shell",
+      "command": "bundle install",
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+    },
+    {
+      "label": "bundle-update",
+      "type": "shell",
+      "command": "bundle update",
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
     }
   ]
 }
