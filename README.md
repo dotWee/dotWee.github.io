@@ -68,22 +68,10 @@ $ docker run --rm \
 
 alternatively using [docker-compose](https://docs.docker.com/compose):
 
-> **note**: see [./docker-compose.yml](./docker-compose.yml) for reference
-
-```yaml
-version: '3.7'
-services:
-  dotwee-github-io:
-    image: jekyll/jekyll:latest
-    command: jekyll serve --watch --force_polling
-    volumes:
-      - $PWD:/srv/jekyll
-    ports:
-      - 4000:4000
-```
+> **note**: see [./compose.yml](./compose.yml) for reference
 
 ```bash
-$ docker-compose up -d
+$ docker compose up -d
 ```
 
 ### update [ruby gems](https://rubygems.org/) dependencies
