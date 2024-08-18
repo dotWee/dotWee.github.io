@@ -101,3 +101,7 @@ target-blank:
   rel_exclude: 
     - kdv-fh-bayern.de
     - weigertkunde.de
+
+# Config for jekyll-redirect-from
+redirect_from:
+  json: false
