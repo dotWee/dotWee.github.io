@@ -15,7 +15,7 @@
         {% if exp.details %}
         <div class="details">
             {% for sentence in exp.details %}
-            <p>{{sentence}}</p>
+            <p>{{ sentence | markdownify }}</p>
             {% endfor %}
         </div>
         {% endif %}
