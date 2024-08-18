@@ -58,7 +58,7 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - .DS_Store
-  - docker-compose.yml
+  - compose.yml
   - LICENSE
   - CNAME
 
