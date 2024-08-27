@@ -1,4 +1,3 @@
-#name: Lukas Wolfsteiner
 support_dark_mode: false
 
 # Sidebar
@@ -20,8 +19,10 @@ contacts:
     label: DockerHub
 
 languages:
-  - idiom: German (native)
-  - idiom: English (fluent)
+  - language: German
+    fluency: native
+  - language: English
+    fluency: fluent
 
 education:
   - degree: Bachelor of Science (B.Sc.) in Computer Science

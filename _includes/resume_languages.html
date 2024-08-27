@@ -3,7 +3,7 @@
 <section class="languages">
     <div class="title">Languages</div>
     {% for lang in languages %}
-    <div class="idiom">{{lang.idiom}}</div>
+    <div class="idiom">{{lang.language}} ({{lang.fluency}})</div>
     {% endfor %}
 </section>
 {% endif %}
