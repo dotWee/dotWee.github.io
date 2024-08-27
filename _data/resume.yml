@@ -1,22 +1,25 @@
 support_dark_mode: false
 
-# Sidebar
-contacts:
-  - icon: "far.fa-envelope"
-    href: "mailto:lukas@wolfsteiner.media"
-    username: lukas@wolfsteiner.media
-  - icon: "fab.fa-linkedin-in"
-    href: "/links/linkedin"
-    username: lukas-wolfsteiner
-    label: LinkedIn
-  - icon: "fab.fa-github"
-    href: "/links/github"
-    username: dotWee
-    label: GitHub
-  - icon: "fab.fa-docker"
-    href: "/links/dockerhub"
-    username: "dotwee"
-    label: DockerHub
+basics:
+  name: Lukas Wolfsteiner
+
+  profiles:
+    - icon: "far.fa-envelope"
+      url: "mailto:lukas@wolfsteiner.media"
+      username: lukas@wolfsteiner.media
+      network: Email
+    - icon: "fab.fa-linkedin-in"
+      url: "/links/linkedin"
+      username: lukas-wolfsteiner
+      network: LinkedIn
+    - icon: "fab.fa-github"
+      url: "/links/github"
+      username: dotWee
+      network: GitHub
+    - icon: "fab.fa-docker"
+      url: "/links/dockerhub"
+      username: dotwee
+      network: DockerHub
 
 languages:
   - language: German

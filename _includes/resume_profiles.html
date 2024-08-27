@@ -1,0 +1,17 @@
+{% assign profiles = site.data.resume.basics.profiles %}
+{% if profiles %}
+<section class="profiles">
+    <div class="title">Contact</div>
+
+    {% for profile in profiles %}
+    <div class="profile">
+        {% fa_svg profile.icon %}
+        <a href="{{profile.url}}">
+            {{ profile.network | default: profile.username }}
+        </a>
+    </div>
+    {% endfor %}
+</section>
+{% fa_svg_generate %}
+
+{% endif %}

@@ -1,9 +1,9 @@
-.contact {
+.profiles {
     margin-bottom: var(--grid-spacing);
     .title {
         @include sub-header;
     }
-    .contact-item {
+    .profile {
         display: flex;
         align-items: center;
 
