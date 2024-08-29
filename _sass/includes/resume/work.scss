@@ -1,12 +1,12 @@
-.experiance {
+.work {
     .title {
         @include header;
     }
-    .experience-item {
-        .role {
+    .work-item {
+        .position {
             @include sub-header;
         }
-        .company {
+        .name {
             @include body-text;
             font-weight: bold;
 
@@ -17,14 +17,27 @@
                 margin-left: calc(var(--grid-spacing) / 2);
             }
         }
-        .details {
+        .summary {
             @include body-text;
             ul {
                 list-style-type: square;
             }
+            br {
+                font-size: 200%;
+            }
+        }
+        .highlights {
+            @include body-text;
+            ul {
+                list-style-type: square;
+            }
+            .highlight-item, .highlight-item p {
+                margin: 0;
+            }
         }
         .technologies {
             @include body-text;
+            font-style: italic;
         }
     }
 }

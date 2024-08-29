@@ -1,0 +1,42 @@
+{% assign work = site.data.resume.work %}
+{% if work %}
+<section class="work">
+    <h2 class="title">Work Experience</h2>
+    {% for item in work %}
+    <div class="work-item">
+        <div class="position">
+            {{ item.position }}
+        </div>
+        <div class="name">
+            {% if item.url %}
+            <a href="{{ item.url }}">{{ item.name }}</a>
+            {% else %}
+            {{ item.name }}
+            {% endif %}
+            <span class="time">{{ item.startDate }} - {{ item.endDate }}</span>
+        </div>
+
+        {% if item.summary %}
+        <div class="summary">
+            {{ item.summary | newline_to_br }}
+        </div>
+        {% endif %}
+
+        {% if item.highlights %}
+        <div class="highlights">
+            <ul>
+                {% for highlight in item.highlights %}
+                <li class="highlight-item">{{ highlight | markdownify }}</li>
+                {% endfor %}                
+            </ul>
+        </div>
+        {% endif %}
+
+        {% if item.technologies %}
+        <p class="technologies">Technologies Used: {{ item.technologies }}</p>
+        {% endif %}
+    </div>
+
+    {% endfor %}
+</section>
+{% endif %}
