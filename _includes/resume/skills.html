@@ -1,11 +1,12 @@
 {% assign skills = site.data.resume.skills %}
 {% if skills %}
 <section class="skills">
-    {% for sks in skills %}
-    <div class="title">{{sks.category}} skills</div>
-    {% for sk in sks.skill%}
-    <div class="skill">{{sk}}</div>
-    {% endfor %}
+    {% for item in skills %}
+        <div class="name">{{ item.name }} Skills</div>
+
+        {% for keyword in item.keywords %}
+            <div class="keyword">{{ keyword }}</div>
+        {% endfor %}
     {% endfor %}
 </section>
 {% endif %}

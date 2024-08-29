@@ -43,27 +43,31 @@ education:
     endDate: 2020
 
 skills:
-  - category: Backend
-    skill: 
+  - name: Backend
+    level: Master
+    keywords: 
       - Python (Pydantic, Mypy, FastAPI)
       - Java (Spring Boot, Hibernate)
       - C# (.NET Core, ASP.NET)
       - SQL (PostgreSQL, MS SQL)
-  - category: Frontend
-    skill:
+  - name: Frontend
+    level: Experienced
+    keywords:
       - JavaScript (ES6, Node.js)
       - TypeScript (Vue.js)
       - Bootstrap
       - Vuetify
-  - category: DevOps
-    skill:
+  - name: DevOps
+    level: Experienced
+    keywords:
       - Cloud (Azure, Docker, Kubernetes)
       - Monitoring (Grafana, Prometheus)
       - Atlassian (Jira, BitBucket)
       - Project Management (Agile)
       - CI/CD (Jenkins, GitHub)
-  - category: Tools
-    skill:
+  - name: Tools
+    level: Master
+    keywords:
       - JetBrains IDEs
       - Visual Studio Code
       - Vim
