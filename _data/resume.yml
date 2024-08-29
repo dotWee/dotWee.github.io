@@ -28,13 +28,19 @@ languages:
     fluency: fluent
 
 education:
-  - degree: Bachelor of Science (B.Sc.) in Computer Science
-    time: 2020 - present
-    university: Technical University of applied Sciences Regensburg
-
-  - degree: Bachelor of Science (B.Sc.) in Medical Health Informatics (switched major)
-    time: 2016 - 2020
-    university: Technical University of applied Sciences Regensburg
+  - institution: Technical University of applied Sciences Regensburg
+    url: https://www.oth-regensburg.de/
+    area: Computer Science
+    studyType: Bachelor of Science (B.Sc.)
+    startDate: 2020
+    endDate: present
+  
+  - institution: Technical University of applied Sciences Regensburg
+    url: https://www.oth-regensburg.de/
+    area: Medical Health Informatics
+    studyType: Bachelor of Science (B.Sc.)
+    startDate: 2016
+    endDate: 2020
 
 skills:
   - category: Backend
