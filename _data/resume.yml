@@ -2,6 +2,7 @@ support_dark_mode: false
 
 basics:
   name: Lukas Wolfsteiner
+  label: Software Gardener
 
   profiles:
     - icon: "far.fa-envelope"

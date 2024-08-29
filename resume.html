@@ -10,7 +10,13 @@ permalink: /resume/
 
 <div class="container">
   <div class="header">
-    <h1 class="title">{{site.data.resume.basics.name | default: site.title }}</h1>
+    <div class="basics">
+      <h1 class="name">{{site.data.resume.basics.name | default: site.title }}</h1>
+
+      {% if data.basics.label %}
+      <h2 class="label">{{ data.basics.label }}</h2>
+      {% endif %}
+    </div>
   </div>
   <div class="container-block">
     <div class="sidebar">
