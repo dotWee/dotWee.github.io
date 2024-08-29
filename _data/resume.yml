@@ -131,12 +131,32 @@ work:
     technologies: ASP.NET Core MVC (C#), MSTest, Bootstrap, Entity Framework Core, Microsoft SQL Server
 
 projects:
-  - title: "DockerHub"
-    link: /links/dockerhub
-    details:
-      - Maintaining and administrating several Docker container images publicly available on DockerHub, ensuring their reliability and availability to the user community.
-      - Monitoring and resolving issues related to the container images, working collaboratively with users to troubleshoot problems and provide technical support.
-      - Updating and optimizing container images to improve their functionality and performance, incorporating feedback from users and following best practices for Docker container management.
+  - name: whatthefuckshouldlukashaveforlunch.com
+    startDate: around 2017
+    endDate: 2020
+    description: Throws a random item from today's canteen meal plan at you
+    highlights:
+      - Reverse engineered the non-public meal plan endpoints from my universitys canteen
+    url: https://whatthefuckshouldlukashaveforlunch.com/
+  - name: stwno-mensa_api
+    startDate: around 2018
+    endDate: 2020
+    description: A public json- / grpc- / graphql-wrapper around the inofficial API for different canteens managed by the Studentenwerk Niederbayern/Oberpfalz.
+    url: https://stwno-mensa-api.herokuapp.com/
+  - name: things
+    startDate: around 2019
+    endDate: present
+    description: Collection of self-designed 3D parts & objects
+    highlights:
+      - Cherry MX compatible Tor Project keycap
+    url: https://github.com/dotWee/things
+  - name: "containers"
+    startDate: around 2019
+    endDate: present
+    description: Collection of publicly maintained Docker images
+    highlights:
+      - Accumulated 10s of thousends pulls
+    url: /links/dockerhub
 
 # Volunteering
 volunteering:
