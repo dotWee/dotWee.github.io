@@ -5,7 +5,7 @@ basics:
 
   profiles:
     - icon: "far.fa-envelope"
-      url: "mailto:lukas@wolfsteiner.media"
+      url: "/links/email"
       username: lukas@wolfsteiner.media
       network: Email
     - icon: "fab.fa-linkedin-in"
