@@ -152,23 +152,24 @@ projects:
     url: https://github.com/dotWee/things
   - name: "containers"
     startDate: around 2019
+# Volunteer
+volunteer:
+  - position: FlightAware Active Network Contributor
+    startDate: 2021
     endDate: present
-    description: Collection of publicly maintained Docker images
+    organization: FlightAware International
+    url: https://flightaware.com/
+    summary: Contributing to the FlightAware network with real-time flight tracking data and ADS-B aircraft transponder decoding to improve aviation safety and efficiency
     highlights:
-      - Accumulated 10s of thousends pulls
-    url: /links/dockerhub
+      - Providing real-time flight tracking to the public, helping airlines and operators improve efficiency and promote aviation safety
 
-# Volunteering
-volunteering:
-  - role: FlightAware Active Network Contributor
-    time: 2022 - present
-    company: <a href="https://flightaware.com/">FlightAware International</a>
-    details:
-      - Contributing to the FlightAware network by running a FlightFeeder, a device that listens for radio signals from ADS-B aircraft transponders and descodes them to determine aircraft positions.
-      - FlightAware uses this data to provide real-time flight tracking to the public, to help airlines and operators improve efficiency and promote aviation safety.
-  - time: 2014 - present
-    role: Bidirectional Translator
-    company: <a href="/links/crowdin">Crowdin</a> & <a href="/links/github">GitHub</a>
-    details:
-      - Translate open-source projects into German and English on <a href="/links/crowdin">Crowdin</a> and <a href="/links/github">GitHub</a>, contributing to the localization efforts of various non-profit organizations and community-driven projects.
-      - Providing high-quality translations, collaborating with other volunteer translators to ensure consistency and accuracy in translations. Assisting in the review and proofreading of translations, ensuring that they are of the highest quality.
+  - startDate: 2014
+    endDate: present
+    position: Bidirectional Translator
+    organization: Crowdin
+    url: /links/crowdin
+    summary: Actively contributing to the localization efforts of various non-profit organizations and community-driven open-source projects
+    highlights: 
+      - Providing high-quality translations, collaborating with other volunteer translators to ensure consistency and accuracy in translations
+      - Assisting in the review and proofreading of translations, ensuring highest quality
+  

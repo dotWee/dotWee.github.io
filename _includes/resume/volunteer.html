@@ -1,0 +1,31 @@
+{% assign volunteer = site.data.resume.volunteer | sort: "startDate" | reverse %}
+{% if volunteer %}
+<section class="volunteer">
+    <h2 class="title">Volunteering</h2>
+
+    {% for item in volunteer %}
+    <div class="item">
+        <div class="position">
+            {{ item.position }}
+        </div>
+        <div class="organization">
+            <a href="{{ item.url }}" target="_blank">{{ item.organization }}</a>
+            <span class="time">{{ item.startDate}} - {{ item.endDate }}</span>
+        </div>
+
+        <div class="details">
+            <ul>
+                {% if item.summary %}
+                <li>{{ item.summary }}</p>
+                {% endif %}
+                
+                {% for highlight in item.highlights %}
+                <li>{{ highlight }}</li>
+                {% endfor %}
+            </p>
+        </div>
+    </div>
+
+    {% endfor %}
+</section>
+{% endif %}
