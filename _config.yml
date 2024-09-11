@@ -28,6 +28,9 @@ markdown: kramdown
 # Force UTF-8 encoding
 encoding: UTF-8
 
+# Custom plugins
+plugins_dir: ./_plugins
+
 plugins:
   - jekyll-sitemap
   - jekyll-favicon

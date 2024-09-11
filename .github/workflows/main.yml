@@ -46,6 +46,14 @@ jobs:
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
 
+      - name: Push resume.json to Gist
+        uses: dotWee/push-gist-action@v1
+        with:
+          token: ${{ secrets.GIST_TOKEN }}
+          gist_id: 46a00ab755cd7904a344463556017670
+          file_path: ./_site/assets/resume.json
+          gist_file_name: resume.json
+
   deploy:
     name: Deploy generated site to GitHub pages
     needs: generate
