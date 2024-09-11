@@ -4,22 +4,20 @@
     }
     .project {
         margin-bottom: var(--grid-spacing);
-        .name {
+
+        .name, .description {
             @include body-text;
+
+            .startDate {
+                @include time;
+            }
         }
-        
-        .description {
+
+        .highlights {
             @include body-text;
-        }
-        .details {
-            @include body-text;
-            text-transform: lowercase;
             ul {
                 list-style-type: square;
                 margin-top: 0;
-            }
-            .highlight-item, .highlight-item p {
-                margin: 0;
             }
         }
     }

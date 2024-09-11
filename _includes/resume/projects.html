@@ -1,10 +1,25 @@
-{% assign projects = site.data.resume.projects %}
+{% assign projects = site.data.resume.projects | sort: "startDate" | reverse %}
 {% if projects %}
 <section class="projects">
     <h2 class="title">Public references</h2>
     {% for item in projects %}
     <div class="project">
-        <a class="name" href="{{ item.url }}">{{ item.name }}</a>: <span class="description">{{ item.description }}</span>
+            <span class="name">
+                <a href="{{ item.url }}">{{ item.name }}</a>
+                <span class="startDate"> ({{ item.startDate }})</span>:
+            </span>
+
+            <span class="description">{{ item.description }}</span>
+
+        {% if item.highlights %}
+        <div class="highlights">
+            <ul>
+                {% for highlight in item.highlights %}
+                <li>{{ highlight }}</li>
+                {% endfor %}
+            </p>
+        </div>
+        {% endif %}
     </div>
     {% endfor %}
 </section>

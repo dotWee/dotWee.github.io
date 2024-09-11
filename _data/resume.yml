@@ -131,27 +131,69 @@ work:
     technologies: ASP.NET Core MVC (C#), MSTest, Bootstrap, Entity Framework Core, Microsoft SQL Server
 
 projects:
-  - name: whatthefuckshouldlukashaveforlunch.com
-    startDate: around 2017
-    endDate: 2020
-    description: Throws a random item from today's canteen meal plan at you
+  - name: MicroPinner
+    startDate: 2015
+    endDate: 2023
+    description: A lightweight native Android application that turns the statusbar into a pingboard, similar to sticky notes on a PC.
     highlights:
-      - Reverse engineered the non-public meal plan endpoints from my universitys canteen
-    url: https://whatthefuckshouldlukashaveforlunch.com/
-  - name: stwno-mensa_api
-    startDate: around 2018
-    endDate: 2020
-    description: A public json- / grpc- / graphql-wrapper around the inofficial API for different canteens managed by the Studentenwerk Niederbayern/Oberpfalz.
-    url: https://stwno-mensa-api.herokuapp.com/
-  - name: things
-    startDate: around 2019
+      - 42 stars and 22 forks on GitHub, 10k+ downloads on Google Play
+      - Developed in Java for Android, with a focus on performance and battery efficiency
+    url: https://github.com/dotWee/MicroPinner
+
+  - name: Mensaplan
+    startDate: 2019
+    endDate: 2019
+    description: A native Android application for viewing the weekly canteen plan of different university locations in Regensburg, providing easy access to meal information for students.
+    highlights:
+      - Based upon my reverse engineered API for the Studentenwerk Niederbayern / Oberpfalz
+      - Developed in Java for Android, accumulating 1k+ downloads on Google Play
+    url: https://github.com/dotWee/Mensaplan
+
+  - name: macOS-PiholeShortcuts
+    startDate: 2022
+    endDate: 2022
+    description: A native macOS application to manage and monitor Pi-hole instances through the status bar, providing quick access to Pi-hole controls and statistics.
+    highlights:
+      - 51 stars on GitHub
+      - Built using Swift & CoreData and fully integrated with macOS UI standards
+    url: https://github.com/dotWee/macOS-PiholeShortcuts
+
+  - name: docker-fritzbox-prometheus-exporter
+    startDate: 2023
     endDate: present
-    description: Collection of self-designed 3D parts & objects
+    description: A Docker image for exporting Fritz!Box UPnP statistics to Prometheus, enabling monitoring of Fritz!Box routers using Prometheus and related tools.
     highlights:
-      - Cherry MX compatible Tor Project keycap
-    url: https://github.com/dotWee/things
-  - name: "containers"
-    startDate: around 2019
+      - 14 stars and 3 forks on GitHub
+      - Forked and enhanced with additional metrics for better network monitoring
+    url: https://github.com/dotWee/docker-fritzbox-prometheus-exporter
+
+  - name: stwno-mensa_api
+    startDate: 2018
+    endDate: 2020
+    url: https://github.com/dotWee/stwno-mensa_api
+    description: A wrapper around the unofficial API for canteens managed by the Studentenwerk Niederbayern/Oberpfalz, providing JSON, gRPC, and GraphQL interfaces for accessing canteen data.
+    highlights:
+      - Supports multiple API formats (JSON, gRPC, GraphQL)
+      - Developed in JavaScript
+
+  - name: macOS-SourceListSidebarExample
+    startDate: 2020
+    endDate: 2020
+    description: An example of implementing a sidebar use case in macOS apps using NSOutlineView with CoreData and RxSwift.
+    highlights:
+      - Provided developers a clean example of macOS UI patterns in combination with modern reactive programming
+      - Written in Swift, utilizing CoreData, RxSwift
+    url: https://github.com/dotWee/macOS-SourceListSidebarExample
+
+  - name: docker-matrix-synapse-s3
+    startDate: 2022
+    endDate: 2023
+    description: A custom Docker image for Matrix Synapse with pre-installed S3 storage support.
+    highlights:
+      - Simplified Matrix Synapse setup with built-in cloud storage support
+      - Fully automated build and testing pipeline using GitHub Actions
+    url: https://github.com/dotWee/docker-matrix-synapse-s3
+
 # Volunteer
 volunteer:
   - position: FlightAware Active Network Contributor
