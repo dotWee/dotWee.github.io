@@ -47,7 +47,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
 
       - name: Push resume.json to Gist
-        uses: dotWee/push-gist-action@v1
+        uses: dotWee/push-gist-action@4c72e19c032cbea15ed6f1a52bacef59e21292eb
         with:
           token: ${{ secrets.GIST_TOKEN }}
           gist_id: 46a00ab755cd7904a344463556017670
