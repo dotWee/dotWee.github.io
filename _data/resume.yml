@@ -4,6 +4,22 @@ basics:
   name: Lukas Wolfsteiner
   label: Software Gardener
 
+  # Properties taken care of by the resume_yaml_to_json.rb plugin
+  # email:
+  # url:
+  # summary:
+  # image:
+
+  # Undefined properties
+  # phone:
+
+  location:
+    # address:
+    postalCode: 92318
+    city: Neumarkt
+    countryCode: DE
+    region: Bavaria
+
   profiles:
     - icon: "far.fa-envelope"
       url: "/links/email"
