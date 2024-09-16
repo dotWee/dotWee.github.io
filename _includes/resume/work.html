@@ -13,7 +13,7 @@
             {% else %}
             {{ item.name }}
             {% endif %}
-            <span class="time">{{ item.startDate }} - {{ item.endDate }}</span>
+            <span class="time">{{ item.startDate }} - {{ item.endDate | default: "present" }}</span>
         </div>
 
         {% if item.summary %}

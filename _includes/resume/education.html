@@ -6,7 +6,7 @@
     <div class="education-item">
         <div class="degree">{{ item.studyType }} in {{ item.area }}</div>
         <div class="institution"><a href="{{ item.url }}">{{ item.institution }}</a></div>
-        <div class="time">{{ item.startDate}} - {{ item.endDate }}</div>
+        <div class="time">{{ item.startDate }} - {{ item.endDate | default: "present" }}</div>
     </div>
     {% endfor %}
 </section>

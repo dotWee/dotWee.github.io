@@ -10,7 +10,7 @@
         </div>
         <div class="organization">
             <a href="{{ item.url }}" target="_blank">{{ item.organization }}</a>
-            <span class="time">{{ item.startDate}} - {{ item.endDate }}</span>
+            <span class="time">{{ item.startDate}} - {{ item.endDate | default: "present" }}</span>
         </div>
 
         <div class="details">
