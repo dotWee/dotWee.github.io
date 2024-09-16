@@ -1,5 +1,5 @@
 // For format details, see https://aka.ms/devcontainer.json.
-// For config options, see the README at: 
+// For config options, see the README at:
 //     https://github.com/devcontainers/templates/tree/main/src/jekyll
 {
 	"name": "Jekyll",
@@ -17,6 +17,10 @@
 	// Commands to be run after the container is first created
 	"postCreateCommand": "sudo apt-get update && sudo apt-get install -y imagemagick imagemagick-doc",
 
+  // Commands to run after the container is started
+  "updateContentCommand": "bundle install",
+
+	// Some default container specific settings
 	"containerEnv": {
 		"DEBIAN_FRONTEND": "noninteractive" // Prevents some apt-get warnings
 	}
