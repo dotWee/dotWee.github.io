@@ -45,12 +45,19 @@ languages:
     fluency: fluent
 
 education:
+  - institution: IU  International University of Applied Sciences
+    url: https://www.iu.de/en/
+    area: Software Engineering
+    studyType: Bachelor of Science (B.Sc.)
+    startDate: 2023
+    endDate: 2025
+
   - institution: Technical University of applied Sciences Regensburg
     url: https://www.oth-regensburg.de/
     area: Computer Science
     studyType: Bachelor of Science (B.Sc.)
     startDate: 2020
-    endDate: present
+    endDate: 2023
   
   - institution: Technical University of applied Sciences Regensburg
     url: https://www.oth-regensburg.de/
