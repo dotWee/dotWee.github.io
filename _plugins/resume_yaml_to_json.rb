@@ -16,18 +16,16 @@ Jekyll::Hooks.register :site, :post_write do |site|
     yaml_data["basics"]["summary"] = site.config["description"]
 
     # Add image property by using the gravatar hash
-    email = site.config["email"].downcase
-    hash = Digest::SHA256.hexdigest(email)
-    yaml_data["basics"]["image"] = "https://www.gravatar.com/avatar/#{hash}?s=600"
+    yaml_data["basics"]["image"] = get_gravatar_url(site.config["email"])
 
     # Append the site baseurl to the profile urls, if it only contains the path
     yaml_data["basics"]["profiles"].each do |profile|
-      profile["url"] = File.join(site.config["url"], profile["url"]) if profile["url"].start_with?("/")
+      profile["url"] = add_baseurl(site, profile["url"])
     end
 
     # Same for the volunteer projects
     yaml_data["volunteer"].each do |volunteer|
-      volunteer["url"] = File.join(site.config["url"], volunteer["url"]) if volunteer["url"].start_with?("/")
+      volunteer["url"] = add_baseurl(site, volunteer["url"])
     end
 
     File.open(json_path, "w") do |f|
@@ -37,4 +35,15 @@ Jekyll::Hooks.register :site, :post_write do |site|
   else
     puts "#{yaml_path} not found!"
   end
+end
+
+def get_gravatar_url(email, size=600) # get the gravatar url for the email, with a default size of 600
+  email = email.downcase
+  hash = Digest::SHA256.hexdigest(email)
+  return "https://www.gravatar.com/avatar/#{hash}?s=#{size}"
+end
+
+def add_baseurl(site, url) # add the baseurl to the url if it only contains the path
+  return File.join(site.config["url"], url) if url.start_with?("/")
+  return url
 end
