@@ -23,5 +23,14 @@
 	// Some default container specific settings
 	"containerEnv": {
 		"DEBIAN_FRONTEND": "noninteractive" // Prevents some apt-get warnings
+	},
+
+	// For validating the resumejson schema
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"redhat.vscode-yaml"
+			]
+		}
 	}
 }

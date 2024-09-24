@@ -1,4 +1,4 @@
-support_dark_mode: false
+$schema: "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json"
 
 basics:
   name: Lukas Wolfsteiner
