@@ -219,22 +219,24 @@ projects:
 
 # Volunteer
 volunteer:
-  - position: FlightAware Active Network Contributor
-    startDate: 2021
+  - position: FlightAware FlightFeeder Operator
+    startDate: "2021-05-01"
     endDate: present
     organization: FlightAware International
     url: https://flightaware.com/
-    summary: Contributing to the FlightAware network with real-time flight tracking data and ADS-B aircraft transponder decoding to improve aviation safety and efficiency
+    summary: Providing real-time flight tracking to the public, helping airlines and operators improve efficiency and promote aviation safety.
     highlights:
-      - Providing real-time flight tracking to the public, helping airlines and operators improve efficiency and promote aviation safety
-
-  - startDate: 2014
+      - Operating a FlightFeeder station near [Airport Neumarkt/Opf. (EDPO)](https://www.flightaware.com/live/airport/EDPO)
+      - Reporting an average of over 2.500+ unique aircrafts daily
+      - Processing and transmitting over 300.000 aircraft positions daily
+      - Providing coverage for both civilian and military aircraft, enhancing overall airspace awareness
+  - startDate: "2014-01-01"
     endDate: present
     position: Bidirectional Translator
     organization: Crowdin
     url: /links/crowdin
-    summary: Actively contributing to the localization efforts of various non-profit organizations and community-driven open-source projects
+    summary: Providing high-quality translations, contributing to the localization efforts of various non-profit organizations and community-driven open-source projects.
     highlights: 
-      - Providing high-quality translations, collaborating with other volunteer translators to ensure consistency and accuracy in translations
-      - Assisting in the review and proofreading of translations, ensuring highest quality
-  
+      - Contributed translations to major open-source projects used by millions of users worldwide
+      - Helping non-native developers to reach a broader audience
+      - Specialized in translating for mobile and desktop applications
