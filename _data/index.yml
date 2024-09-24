@@ -1,4 +1,3 @@
-
 publications:
   - name: Resume
     link: /resume/
@@ -8,12 +7,6 @@ publications:
 
   - name: DockerHub
     link: /links/dockerhub
-
-interests:
-  - name: Digital health and medicine
-  - name: Mobile technologies
-  - name: Creative arts and design
-  - name: Philosophy of information
 
 contact:
   - name: LinkedIn
