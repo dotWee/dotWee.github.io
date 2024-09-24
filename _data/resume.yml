@@ -15,7 +15,7 @@ basics:
 
   location:
     # address:
-    postalCode: 92318
+    postalCode: "92318"
     city: Neumarkt
     countryCode: DE
     region: Bavaria
