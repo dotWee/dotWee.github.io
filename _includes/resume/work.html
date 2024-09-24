@@ -14,7 +14,7 @@
             {% else %}
             {{ item.name }}
             {% endif %}
-            <span class="time">{{ item.startDate }} - {{ item.endDate | default: "present" }}</span>
+            <span class="time">{{ item.startDate | date: "%Y" }} - {{ item.endDate | date: "%Y" | default: "present" }}</span>
         </div>
 
         {% if item.summary %}

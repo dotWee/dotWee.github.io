@@ -45,26 +45,26 @@ languages:
     fluency: fluent
 
 education:
-  - institution: IU  International University of Applied Sciences
+  - institution: IU International University of Applied Sciences
     url: https://www.iu.de/en/
     area: Software Engineering
     studyType: Bachelor of Science (B.Sc.)
-    startDate: 2023
-    endDate: 2025
+    startDate: "2023-10-01"
+    endDate: "2025-04-01"
 
   - institution: Technical University of applied Sciences Regensburg
     url: https://www.oth-regensburg.de/
     area: Computer Science
     studyType: Bachelor of Science (B.Sc.)
-    startDate: 2020
-    endDate: 2023
+    startDate: "2020-04-01"
+    endDate: "2023-09-30"
   
-  - institution: Technical University of applied Sciences Regensburg
-    url: https://www.oth-regensburg.de/
-    area: Medical Health Informatics
-    studyType: Bachelor of Science (B.Sc.)
-    startDate: 2016
-    endDate: 2020
+  # - institution: Technical University of applied Sciences Regensburg
+  #   url: https://www.oth-regensburg.de/
+  #   area: Medical Health Informatics
+  #   studyType: Bachelor of Science (B.Sc.)
+  #   startDate: "2016-10-01"
+  #   endDate: "2020-03-31"
 
 skills:
   - name: Backend
@@ -108,8 +108,7 @@ work:
   - position: Software Engineer, Team R&D
     name: Awesome Technologies Innovationslabor GmbH
     url: https://awesome-technologies.de/
-    startDate: early 2023
-    endDate: present
+    startDate: "2023-04-01"
     summary: >
       As a software engineer at Awesome Technologies Innovationslabor GmbH, I am responsible for developing innovative solutions in the german healthcare and medical technology sectors.
       I work in a cross-functional team with a decentralized approach, focusing on flexibility and continuous improvement.
@@ -124,8 +123,8 @@ work:
     technologies: Python (Mypy, Pydantic, FastAPI), JavaScript (React), Docker, Kubernetes
 
   - position: Full-Stack Developer & IT-Sysadmin
-    startDate: 2022
-    endDate: early 2023
+    startDate: "2022-04-01"
+    endDate: "2023-04-01"
     name: WEIGERT + KUNDE Unternehmensberatung GmbH
     url: https://www.weigertkunde.de/
     summary: >
@@ -139,8 +138,8 @@ work:
     technologies: Vue.js (TypeScript), Vuetify (UI), Spring Boot (Java), Hibernate, PostgreSQL, Atlassian
   
   - position: Working Student Software Engineer
-    startDate: 2017
-    endDate: 2019
+    startDate: "2017-04-01"
+    endDate: "2019-10-01"
     name: Koordinierungsstelle für die Datenverarbeitung in der Hochschulverwaltung an den staatlichen Hochschulen für angewandte Wissenschaften in Bayern (KDV)
     url: https://www.kdv-fh-bayern.de/
     summary: >
@@ -151,8 +150,6 @@ work:
       I mapped the data model using Entity Framework Core and Microsoft SQL Server and implemented continuous test-driven development using the MSTest unit testing framework.
 
       Throughout the project, I worked closely with the responsible domain expert and proved that I could integrate complex changes through clean refactoring in existing source code.
-    highlights:
-      - "[Letter of Recommendation by Dr. Wolfgang Wiedermann, Technical Director KDV](/assets/files/2019-06-11_Letter-Of-Recommendation_KDV.pdf)"
     technologies: ASP.NET Core MVC (C#), MSTest, Bootstrap, Entity Framework Core, Microsoft SQL Server
 
 projects:
@@ -223,7 +220,6 @@ projects:
 volunteer:
   - position: FlightAware FlightFeeder Operator
     startDate: "2021-05-01"
-    endDate: present
     organization: FlightAware International
     url: https://flightaware.com/
     summary: Providing real-time flight tracking to the public, helping airlines and operators improve efficiency and promote aviation safety.
@@ -233,7 +229,6 @@ volunteer:
       - Processing and transmitting over 300.000 aircraft positions daily
       - Providing coverage for both civilian and military aircraft, enhancing overall airspace awareness
   - startDate: "2014-01-01"
-    endDate: present
     position: Bidirectional Translator
     organization: Crowdin
     url: /links/crowdin
