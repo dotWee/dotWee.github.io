@@ -36,11 +36,10 @@
                 margin-block-start: 0;
                 margin-block-end: 0;
             }
-        }
 
-        .technologies {
-            @include body-text;
-            font-style: italic;
+            .reference {
+                text-align: left;
+            }
         }
     }
 }

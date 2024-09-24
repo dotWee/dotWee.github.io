@@ -25,7 +25,7 @@
 
         {% if item.highlights %}
         <div class="highlights">
-            <!--h3>Highlights</h3-->
+            <p><strong>Highlights</strong></p>
             <ul>
                 {% for highlight in item.highlights %}
                 <li class="highlight">{{ highlight | markdownify }}</li>
@@ -37,7 +37,7 @@
         {% assign references = site.data.resume.references | where_exp: "reference", "reference.name contains item.name"  %}
         {% if references.size > 0 %}
         <div class="references">
-            <!--h3>References</h3-->
+            <p><strong>References</strong></p>
             <ul>
                 {% for reference in references %}
                 <li class="reference">
@@ -46,10 +46,6 @@
                 {% endfor %}
             </ul>
         </div>
-        {% endif %}
-
-        {% if item.technologies %}
-        <p class="technologies">Technologies Used: {{ item.technologies }}</p>
         {% endif %}
     </div>
 

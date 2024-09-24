@@ -117,10 +117,9 @@ work:
     highlights:
       - "**Requirement Engineering:** Participated in requirement elaboration and technical grooming for Gematik TI-M project"
       - "**Backend Development:** Developed backend infrastructure and functionalities using Python 3, Pydantic, Uvicorn, and FastAPI"
-      - "**Cryptography:** Implemented and integrated various data processing algorithms and classifiers, including government-specified cryptography (BP elliptic curve algorithm) to handle government issued custom X.509 certificates with ASN.1"
+      - "**Cryptography:** Implemented and integrated various data processing algorithms and classifiers, including government-specified cryptography to handle government issued custom X.509 certificates with ASN.1"
       - "**Security:** Implemented IAAA features using Keycloak, Open ID Connect (OIDC), and OAuth2 for secure authentication and authorization"
       #- Mentored and supported an apprentice, contributing to their professional development
-    technologies: Python (Mypy, Pydantic, FastAPI), JavaScript (React), Docker, Kubernetes
 
   - position: Full-Stack Developer & IT-Sysadmin
     startDate: "2022-04-01"
@@ -131,11 +130,13 @@ work:
       As part of the project, an existing web platform was extended with a component for in-house document and file management to reduce paperwork and administrative friction for company management.  
 
       My tasks included planning, designing, and developing the document management system as well as fully integrating it with the existing web platform. Additionally, I was responsible for testing, deployment, and maintenance.
-
-      For the frontend, I used VueJS & Vuetify technologies, implemented the RESTful API in the Spring Boot Java backend, and used PostgreSQL & Hibernate for the database layer.
       
-      Version control was carried out via Atlassian Jira and BitBucket. The project was successfully deployed and commissioned.
-    technologies: Vue.js (TypeScript), Vuetify (UI), Spring Boot (Java), Hibernate, PostgreSQL, Atlassian
+      The project was successfully deployed and commissioned, actively used by the company's management team.
+    highlights:
+      - "**Backend Development:** Developed RESTful API using Spring Boot and Hibernate"
+      - "**Frontend Development:** Implemented the user interface using Vue.js and Vuetify"
+      - "**Database Management:** Utilized S3, PostgreSQL and Hibernate for scalable data storage and retrieval"
+      - "**Monitoring & DevOps:** Defined and integrated CI/CD pipelines using Atlassian BitBucket"
   
   - position: Working Student Software Engineer
     startDate: "2017-04-01"
@@ -145,12 +146,14 @@ work:
     summary: >
       As a student assistant and software developer at the Coordination Office for Data Processing in Administration at the State Universities of Applied Sciences in Bavaria (Germany), I was given the task to develope a internally used web platform for data management and administration.
 
-      The project involved tasks such as requirement analysis, data modeling, UI concept, web application development with C# and JavaScript, and use of GUI frameworks such as ASP.NET Core MVC and Bootstrap 4.
-
-      I mapped the data model using Entity Framework Core and Microsoft SQL Server and implemented continuous test-driven development using the MSTest unit testing framework.
+      The project involved tasks such as requirement analysis, data modeling, UI concept, web application development with C# and JavaScript and Bootstrap 4.
 
       Throughout the project, I worked closely with the responsible domain expert and proved that I could integrate complex changes through clean refactoring in existing source code.
-    technologies: ASP.NET Core MVC (C#), MSTest, Bootstrap, Entity Framework Core, Microsoft SQL Server
+    highlights:
+      - "**Database Design:** Designed and implemented the database schema using Entity Framework Core"
+      - "**Backend Development:** Developed the backend using ASP.NET Core MVC and C#"
+      - "**Frontend Development:** Developed the user interface using ASP.NET Core MVC and Bootstrap"
+      - "**Testing & Quality Assurance:** Implemented unit tests using MSTest for continuous integration and deployment"
 
 projects:
   - name: MicroPinner
@@ -224,7 +227,7 @@ volunteer:
     url: https://flightaware.com/
     summary: Providing real-time flight tracking to the public, helping airlines and operators improve efficiency and promote aviation safety.
     highlights:
-      - Operating a FlightFeeder station near [Airport Neumarkt/Opf. (EDPO)](https://www.flightaware.com/live/airport/EDPO)
+      - Operating a FlightFeeder station in proximity of the local airport [Neumarkt/Opf. (EDPO)](https://www.flightaware.com/live/airport/EDPO)
       - Reporting an average of over 2.500+ unique aircrafts daily
       - Processing and transmitting over 300.000 aircraft positions daily
       - Providing coverage for both civilian and military aircraft, enhancing overall airspace awareness
