@@ -111,14 +111,16 @@ work:
     startDate: early 2023
     endDate: present
     summary: >
-      As a software engineer at Awesome Technologies Innovationslabor GmbH, I am responsible for developing and maintaining software solutions for clients in the german healthcare and medical technology sectors.  
+      As a software engineer at Awesome Technologies Innovationslabor GmbH, I am responsible for developing innovative solutions in the german healthcare and medical technology sectors.
+      I work in a cross-functional team with a decentralized approach, focusing on flexibility and continuous improvement.
 
-      My role involves collaborating with cross-functional teams to design and implement software applications that meet the needs of the client and comply with industry standards and government regulations.  
-
-      I work closely with product managers, designers, and other stakeholders to define project requirements, develop technical specifications, and deliver high-quality software solutions on time and within budget.
+      My primary focus has been on backend development for our TI-Messenger (TI-M) project, where I've demonstrated high-quality and efficient coding skills.
     highlights:
-      - "[Letter of Recommendation by Richard Gyenes; Product Owner](/assets/files/2024-03-19_Letter-of-Reference_Richard-Gyenes.pdf)"
-      - "[Letter of Recommendation by Simon Haas; Head of Solution Development](/assets/files/2024-06-07_Letter-of-Reference_Simon-Haas.pdf)"
+      - "**Requirement Engineering:** Participated in requirement elaboration and technical grooming for Gematik TI-M project"
+      - "**Backend Development:** Developed backend infrastructure and functionalities using Python 3, Pydantic, Uvicorn, and FastAPI"
+      - "**Cryptography:** Implemented and integrated various data processing algorithms and classifiers, including government-specified cryptography (BP elliptic curve algorithm) to handle government issued custom X.509 certificates with ASN.1"
+      - "**Security:** Implemented IAAA features using Keycloak, Open ID Connect (OIDC), and OAuth2 for secure authentication and authorization"
+      #- Mentored and supported an apprentice, contributing to their professional development
     technologies: Python (Mypy, Pydantic, FastAPI), JavaScript (React), Docker, Kubernetes
 
   - position: Full-Stack Developer & IT-Sysadmin

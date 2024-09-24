@@ -1,4 +1,5 @@
 {% assign work = site.data.resume.work %}
+
 {% if work %}
 <section class="work">
     <h2 class="title">Work Experience</h2>
@@ -24,10 +25,25 @@
 
         {% if item.highlights %}
         <div class="highlights">
+            <!--h3>Highlights</h3-->
             <ul>
                 {% for highlight in item.highlights %}
-                <li class="highlight-item">{{ highlight | markdownify }}</li>
-                {% endfor %}                
+                <li class="highlight">{{ highlight | markdownify }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+
+        {% assign references = site.data.resume.references | where_exp: "reference", "reference.name contains item.name"  %}
+        {% if references.size > 0 %}
+        <div class="references">
+            <!--h3>References</h3-->
+            <ul>
+                {% for reference in references %}
+                <li class="reference">
+                    <a href="{{ reference.reference }}" target="_blank">Letter of Reference by {{ reference.name }}</a>
+                </li>
+                {% endfor %}
             </ul>
         </div>
         {% endif %}
