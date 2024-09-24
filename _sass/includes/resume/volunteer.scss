@@ -22,9 +22,17 @@
         .details {
             @include body-text;
 
-            ul {
+            .summary {
+                margin-block-start: 0;
+            }
+
+            .highlights {
                 list-style-type: square;
-                margin-top: 0;
+
+                .highlight p {
+                    margin-block-start: 0;
+                    margin-block-end: 0;
+                }
             }
         }
     }

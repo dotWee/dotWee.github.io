@@ -10,19 +10,21 @@
         </div>
         <div class="organization">
             <a href="{{ item.url }}" target="_blank">{{ item.organization }}</a>
-            <span class="time">{{ item.startDate}} - {{ item.endDate | default: "present" }}</span>
+            <span class="time">{{ item.startDate | date: "%Y" }} - {{ item.endDate | default: "present" }}</span>
         </div>
 
         <div class="details">
-            <ul>
-                {% if item.summary %}
-                <li>{{ item.summary }}</p>
-                {% endif %}
-                
+            {% if item.summary %}
+            <p class="summary">{{ item.summary }}</p>
+            {% endif %}
+
+            {% if item.highlights %}
+            <ul class="highlights">
                 {% for highlight in item.highlights %}
-                <li>{{ highlight }}</li>
+                <li class="highlight">{{ highlight | markdownify }}</li>
                 {% endfor %}
-            </p>
+            </ul>
+            {% endif %}
         </div>
     </div>
 
