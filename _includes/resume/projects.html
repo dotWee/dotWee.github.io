@@ -6,7 +6,7 @@
     <div class="project">
             <span class="name">
                 <a href="{{ item.url }}">{{ item.name }}</a>
-                <span class="startDate"> ({{ item.startDate }})</span>:
+                <span class="startDate"> ({{ item.startDate | date: "%Y" }})</span>:
             </span>
 
             <span class="description">{{ item.description }}</span>
