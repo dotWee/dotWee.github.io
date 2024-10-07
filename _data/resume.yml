@@ -156,67 +156,89 @@ work:
 
 projects:
   - name: MicroPinner
-    startDate: 2015
-    endDate: 2023
+    startDate: "2015-01-01"
+    endDate: "2023-01-01"
     description: A lightweight native Android application that turns the statusbar into a pingboard, similar to sticky notes on a PC.
     highlights:
       - 42 stars and 22 forks on GitHub, 10k+ downloads on Google Play
       - Developed in Java for Android, with a focus on performance and battery efficiency
     url: https://github.com/dotWee/MicroPinner
+    keywords:
+      - Android
+      - Java
 
   - name: Mensaplan
-    startDate: 2019
-    endDate: 2019
+    startDate: "2019-01-01"
+    endDate: "2019-12-31"
     description: A native Android application for viewing the weekly canteen plan of different university locations in Regensburg, providing easy access to meal information for students.
     highlights:
       - Based upon my reverse engineered API for the Studentenwerk Niederbayern / Oberpfalz
       - Developed in Java for Android, accumulating 1k+ downloads on Google Play
     url: https://github.com/dotWee/Mensaplan
+    keywords:
+      - Android
+      - Java
 
   - name: macOS-PiholeShortcuts
-    startDate: 2022
-    endDate: 2022
+    startDate: "2022-01-01"
+    endDate: "2022-12-31"
     description: A native macOS application to manage and monitor Pi-hole instances through the status bar, providing quick access to Pi-hole controls and statistics.
     highlights:
       - 51 stars on GitHub
       - Built using Swift & CoreData and fully integrated with macOS UI standards
     url: https://github.com/dotWee/macOS-PiholeShortcuts
+    keywords:
+      - macOS
+      - Swift
 
   - name: docker-fritzbox-prometheus-exporter
-    startDate: 2023
-    endDate: present
+    startDate: "2023-01-01"
     description: A Docker image for exporting Fritz!Box UPnP statistics to Prometheus, enabling monitoring of Fritz!Box routers using Prometheus and related tools.
     highlights:
       - 14 stars and 3 forks on GitHub
       - Forked and enhanced with additional metrics for better network monitoring
     url: https://github.com/dotWee/docker-fritzbox-prometheus-exporter
+    keywords:
+      - Go
+      - Docker
+      - Metrics
 
   - name: stwno-mensa_api
-    startDate: 2018
-    endDate: 2020
+    startDate: "2018-01-01"
+    endDate: "2020-12-31"
     url: https://github.com/dotWee/stwno-mensa_api
     description: A wrapper around the unofficial API for canteens managed by the Studentenwerk Niederbayern/Oberpfalz, providing JSON, gRPC, and GraphQL interfaces for accessing canteen data.
     highlights:
       - Supports multiple API formats (JSON, gRPC, GraphQL)
       - Developed in JavaScript
+    keywords:
+      - JavaScript
+      - Node.js
+      - Web
 
   - name: macOS-SourceListSidebarExample
-    startDate: 2020
-    endDate: 2020
+    startDate: "2020-01-01"
+    endDate: "2020-12-31"
     description: An example of implementing a sidebar use case in macOS apps using NSOutlineView with CoreData and RxSwift.
     highlights:
       - Provided developers a clean example of macOS UI patterns in combination with modern reactive programming
       - Written in Swift, utilizing CoreData, RxSwift
     url: https://github.com/dotWee/macOS-SourceListSidebarExample
+    keywords:
+      - macOS
+      - Swift
 
   - name: docker-matrix-synapse-s3
-    startDate: 2022
-    endDate: 2023
+    startDate: "2022-01-01"
     description: A custom Docker image for Matrix Synapse with pre-installed S3 storage support.
     highlights:
       - Simplified Matrix Synapse setup with built-in cloud storage support
       - Fully automated build and testing pipeline using GitHub Actions
     url: https://github.com/dotWee/docker-matrix-synapse-s3
+    keywords:
+      - Docker
+      - Python
+      - Web
 
 # Volunteer
 volunteer:
