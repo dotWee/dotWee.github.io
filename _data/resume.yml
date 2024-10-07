@@ -99,7 +99,7 @@ skills:
 career:
   - Results-driven software engineer with a proven ability to develop and deliver high-quality software solutions in a fast-paced, deadline-driven environment.
   - Proficient in multiple programming languages and frameworks, with experience in agile methodologies and DevOps practices.
-  - Passionate about information theory and philosophy, with a deep understanding of how these disciplines inform and influence software development.
+  #- Passionate about information theory and philosophy, with a deep understanding of how these disciplines inform and influence software development.
   - Strong analytical thinker with a passion for problem-solving and a commitment to continuous learning and improvement.
 
 # Work Experience
@@ -248,7 +248,7 @@ volunteer:
     url: https://flightaware.com/
     summary: Providing real-time flight tracking to the public, helping airlines and operators improve efficiency and promote aviation safety.
     highlights:
-      - Operating a FlightFeeder station in proximity of the local airport [Neumarkt/Opf. (EDPO)](https://www.flightaware.com/live/airport/EDPO)
+      - Operating a FlightFeeder station in proximity of the local airport [Neumarkt Opf. (EDPO)](https://www.flightaware.com/live/airport/EDPO)
       - Reporting an average of over 2.500+ unique aircrafts daily
       - Processing and transmitting over 300.000 aircraft positions daily
       - Providing coverage for both civilian and military aircraft, enhancing overall airspace awareness
@@ -275,5 +275,8 @@ interests:
     #keywords:
     #  - Health informatics
   - name: Mobile technologies
+    keywords:
+      - Android
+      - iOS
   - name: Creative arts and design
   - name: Philosophy of information
