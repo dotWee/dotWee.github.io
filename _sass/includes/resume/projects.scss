@@ -8,6 +8,10 @@
         .name, .description {
             @include body-text;
 
+            a {
+                font-weight: bold;
+            }
+
             .startDate {
                 @include time;
             }
