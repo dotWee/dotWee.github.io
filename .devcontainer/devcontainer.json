@@ -1,6 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json.
 // For config options, see the README at:
 //     https://github.com/devcontainers/templates/tree/main/src/jekyll
+//     https://containers.dev/implementors/json_reference/
 {
 	"name": "Jekyll",
 	"image": "mcr.microsoft.com/devcontainers/jekyll",
