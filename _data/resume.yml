@@ -155,6 +155,16 @@ work:
       - "**Testing & Quality Assurance:** Implemented unit tests using MSTest for continuous integration and deployment"
 
 projects:
+  - name: structured-stern-neon-articles
+    startDate: "2024-10-01"
+    description: Machine learning dataset consisting of approximately 5k user written texts, articles, and poetry pulled from archives of the Stern NEON website.
+    highlights:
+      - Can be used for text classification, question answering, text generation, and text-to-text generation tasks
+    url: https://huggingface.co/datasets/dotwee/structured-stern-neon-articles
+    keywords:
+      - Python
+      - KI/ML
+
   - name: MicroPinner
     startDate: "2015-01-01"
     endDate: "2023-01-01"
