@@ -1,0 +1,9 @@
+{% assign interests = site.data.resume.interests %}
+{% if interests %}
+<section class="interests">
+    <div class="title">Personal Interests</div>
+    {% for interest in interests %}
+    <div class="idiom">{{interest.name}}</div>
+    {% endfor %}
+</section>
+{% endif %}
