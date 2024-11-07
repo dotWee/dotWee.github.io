@@ -8,7 +8,7 @@ basics:
   # email:
   # url:
   # summary:
-  # image:
+  image: "/assets/img/photo.jpg"
 
   # Undefined properties
   # phone:

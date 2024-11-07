@@ -2,8 +2,17 @@
     width: 90%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+
+    .image {
+        padding-right: var(--grid-spacing);
+        
+        img {
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+        }
+      }
 
     .basics {
         .name, .label {
@@ -16,6 +25,7 @@
             margin-bottom: 0;
         }
         .label {
+            text-align: left;
             font-weight: bold;
             margin-top: 0;
         }        
