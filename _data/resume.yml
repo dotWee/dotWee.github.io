@@ -112,12 +112,12 @@ work:
       As a software engineer at Awesome Technologies Innovationslabor GmbH, I am responsible for developing innovative solutions in the german healthcare and medical technology sectors.
       I work in a cross-functional team with a decentralized approach, focusing on flexibility and continuous improvement.
 
-      My primary focus has been on backend development for our TI-Messenger (TI-M) project, where I've demonstrated high-quality and efficient coding skills.
+      My primary focus has been on backend development for our TI-Messenger (TI-M) project, where took care of implementing core compontents of future safe products.
     highlights:
-      - "**Requirement Engineering:** Participated in requirement elaboration and technical grooming for Gematik TI-M project"
       - "**Backend Development:** Developed backend infrastructure and functionalities using Python 3, Pydantic, Uvicorn, and FastAPI"
-      - "**Cryptography:** Implemented and integrated various data processing algorithms and classifiers, including government-specified cryptography to handle government issued custom X.509 certificates with ASN.1"
+      - "**Cryptography:** Implemented and integrated various data processing algorithms and classifiers, including BSI-specified cryptography to handle government issued custom X.509 certificates with ASN.1"
       - "**Security:** Implemented IAAA features using Keycloak, Open ID Connect (OIDC), and OAuth2 for secure authentication and authorization"
+      - "**Requirement Engineering:** Participated in requirement elaboration and technical grooming for Gematik TI-M project"
       #- Mentored and supported an apprentice, contributing to their professional development
 
   - position: Full-Stack Developer & IT-Sysadmin
