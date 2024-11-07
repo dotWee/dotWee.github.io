@@ -18,8 +18,10 @@ Jekyll::Hooks.register :site, :post_write do |site|
     yaml_data["basics"]["url"] = site.config["url"]
     yaml_data["basics"]["summary"] = site.config["description"]
 
-    # Add image property by using the gravatar hash
-    yaml_data["basics"]["image"] = get_gravatar_url(site.config["email"])
+    # Add image property by using the gravatar hash, if property image not defined
+    if not defined?(yaml_data["basics"]["image"])
+      yaml_data["basics"]["image"] = get_gravatar_url(site.config["email"])
+    end
 
     File.open(json_path, "w") do |f|
       f.write(JSON.pretty_generate(yaml_data))
