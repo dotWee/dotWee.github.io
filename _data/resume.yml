@@ -281,12 +281,16 @@ references:
     reference: /assets/files/2019-06-11_Letter-Of-Recommendation_KDV.pdf
 
 interests:
-  - name: Digital health and medicine
-    #keywords:
-    #  - Health informatics
-  - name: Mobile technologies
+  - name: Circuit Design & Analysis
+    keywords:
+      - Hardware
+  - name: Philosophy of Information
+    keywords:
+      - Philosophy
+  - name: Mobile Technologies
     keywords:
       - Android
       - iOS
-  - name: Creative arts and design
-  - name: Philosophy of information
+  - name: Digital Health & Medicine
+    keywords:
+      - Health
