@@ -73,7 +73,7 @@ sass:
 
 # Config for jekyll-last-modified-at
 last-modified-at:
-    date-format: '%Y-%m-%d'
+  date-format: '%Y-%m-%d'
 
 # Config for jekyll-favicon
 favicon:
