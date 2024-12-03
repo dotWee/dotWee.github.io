@@ -1,4 +1,4 @@
 ---
-title: dotwee on Dockerhub.com
+title: "@dotwee on DockerHub.com"
 redirect_to: https://hub.docker.com/u/dotwee
 ---
