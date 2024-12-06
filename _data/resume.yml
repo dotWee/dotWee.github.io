@@ -21,19 +21,19 @@ basics:
     region: Bavaria
 
   profiles:
-    - icon: "far.fa-envelope"
+    - _icon: "far.fa-envelope"
       url: "/links/email"
       username: lukas@wolfsteiner.media
       network: Email
-    - icon: "fab.fa-linkedin-in"
+    - _icon: "fab.fa-linkedin-in"
       url: "/links/linkedin"
       username: lukas-wolfsteiner
       network: LinkedIn
-    - icon: "fab.fa-github"
+    - _icon: "fab.fa-github"
       url: "/links/github"
       username: dotWee
       network: GitHub
-    - icon: "fab.fa-docker"
+    - _icon: "fab.fa-docker"
       url: "/links/dockerhub"
       username: dotwee
       network: DockerHub
