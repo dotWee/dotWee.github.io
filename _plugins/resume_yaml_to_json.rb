@@ -13,6 +13,9 @@ Jekyll::Hooks.register :site, :post_write do |site|
     # Append the site baseurl to the profile urls, if it only contains the path
     yaml_data = append_baseurl_to_yaml(yaml_data, site.config["url"])
 
+    # Remove properties that start with an underscore (e.g., _comments)
+    yaml_data = remove_properties_by_prefix(yaml_data, "_")
+
     # Add additional properties from the site configuration
     yaml_data["basics"]["email"] = site.config["email"]
     yaml_data["basics"]["url"] = site.config["url"]
@@ -99,4 +102,28 @@ def get_gravatar_url(email, size=600) # get the gravatar url for the email, with
   email = email.downcase
   hash = Digest::SHA256.hexdigest(email)
   return "https://www.gravatar.com/avatar/#{hash}?s=#{size}"
+end
+
+
+# Removes properties from a YAML object that start with a given prefix
+# 
+# This function takes a YAML object (hash or array) and a prefix string.
+# It removes all properties (keys) from the YAML object that start with the given prefix.
+# The function is recursive and handles nested structures within the YAML.
+# It is used to remove properties that are not needed in the final JSON output, such as _comments.
+# 
+# @param yaml_obj [Hash, Array] The YAML object to remove properties from
+# @param prefix [String] The prefix string to match and remove properties
+# 
+# @return [Hash, Array] The YAML object with properties removed
+def remove_properties_by_prefix(yaml_obj, prefix="_")
+  case yaml_obj
+  when Hash
+    yaml_obj.transform_values! { |v| remove_properties_by_prefix(v, prefix) }
+    yaml_obj.delete_if { |k, v| k.start_with?(prefix) }
+  when Array
+    yaml_obj.map! { |v| remove_properties_by_prefix(v, prefix) }
+  else
+    yaml_obj
+  end
 end
