@@ -86,6 +86,11 @@ $ bundle update
 $ bundle exec jekyll clean
 ```
 
+## links & references
+
+this resume makes use of the json resume schema by [jsonresume](https://jsonresume.org/).
+
+
 ## license
 
 copyright (c) 2015 lukas 'dotwee' wolfsteiner <lukas@wolfsteiner.media>
