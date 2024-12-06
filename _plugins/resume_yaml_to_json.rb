@@ -83,6 +83,18 @@ def append_baseurl_to_yaml(yaml_obj, baseurl) # recursive function to process ne
   end
 end
 
+
+# Returns the Gravatar URL for a given email address
+#
+# This function takes an email address and returns the Gravatar URL for the email.
+# The URL is constructed using the Gravatar hash of the email address.
+# The function also accepts an optional size parameter for the image size.
+# The default size is 600 pixels.
+# 
+# @param email [String] The email address to generate the Gravatar URL
+# @param size [Integer] The size of the Gravatar image (default: 600)
+# 
+# @return [String] The Gravatar URL for the email address
 def get_gravatar_url(email, size=600) # get the gravatar url for the email, with a default size of 600
   email = email.downcase
   hash = Digest::SHA256.hexdigest(email)
