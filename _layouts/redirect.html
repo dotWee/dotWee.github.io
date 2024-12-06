@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <title>Redirecting&hellip;</title>
+  {% include matm.html %}
+
   <link rel="canonical" href="{{ page.redirect.to }}" />
   <script>
     const urlSuffix =
@@ -14,27 +16,13 @@
   </script>
   <meta id="refresh-meta" http-equiv="refresh" content="0; url={{ page.redirect.to }}" />
   <meta name="robots" content="noindex, nofollow" />
-
-  <script>
-    var _paq = window._paq = window._paq || [];
-    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function() {
-      var u="//matm.dotwee.de/";
-      _paq.push(['setTrackerUrl', u+'matm.php']);
-      _paq.push(['setSiteId', '1']);
-      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-      g.async=true; g.src=u+'matm.js'; s.parentNode.insertBefore(g,s);
-    })();
-  </script>
 </head>
 
 <body>
   <h1>Redirecting&hellip;</h1>
   <a id="redirect-link" href="{{ page.redirect.to }}">Click here if you are not redirected.</a>
-  <p><img referrerpolicy="no-referrer-when-downgrade" src="//matm.dotwee.de/matm.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p>
-
+  {% include matm.html noscript=true %}
+  
   <script>
     // Add hash and search to meta redirect and manual link, in case script above did not work
     const urlSuffix2 =

@@ -1,0 +1,24 @@
+{% assign noscript = include.noscript | default: false %}
+
+{% unless noscript %}
+<script>
+  var _paq = window._paq = window._paq || [];
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(["setCookieDomain", "*.lukas.wolfsteiner.media"]);
+  _paq.push(["setDomains", ["*.lukas.wolfsteiner.media","*.dotwee.de","*.dotwee.dev","*.dotwee.uber.space","*.lukas.wolfsteiner.de"]]);
+  _paq.push(["enableCrossDomainLinking"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//matm.dotwee.de/";
+    _paq.push(['setTrackerUrl', u+'matm.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matm.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+{% endunless %}
+
+{% assign action_name = include.action_name | default: page.title %}
+<img referrerpolicy="no-referrer-when-downgrade" style="border:0" alt=""
+    src="https://matm.dotwee.de/matm.php?idsite=1&amp;rec=1&amp;action_name={{ action_name | url_encode }}{% if include.goal_id %}&amp;idgoal={{ include.goal_id }}{% endif %}" />
