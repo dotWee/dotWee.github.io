@@ -77,9 +77,7 @@ jobs:
     
     steps:
       - name: Download site artifact
-        uses: actions/download-artifact@v3
-        with:
-          name: ${{ env.ARTIFACT_NAME_SITE }}
+        uses: actions/download-artifact@v4
 
       - name: Push resume.json to Gist
         uses: dotWee/push-gist-action@4c72e19c032cbea15ed6f1a52bacef59e21292eb
@@ -108,9 +106,7 @@ jobs:
 
     steps:
       - name: Download site artifact
-        uses: actions/download-artifact@v3
-        with:
-          name: ${{ env.ARTIFACT_NAME_SITE }}
+        uses: actions/download-artifact@v4
   
       - name: Deploy to GitHub Pages
         id: deployment
