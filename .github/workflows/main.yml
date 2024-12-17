@@ -70,9 +70,30 @@ jobs:
           name: ${{ env.ARTIFACT_NAME_RESUME }}
           path: "${{ env.ARTIFACT_FILE_RESUME }}"
 
+  validate-resumejson:
+    name: Validate generated resume.json
+    needs: generate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install -g resumed
+
+      - name: Download site artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: ${{ env.ARTIFACT_NAME_RESUME }}
+
+      - name: Validate resume.json
+        run: resumed validate ${{ env.ARTIFACT_FILE_RESUME }}
+
   deploy-resume:
     name: Deploy resume.json to Gist
-    needs: generate
+    needs: validate-resumejson
     runs-on: ubuntu-latest
 
     # Only deploy on pushes to the default branch
