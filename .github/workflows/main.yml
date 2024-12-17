@@ -25,12 +25,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Add ImageMagick for image processing
+        run: sudo apt-get install imagemagick -y
+
       - name: Use ruby/setup-ruby to shorten build times
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2' # Not needed with a .ruby-version file
+          ruby-version: '3.3' # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-          cache-version: 3 # Increment this number if you need to re-download cached gems
+          cache-version: 4 # Increment this number if you need to re-download cached gems
 
       - name: Setup Pages
         id: pages
