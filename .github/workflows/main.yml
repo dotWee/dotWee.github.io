@@ -66,7 +66,7 @@ jobs:
     needs: generate
     
     # Only deploy on pushes to the default branch
-    if: github.ref == "refs/heads/${{ github.event.repository.default_branch }}"
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
 
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
