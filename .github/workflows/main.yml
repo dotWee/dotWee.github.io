@@ -25,6 +25,8 @@ concurrency:
 env:
   JEKYLL_ENV: production
   ARTIFACT_NAME_SITE: github-pages
+  ARTIFACT_NAME_RESUME: resume-json
+  ARTIFACT_FILE_RESUME: resume.json
 
 jobs:
   generate:
@@ -60,13 +62,13 @@ jobs:
           name: ${{ env.ARTIFACT_NAME_SITE }}
 
       - name: Copy resume.json to _site/assets
-        run: cp _site/assets/resume.json resume.json
+        run: cp "_site/assets/${{ env.ARTIFACT_FILE_RESUME }}" "${{ env.ARTIFACT_FILE_RESUME }}"
 
       - name: Upload resume.json
         uses: actions/upload-artifact@v4
         with:
-          name: resume-json
-          path: resume.json
+          name: ${{ env.ARTIFACT_NAME_RESUME }}
+          path: "${{ env.ARTIFACT_FILE_RESUME }}"
 
   deploy-resume:
     name: Deploy resume.json to Gist
@@ -80,15 +82,15 @@ jobs:
       - name: Download site artifact
         uses: actions/download-artifact@v4
         with:
-          name: resume-json
+          name: ${{ env.ARTIFACT_NAME_RESUME }}
 
       - name: Push resume.json to Gist
         uses: dotWee/push-gist-action@4c72e19c032cbea15ed6f1a52bacef59e21292eb
         with:
           token: ${{ secrets.GIST_TOKEN }}
           gist_id: 46a00ab755cd7904a344463556017670
-          file_path: resume.json
-          gist_file_name: resume.json
+          file_path: ${{ env.ARTIFACT_FILE_RESUME }}
+          gist_file_name: ${{ env.ARTIFACT_FILE_RESUME }}
 
   deploy-site:
     name: Deploy generated site to GitHub pages
