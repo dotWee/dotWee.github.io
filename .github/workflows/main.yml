@@ -126,6 +126,8 @@ jobs:
 
       - name: Download site artifact
         uses: actions/download-artifact@v4
+        with:
+          name: github-pages
 
       - name: Install HTMLProofer
         run: gem install html-proofer
