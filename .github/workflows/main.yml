@@ -113,9 +113,32 @@ jobs:
           file_path: ${{ env.ARTIFACT_FILE_RESUME }}
           gist_file_name: ${{ env.ARTIFACT_FILE_RESUME }}
 
+  validate-site:
+    name: Validate generated site using HTMLProofer
+    needs: generate
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Use Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+
+      - name: Install dependencies
+        run: bundle install
+
+      - name: Download site artifact
+        uses: actions/download-artifact@v4
+
+      - name: Install HTMLProofer
+        run: gem install html-proofer
+
+      - name: Validate site
+        run: htmlproofer --assume-extension --check-html --check-sri --disable-external --enforce-https _site
+
   deploy-site:
     name: Deploy generated site to GitHub pages
-    needs: generate
+    needs: validate-site
     
     # Only deploy on pushes to the default branch
     if: github.ref == 'refs/heads/main'
