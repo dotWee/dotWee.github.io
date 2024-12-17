@@ -1,6 +1,6 @@
 # [dotwee.github.io](https://dotwee.github.io/)
 
-[![Jekyll Build & Deploy](https://github.com/dotWee/dotWee.github.io/actions/workflows/main.yml/badge.svg)](https://github.com/dotWee/dotWee.github.io/actions/workflows/main.yml)
+[![Jekyll Build & Deploy](https://github.com/dotWee/dotWee.github.io/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/dotWee/dotWee.github.io/actions/workflows/main.yml)
 
 _a simple static website* built using [jekyll](https://jekyllrb.com/) and some handcrafted stylesheets_
 
