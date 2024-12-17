@@ -4,7 +4,7 @@ on:
   # Run this workflow on push events
   push:
     branches:
-      - $default-branch # Default branch is the branch set in the repository settings
+      - "main" # Default branch is the branch set in the repository settings
       - "feature/*" # Run on feature branches
   pull_request:
 
@@ -21,6 +21,10 @@ permissions:
 concurrency:
   group: "pages"
   cancel-in-progress: true
+
+env:
+  JEKYLL_ENV: production
+  ARTIFACT_NAME_SITE: github-pages
 
 jobs:
   generate:
@@ -50,7 +54,7 @@ jobs:
           JEKYLL_ENV: production
 
       - name: Upload artifact
-        # Automatically uploads an artifact from the './_site' directory by default
+        # Automatically uploads an artifact from the './_site' directory by default, artifact name is 'github-pages'
         uses: actions/upload-pages-artifact@v3
 
       - name: Push resume.json to Gist
@@ -61,7 +65,29 @@ jobs:
           file_path: ./_site/assets/resume.json
           gist_file_name: resume.json
 
-  deploy:
+  deploy-resume:
+    name: Deploy resume.json to Gist
+    needs: generate
+    runs-on: ubuntu-latest
+
+    # Only deploy on pushes to the default branch
+    if: github.ref == 'refs/heads/main'
+    
+    steps:
+      - name: Download site artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: ${{ env.ARTIFACT_NAME_SITE }}
+
+      - name: Push resume.json to Gist
+        uses: dotWee/push-gist-action@4c72e19c032cbea15ed6f1a52bacef59e21292eb
+        with:
+          token: ${{ secrets.GIST_TOKEN }}
+          gist_id: 46a00ab755cd7904a344463556017670
+          file_path: ./_site/assets/resume.json
+          gist_file_name: resume.json
+
+  deploy-site:
     name: Deploy generated site to GitHub pages
     needs: generate
     
@@ -79,6 +105,11 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
+      - name: Download site artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: ${{ env.ARTIFACT_NAME_SITE }}
+  
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
