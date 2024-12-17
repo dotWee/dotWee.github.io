@@ -59,13 +59,14 @@ jobs:
         with:
           name: ${{ env.ARTIFACT_NAME_SITE }}
 
-      - name: Push resume.json to Gist
-        uses: dotWee/push-gist-action@4c72e19c032cbea15ed6f1a52bacef59e21292eb
+      - name: Copy resume.json to _site/assets
+        run: cp _site/assets/resume.json resume.json
+
+      - name: Upload resume.json
+        uses: actions/upload-artifact@v4
         with:
-          token: ${{ secrets.GIST_TOKEN }}
-          gist_id: 46a00ab755cd7904a344463556017670
-          file_path: ./_site/assets/resume.json
-          gist_file_name: resume.json
+          name: resume-json
+          path: resume.json
 
   deploy-resume:
     name: Deploy resume.json to Gist
@@ -78,13 +79,15 @@ jobs:
     steps:
       - name: Download site artifact
         uses: actions/download-artifact@v4
+        with:
+          name: resume-json
 
       - name: Push resume.json to Gist
         uses: dotWee/push-gist-action@4c72e19c032cbea15ed6f1a52bacef59e21292eb
         with:
           token: ${{ secrets.GIST_TOKEN }}
           gist_id: 46a00ab755cd7904a344463556017670
-          file_path: ./_site/assets/resume.json
+          file_path: resume.json
           gist_file_name: resume.json
 
   deploy-site:
