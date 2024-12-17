@@ -56,6 +56,8 @@ jobs:
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default, artifact name is 'github-pages'
         uses: actions/upload-pages-artifact@v3
+        with:
+          name: ${{ env.ARTIFACT_NAME_SITE }}
 
       - name: Push resume.json to Gist
         uses: dotWee/push-gist-action@4c72e19c032cbea15ed6f1a52bacef59e21292eb
