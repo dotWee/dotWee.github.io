@@ -1,0 +1,20 @@
+.certificates {
+    margin-bottom: var(--grid-spacing);
+    .title {
+        @include sub-header;
+    }
+
+    .certificate {
+        margin-bottom: var(--grid-spacing);
+        .name {
+            @include body-text;
+            font-weight: bold;
+            text-align: start;
+        }
+
+        .issuer {
+            @include body-text;
+            text-align: start;
+        }
+    }
+}

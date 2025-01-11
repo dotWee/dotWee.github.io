@@ -296,3 +296,14 @@ interests:
   - name: Digital Health & Medicine
     keywords:
       - Health
+
+certificates:
+  - name: EASA Remote Drone Pilot Certificate (RPAS)
+    date: "2021-01-01"
+    issuer: European Aviation Safety Agency (EASA)
+    url: "https://exam.lba-openuav.de/#/droneExam/certificateVerification/jTMB3LF6i81YEGGjcx57khygaOdGY4rrSpaLSwo0S1QiI42AvuLoGUWHejzX_D8jslFUwjiTdjmqlr2APdaCQwGpxxVX6fvdY2GkRoJ2--e8_vTJ7NTzaAZO5XIjXaBFg_9M7N7m1OUztg7qF61bOCmimFC8Z7qn5GaHCf32Ll4"
+
+  - name: LFS101x Introduction to Linux
+    date: "2014-08-15"
+    issuer: The Linux Foundation
+    url: "https://verify.edx.org/cert/da77ff5c55474165bba348041270a796"

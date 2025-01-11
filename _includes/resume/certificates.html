@@ -1,0 +1,16 @@
+{% assign certificates = site.data.resume.certificates %}
+
+{% if certificates %}
+<section class="certificates">
+    <div class="title">Certifications</div>
+
+    {% for certificate in certificates %}
+    <div class="certificate">
+        <div class="name">{{ certificate.name }}</div>
+        <div class="issuer">
+            <a href="{{ certificate.url }}">{{ certificate.issuer }}</a>
+        </div>
+    </div>
+    {% endfor %}
+</section>
+{% endif %}
