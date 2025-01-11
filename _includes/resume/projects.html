@@ -4,12 +4,12 @@
     <h2 class="title">Public projects</h2>
     {% for item in projects %}
     <div class="project">
-            <span class="name">
-                <a href="{{ item.url }}">{{ item.name }}</a>
-                <span class="startDate"> ({{ item.startDate | date: "%Y" }})</span>:
-            </span>
+        <div class="name">
+            <a href="{{ item.url }}">{{ item.name }}</a>
+            <span class="startDate"> {{ item.startDate | date: "%B %Y" }}</span>
+        </div>
 
-            <span class="description">{{ item.description }}</span>
+        <div class="description">{{ item.description }}</div>
 
         {% if item.highlights %}
         <div class="highlights">

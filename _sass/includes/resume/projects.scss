@@ -5,7 +5,7 @@
     .project {
         margin-bottom: var(--grid-spacing);
 
-        .name, .description {
+        .name {
             @include body-text;
 
             a {
@@ -14,7 +14,13 @@
 
             .startDate {
                 @include time;
+
+                float: right;
             }
+        }
+
+        .description {
+            @include body-text;
         }
 
         .highlights {
