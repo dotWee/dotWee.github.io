@@ -10,14 +10,18 @@
 
 
 @import "includes/resume/header";
-@import "includes/resume/career";
-@import "includes/resume/profiles";
-@import "includes/resume/languages";
-@import "includes/resume/interests";
-@import "includes/resume/education";
-@import "includes/resume/certificates";
-@import "includes/resume/skills";
-@import "includes/resume/work";
-@import "includes/resume/publications";
-@import "includes/resume/projects";
-@import "includes/resume/volunteer";
+
+// main content
+@import "includes/resume/content/career";
+@import "includes/resume/content/work";
+@import "includes/resume/content/publications";
+@import "includes/resume/content/volunteer";
+@import "includes/resume/content/projects";
+
+// sidebar
+@import "includes/resume/sidebar/profiles";
+@import "includes/resume/sidebar/languages";
+@import "includes/resume/sidebar/interests";
+@import "includes/resume/sidebar/education";
+@import "includes/resume/sidebar/certificates";
+@import "includes/resume/sidebar/skills";
