@@ -19,10 +19,6 @@
 
         .highlights {
             @include body-text;
-            ul {
-                list-style-type: square;
-                margin-top: 0;
-            }
         }
     }
 }
