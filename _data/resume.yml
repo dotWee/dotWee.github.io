@@ -157,9 +157,10 @@ work:
 projects:
   - name: structured-stern-neon-articles
     startDate: "2024-10-01"
-    description: Machine learning dataset consisting of approximately 5k user written texts, articles, and poetry pulled from archives of the Stern NEON website.
+    description: Machine learning dataset consisting of approximately 15k user written texts, articles, and poetry pulled from archives of the Stern NEON website.
     highlights:
-      - Can be used for text classification, question answering, text generation, and text-to-text generation tasks
+      - Cleaned and structured dataset with metadata, including author, title, keywords and publication date
+      - Usecases include text classification, question answering, text generation, and text-to-text generation tasks
     url: https://huggingface.co/datasets/dotwee/structured-stern-neon-articles
     keywords:
       - Python
@@ -239,7 +240,7 @@ projects:
       - Swift
 
   - name: docker-matrix-synapse-s3
-    startDate: "2022-01-01"
+    startDate: "2021-06-20"
     description: A custom Docker image for Matrix Synapse with pre-installed S3 storage support.
     highlights:
       - Simplified Matrix Synapse setup with built-in cloud storage support
@@ -248,6 +249,18 @@ projects:
     keywords:
       - Docker
       - Python
+      - Web
+
+  - name: repogen
+    startDate: "2018-08-21"
+    description: CLI tool for generating git-repo manifests from GitHub/GitLab/Gitea accounts or organizations through official (even unauthenticated) APIs.
+    highlights:
+      - Written in Node.js, with a focus on performance and ease of use
+      - Published on npm, with an average of ~100+ downloads per month
+    url: https://github.com/dotWee/repogen
+    keywords:
+      - Node.js
+      - CLI
       - Web
 
 # Volunteer
