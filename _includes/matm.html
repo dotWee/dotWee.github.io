@@ -20,5 +20,7 @@
 {% endunless %}
 
 {% assign action_name = include.action_name | default: page.title %}
-<img referrerpolicy="no-referrer-when-downgrade" style="border:0" alt=""
-    src="https://matm.dotwee.de/matm.php?idsite=1&amp;rec=1&amp;action_name={{ action_name | url_encode }}{% if include.goal_id %}&amp;idgoal={{ include.goal_id }}{% endif %}" />
+<noscript>
+    <img referrerpolicy="no-referrer-when-downgrade" style="border:0" alt=""
+        src="https://matm.dotwee.de/matm.php?idsite=1&amp;rec=1&amp;action_name={{ action_name | url_encode }}{% if include.goal_id %}&amp;idgoal={{ include.goal_id }}{% endif %}" />
+</noscript>
