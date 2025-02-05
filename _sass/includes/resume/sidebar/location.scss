@@ -1,0 +1,9 @@
+.location {
+    margin-bottom: var(--grid-spacing);
+    .title {
+        @include sub-header;
+    }
+    .idiom {
+        @include body-text;
+    }
+}

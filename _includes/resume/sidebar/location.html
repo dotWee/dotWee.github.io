@@ -1,0 +1,7 @@
+{% assign location = site.data.resume.basics.location %}
+{% if location %}
+<section class="location">
+    <div class="title">Location</div>
+    <div class="idiom">{{location.city}}, {{location.countryCode}}</div>
+</section>
+{% endif %}
