@@ -11,7 +11,7 @@ basics:
   image: "/assets/img/photo.jpg"
 
   # Undefined properties
-  # phone:
+  phone: "+4915736887453"
 
   location:
     # address:
@@ -21,6 +21,9 @@ basics:
     region: Bavaria
 
   profiles:
+    - _icon: "fas.fa-phone"
+      url: "/links/phone"
+      network: Phone
     - _icon: "far.fa-envelope"
       url: "/links/email"
       username: lukas@wolfsteiner.media
