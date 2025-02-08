@@ -15,7 +15,7 @@ permalink: /imprint/
 > 92348 Berg  
 > Deutschland  
 > 
-> E-Mail: _[{{ site.email }}](mailto:{{ site.email | encode_email }})_
+> E-Mail: _[{{ site.email }}](mailto:{{ site.email }})_
 
 ### Datenschutzerklärung
 

@@ -39,7 +39,6 @@ plugins:
   - jekyll/mastodon_webfinger
   - jekyll-target-blank
   - jekyll-redirect-from
-  - jekyll-email-protect
 
 # Config for jekyll/mastodon_webfinger
 mastodon:
