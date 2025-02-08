@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <title>Redirecting&hellip;</title>
-  {% include matm.html %}
+  {% include _matm.html %}
 
   <link rel="canonical" href="{{ page.redirect.to }}" />
   <script>
@@ -21,8 +21,8 @@
 <body>
   <h1>Redirecting&hellip;</h1>
   <a id="redirect-link" href="{{ page.redirect.to }}">Click here if you are not redirected.</a>
-  {% include matm.html noscript=true %}
-  
+  {% include _matm.html noscript=true %}
+
   <script>
     // Add hash and search to meta redirect and manual link, in case script above did not work
     const urlSuffix2 =
