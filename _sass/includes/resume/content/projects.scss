@@ -12,6 +12,10 @@
                 font-weight: bold;
             }
 
+            .keywords {
+                @include time;
+            }
+
             .startDate {
                 @include time;
 

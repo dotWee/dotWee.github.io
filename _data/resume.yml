@@ -10,7 +10,6 @@ basics:
   # summary:
   image: "/assets/img/photo.jpg"
 
-  # Undefined properties
   phone: "+4915736887453"
 
   location:
@@ -166,8 +165,8 @@ projects:
       - Usecases include text classification, question answering, text generation, and text-to-text generation tasks
     url: https://huggingface.co/datasets/dotwee/structured-stern-neon-articles
     keywords:
-      - Python
-      - KI/ML
+      - Dataset
+      - Machine Learning
 
   - name: MicroPinner
     startDate: "2015-01-01"

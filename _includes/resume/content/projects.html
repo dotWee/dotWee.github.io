@@ -6,6 +6,11 @@
     <div class="project">
         <div class="name">
             <a href="{{ item.url }}">{{ item.name }}</a>
+
+            {% if item.keywords %}
+            <span class="keywords">{{ item.keywords | join: " #" | prepend: "#" | downcase }}</span>
+            {% endif %}
+
             <span class="startDate"> {{ item.startDate | date: "%B %Y" }}</span>
         </div>
 
