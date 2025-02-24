@@ -126,7 +126,7 @@ work:
       - "**Cryptography:** Implemented and integrated various data processing algorithms and classifiers, including BSI-specified cryptography to handle government issued custom X.509 certificates with ASN.1"
       - "**Security:** Implemented IAAA features using Keycloak, Open ID Connect (OIDC), and OAuth2 for secure authentication and authorization"
       - "**Requirement Engineering:** Participated in requirement elaboration and technical grooming for Gematik TI-M project"
-      #- Mentored and supported an apprentice, contributing to their professional development
+      - "**Team Leadership:** Mentored and supported an apprentice, contributing to their professional development"
 
   - position: Full-Stack Developer & IT-Sysadmin
     startDate: "2022-04-01"
