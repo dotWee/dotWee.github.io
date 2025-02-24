@@ -233,7 +233,8 @@ projects:
     keywords:
       - JavaScript
       - Node.js
-      - Web
+      - gRPC
+      - GraphQL
 
   - name: macOS-SourceListSidebarExample
     startDate: "2020-01-01"
