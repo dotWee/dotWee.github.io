@@ -96,6 +96,12 @@ skills:
       - JetBrains IDEs
       - Visual Studio Code
       - Vim
+  - name: Management
+    level: Experienced
+    keywords:
+      - Technical Grooming
+      - Code Reviews
+      - Mentoring
 
 # Career Objective
 career:
