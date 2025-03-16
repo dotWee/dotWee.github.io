@@ -35,6 +35,14 @@
 }
 
 @media screen and (max-width: 500px) {
+
+    /* Make the right columns text align right on mobile layouts */
+    #content > div > section:nth-child(5) {
+        tr > td:last-of-type, tr > th:last-of-type h2 {
+            text-align: right;
+        }
+    }
+
     .entry {
         font-size: 1.6;
     }
