@@ -2,7 +2,7 @@ $schema: "https://raw.githubusercontent.com/jsonresume/resume-schema/master/sche
 
 basics:
   name: Lukas Wolfsteiner
-  label: Senior Software Engineer
+  label: Software Engineer
 
   # Properties taken care of by the resume_yaml_to_json.rb plugin
   # email:

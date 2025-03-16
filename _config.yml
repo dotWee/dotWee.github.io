@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Lukas Wolfsteiner
-description: senior software engineer with a proven track record to develop and deliver high-quality software solutions
+description: Software Engineer based in Germany; shaping resilient Software Architectures and cultivating flourishing Codebases
 email: lukas@wolfsteiner.media
 
 # baseurl: "" # the subpath of your site, e.g. /blog
