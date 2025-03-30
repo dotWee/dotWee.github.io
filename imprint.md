@@ -7,7 +7,7 @@ permalink: /imprint/
 ---
 
 # {{ site.title }}
-    
+
 ## {{ page.title }}
 
 > Lukas Wolfsteiner  
@@ -20,10 +20,10 @@ permalink: /imprint/
 ### Datenschutzerklärung
 
 Der Webserver schreibt Logdateien mit den Zugriffen und den IP-Adressen der Zugreifer.  
-Diese dienen der Fehlersuche im Krisenfall und werden ansonsten nicht ausgewertet.  
-Da es hier keine Benutzerkonten und keine Tracking-Cookies o.ä. gibt, betrachte ich diese Logdateien nicht als personenbezogen.  
+Diese dienen der Fehlersuche im Krisenfall und werden ansonsten nicht ausgewertet.
 
-Abgesehen davon werden keine Daten erhoben, gespeichert oder ausgewertet.  
+
+Abgesehen davon werden keine Daten erhoben, gespeichert oder ausgewertet.
 
 ---
 
