@@ -10,7 +10,7 @@
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
   (function() {
-    var u="//matm.dotwee.de/";
+    var u = "https://matm.wolfsteiner.media/";
     _paq.push(['setTrackerUrl', u+'matm.php']);
     _paq.push(['setSiteId', '1']);
     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
@@ -22,7 +22,7 @@
 {% assign action_name = include.action_name | default: page.title %}
 <noscript>
     <img referrerpolicy="no-referrer-when-downgrade" style="border:0" alt=""
-        src="https://matm.dotwee.de/matm.php?idsite=1&amp;rec=1&amp;action_name={{ action_name | url_encode }}{% if include.goal_id %}&amp;idgoal={{ include.goal_id }}{% endif %}" />
+    src="https://matm.wolfsteiner.media/matm.php?idsite=1&amp;rec=1&amp;action_name={{ action_name | url_encode }}{% if include.goal_id %}&amp;idgoal={{ include.goal_id }}{% endif %}" />
 </noscript>
 
 <script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

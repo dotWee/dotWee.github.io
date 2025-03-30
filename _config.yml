@@ -100,10 +100,6 @@ social:
 target-blank:
   noopener: false
   noreferrer: false
-  rel: me
-  rel_exclude: 
-    - kdv-fh-bayern.de
-    - weigertkunde.de
 
 # Config for jekyll-redirect-from
 redirect_from:
