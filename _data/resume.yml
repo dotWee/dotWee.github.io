@@ -14,10 +14,10 @@ basics:
 
   location:
     # address:
-    postalCode: "92318"
-    city: Neumarkt
-    countryCode: DE
-    region: Bavaria
+    postalCode: "8048"
+    city: Zurich
+    countryCode: CH
+    region: Zurich
 
   profiles:
     - _icon: "fas.fa-phone"
