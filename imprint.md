@@ -2,7 +2,7 @@
 layout: default
 stylesheet: imprint
 title: "Impressum & ViSdP"
-
+prefetch: true
 permalink: /imprint/
 redirect_from:
     - /disclaimer

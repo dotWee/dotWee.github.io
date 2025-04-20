@@ -5,3 +5,11 @@
 <meta name="keywords"
   content="Wolfsteiner, Lukas, Lukas Wolfsteiner, Lukas dotwee Wolfsteiner, dotwee, dot, wee, coding, wee coding, dotwee coding">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+<!-- Prefetch linked sites -->
+{% assign pages_to_prefetch = site.pages | where: "prefetch", true %}
+{% for page_to_prefetch in pages_to_prefetch %}
+{% if page.url != page_to_prefetch.url %}
+<link rel="dns-prefetch" href="{{ page_to_prefetch.url | absolute_url }}">
+{% endif %}
+{% endfor %}
