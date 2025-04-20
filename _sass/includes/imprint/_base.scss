@@ -1,3 +1,5 @@
+@use "../../mixins";
+
 body {
     font-family: "Lucida Console", Monaco, monospace;
     color: var(--fg-color-body);
@@ -15,7 +17,7 @@ h3 {
 p,
 span,
 blockquote {
-    @include body-text;
+    @include mixins.body-text;
     font-size: .8rem;
 }
 

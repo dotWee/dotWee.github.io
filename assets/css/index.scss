@@ -1,11 +1,11 @@
 ---
 ---
 
-@import "_mixins";
-@import "_theme";
+@use "../../_sass/theme"; // Use theme to define CSS variables
 
-@import "includes/index/_base";
-@import "includes/index/entry";
-@import "includes/index/corners";
-@import "includes/index/imprint";
-@import "includes/index/copyright";
+// Use the index partials
+@use "../../_sass/includes/index/base";
+@use "../../_sass/includes/index/entry";
+@use "../../_sass/includes/index/corners";
+@use "../../_sass/includes/index/imprint";
+@use "../../_sass/includes/index/copyright";

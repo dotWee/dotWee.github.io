@@ -1,10 +1,12 @@
+@use "../../../mixins";
+
 .skills {
     margin-bottom: var(--grid-spacing);
     .name {
         margin-top: var(--grid-spacing);
-        @include sub-header;
+        @include mixins.sub-header;
     }
     .keyword {
-        @include body-text;
+        @include mixins.body-text;
     }
 }

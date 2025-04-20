@@ -1,3 +1,5 @@
+@use "../../mixins";
+
 .imprint {
     font-family: "Lucida Console", Monaco, monospace;
     text-align: right;
@@ -7,7 +9,7 @@
 }
 
 .imprint a {
-    @include body-text;
+    @include mixins.body-text;
     color: var(--fg-color-dark);
     font-size: 0.7rem;
     line-height: 1rem;

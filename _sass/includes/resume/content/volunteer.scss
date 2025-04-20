@@ -1,32 +1,35 @@
+@use "../../../mixins";
+
 .volunteer {
     .title {
-        @include header;
+        @include mixins.header;
     }
     
     .item {
         margin-bottom: var(--grid-spacing);
         .position {
-            @include sub-header;
+            @include mixins.sub-header;
         }
         .organization {
-            @include body-text;
+            @include mixins.body-text;
             font-weight: bold;
 
             .time {
-                @include time;
+                @include mixins.time;
 
                 float: right;
                 margin-left: calc(var(--grid-spacing) / 2);
             }
         }
         .details {
-            @include body-text;
+            @include mixins.body-text;
 
             .summary {
                 margin-block-start: 0;
             }
 
             .highlights {
+                @include mixins.body-text;
                 .highlight p {
                     margin-block-start: 0;
                     margin-block-end: 0;

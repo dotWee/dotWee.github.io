@@ -1,7 +1,5 @@
 ---
 ---
 
-@import "_mixins";
-@import "_theme";
-
-@import "includes/imprint/_base";
+@use "../../_sass/theme"; // Use theme to define CSS variables
+@use "../../_sass/includes/imprint/base"; // Use the base imprint styles

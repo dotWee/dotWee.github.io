@@ -1,9 +1,11 @@
+@use "../../../mixins";
+
 .location {
     margin-bottom: var(--grid-spacing);
     .title {
-        @include sub-header;
+        @include mixins.sub-header;
     }
     .idiom {
-        @include body-text;
+        @include mixins.body-text;
     }
 }

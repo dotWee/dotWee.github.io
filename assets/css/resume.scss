@@ -1,28 +1,26 @@
 ---
 ---
 
-@import "_mixins";
-@import "_theme";
+@use "../../_sass/theme"; // Use theme to define CSS variables
 
-@import "includes/resume/_print";
-@import "includes/resume/_base";
-@import "includes/resume/responsive";
-
-
-@import "includes/resume/header";
+// Use resume partials
+@use "../../_sass/includes/resume/print";
+@use "../../_sass/includes/resume/base";
+@use "../../_sass/includes/resume/responsive";
+@use "../../_sass/includes/resume/header";
 
 // main content
-@import "includes/resume/content/career";
-@import "includes/resume/content/work";
-@import "includes/resume/content/publications";
-@import "includes/resume/content/volunteer";
-@import "includes/resume/content/projects";
+@use "../../_sass/includes/resume/content/career";
+@use "../../_sass/includes/resume/content/work";
+@use "../../_sass/includes/resume/content/publications";
+@use "../../_sass/includes/resume/content/volunteer";
+@use "../../_sass/includes/resume/content/projects";
 
 // sidebar
-@import "includes/resume/sidebar/profiles";
-@import "includes/resume/sidebar/location";
-@import "includes/resume/sidebar/languages";
-@import "includes/resume/sidebar/interests";
-@import "includes/resume/sidebar/education";
-@import "includes/resume/sidebar/certificates";
-@import "includes/resume/sidebar/skills";
+@use "../../_sass/includes/resume/sidebar/profiles";
+@use "../../_sass/includes/resume/sidebar/location";
+@use "../../_sass/includes/resume/sidebar/languages";
+@use "../../_sass/includes/resume/sidebar/interests";
+@use "../../_sass/includes/resume/sidebar/education";
+@use "../../_sass/includes/resume/sidebar/certificates";
+@use "../../_sass/includes/resume/sidebar/skills";

@@ -1,24 +1,26 @@
+@use "../../../mixins";
+
 .work {
     .title {
-        @include header;
+        @include mixins.header;
     }
     .work-item {
         .position {
-            @include sub-header;
+            @include mixins.sub-header;
         }
         .name {
-            @include body-text;
+            @include mixins.body-text;
             font-weight: bold;
 
             .time {
-                @include time;
+                @include mixins.time;
 
                 float: right;
                 margin-left: calc(var(--grid-spacing) / 2);
             }
         }
         .summary {
-            @include body-text;
+            @include mixins.body-text;
     
             br {
                 font-size: 200%;
@@ -26,7 +28,7 @@
         }
         
         .highlights, .references {
-            @include body-text;
+            @include mixins.body-text;
 
             .highlight p, .reference p {
                 margin-block-start: 0;

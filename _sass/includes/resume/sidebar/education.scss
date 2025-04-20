@@ -1,23 +1,25 @@
+@use "../../../mixins";
+
 .education {
     margin-bottom: var(--grid-spacing);
     .title {
-        @include sub-header;
+        @include mixins.sub-header;
     }
     .education-item {
         margin-bottom: var(--grid-spacing);
         .degree {
-            @include body-text;
+            @include mixins.body-text;
             font-weight: bold;
             text-align: start;
         }
 
         .institution {
-            @include body-text;
+            @include mixins.body-text;
             text-align: start;
         }
 
         .time {
-            @include time;
+            @include mixins.time;
         }
     }
 }

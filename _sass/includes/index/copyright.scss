@@ -1,3 +1,5 @@
+@use "../../mixins";
+
 .copyright {
     font-family: "Lucida Console", Monaco, monospace;
     text-align: right;
@@ -11,7 +13,7 @@
 
 .copyright p,
 .copyright a {
-    @include body-text;
+    @include mixins.body-text;
     font-size: 0.7rem;
     line-height: 1rem;
     padding: 0;

@@ -1,34 +1,36 @@
+@use "../../../mixins";
+
 .projects {
     .title {
-        @include header;
+        @include mixins.header;
     }
     .project {
         margin-bottom: var(--grid-spacing);
 
         .name {
-            @include body-text;
+            @include mixins.body-text;
 
             a {
                 font-weight: bold;
             }
 
             .keywords {
-                @include time;
+                @include mixins.time;
             }
 
             .startDate {
-                @include time;
+                @include mixins.time;
 
                 float: right;
             }
         }
 
         .description {
-            @include body-text;
+            @include mixins.body-text;
         }
 
         .highlights {
-            @include body-text;
+            @include mixins.body-text;
         }
     }
 }
