@@ -21,10 +21,11 @@
     
         .name {
             font-weight: bolder;
-            color: var(--fg-color-dark);
+            color: var(--text-primary);
             margin-bottom: 0;
         }
         .label {
+            color: var(--text-label);
             text-align: left;
             font-weight: bold;
             margin-top: 0;

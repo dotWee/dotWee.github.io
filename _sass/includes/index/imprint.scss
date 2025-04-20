@@ -10,7 +10,7 @@
 
 .imprint a {
     @include mixins.body-text;
-    color: var(--fg-color-dark);
+    color: var(--text-label);
     font-size: 0.7rem;
     line-height: 1rem;
     padding: 0;

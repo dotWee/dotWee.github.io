@@ -1,10 +1,9 @@
 :root {
-    --bg-color: #f1f1f1;
-    --bg-color-cv: white;
-    --fg-color: blue;
-    --fg-color-dark: blue;
-    --fg-color-body: black;
-    --fg-color-title-sm: black;
+    --background-primary: white;
+    --background-secondary: #f1f1f1;
+
+    --text-label: blue;
+    --text-primary: black;
 
     --grid-spacing: 20px;
     --stroke-width: 0.2rem;
@@ -16,12 +15,11 @@ $dark-theme-enabled: false;
 @if $dark-theme-enabled {
     @media (prefers-color-scheme: dark) {
         :root {
-            --bg-color: black;
-            --bg-color-cv: #00072D;
-            --fg-color: #A6E1FA;
-            --fg-color-dark: #A6E1FA;
-            --fg-color-body: white;
-            --fg-color-title-sm: white;
+            --background-primary: #00072D;
+            --background-secondary: black;
+
+            --text-label: #A6E1FA;
+            --text-primary: white;
         }
     }
 }

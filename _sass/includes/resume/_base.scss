@@ -5,18 +5,18 @@
 }
 
 a:visited {
-    color: var(--fg-color);
+    color: var(--text-label);
 }
 
 body {
-    background-color: var(--bg-color);
+    background-color: var(--background-secondary);
 }
 
 .container {
     max-width: 900px;
     min-height: 900px;
     margin: 0 auto;
-    background-color: var(--bg-color-cv);
+    background-color: var(--background-primary);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     padding: var(--grid-spacing);
     margin-top: var(--grid-spacing);

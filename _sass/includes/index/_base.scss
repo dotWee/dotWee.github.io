@@ -7,7 +7,7 @@ body {
 }
 
 body {
-    background-color: var(--bg-color-cv);
+    background-color: var(--background-primary);
 }
 
 .container {
@@ -39,7 +39,7 @@ li,
 a,
 h1,
 a:visited {
-    color: var(--fg-color)
+    color: var(--text-label)
 }
 
 ul>li {
@@ -49,10 +49,10 @@ ul>li {
 hr {
     border: none;
     height: var(--stroke-width);
-    color: var(--fg-color-body);
+    color: var(--text-primary);
     margin-bottom: 1rem;
     margin-top: 1rem;
-    background-color: var(--fg-color-title-sm);
+    background-color: var(--text-primary);
 }
 
 h1 {

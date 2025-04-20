@@ -2,16 +2,16 @@
 
 body {
     font-family: "Lucida Console", Monaco, monospace;
-    color: var(--fg-color-body);
+    color: var(--text-primary);
     padding: 2.5rem 5rem;
 
-    background-color: var(--bg-color-cv);
+    background-color: var(--background-primary);
 }
 
 h1,
 h2,
 h3 {
-    color: var(--fg-color)
+    color: var(--text-label)
 }
 
 p,

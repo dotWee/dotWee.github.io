@@ -19,7 +19,7 @@
             }
             .conference {
                 @include mixins.body-text;
-                color: var(--fg-color-title-sm);
+                color: var(--text-primary);
                 font-weight: 100;
             }
         }

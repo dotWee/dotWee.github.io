@@ -1,5 +1,5 @@
 .bordered {
-    border: var(--stroke-width) solid var(--fg-color-title-sm);
+    border: var(--stroke-width) solid var(--text-primary);
 }
 
 svg {
@@ -14,7 +14,7 @@ svg {
 
 .corner-line {
     fill: none;
-    stroke: var(--fg-color-title-sm);
+    stroke: var(--text-primary);
     stroke-miterlimit: 10;
     position: absolute;
     stroke-width: var(--stroke-width);
