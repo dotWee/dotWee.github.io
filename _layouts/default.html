@@ -33,8 +33,10 @@ seo:
     <meta name="HandheldFriendly" content="True">
 
     <!-- Default page style -->
-    <link rel="stylesheet" href="/assets/css/normalize.css">
-    <link rel="stylesheet" href="/assets/css/{{ page.stylesheet }}.css">
+    <link rel="stylesheet" href="{% link /assets/css/normalize.css %}">
+    {% if page.stylesheet %}
+    <link rel="stylesheet" href="{{ page.stylesheet | append: '.css' | prepend: '/assets/css/' }}">
+    {% endif %}
 </head>
 
 <body>
