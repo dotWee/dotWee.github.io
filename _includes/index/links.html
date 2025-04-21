@@ -16,10 +16,10 @@
                         <a class="link" href="{% link resume.html %}">resume</a>
                     </li>
 
-                    {% assign publications_links = site.data.links | where_exp: "link", "link.tags contains 'publication'" %}
+                    {% assign publications_links = site.data.links | where_exp: "link", "link.tags contains 'publication'" | reverse %}
                     {% for link in publications_links %}
                     <li>
-                        <a class="link" href="{% link links/{{ link.name }}.html %}">{{ link.name }}</a>
+                        <a class="link" target="_blank" href="{% link links/{{ link.name }}.html %}">{{ link.name }}</a>
                     </li>
                     {% endfor %}
                 </ul>
@@ -29,7 +29,7 @@
                     {% assign contact_links = site.data.links | where_exp: "link", "link.tags contains 'contact'" %}
                     {% for link in contact_links %}
                     <li>
-                        <a class="link" href="{% link links/{{ link.name }}.html %}">{{ link.name }}</a>
+                        <a class="link" target="_blank" href="{% link links/{{ link.name }}.html %}">{{ link.name }}</a>
                     </li>
                     {% endfor %}
                 </ul>

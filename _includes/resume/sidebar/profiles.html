@@ -6,7 +6,7 @@
     {% for profile in profiles %}
     <div class="profile">
         {% fa_svg profile._icon %}
-        <a href="{{profile.url}}">
+        <a href="{% link links/{{ profile.network | downcase }}.html %}" target="_blank">
             {{ profile.network | default: profile.username }}
         </a>
     </div>
