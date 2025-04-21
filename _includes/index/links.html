@@ -12,18 +12,24 @@
         <tr>
             <td>
                 <ul>
-                    {% for entry in site.data.index.publications %}
                     <li>
-                        <a class="link" href="{{ entry.link }}">{{ entry.name }}</a>
+                        <a class="link" href="{% link resume.html %}">resume</a>
+                    </li>
+
+                    {% assign publications_links = site.data.links | where_exp: "link", "link.tags contains 'publication'" %}
+                    {% for link in publications_links %}
+                    <li>
+                        <a class="link" href="{% link links/{{ link.name }}.html %}">{{ link.name }}</a>
                     </li>
                     {% endfor %}
                 </ul>
             </td>
             <td>
                 <ul>
-                    {% for entry in site.data.index.contact %}
+                    {% assign contact_links = site.data.links | where_exp: "link", "link.tags contains 'contact'" %}
+                    {% for link in contact_links %}
                     <li>
-                        <a class="link" href="{{ entry.link }}">{{ entry.name }}</a>
+                        <a class="link" href="{% link links/{{ link.name }}.html %}">{{ link.name }}</a>
                     </li>
                     {% endfor %}
                 </ul>
