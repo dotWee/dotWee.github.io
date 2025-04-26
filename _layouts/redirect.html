@@ -7,7 +7,7 @@ prefetch: false
 
 <head>
   <meta charset="utf-8" />
-  <title>Redirecting&hellip;</title>
+  <title>{{ "Redirecting to " | append: page.title }}</title>
   {% include _matm.html %}
 
   <link rel="canonical" href="{{ page.redirect.to }}" />
