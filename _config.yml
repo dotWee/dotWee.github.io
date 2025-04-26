@@ -72,8 +72,12 @@ defaults:
       type: "pages"
     values:
       author: lukaswolfsteiner
-      image: /assets/img/photo.jpg
-      
+      image:
+        path: /assets/img/photo.jpg
+        alt: "Photo of Lukas Wolfsteiner"
+      prefetch: true
+      layout: default
+
   - scope:
       path: "assets/img"
     values:
