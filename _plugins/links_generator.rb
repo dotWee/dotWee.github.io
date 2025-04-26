@@ -37,7 +37,7 @@ module LinksGenerator
           'to' => link['redirect_to']
         },
         'sitemap' => false,
-        'permalink' => "/#{@dir}/#{@basename}",
+        'permalink' => "/#{@dir}/#{@basename.downcase}",
       }
     end
   end
