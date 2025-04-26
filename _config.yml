@@ -79,9 +79,14 @@ defaults:
       layout: default
 
   - scope:
+      path: "assets/css"
+    values:
+      prefetch: false
+  - scope:
       path: "assets/img"
     values:
       image: true
+      prefetch: false
   - scope:
       path: "assets/files"
     values:
@@ -89,9 +94,46 @@ defaults:
   - scope:
       path: "links"
     values:
+      prefetch: false
       sitemap: false
       layout: redirect
       permalink: /links/:name
+  # jekyll-seo-tag defaults for all pages
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      seo:
+        # json-ld schema
+        # docs: https://schema.org/Person
+        type: person
+        name: Lukas Wolfsteiner
+        url: https://lukas.wolfsteiner.media
+        image: /assets/img/photo.jpg
+        links:
+          - https://twitter.com/dotwee_
+          - https://x.com/dotwee_
+          - https://www.xing.com/profile/Lukas_Wolfsteiner2
+          - https://www.linkedin.com/in/lukas-wolfsteiner
+          - https://instagram.com/dnkncht
+          - https://github.com/dotWee
+          - https://keybase.io/dotwee
+        jobTitle: Software Engineer Digital Health
+        knowsLanguages:
+          - de
+          - en
+        knowsAbout:
+          - Software Engineering
+          - Software Architecture
+          - Software Development
+          - Software Design
+          - Software Quality
+          - Software Testing
+          - Software Maintenance
+          - Software Deployment
+          - Software Documentation
+        nationality: de
+        workLocation: Zurich
 
 # Sass
 sass:
@@ -116,32 +158,6 @@ author:
 twitter:
   username: dotwee_
   card: summary
-social:
-  name: Lukas Wolfsteiner
-  type: person
-  image: /assets/img/photo.jpg
-  links:
-    - https://twitter.com/dotwee_
-    - https://x.com/dotwee_
-    - https://www.xing.com/profile/Lukas_Wolfsteiner2
-    - https://www.linkedin.com/in/lukas-wolfsteiner
-    - https://instagram.com/dnkncht
-    - https://github.com/dotWee
-    - https://keybase.io/dotwee
-
-seo:
-  type: person
-  name: Lukas Wolfsteiner
-  url: https://lukas.wolfsteiner.media
-  image: /assets/img/photo.jpg
-  links:
-    - https://twitter.com/dotwee_
-    - https://x.com/dotwee_
-    - https://www.xing.com/profile/Lukas_Wolfsteiner2
-    - https://www.linkedin.com/in/lukas-wolfsteiner
-    - https://instagram.com/dnkncht
-    - https://github.com/dotWee
-    - https://keybase.io/dotwee
 
 # Config for jekyll-target-blank
 target-blank:
