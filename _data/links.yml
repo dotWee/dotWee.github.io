@@ -63,3 +63,7 @@
   name: xing
   tags:
     - "contact"
+
+- title: "@dotwee_ on X.com (Previous Twitter)"
+  redirect_to: https://www.x.com/dotwee_
+  name: X
