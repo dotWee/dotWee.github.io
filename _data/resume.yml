@@ -112,10 +112,16 @@ career:
 
 # Work Experience
 work:
-  - position: Software Engineer, Team R&D
+  - position: Professional Software Engineer (Digital Health)
+    name: adesso Schweiz AG
+    url: https://www.adesso.ch/
+    startDate: "2025-05-01"
+    
+  - position: Software Engineer (Team Run&Deliver)
     name: Awesome Technologies Innovationslabor GmbH
     url: https://awesome-technologies.de/
     startDate: "2023-04-01"
+    endDate: "2025-04-30"
     summary: >
       As a software engineer at Awesome Technologies Innovationslabor GmbH, I am responsible for developing innovative solutions in the german healthcare and medical technology sectors.
       I work in a cross-functional team with a decentralized approach, focusing on flexibility and continuous improvement.
@@ -290,7 +296,7 @@ volunteer:
     organization: Crowdin
     url: /links/crowdin
     summary: Providing high-quality translations, contributing to the localization efforts of various non-profit organizations and community-driven open-source projects.
-    highlights: 
+    highlights:
       - Contributed translations to major open-source projects used by millions of users worldwide
       - Helping non-native developers to reach a broader audience
       - Specialised in translating for mobile and desktop applications
