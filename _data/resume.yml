@@ -17,7 +17,7 @@ basics:
     postalCode: "8048"
     city: Zurich
     countryCode: CH
-    region: Zurich
+    region: Zurich Metropolitan Area
 
   profiles:
     - _icon: "fas.fa-phone"
