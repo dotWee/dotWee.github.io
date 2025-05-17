@@ -19,20 +19,17 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 512px) {
     .container {
+        padding-left: 0;
+        padding-right: 0;
+
         .container-block {
             display: block;
         }
     }
-    .header {
-        display: block;
-        .title {
-            margin: 0 auto;
-        }
-        input,
-        label {
-            display: none;
-        }
+
+    ul {
+        padding-left: var(--grid-spacing);
     }
 }

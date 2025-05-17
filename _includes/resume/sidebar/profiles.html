@@ -3,6 +3,12 @@
 <section class="profiles">
     <div class="title">Contact</div>
 
+    <div class="profile">
+        {% fa_svg fas.fa-house %}
+        <a href="{{ site.url }}" target="_blank">
+            Homepage
+        </a>
+    </div>
     {% for profile in profiles %}
     <div class="profile">
         {% fa_svg profile._icon %}
