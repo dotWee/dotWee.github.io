@@ -5,6 +5,7 @@
         @include mixins.header;
     }
     .work-item {
+        margin-bottom: var(--grid-spacing);
         .position {
             @include mixins.sub-header;
         }
@@ -37,6 +38,10 @@
 
             .reference {
                 text-align: left;
+            }
+
+            ul {
+                margin-bottom: 0;
             }
         }
     }
