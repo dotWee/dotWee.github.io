@@ -144,51 +144,59 @@ work:
     startDate: "2023-04-01"
     endDate: "2025-04-30"
     summary: >
-      As a software engineer at Awesome Technologies Innovationslabor GmbH, I am responsible for developing innovative solutions in the german healthcare and medical technology sectors.
-      I work in a cross-functional team with a decentralized approach, focusing on flexibility and continuous improvement.
+      Rapidly advanced from entry-level to taking ownership of key infrastructure components in a national-scale healthcare communications platform.
 
-      My primary focus has been on backend development for our TI-Messenger (TI-M) project, where took care of implementing core compontents of future safe products.
+      Delivered secure communication infrastructure for Germany's national healthcare messaging platform while achieving exceptional quality metrics.
+      
+      Demonstrated technical leadership in high-compliance environments requiring government-grade data protection, security and cryptography standards.
+
+      Specialized in mission-critical backend development for systems handling sensitive medical data in accordance with strict government standards.
     highlights:
-      - "**Backend Development:** Developed backend infrastructure and functionalities using Python 3, Pydantic, Uvicorn, and FastAPI"
-      - "**Cryptography:** Implemented and integrated various data processing algorithms and classifiers, including BSI-specified cryptography to handle government issued custom X.509 certificates with ASN.1"
-      - "**Security:** Implemented IAAA features using Keycloak, Open ID Connect (OIDC), and OAuth2 for secure authentication and authorization"
-      - "**Requirement Engineering:** Participated in requirement elaboration and technical grooming for Gematik TI-M project"
-      - "**Team Leadership:** Mentored and supported an apprentice, contributing to their professional development"
+      - "**Secure Backend Architecture:** Engineered scalable Python microservices handling sensitive medical data, implementing BSI-certified cryptography while maintaining strict regulatory compliance for national healthcare infrastructure"
+      - "**Quality & Reliability Champion:** Established test-driven development culture achieving full coverage for medical-grade software, reducing production bugs by automating comprehensive test suites and implementing robust CI/CD pipelines"
+      - "**Authentication Expertise:** Delivered enterprise-grade security through KeyCloak integration with OAuth2 and OpenID Connect, implementing fine-grained access controls that protected sensitive patient data while enabling seamless provider authentication"
+      - "**Technical Interface Leadership:** Translated complex Gematik specifications into implementable requirements, creating interoperability between disparate healthcare systems through RESTful APIs and standardized E-Health protocols"
+      - "**Cross-Functional Impact:** Bridged technical and business domains by creating comprehensive documentation, mentoring junior developers, and collaborating with stakeholders to deliver solutions that met strict regulatory requirements while solving real clinical needs"
 
-  - position: Full-Stack Developer & IT-Sysadmin
+  - position: Full-Stack & DevOps Engineer (Financial Services)
     startDate: "2022-04-01"
     endDate: "2023-04-01"
     name: WEIGERT + KUNDE Unternehmensberatung GmbH
     url: https://www.weigertkunde.de/
     summary: >
-      As part of the project, an existing web platform was extended with a component for in-house document and file management to reduce paperwork and administrative friction for company management.  
+      Spearheaded development of an integrated document management system that streamlined core business operations for company management.
 
-      My tasks included planning, designing, and developing the document management system as well as fully integrating it with the existing web platform.
-      Additionally, I was responsible for testing, deployment, and maintenance.
+      Architected and implemented a comprehensive solution that significantly reduced administrative overhead and eliminated paper-based processes.
       
-      The project was successfully deployed and commissioned, actively used by the company's management team.
+      Delivered a full-cycle project from initial requirements gathering through development to successful production deployment.
+      
+      Demonstrated versatility by handling both development responsibilities and system administration tasks within a small team environment.
     highlights:
-      - "**Backend Development:** Developed RESTful API using Spring Boot and Hibernate"
-      - "**Frontend Development:** Implemented the user interface using Vue.js and Vuetify"
-      - "**Database Management:** Utilized S3, PostgreSQL and Hibernate for scalable data storage and retrieval"
-      - "**Monitoring & DevOps:** Defined and integrated CI/CD pipelines using Atlassian BitBucket"
+      - "**End-to-End Solution Design:** Architected and implemented a complete document management system from database schema to user interface, integrating seamlessly with existing business platform infrastructure"
+      - "**Backend Excellence:** Created high-performance RESTful APIs using Spring Boot and Hibernate that handled complex document processing while maintaining strict data integrity requirements"
+      - "**Frontend Innovation:** Developed intuitive user interfaces with Vue.js and Vuetify that significantly improved document workflows and reduced training overhead for business users"
+      - "**Cloud Infrastructure:** Engineered scalable storage solutions utilizing S3 and PostgreSQL, implementing efficient data access patterns for reliable document retrieval and management"
+      - "**DevOps Integration:** Established robust CI/CD pipelines with Atlassian BitBucket that ensured consistent quality across development and production environments"
   
-  - position: Working Student Software Engineer
+  - position: Working Student Software Engineer (Higher Education Administration)
     startDate: "2017-04-01"
     endDate: "2019-10-01"
     name: Koordinierungsstelle für Datenverarbeitung in der Hochschulverwaltung an staat-lichen Hochschulen für angewandte Wissenschaften in Bayern (KDV)
     url: https://www.kdv-fh-bayern.de/
     summary: >
-      As a student assistant and software developer at the Coordination Office for Data Processing in Administration at the State Universities of Applied Sciences in Bavaria (Germany), I was given the task to develope a internally used web platform for data management and administration.
+      Engineered web platform for internal data management and administration serving multiple state universities across Bavaria.
 
-      The project involved tasks such as requirement analysis, data modeling, UI concept, web application development with C# and JavaScript and Bootstrap 4.
-
-      Throughout the project, I worked closely with the responsible domain expert and proved that I could integrate complex changes through clean refactoring in existing source code.
+      Executed comprehensive software development lifecycle from requirements analysis through implementation to successful deployment.
+      
+      Translated complex domain knowledge into effective technical solutions for higher education administration.
+      
+      Demonstrated strong code refactoring skills by successfully integrating complex changes into existing codebases without disrupting critical operations.
     highlights:
-      - "**Database Design:** Designed and implemented the database schema using Entity Framework Core"
-      - "**Backend Development:** Developed the backend using ASP.NET Core MVC and C#"
-      - "**Frontend Development:** Developed the user interface using ASP.NET Core MVC and Bootstrap"
-      - "**Testing & Quality Assurance:** Implemented unit tests using MSTest for continuous integration and deployment"
+      - "**Database Architecture:** Designed and implemented robust database schemas using Entity Framework Core that effectively modeled complex administrative relationships across multiple institutions"
+      - "**Enterprise Backend Development:** Built high-reliability backend systems using ASP.NET Core MVC and C# that efficiently processed and managed sensitive institutional data"
+      - "**Responsive UI Design:** Created intuitive user interfaces with ASP.NET Core MVC and Bootstrap 4 that significantly improved administrative workflow efficiency"
+      - "**Quality Assurance Leadership:** Implemented comprehensive testing strategies with MSTest that ensured maximum platform reliability for critical administrative functions"
+      - "**Domain Knowledge Integration:** Collaborated closely with subject matter experts to translate specialized higher education administration requirements into effective technical solutions"
 
 projects:
   - name: structured-stern-neon-articles
