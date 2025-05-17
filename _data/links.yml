@@ -54,3 +54,12 @@
 
 - redirect_to: https://www.x.com/dotwee_
   name: X
+
+- redirect_to: https://cults3d.com/en/users/dotWee/3d-models
+  name: cults3d
+
+- redirect_to: https://www.thingiverse.com/dotwee/about
+  name: thingiverse
+
+- redirect_to: https://www.printables.com/social/529393-dotwee
+  name: printables
