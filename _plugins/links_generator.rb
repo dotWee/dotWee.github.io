@@ -31,7 +31,9 @@ module LinksGenerator
       # Initialize data hash with a key pointing to all posts under current category.
       # This allows accessing the list in a template via `page.linked_docs`.
       @data = {
-        'title' => link['title'],
+        # Fallback for title if not present (uses site.title + "on" + link["name"]).
+        'title' => link['title'] || "#{@site.config['title']} on #{link['name']}",
+
         'layout' => 'redirect',
         'redirect' => {
           'to' => link['redirect_to']

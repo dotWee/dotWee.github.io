@@ -1,13 +1,10 @@
-- title: "@dotWee on Crowdin.com"
-  redirect_to: https://crowdin.com/profile/dotwee
+- redirect_to: https://crowdin.com/profile/dotwee
   name: crowdin
 
-- title: dotWee on dev.to
-  redirect_to: https://dev.to/dotwee
+- redirect_to: https://dev.to/dotwee
   name: devto
 
-- title: "@dotwee on DockerHub.com"
-  redirect_to: https://hub.docker.com/u/dotwee
+- redirect_to: https://hub.docker.com/u/dotwee
   name: dockerhub
   tags:
     - "publication"
@@ -24,46 +21,36 @@
   tags:
     - "publication"
 
-- title: "@dotWee on HuggingFace"
-  redirect_to: https://huggingface.co/dotwee
+- redirect_to: https://huggingface.co/dotwee
   name: huggingface
 
-- title: "@lukas-wolfsteiner on LinkedIn.com"
-  redirect_to: https://www.linkedin.com/in/lukas-wolfsteiner
+- redirect_to: https://www.linkedin.com/in/lukas-wolfsteiner
   name: linkedin
   tags:
     - "contact"
 
-- title: "@dotWee on Sueden.social (Mastodon)"
-  redirect_to: https://sueden.social/@dotwee
+- redirect_to: https://sueden.social/@dotwee
   name: mastodon
 
-- title: Lukas Wolfsteiner on ORCID
-  redirect_to: https://orcid.org/0009-0004-5196-3795
+- redirect_to: https://orcid.org/0009-0004-5196-3795
   name: orcid
 
-- title: Call Lukas Wolfsteiner
-  redirect_to: tel:+4915736887453
+- redirect_to: tel:+4915736887453
   name: phone
 
-- title: "@dnkncht on GetPocket.com"
-  redirect_to: https://getpocket.com/@dnkncht/
+- redirect_to: https://getpocket.com/@dnkncht/
   name: pocket
 
-- title: "Lukas Wolfsteiner on Spotify"
-  redirect_to: https://open.spotify.com/user/1183417465
+- redirect_to: https://open.spotify.com/user/1183417465
   name: spotify
 
-- title: "@lukas-wolfsteiner on StackOverflow"
-  redirect_to: https://stackoverflow.com/users/5489456/lukas
+- redirect_to: https://stackoverflow.com/users/5489456/lukas
   name: stackoverflow
 
-- title: "@Lukas_Wolfsteiner2 on Xing.com"
-  redirect_to: https://www.xing.com/profile/Lukas_Wolfsteiner2
+- redirect_to: https://www.xing.com/profile/Lukas_Wolfsteiner2
   name: xing
   tags:
     - "contact"
 
-- title: "@dotwee_ on X.com (Previous Twitter)"
-  redirect_to: https://www.x.com/dotwee_
+- redirect_to: https://www.x.com/dotwee_
   name: X
