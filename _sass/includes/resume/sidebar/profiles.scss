@@ -2,17 +2,19 @@
 
 .profiles {
     margin-bottom: var(--grid-spacing);
+
     .title {
         @include mixins.sub-header;
     }
+
     .profile {
         display: flex;
         align-items: center;
 
         .icon {
             margin-top: 4px;
-            width: 21px;
-            height: 21px;
+            width: var(--grid-spacing);
+            height: var(--grid-spacing);
             display: inline-block;
 
             * {
@@ -26,9 +28,43 @@
             padding-left: 4px;
 
             @include mixins.body-text;
+
             &:hover {
                 text-decoration: underline;
             }
+        }
+    }
+}
+
+// Mobile: display profiles in two columns
+@media screen and (max-width: 512px) {
+    .profiles {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: calc(var(--grid-spacing) / 4) calc(var(--grid-spacing) / 2);
+
+        .title {
+            grid-column: 1 / -1;
+        }
+
+        .profile {
+            width: 100%;
+        }
+    }
+}
+
+// Responsive: display profiles in up to 3 columns, fallback to 2 or 1 if space is limited
+@media screen and (max-width: 768px) {
+    .profiles {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+
+        .title {
+            grid-column: 1 / -1;
+        }
+
+        .profile {
+            width: 100%;
         }
     }
 }
