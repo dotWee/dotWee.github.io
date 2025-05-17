@@ -37,8 +37,15 @@
 
 @mixin time {
     font-size: 14px;
-
     color: var(--text-primary);
+
     font-weight: 100;
     font-style: italic;
+}
+
+@mixin footer-text {
+    font-family: "Lucida Console", Monaco, monospace;
+
+    font-size: 0.7rem;
+    line-height: 1rem;
 }

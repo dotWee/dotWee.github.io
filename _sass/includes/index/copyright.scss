@@ -1,33 +1,31 @@
 @use "../../mixins";
 
 .copyright {
-    font-family: "Lucida Console", Monaco, monospace;
     text-align: right;
     position: fixed;
-    bottom: 1rem;
-}
-
-.copyright {
-    right: 1rem;
+    bottom: var(--grid-spacing);
+    right: var(--grid-spacing);
 }
 
 .copyright p,
 .copyright a {
-    @include mixins.body-text;
-    font-size: 0.7rem;
-    line-height: 1rem;
+    @include mixins.footer-text;
     padding: 0;
     margin: 0;
 }
 
-.copyright a {
-    color: var(--text-label);
-}
-
 @media screen and (max-width: 500px) {
     .copyright {
-        position: inherit;
-        margin-right: 1rem;
-        margin-bottom: 1rem;
+        position: static;
+        margin: 0 auto var(--grid-spacing) auto;
+        text-align: center;
+        width: fit-content;
+    }
+    .copyright p {
+        display: inline;
+        margin-right: 0;
+    }
+    .copyright p:not(:last-child)::after {
+        margin-left: 0;
     }
 }

@@ -1,7 +1,7 @@
 .entry {
     font-size: 1.4rem;
     text-align: left;
-    margin-bottom: 1rem;
+    margin-bottom: var(--grid-spacing);
     display: grid;
 }
 

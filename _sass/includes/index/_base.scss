@@ -10,6 +10,14 @@ body {
     background-color: var(--background-primary);
 }
 
+strong {
+    font-weight: normal
+}
+
+table {
+    width: 100%;
+}
+
 .container {
     height: 100%;
     display: flex;
@@ -26,11 +34,11 @@ body {
 }
 
 #content div {
-    padding: 2rem
+    padding: calc(var(--grid-spacing) * 2)
 }
 
 #content span {
-    margin-bottom: 1rem
+    margin-bottom: var(--grid-spacing)
 }
 
 
@@ -53,31 +61,25 @@ h1 {
 
 @media screen and (max-width: 500px) {
     body {
-        height: unset
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        height: unset;
     }
-
-    .title {
-        text-align: center
+    .container {
+        flex: 1 0 auto;
+        padding: calc(var(--grid-spacing) / 2);
     }
-
-    #content {
-        margin: 2rem
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: calc(var(--grid-spacing) / 2);
+        flex-shrink: 0;
     }
 
     #content div {
-        padding: .5rem;
-        padding: 1rem 1rem 2rem
+        padding: calc(var(--grid-spacing))
     }
-
-    .footer {
-        padding-bottom: .5rem;
-    }
-}
-
-strong {
-    font-weight: normal
-}
-
-table {
-    width: 100%;
 }
