@@ -17,7 +17,7 @@ $schema: "http://json.schemastore.org/jekyll"
 # in the templates via {{ site.myvariable }}.
 title: Lukas Wolfsteiner
 tagline: Personal Website, Portfolio, Blog
-description: German Software Engineer based in Zurich, Switzerland; shaping resilient Software Architectures and cultivating flourishing Codebases
+description: Senior Software Engineer based in the Zurich Metropolitan Area; shaping resilient Software Architectures and cultivating flourishing Codebases
 email: lukas@wolfsteiner.media
 
 # baseurl: "" # the subpath of your site, e.g. /blog
