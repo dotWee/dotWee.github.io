@@ -70,38 +70,59 @@ education:
 skills:
   - name: Backend
     level: Master
-    keywords: 
-      - Python (Pydantic, Mypy, FastAPI)
-      - Java (Spring Boot, Hibernate)
-      - C# (.NET Core, ASP.NET)
-      - SQL (PostgreSQL, MS SQL)
+    keywords:
+      - Python (FastAPI, Pydantic, Mypy)
+      - Java (Spring Boot, Hibernate, JPA)
+      - C# (.NET Core, ASP.NET MVC)
+      - RESTful API Architectures
+
+  - name: Storage
+    level: Master
+    keywords:
+      - SQL (PostgreSQL, MS SQL Server)
+      - S3 Object Storage
+      - Data Modeling
+      - Query Optimization
+
+  - name: Security
+    level: Master
+    keywords:
+      - OAuth2 & OpenID Connect
+      - Full IAAA Compliance
+      - BSI-Certified Cryptography
+      - Healthcare Data Protection
+
   - name: Frontend
     level: Experienced
     keywords:
-      - JavaScript (ES6, Node.js)
-      - TypeScript (Vue.js)
-      - Bootstrap
-      - Vuetify
+      - JavaScript (ES6+, Node.js)
+      - TypeScript (Vue.js, Vuetify)
+      - Single-Page Applications
+      - Web Accessibility
+
   - name: DevOps
     level: Experienced
     keywords:
-      - Cloud (Azure, Docker, Kubernetes)
-      - Monitoring (Grafana, Prometheus)
-      - Atlassian (Jira, BitBucket)
-      - Project Management (Agile)
-      - CI/CD (Jenkins, GitHub)
-  - name: Tools
+      - Containerization (Docker)
+      - CI/CD (Jenkins, GitHub Actions)
+      - Cloud Services (Azure)
+      - Infrastructure as Code
+
+  - name: Quality Assurance
     level: Master
     keywords:
-      - JetBrains IDEs
-      - Visual Studio Code
-      - Vim
-  - name: Management
+      - Test-Driven Development
+      - Code Quality Metrics
+      - Automated Testing
+      - Integration Testing
+
+  - name: Technical Leadership
     level: Experienced
     keywords:
-      - Technical Grooming
       - Code Reviews
-      - Mentoring
+      - Junior Mentoring
+      - Requirements Analysis
+      - Technical Documentation
 
 # Career Objective
 career:
