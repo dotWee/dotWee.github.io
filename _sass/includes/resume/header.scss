@@ -1,3 +1,4 @@
+// Responsive stacking for header: image and basics side by side on desktop, stacked on mobile
 .header {
     width: 90%;
     margin: 0 auto;
@@ -6,29 +7,69 @@
 
     .image {
         padding-right: var(--grid-spacing);
-        
+
         img {
             height: 120px;
             width: 120px;
             border-radius: 50%;
         }
-      }
+    }
 
     .basics {
-        .name, .label {
+
+        .name,
+        .label {
             text-transform: uppercase;
         }
-    
+
         .name {
             font-weight: bolder;
             color: var(--text-primary);
             margin-bottom: 0;
         }
+
         .label {
             color: var(--text-label);
             text-align: left;
             font-weight: bold;
             margin-top: 0;
-        }        
+        }
+    }
+}
+
+// Mobile: stack image and basics vertically in header
+@media screen and (max-width: 512px) {
+    .header {
+        display: block;
+
+        .title {
+            margin: 0 auto;
+        }
+
+        input,
+        label {
+            display: none;
+        }
+
+        >.image,
+        >.basics {
+            display: block;
+            width: 100%;
+        }
+
+        >.image {
+            padding-right: 0;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        >.basics {
+            text-align: center;
+
+            >.name,
+            >.label {
+                text-align: center;
+            }
+        }
     }
 }
