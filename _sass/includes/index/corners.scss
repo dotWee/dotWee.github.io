@@ -23,21 +23,21 @@ svg {
 }
 
 .corner-line-top-left {
-    top: -0.7rem;
-    left: -0.7rem;
+    top: calc(var(--stroke-width) * -0.5);
+    left: calc(var(--stroke-width) * -0.5);
 }
 
 .corner-line-top-right {
-    top: -0.7rem;
-    right: -0.7rem;
+    top: calc(var(--stroke-width) * -0.5);
+    right: calc(var(--stroke-width) * -0.5);
 }
 
 .corner-line-bottom-left {
-    bottom: -0.7rem;
-    left: -0.7rem;
+    bottom: calc(var(--stroke-width) * -0.5);
+    left: calc(var(--stroke-width) * -0.5);
 }
 
 .corner-line-bottom-right {
-    bottom: -0.7rem;
-    right: -0.7rem;
+    bottom: calc(var(--stroke-width) * -0.5);
+    right: calc(var(--stroke-width) * -0.5);
 }

@@ -3,7 +3,7 @@
 body {
     font-family: "Lucida Console", Monaco, monospace;
     color: var(--text-primary);
-    padding: 2.5rem 5rem;
+    padding: var(--grid-spacing) calc(var(--grid-spacing) * 2);
 
     background-color: var(--background-primary);
 }
@@ -18,7 +18,7 @@ p,
 span,
 blockquote {
     @include mixins.body-text;
-    font-size: .8rem;
+    font-size: calc(var(--grid-spacing) / 2);
 }
 
 code {
