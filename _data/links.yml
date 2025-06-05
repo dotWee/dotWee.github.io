@@ -63,3 +63,6 @@
 
 - redirect_to: https://www.printables.com/social/529393-dotwee
   name: printables
+
+- redirect_to: https://dotwee.alphaxiv.io
+  name: alphaxiv
