@@ -38,3 +38,34 @@ ul {
     list-style-type: square;
     //margin-top: 0;
 }
+
+@media screen and (max-width: 1024px) {
+    body {
+        background-color: var(--background-primary);
+    }
+    .container {
+        box-shadow: none;
+        .container-block {
+            .sidebar {
+                div {
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 512px) {
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+
+        .container-block {
+            display: block;
+        }
+    }
+
+    ul {
+        padding-left: var(--grid-spacing);
+    }
+}
