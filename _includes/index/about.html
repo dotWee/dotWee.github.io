@@ -11,7 +11,7 @@
                 <ul>
                     <li>
                         <span>
-                            {{ site.description }}
+                            {{ site.description | replace: ';', ';<br>' }}
                         </span>
                     </li>
                 </ul>
