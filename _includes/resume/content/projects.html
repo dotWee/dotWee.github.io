@@ -8,7 +8,7 @@
             <a href="{{ item.url }}">{{ item.name }}</a>
 
             {% if item.keywords %}
-            <span class="keywords">{{ item.keywords | join: " #" | prepend: "#" | downcase }}</span>
+            <span class="keywords">{{ item.keywords | join: " #" | prepend: "#" }}</span>
             {% endif %}
 
             <span class="startDate"> {{ item.startDate | date: "%B %Y" }}</span>
