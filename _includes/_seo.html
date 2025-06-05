@@ -11,3 +11,7 @@
 {% for page_to_prefetch in pages_to_prefetch %}{% if page.url != page_to_prefetch.url %}
 <link rel="dns-prefetch" href="{{ page_to_prefetch.url | absolute_url }}">
 {% endif %}{% endfor %}
+
+<!-- Geographic meta tags -->
+<meta name="geo.region" content="{{ site.data.resume.basics.location.countryCode }}">
+<meta name="geo.placename" content="{{ site.data.resume.basics.location.city }}">
