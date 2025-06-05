@@ -18,7 +18,7 @@ p,
 span,
 blockquote {
     @include mixins.body-text;
-    font-size: calc(var(--grid-spacing) / 2);
+    font-size: calc(var(--grid-spacing) / 1.6);
 }
 
 code {
